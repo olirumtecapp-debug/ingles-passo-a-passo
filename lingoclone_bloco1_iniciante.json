@@ -1,0 +1,6168 @@
+[
+  {
+    "id": "beginner_u1_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 1,
+    "unitName": "Primeiros Passos",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Cumprimentos",
+    "icon": "👋",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Olá'",
+        "options": [
+          {
+            "text": "Hello",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Bom dia'?",
+        "options": [
+          {
+            "text": "Good morning",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Hi",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "How are you?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Good morning",
+        "words": [
+          "Bom",
+          "dia",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Bom",
+          "dia"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Hi",
+        "correctAnswer": "Oi"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Como você está?'",
+        "options": [
+          {
+            "text": "How are you?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Good morning",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u1_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 1,
+    "unitName": "Primeiros Passos",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Despedidas",
+    "icon": "🚪",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Adeus'",
+        "options": [
+          {
+            "text": "Goodbye",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Thank you",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Até logo'?",
+        "options": [
+          {
+            "text": "See you later",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "See you tomorrow",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Good night",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "See you later",
+        "words": [
+          "Até",
+          "logo",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Até",
+          "logo"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "See you tomorrow",
+        "correctAnswer": "Até amanhã"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Boa noite'",
+        "options": [
+          {
+            "text": "Good night",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "See you later",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u1_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 1,
+    "unitName": "Primeiros Passos",
+    "lesson": 3,
+    "isReview": false,
+    "title": "To Be — I am",
+    "icon": "🧩",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu estou feliz.'",
+        "options": [
+          {
+            "text": "I am happy.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu sou um estudante.'?",
+        "options": [
+          {
+            "text": "I am a student.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I am ready.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am Brazilian.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I am a student.",
+        "words": [
+          "Eu",
+          "sou",
+          "um",
+          "estudante.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "sou",
+          "um",
+          "estudante."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I am ready.",
+        "correctAnswer": "Eu estou pronto."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu sou brasileiro.'",
+        "options": [
+          {
+            "text": "I am Brazilian.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I am a student.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am happy.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u1_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 1,
+    "unitName": "Primeiros Passos",
+    "lesson": 4,
+    "isReview": false,
+    "title": "To Be — You are",
+    "icon": "🗣️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Você é meu amigo.'",
+        "options": [
+          {
+            "text": "You are my friend.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Você está bem.'?",
+        "options": [
+          {
+            "text": "You are fine.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "You are welcome.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Are you okay?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "You are fine.",
+        "words": [
+          "Você",
+          "está",
+          "bem.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Você",
+          "está",
+          "bem."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "You are welcome.",
+        "correctAnswer": "De nada."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Você está bem?'",
+        "options": [
+          {
+            "text": "Are you okay?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "You are fine.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "You are my friend.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u1_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 1,
+    "unitName": "Primeiros Passos",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Primeira Conversa",
+    "icon": "💬",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Qual é o seu nome?'",
+        "options": [
+          {
+            "text": "What is your name?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Meu nome é Ana.'?",
+        "options": [
+          {
+            "text": "My name is Ana.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Nice to meet you.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am fine, thanks.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "My name is Ana.",
+        "words": [
+          "Meu",
+          "nome",
+          "é",
+          "Ana.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Meu",
+          "nome",
+          "é",
+          "Ana."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Nice to meet you.",
+        "correctAnswer": "Prazer em conhecer você."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu estou bem, obrigado.'",
+        "options": [
+          {
+            "text": "I am fine, thanks.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "My name is Ana.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "What is your name?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u1_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 1,
+    "unitName": "Primeiros Passos",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Primeiros Passos",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Olá'",
+        "options": [
+          {
+            "text": "Hello",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Adeus'",
+        "options": [
+          {
+            "text": "Goodbye",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu estou feliz.'",
+        "options": [
+          {
+            "text": "I am happy.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "You are my friend.",
+        "words": [
+          "Você",
+          "é",
+          "meu",
+          "amigo.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Você",
+          "é",
+          "meu",
+          "amigo."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "What is your name?",
+        "correctAnswer": "Qual é o seu nome?"
+      }
+    ]
+  },
+  {
+    "id": "beginner_u2_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 2,
+    "unitName": "Apresentações e Informações Pessoais",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Meu Nome",
+    "icon": "🙋",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Meu nome é Lucas.'",
+        "options": [
+          {
+            "text": "My name is Lucas.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Qual é o seu nome?'?",
+        "options": [
+          {
+            "text": "What is your name?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "My name is Julia.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Nice to meet you.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "What is your name?",
+        "words": [
+          "Qual",
+          "é",
+          "o",
+          "seu",
+          "nome?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Qual",
+          "é",
+          "o",
+          "seu",
+          "nome?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "My name is Julia.",
+        "correctAnswer": "Meu nome é Julia."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Prazer em conhecer você.'",
+        "options": [
+          {
+            "text": "Nice to meet you.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "What is your name?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "My name is Lucas.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u2_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 2,
+    "unitName": "Apresentações e Informações Pessoais",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Países e Nacionalidades",
+    "icon": "🌎",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu sou do Brasil.'",
+        "options": [
+          {
+            "text": "I am from Brazil.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ela é do Canadá.'?",
+        "options": [
+          {
+            "text": "She is from Canada.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I am Brazilian.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "He is American.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "She is from Canada.",
+        "words": [
+          "Ela",
+          "é",
+          "do",
+          "Canadá.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ela",
+          "é",
+          "do",
+          "Canadá."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I am Brazilian.",
+        "correctAnswer": "Eu sou brasileiro."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Ele é americano.'",
+        "options": [
+          {
+            "text": "He is American.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She is from Canada.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am from Brazil.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u2_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 2,
+    "unitName": "Apresentações e Informações Pessoais",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Profissões Básicas",
+    "icon": "💼",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu sou professor.'",
+        "options": [
+          {
+            "text": "I am a teacher.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ele é médico.'?",
+        "options": [
+          {
+            "text": "He is a doctor.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She is a student.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am a driver.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "He is a doctor.",
+        "words": [
+          "Ele",
+          "é",
+          "médico.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ele",
+          "é",
+          "médico."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "She is a student.",
+        "correctAnswer": "Ela é estudante."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu sou motorista.'",
+        "options": [
+          {
+            "text": "I am a driver.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "He is a doctor.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am a teacher.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u2_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 2,
+    "unitName": "Apresentações e Informações Pessoais",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Idade",
+    "icon": "🎂",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Quantos anos você tem?'",
+        "options": [
+          {
+            "text": "How old are you?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu tenho vinte anos.'?",
+        "options": [
+          {
+            "text": "I am twenty years old.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She is thirty years old.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "How old is he?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I am twenty years old.",
+        "words": [
+          "Eu",
+          "tenho",
+          "vinte",
+          "anos.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "tenho",
+          "vinte",
+          "anos."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "She is thirty years old.",
+        "correctAnswer": "Ela tem trinta anos."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Quantos anos ele tem?'",
+        "options": [
+          {
+            "text": "How old is he?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I am twenty years old.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "How old are you?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u2_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 2,
+    "unitName": "Apresentações e Informações Pessoais",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Informações Pessoais",
+    "icon": "📋",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Onde você mora?'",
+        "options": [
+          {
+            "text": "Where do you live?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu moro em São Paulo.'?",
+        "options": [
+          {
+            "text": "I live in São Paulo.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "What is your phone number?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I live in a small apartment.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I live in São Paulo.",
+        "words": [
+          "Eu",
+          "moro",
+          "em",
+          "São",
+          "Paulo.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "moro",
+          "em",
+          "São",
+          "Paulo."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "What is your phone number?",
+        "correctAnswer": "Qual é o seu telefone?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu moro em um apartamento pequeno.'",
+        "options": [
+          {
+            "text": "I live in a small apartment.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I live in São Paulo.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Where do you live?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u2_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 2,
+    "unitName": "Apresentações e Informações Pessoais",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Apresentações e Informações Pessoais",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Meu nome é Lucas.'",
+        "options": [
+          {
+            "text": "My name is Lucas.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu sou do Brasil.'",
+        "options": [
+          {
+            "text": "I am from Brazil.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu sou professor.'",
+        "options": [
+          {
+            "text": "I am a teacher.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "How old are you?",
+        "words": [
+          "Quantos",
+          "anos",
+          "você",
+          "tem?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Quantos",
+          "anos",
+          "você",
+          "tem?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Where do you live?",
+        "correctAnswer": "Onde você mora?"
+      }
+    ]
+  },
+  {
+    "id": "beginner_u3_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 3,
+    "unitName": "Família e Pessoas",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Minha Família",
+    "icon": "👨‍👩‍👧",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Esta é minha mãe.'",
+        "options": [
+          {
+            "text": "This is my mother.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Minha família é pequena.'?",
+        "options": [
+          {
+            "text": "My family is small.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "This is my brother.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "My father is a teacher.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "My family is small.",
+        "words": [
+          "Minha",
+          "família",
+          "é",
+          "pequena.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Minha",
+          "família",
+          "é",
+          "pequena."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "This is my brother.",
+        "correctAnswer": "Este é meu irmão."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Meu pai é professor.'",
+        "options": [
+          {
+            "text": "My father is a teacher.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "My family is small.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "This is my mother.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u3_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 3,
+    "unitName": "Família e Pessoas",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Possessivos",
+    "icon": "🔑",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Este é meu livro.'",
+        "options": [
+          {
+            "text": "This is my book.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'O nome dela é Julia.'?",
+        "options": [
+          {
+            "text": "Her name is Julia.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "His brother is tall.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Our house is small.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Her name is Julia.",
+        "words": [
+          "O",
+          "nome",
+          "dela",
+          "é",
+          "Julia.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "O",
+          "nome",
+          "dela",
+          "é",
+          "Julia."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "His brother is tall.",
+        "correctAnswer": "O irmão dele é alto."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Nossa casa é pequena.'",
+        "options": [
+          {
+            "text": "Our house is small.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Her name is Julia.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "This is my book.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u3_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 3,
+    "unitName": "Família e Pessoas",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Descrevendo Pessoas",
+    "icon": "🙂",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Ela é baixa.'",
+        "options": [
+          {
+            "text": "She is short.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ele é alto.'?",
+        "options": [
+          {
+            "text": "He is tall.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "My sister is young.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "My friend is friendly.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "He is tall.",
+        "words": [
+          "Ele",
+          "é",
+          "alto.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ele",
+          "é",
+          "alto."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "My sister is young.",
+        "correctAnswer": "Minha irmã é jovem."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Meu amigo é amigável.'",
+        "options": [
+          {
+            "text": "My friend is friendly.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "He is tall.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "She is short.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u3_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 3,
+    "unitName": "Família e Pessoas",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Have e Has",
+    "icon": "🤲",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu tenho dois irmãos.'",
+        "options": [
+          {
+            "text": "I have two brothers.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ela tem um carro novo.'?",
+        "options": [
+          {
+            "text": "She has a new car.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "He has two sisters.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "We have a big family.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "She has a new car.",
+        "words": [
+          "Ela",
+          "tem",
+          "um",
+          "carro",
+          "novo.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ela",
+          "tem",
+          "um",
+          "carro",
+          "novo."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "He has two sisters.",
+        "correctAnswer": "Ele tem duas irmãs."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Nós temos uma família grande.'",
+        "options": [
+          {
+            "text": "We have a big family.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She has a new car.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I have two brothers.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u3_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 3,
+    "unitName": "Família e Pessoas",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Quem é Quem?",
+    "icon": "👥",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Quem é ela?'",
+        "options": [
+          {
+            "text": "Who is she?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ele é meu pai.'?",
+        "options": [
+          {
+            "text": "He is my father.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Who is that man?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "She is my best friend.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "He is my father.",
+        "words": [
+          "Ele",
+          "é",
+          "meu",
+          "pai.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ele",
+          "é",
+          "meu",
+          "pai."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Who is that man?",
+        "correctAnswer": "Quem é aquele homem?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Ela é minha melhor amiga.'",
+        "options": [
+          {
+            "text": "She is my best friend.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "He is my father.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Who is she?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u3_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 3,
+    "unitName": "Família e Pessoas",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Família e Pessoas",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Esta é minha mãe.'",
+        "options": [
+          {
+            "text": "This is my mother.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Este é meu livro.'",
+        "options": [
+          {
+            "text": "This is my book.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Ela é baixa.'",
+        "options": [
+          {
+            "text": "She is short.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I have two brothers.",
+        "words": [
+          "Eu",
+          "tenho",
+          "dois",
+          "irmãos.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "tenho",
+          "dois",
+          "irmãos."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Who is she?",
+        "correctAnswer": "Quem é ela?"
+      }
+    ]
+  },
+  {
+    "id": "beginner_u4_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 4,
+    "unitName": "Casa e Objetos",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Minha Casa",
+    "icon": "🏠",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Esta é minha casa.'",
+        "options": [
+          {
+            "text": "This is my house.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu moro em uma casa.'?",
+        "options": [
+          {
+            "text": "I live in a house.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "My house is small.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I live in an apartment.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I live in a house.",
+        "words": [
+          "Eu",
+          "moro",
+          "em",
+          "uma",
+          "casa.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "moro",
+          "em",
+          "uma",
+          "casa."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "My house is small.",
+        "correctAnswer": "Minha casa é pequena."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu moro em um apartamento.'",
+        "options": [
+          {
+            "text": "I live in an apartment.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I live in a house.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "This is my house.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u4_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 4,
+    "unitName": "Casa e Objetos",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Cômodos",
+    "icon": "🛋️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'A cozinha está limpa.'",
+        "options": [
+          {
+            "text": "The kitchen is clean.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'O quarto é pequeno.'?",
+        "options": [
+          {
+            "text": "The bedroom is small.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The bathroom is clean.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am in the living room.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "The bedroom is small.",
+        "words": [
+          "O",
+          "quarto",
+          "é",
+          "pequeno.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "O",
+          "quarto",
+          "é",
+          "pequeno."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The bathroom is clean.",
+        "correctAnswer": "O banheiro está limpo."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu estou na sala.'",
+        "options": [
+          {
+            "text": "I am in the living room.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The bedroom is small.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The kitchen is clean.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u4_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 4,
+    "unitName": "Casa e Objetos",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Objetos da Casa",
+    "icon": "🪑",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'O livro está sobre a mesa.'",
+        "options": [
+          {
+            "text": "The book is on the table.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'As chaves estão na cadeira.'?",
+        "options": [
+          {
+            "text": "The keys are on the chair.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The lamp is on the desk.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The door is open.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "The keys are on the chair.",
+        "words": [
+          "As",
+          "chaves",
+          "estão",
+          "na",
+          "cadeira.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "As",
+          "chaves",
+          "estão",
+          "na",
+          "cadeira."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The lamp is on the desk.",
+        "correctAnswer": "A lâmpada está sobre a mesa."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'A porta está aberta.'",
+        "options": [
+          {
+            "text": "The door is open.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The keys are on the chair.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The book is on the table.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u4_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 4,
+    "unitName": "Casa e Objetos",
+    "lesson": 4,
+    "isReview": false,
+    "title": "There Is / There Are",
+    "icon": "📦",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Há uma cama no quarto.'",
+        "options": [
+          {
+            "text": "There is a bed in the room.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Há duas cadeiras.'?",
+        "options": [
+          {
+            "text": "There are two chairs.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "There is a window.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "There are three books on the desk.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "There are two chairs.",
+        "words": [
+          "Há",
+          "duas",
+          "cadeiras.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Há",
+          "duas",
+          "cadeiras."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "There is a window.",
+        "correctAnswer": "Há uma janela."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Há três livros sobre a mesa.'",
+        "options": [
+          {
+            "text": "There are three books on the desk.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "There are two chairs.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "There is a bed in the room.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u4_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 4,
+    "unitName": "Casa e Objetos",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Localização na Casa",
+    "icon": "📍",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'A bolsa está embaixo da cadeira.'",
+        "options": [
+          {
+            "text": "The bag is under the chair.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'As chaves estão ao lado da porta.'?",
+        "options": [
+          {
+            "text": "The keys are next to the door.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The cat is behind the sofa.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The lamp is on the table.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "The keys are next to the door.",
+        "words": [
+          "As",
+          "chaves",
+          "estão",
+          "ao",
+          "lado",
+          "da",
+          "porta.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "As",
+          "chaves",
+          "estão",
+          "ao",
+          "lado",
+          "da",
+          "porta."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The cat is behind the sofa.",
+        "correctAnswer": "O gato está atrás do sofá."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'A lâmpada está sobre a mesa.'",
+        "options": [
+          {
+            "text": "The lamp is on the table.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The keys are next to the door.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The bag is under the chair.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u4_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 4,
+    "unitName": "Casa e Objetos",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Casa e Objetos",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Esta é minha casa.'",
+        "options": [
+          {
+            "text": "This is my house.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'A cozinha está limpa.'",
+        "options": [
+          {
+            "text": "The kitchen is clean.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'O livro está sobre a mesa.'",
+        "options": [
+          {
+            "text": "The book is on the table.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "There is a bed in the room.",
+        "words": [
+          "Há",
+          "uma",
+          "cama",
+          "no",
+          "quarto.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Há",
+          "uma",
+          "cama",
+          "no",
+          "quarto."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The bag is under the chair.",
+        "correctAnswer": "A bolsa está embaixo da cadeira."
+      }
+    ]
+  },
+  {
+    "id": "beginner_u5_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 5,
+    "unitName": "Rotina e Tempo",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Rotina Diária",
+    "icon": "⏰",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu acordo cedo.'",
+        "options": [
+          {
+            "text": "I wake up early.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu trabalho todos os dias.'?",
+        "options": [
+          {
+            "text": "I work every day.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have breakfast at seven.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I go to bed at eleven.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I work every day.",
+        "words": [
+          "Eu",
+          "trabalho",
+          "todos",
+          "os",
+          "dias.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "trabalho",
+          "todos",
+          "os",
+          "dias."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I have breakfast at seven.",
+        "correctAnswer": "Eu tomo café da manhã às sete."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu vou para a cama às onze.'",
+        "options": [
+          {
+            "text": "I go to bed at eleven.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I work every day.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I wake up early.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u5_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 5,
+    "unitName": "Rotina e Tempo",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Horas",
+    "icon": "🕐",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'São sete horas.'",
+        "options": [
+          {
+            "text": "It is seven o’clock.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'São oito e meia.'?",
+        "options": [
+          {
+            "text": "It is eight thirty.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "It is ten o’clock.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "It is half past six.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "It is eight thirty.",
+        "words": [
+          "São",
+          "oito",
+          "e",
+          "meia.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "São",
+          "oito",
+          "e",
+          "meia."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "It is ten o’clock.",
+        "correctAnswer": "São dez horas."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'São seis e meia.'",
+        "options": [
+          {
+            "text": "It is half past six.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "It is eight thirty.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "It is seven o’clock.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u5_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 5,
+    "unitName": "Rotina e Tempo",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Present Simple",
+    "icon": "📅",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu tomo café todas as manhãs.'",
+        "options": [
+          {
+            "text": "I drink coffee every morning.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ela estuda inglês.'?",
+        "options": [
+          {
+            "text": "She studies English.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "They live here.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "He works at home.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "She studies English.",
+        "words": [
+          "Ela",
+          "estuda",
+          "inglês.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ela",
+          "estuda",
+          "inglês."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "They live here.",
+        "correctAnswer": "Eles moram aqui."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Ele trabalha em casa.'",
+        "options": [
+          {
+            "text": "He works at home.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She studies English.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I drink coffee every morning.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u5_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 5,
+    "unitName": "Rotina e Tempo",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Frequência",
+    "icon": "🔄",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu sempre vou a pé para o trabalho.'",
+        "options": [
+          {
+            "text": "I always walk to work.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ela às vezes cozinha.'?",
+        "options": [
+          {
+            "text": "She sometimes cooks.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I usually watch TV at night.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I never drink soda.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "She sometimes cooks.",
+        "words": [
+          "Ela",
+          "às",
+          "vezes",
+          "cozinha.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ela",
+          "às",
+          "vezes",
+          "cozinha."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I usually watch TV at night.",
+        "correctAnswer": "Eu geralmente assisto à TV à noite."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu nunca tomo refrigerante.'",
+        "options": [
+          {
+            "text": "I never drink soda.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She sometimes cooks.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I always walk to work.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u5_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 5,
+    "unitName": "Rotina e Tempo",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Minha Rotina",
+    "icon": "📝",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'A que horas você acorda?'",
+        "options": [
+          {
+            "text": "What time do you get up?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu acordo às sete.'?",
+        "options": [
+          {
+            "text": "I get up at seven.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "What do you do in the morning?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I get home at six.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I get up at seven.",
+        "words": [
+          "Eu",
+          "acordo",
+          "às",
+          "sete.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "acordo",
+          "às",
+          "sete."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "What do you do in the morning?",
+        "correctAnswer": "O que você faz de manhã?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu chego em casa às seis.'",
+        "options": [
+          {
+            "text": "I get home at six.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I get up at seven.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "What time do you get up?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u5_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 5,
+    "unitName": "Rotina e Tempo",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Rotina e Tempo",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu acordo cedo.'",
+        "options": [
+          {
+            "text": "I wake up early.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'São sete horas.'",
+        "options": [
+          {
+            "text": "It is seven o’clock.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu tomo café todas as manhãs.'",
+        "options": [
+          {
+            "text": "I drink coffee every morning.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I always walk to work.",
+        "words": [
+          "Eu",
+          "sempre",
+          "vou",
+          "a",
+          "pé",
+          "para",
+          "o",
+          "trabalho.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "sempre",
+          "vou",
+          "a",
+          "pé",
+          "para",
+          "o",
+          "trabalho."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "What time do you get up?",
+        "correctAnswer": "A que horas você acorda?"
+      }
+    ]
+  },
+  {
+    "id": "beginner_u6_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 6,
+    "unitName": "Comida e Bebidas",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Alimentos",
+    "icon": "🍎",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu gosto de maçãs.'",
+        "options": [
+          {
+            "text": "I like apples.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu como pão no café da manhã.'?",
+        "options": [
+          {
+            "text": "I eat bread for breakfast.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I like rice.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "We eat chicken for lunch.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I eat bread for breakfast.",
+        "words": [
+          "Eu",
+          "como",
+          "pão",
+          "no",
+          "café",
+          "da",
+          "manhã.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "como",
+          "pão",
+          "no",
+          "café",
+          "da",
+          "manhã."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I like rice.",
+        "correctAnswer": "Eu gosto de arroz."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Nós comemos frango no almoço.'",
+        "options": [
+          {
+            "text": "We eat chicken for lunch.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I eat bread for breakfast.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I like apples.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u6_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 6,
+    "unitName": "Comida e Bebidas",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Bebidas",
+    "icon": "🥤",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu bebo água todos os dias.'",
+        "options": [
+          {
+            "text": "I drink water every day.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ela toma café de manhã.'?",
+        "options": [
+          {
+            "text": "She drinks coffee in the morning.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Would you like some tea?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I like orange juice.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "She drinks coffee in the morning.",
+        "words": [
+          "Ela",
+          "toma",
+          "café",
+          "de",
+          "manhã.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ela",
+          "toma",
+          "café",
+          "de",
+          "manhã."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Would you like some tea?",
+        "correctAnswer": "Você gostaria de um pouco de chá?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu gosto de suco de laranja.'",
+        "options": [
+          {
+            "text": "I like orange juice.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She drinks coffee in the morning.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I drink water every day.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u6_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 6,
+    "unitName": "Comida e Bebidas",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Gostos e Preferências",
+    "icon": "❤️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu gosto de café.'",
+        "options": [
+          {
+            "text": "I like coffee.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu não gosto de peixe.'?",
+        "options": [
+          {
+            "text": "I don't like fish.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Do you like chocolate?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Yes, I do.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I don't like fish.",
+        "words": [
+          "Eu",
+          "não",
+          "gosto",
+          "de",
+          "peixe.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "não",
+          "gosto",
+          "de",
+          "peixe."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Do you like chocolate?",
+        "correctAnswer": "Você gosta de chocolate?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Sim, eu gosto.'",
+        "options": [
+          {
+            "text": "Yes, I do.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I don't like fish.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I like coffee.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u6_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 6,
+    "unitName": "Comida e Bebidas",
+    "lesson": 4,
+    "isReview": false,
+    "title": "No Restaurante",
+    "icon": "🍽️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu gostaria de um pouco de água, por favor.'",
+        "options": [
+          {
+            "text": "I'd like some water, please.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Posso ver o cardápio, por favor?'?",
+        "options": [
+          {
+            "text": "Can I have the menu, please?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I would like a salad.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The bill, please.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Can I have the menu, please?",
+        "words": [
+          "Posso",
+          "ver",
+          "o",
+          "cardápio,",
+          "por",
+          "favor?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Posso",
+          "ver",
+          "o",
+          "cardápio,",
+          "por",
+          "favor?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I would like a salad.",
+        "correctAnswer": "Eu gostaria de uma salada."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'A conta, por favor.'",
+        "options": [
+          {
+            "text": "The bill, please.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Can I have the menu, please?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I'd like some water, please.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u6_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 6,
+    "unitName": "Comida e Bebidas",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Comida do Dia a Dia",
+    "icon": "🥪",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu estou com fome.'",
+        "options": [
+          {
+            "text": "I am hungry.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu estou com sede.'?",
+        "options": [
+          {
+            "text": "I am thirsty.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "We have dinner at eight.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I have lunch at noon.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I am thirsty.",
+        "words": [
+          "Eu",
+          "estou",
+          "com",
+          "sede.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "estou",
+          "com",
+          "sede."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We have dinner at eight.",
+        "correctAnswer": "Nós jantamos às oito."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu almoço ao meio-dia.'",
+        "options": [
+          {
+            "text": "I have lunch at noon.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I am thirsty.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am hungry.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u6_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 6,
+    "unitName": "Comida e Bebidas",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Comida e Bebidas",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu gosto de maçãs.'",
+        "options": [
+          {
+            "text": "I like apples.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu bebo água todos os dias.'",
+        "options": [
+          {
+            "text": "I drink water every day.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu gosto de café.'",
+        "options": [
+          {
+            "text": "I like coffee.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I'd like some water, please.",
+        "words": [
+          "Eu",
+          "gostaria",
+          "de",
+          "um",
+          "pouco",
+          "de",
+          "água,",
+          "por",
+          "favor.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "gostaria",
+          "de",
+          "um",
+          "pouco",
+          "de",
+          "água,",
+          "por",
+          "favor."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I am hungry.",
+        "correctAnswer": "Eu estou com fome."
+      }
+    ]
+  },
+  {
+    "id": "beginner_u7_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 7,
+    "unitName": "Cidade e Direções",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Lugares na Cidade",
+    "icon": "🏙️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'O banco fica perto da minha casa.'",
+        "options": [
+          {
+            "text": "The bank is near my house.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'O supermercado fica perto do parque.'?",
+        "options": [
+          {
+            "text": "The supermarket is near the park.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The hospital is on Main Street.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The pharmacy is near the station.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "The supermarket is near the park.",
+        "words": [
+          "O",
+          "supermercado",
+          "fica",
+          "perto",
+          "do",
+          "parque.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "O",
+          "supermercado",
+          "fica",
+          "perto",
+          "do",
+          "parque."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The hospital is on Main Street.",
+        "correctAnswer": "O hospital fica na Main Street."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'A farmácia fica perto da estação.'",
+        "options": [
+          {
+            "text": "The pharmacy is near the station.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The supermarket is near the park.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The bank is near my house.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u7_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 7,
+    "unitName": "Cidade e Direções",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Transporte",
+    "icon": "🚌",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu vou para o trabalho de ônibus.'",
+        "options": [
+          {
+            "text": "I go to work by bus.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Ela vai para a escola de trem.'?",
+        "options": [
+          {
+            "text": "She goes to school by train.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I ride a bike.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "We go by car.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "She goes to school by train.",
+        "words": [
+          "Ela",
+          "vai",
+          "para",
+          "a",
+          "escola",
+          "de",
+          "trem.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Ela",
+          "vai",
+          "para",
+          "a",
+          "escola",
+          "de",
+          "trem."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I ride a bike.",
+        "correctAnswer": "Eu ando de bicicleta."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Nós vamos de carro.'",
+        "options": [
+          {
+            "text": "We go by car.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She goes to school by train.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I go to work by bus.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u7_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 7,
+    "unitName": "Cidade e Direções",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Pedindo Direções",
+    "icon": "🗺️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Onde fica o banco?'",
+        "options": [
+          {
+            "text": "Where is the bank?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Como chego ao hotel?'?",
+        "options": [
+          {
+            "text": "How do I get to the hotel?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Can you help me?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Where is the train station?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "How do I get to the hotel?",
+        "words": [
+          "Como",
+          "chego",
+          "ao",
+          "hotel?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Como",
+          "chego",
+          "ao",
+          "hotel?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Can you help me?",
+        "correctAnswer": "Você pode me ajudar?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Onde fica a estação de trem?'",
+        "options": [
+          {
+            "text": "Where is the train station?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "How do I get to the hotel?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Where is the bank?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u7_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 7,
+    "unitName": "Cidade e Direções",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Esquerda, Direita e Perto",
+    "icon": "↩️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Vire à esquerda na esquina.'",
+        "options": [
+          {
+            "text": "Turn left at the corner.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Vire à direita na esquina.'?",
+        "options": [
+          {
+            "text": "Turn right at the corner.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Go straight ahead.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The pharmacy is on the right.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Turn right at the corner.",
+        "words": [
+          "Vire",
+          "à",
+          "direita",
+          "na",
+          "esquina.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Vire",
+          "à",
+          "direita",
+          "na",
+          "esquina."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Go straight ahead.",
+        "correctAnswer": "Siga em frente."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'A farmácia fica à direita.'",
+        "options": [
+          {
+            "text": "The pharmacy is on the right.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Turn right at the corner.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Turn left at the corner.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u7_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 7,
+    "unitName": "Cidade e Direções",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Dando Direções",
+    "icon": "🚶",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'O café fica ao lado do banco.'",
+        "options": [
+          {
+            "text": "The café is next to the bank.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Vire à direita e siga em frente.'?",
+        "options": [
+          {
+            "text": "Turn right and go straight.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The hotel is near the station.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Go straight to the park.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Turn right and go straight.",
+        "words": [
+          "Vire",
+          "à",
+          "direita",
+          "e",
+          "siga",
+          "em",
+          "frente.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Vire",
+          "à",
+          "direita",
+          "e",
+          "siga",
+          "em",
+          "frente."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The hotel is near the station.",
+        "correctAnswer": "O hotel fica perto da estação."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Siga em frente até o parque.'",
+        "options": [
+          {
+            "text": "Go straight to the park.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Turn right and go straight.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The café is next to the bank.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u7_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 7,
+    "unitName": "Cidade e Direções",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Cidade e Direções",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'O banco fica perto da minha casa.'",
+        "options": [
+          {
+            "text": "The bank is near my house.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu vou para o trabalho de ônibus.'",
+        "options": [
+          {
+            "text": "I go to work by bus.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Onde fica o banco?'",
+        "options": [
+          {
+            "text": "Where is the bank?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Turn left at the corner.",
+        "words": [
+          "Vire",
+          "à",
+          "esquerda",
+          "na",
+          "esquina.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Vire",
+          "à",
+          "esquerda",
+          "na",
+          "esquina."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The café is next to the bank.",
+        "correctAnswer": "O café fica ao lado do banco."
+      }
+    ]
+  },
+  {
+    "id": "beginner_u8_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 8,
+    "unitName": "Compras e Serviços",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Lojas e Produtos",
+    "icon": "🛍️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu preciso de uma camisa nova.'",
+        "options": [
+          {
+            "text": "I need a new shirt.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Os sapatos são pretos.'?",
+        "options": [
+          {
+            "text": "The shoes are black.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I want a blue jacket.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "The store is open.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "The shoes are black.",
+        "words": [
+          "Os",
+          "sapatos",
+          "são",
+          "pretos.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Os",
+          "sapatos",
+          "são",
+          "pretos."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I want a blue jacket.",
+        "correctAnswer": "Eu quero uma jaqueta azul."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'A loja está aberta.'",
+        "options": [
+          {
+            "text": "The store is open.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The shoes are black.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I need a new shirt.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u8_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 8,
+    "unitName": "Compras e Serviços",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Preços",
+    "icon": "💰",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Quanto custa?'",
+        "options": [
+          {
+            "text": "How much is it?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Custa dez dólares.'?",
+        "options": [
+          {
+            "text": "It is ten dollars.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "It costs twenty dollars.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "How much is this bag?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "It is ten dollars.",
+        "words": [
+          "Custa",
+          "dez",
+          "dólares.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Custa",
+          "dez",
+          "dólares."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "It costs twenty dollars.",
+        "correctAnswer": "Custa vinte dólares."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Quanto custa esta bolsa?'",
+        "options": [
+          {
+            "text": "How much is this bag?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "It is ten dollars.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "How much is it?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u8_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 8,
+    "unitName": "Compras e Serviços",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Tamanhos e Cores",
+    "icon": "🎨",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Você tem uma camisa azul?'",
+        "options": [
+          {
+            "text": "Do you have a blue shirt?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu preciso de um tamanho pequeno.'?",
+        "options": [
+          {
+            "text": "I need a small size.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Do you have a larger size?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I like the red one.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I need a small size.",
+        "words": [
+          "Eu",
+          "preciso",
+          "de",
+          "um",
+          "tamanho",
+          "pequeno.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "preciso",
+          "de",
+          "um",
+          "tamanho",
+          "pequeno."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Do you have a larger size?",
+        "correctAnswer": "Você tem um tamanho maior?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu gosto do vermelho.'",
+        "options": [
+          {
+            "text": "I like the red one.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I need a small size.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Do you have a blue shirt?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u8_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 8,
+    "unitName": "Compras e Serviços",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Pedindo no Atendimento",
+    "icon": "🙋‍♂️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Posso experimentar?'",
+        "options": [
+          {
+            "text": "Can I try it on?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu gostaria deste.'?",
+        "options": [
+          {
+            "text": "I'd like this one.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Can I have this one?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Do you have another color?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I'd like this one.",
+        "words": [
+          "Eu",
+          "gostaria",
+          "deste.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "gostaria",
+          "deste."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Can I have this one?",
+        "correctAnswer": "Posso ficar com este?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Você tem outra cor?'",
+        "options": [
+          {
+            "text": "Do you have another color?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'd like this one.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Can I try it on?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u8_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 8,
+    "unitName": "Compras e Serviços",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Serviços do Dia a Dia",
+    "icon": "🧾",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Onde fica a farmácia?'",
+        "options": [
+          {
+            "text": "Where is the pharmacy?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu preciso enviar um pacote.'?",
+        "options": [
+          {
+            "text": "I need to send a package.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The post office is nearby.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I need some medicine.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I need to send a package.",
+        "words": [
+          "Eu",
+          "preciso",
+          "enviar",
+          "um",
+          "pacote.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "preciso",
+          "enviar",
+          "um",
+          "pacote."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The post office is nearby.",
+        "correctAnswer": "O correio fica perto."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu preciso de um remédio.'",
+        "options": [
+          {
+            "text": "I need some medicine.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I need to send a package.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Where is the pharmacy?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u8_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 8,
+    "unitName": "Compras e Serviços",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Compras e Serviços",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu preciso de uma camisa nova.'",
+        "options": [
+          {
+            "text": "I need a new shirt.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Quanto custa?'",
+        "options": [
+          {
+            "text": "How much is it?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Você tem uma camisa azul?'",
+        "options": [
+          {
+            "text": "Do you have a blue shirt?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Can I try it on?",
+        "words": [
+          "Posso",
+          "experimentar?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Posso",
+          "experimentar?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Where is the pharmacy?",
+        "correctAnswer": "Onde fica a farmácia?"
+      }
+    ]
+  },
+  {
+    "id": "beginner_u9_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 9,
+    "unitName": "Viagens e Transporte",
+    "lesson": 1,
+    "isReview": false,
+    "title": "No Aeroporto",
+    "icon": "✈️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Onde fica o balcão de check-in?'",
+        "options": [
+          {
+            "text": "Where is the check-in desk?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu estou com meu passaporte.'?",
+        "options": [
+          {
+            "text": "I have my passport.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Where is the airport?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I have a ticket.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I have my passport.",
+        "words": [
+          "Eu",
+          "estou",
+          "com",
+          "meu",
+          "passaporte.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "estou",
+          "com",
+          "meu",
+          "passaporte."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Where is the airport?",
+        "correctAnswer": "Onde fica o aeroporto?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu tenho uma passagem.'",
+        "options": [
+          {
+            "text": "I have a ticket.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have my passport.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Where is the check-in desk?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u9_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 9,
+    "unitName": "Viagens e Transporte",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Bilhetes e Viagens",
+    "icon": "🎫",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu preciso de uma passagem para Londres.'",
+        "options": [
+          {
+            "text": "I need a ticket to London.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Quanto custa a passagem?'?",
+        "options": [
+          {
+            "text": "How much is the ticket?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "One ticket, please.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I need a ticket to Madrid.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "How much is the ticket?",
+        "words": [
+          "Quanto",
+          "custa",
+          "a",
+          "passagem?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Quanto",
+          "custa",
+          "a",
+          "passagem?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "One ticket, please.",
+        "correctAnswer": "Uma passagem, por favor."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu preciso de uma passagem para Madrid.'",
+        "options": [
+          {
+            "text": "I need a ticket to Madrid.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "How much is the ticket?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I need a ticket to London.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u9_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 9,
+    "unitName": "Viagens e Transporte",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Hotel",
+    "icon": "🏨",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu tenho uma reserva.'",
+        "options": [
+          {
+            "text": "I have a reservation.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Onde fica meu quarto?'?",
+        "options": [
+          {
+            "text": "Where is my room?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I need a room.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Where is the reception?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Where is my room?",
+        "words": [
+          "Onde",
+          "fica",
+          "meu",
+          "quarto?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Onde",
+          "fica",
+          "meu",
+          "quarto?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I need a room.",
+        "correctAnswer": "Eu preciso de um quarto."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Onde fica a recepção?'",
+        "options": [
+          {
+            "text": "Where is the reception?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Where is my room?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I have a reservation.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u9_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 9,
+    "unitName": "Viagens e Transporte",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Bagagem e Problemas",
+    "icon": "🧳",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Onde está a minha bagagem?'",
+        "options": [
+          {
+            "text": "Where is my luggage?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Minha mala está perdida.'?",
+        "options": [
+          {
+            "text": "My bag is lost.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I can't find my bag.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "My suitcase is here.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "My bag is lost.",
+        "words": [
+          "Minha",
+          "mala",
+          "está",
+          "perdida.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Minha",
+          "mala",
+          "está",
+          "perdida."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I can't find my bag.",
+        "correctAnswer": "Eu não consigo encontrar minha mala."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Minha mala está aqui.'",
+        "options": [
+          {
+            "text": "My suitcase is here.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "My bag is lost.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Where is my luggage?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u9_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 9,
+    "unitName": "Viagens e Transporte",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Durante a Viagem",
+    "icon": "🌍",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Onde fica o banheiro?'",
+        "options": [
+          {
+            "text": "Where is the bathroom?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu preciso de ajuda.'?",
+        "options": [
+          {
+            "text": "I need help.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Can you call a taxi?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "How long does the trip take?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I need help.",
+        "words": [
+          "Eu",
+          "preciso",
+          "de",
+          "ajuda.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "preciso",
+          "de",
+          "ajuda."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Can you call a taxi?",
+        "correctAnswer": "Você pode chamar um táxi?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Quanto tempo dura a viagem?'",
+        "options": [
+          {
+            "text": "How long does the trip take?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I need help.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Where is the bathroom?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u9_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 9,
+    "unitName": "Viagens e Transporte",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Viagens e Transporte",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Onde fica o balcão de check-in?'",
+        "options": [
+          {
+            "text": "Where is the check-in desk?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu preciso de uma passagem para Londres.'",
+        "options": [
+          {
+            "text": "I need a ticket to London.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu tenho uma reserva.'",
+        "options": [
+          {
+            "text": "I have a reservation.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Where is my luggage?",
+        "words": [
+          "Onde",
+          "está",
+          "a",
+          "minha",
+          "bagagem?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Onde",
+          "está",
+          "a",
+          "minha",
+          "bagagem?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Where is the bathroom?",
+        "correctAnswer": "Onde fica o banheiro?"
+      }
+    ]
+  },
+  {
+    "id": "beginner_u10_l1",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 10,
+    "unitName": "Comunicação do Dia a Dia",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Pedidos e Ajuda",
+    "icon": "🆘",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Por favor, me ajude.'",
+        "options": [
+          {
+            "text": "Please help me.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Você pode repetir isso?'?",
+        "options": [
+          {
+            "text": "Can you repeat that?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Can you say that again?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I need help, please.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Can you repeat that?",
+        "words": [
+          "Você",
+          "pode",
+          "repetir",
+          "isso?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Você",
+          "pode",
+          "repetir",
+          "isso?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Can you say that again?",
+        "correctAnswer": "Você pode dizer isso novamente?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu preciso de ajuda, por favor.'",
+        "options": [
+          {
+            "text": "I need help, please.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Can you repeat that?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please help me.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u10_l2",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 10,
+    "unitName": "Comunicação do Dia a Dia",
+    "lesson": 2,
+    "isReview": false,
+    "title": "What / Where / Who",
+    "icon": "❔",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'O que é isso?'",
+        "options": [
+          {
+            "text": "What is this?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Quem é aquele?'?",
+        "options": [
+          {
+            "text": "Who is that?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Where do you live?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "What do you need?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Who is that?",
+        "words": [
+          "Quem",
+          "é",
+          "aquele?",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Quem",
+          "é",
+          "aquele?"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Where do you live?",
+        "correctAnswer": "Onde você mora?"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'O que você precisa?'",
+        "options": [
+          {
+            "text": "What do you need?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Who is that?",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "What is this?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u10_l3",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 10,
+    "unitName": "Comunicação do Dia a Dia",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Convites e Planos Simples",
+    "icon": "📅",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Você quer ir ao cinema?'",
+        "options": [
+          {
+            "text": "Do you want to go to the movies?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Sim, vamos.'?",
+        "options": [
+          {
+            "text": "Yes, let's go.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Let's have lunch.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Do you want some coffee?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "Yes, let's go.",
+        "words": [
+          "Sim,",
+          "vamos.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Sim,",
+          "vamos."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Let's have lunch.",
+        "correctAnswer": "Vamos almoçar."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Você quer um pouco de café?'",
+        "options": [
+          {
+            "text": "Do you want some coffee?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Yes, let's go.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Do you want to go to the movies?",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u10_l4",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 10,
+    "unitName": "Comunicação do Dia a Dia",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Falar sobre o Dia",
+    "icon": "☀️",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu estou cansado hoje.'",
+        "options": [
+          {
+            "text": "I am tired today.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Está chovendo.'?",
+        "options": [
+          {
+            "text": "It is raining.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Today I am very busy.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am at home tonight.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "It is raining.",
+        "words": [
+          "Está",
+          "chovendo.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Está",
+          "chovendo."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Today I am very busy.",
+        "correctAnswer": "Hoje eu estou muito ocupado."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Eu estou em casa esta noite.'",
+        "options": [
+          {
+            "text": "I am at home tonight.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "It is raining.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I am tired today.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u10_l5",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 10,
+    "unitName": "Comunicação do Dia a Dia",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Conversa Básica",
+    "icon": "💬",
+    "difficulty": "easy",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Eu sou do Brasil.'",
+        "options": [
+          {
+            "text": "I'm from Brazil.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Please",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual significa: 'Eu sou estudante.'?",
+        "options": [
+          {
+            "text": "I'm a student.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Nice to see you again.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "See you tomorrow.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I'm a student.",
+        "words": [
+          "Eu",
+          "sou",
+          "estudante.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "sou",
+          "estudante."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Nice to see you again.",
+        "correctAnswer": "Prazer em ver você de novo."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a frase correta para 'Até amanhã.'",
+        "options": [
+          {
+            "text": "See you tomorrow.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'm a student.",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "I'm from Brazil.",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beginner_u10_l6",
+    "level": "beginner",
+    "levelName": "Iniciante",
+    "unit": 10,
+    "unitName": "Comunicação do Dia a Dia",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Comunicação do Dia a Dia",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Por favor, me ajude.'",
+        "options": [
+          {
+            "text": "Please help me.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'O que é isso?'",
+        "options": [
+          {
+            "text": "What is this?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione 'Você quer ir ao cinema?'",
+        "options": [
+          {
+            "text": "Do you want to go to the movies?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Goodbye",
+            "isCorrect": false,
+            "emoji": "❌"
+          },
+          {
+            "text": "Hello",
+            "isCorrect": false,
+            "emoji": "❌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase",
+        "english": "I am tired today.",
+        "words": [
+          "Eu",
+          "estou",
+          "cansado",
+          "hoje.",
+          "carro",
+          "gato"
+        ],
+        "correctOrder": [
+          "Eu",
+          "estou",
+          "cansado",
+          "hoje."
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'm from Brazil.",
+        "correctAnswer": "Eu sou do Brasil."
+      }
+    ]
+  }
+]

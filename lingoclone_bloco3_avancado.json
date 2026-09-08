@@ -1,0 +1,6728 @@
+[
+  {
+    "id": "advanced_u1_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 1,
+    "unitName": "Inglês Profissional",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Professional Introductions",
+    "icon": "💼",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Atualmente trabalho como coordenador de projetos.'?",
+        "options": [
+          {
+            "text": "I currently work as a project coordinator.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Good communication is essential to teamwork.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "What are the main priorities for this role?",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I have been in this field for over five years.",
+        "words": [
+          "anos.",
+          "há",
+          "área",
+          "nessa",
+          "cinco",
+          "talvez",
+          "Estou",
+          "mais",
+          "de"
+        ],
+        "correctOrder": [
+          "Estou",
+          "nessa",
+          "área",
+          "há",
+          "mais",
+          "de",
+          "cinco",
+          "anos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Minha função envolve gerenciar várias equipes.'",
+        "options": [
+          {
+            "text": "Let's address the issue before it becomes more serious.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "My role involves managing several teams.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "She is easy to work with.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I specialize in process improvement.",
+        "correctAnswer": "Sou especialista em melhoria de processos."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd be happy to tell you more about my experience.",
+        "words": [
+          "Terei",
+          "mais",
+          "experiência.",
+          "sobre",
+          "prazer",
+          "em",
+          "falar",
+          "minha",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Terei",
+          "prazer",
+          "em",
+          "falar",
+          "mais",
+          "sobre",
+          "minha",
+          "experiência."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u1_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 1,
+    "unitName": "Inglês Profissional",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Professional Goals",
+    "icon": "💼",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Estou procurando uma oportunidade para crescer profissionalmente.'?",
+        "options": [
+          {
+            "text": "She is easy to work with.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'm looking for an opportunity to grow professionally.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "Good communication is essential to teamwork.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I want to take on more challenging projects.",
+        "words": [
+          "desafiadores.",
+          "mais",
+          "Quero",
+          "projetos",
+          "assumir",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Quero",
+          "assumir",
+          "projetos",
+          "mais",
+          "desafiadores."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Meu objetivo de longo prazo é liderar uma equipe maior.'",
+        "options": [
+          {
+            "text": "We rely on each other to get things done.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's address the issue before it becomes more serious.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "My long-term goal is to lead a larger team.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'd like to broaden my experience.",
+        "correctAnswer": "Gostaria de ampliar minha experiência."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I see this position as an important next step.",
+        "words": [
+          "um",
+          "posição",
+          "Vejo",
+          "passo",
+          "esta",
+          "como",
+          "importante.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Vejo",
+          "esta",
+          "posição",
+          "como",
+          "um",
+          "passo",
+          "importante."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u1_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 1,
+    "unitName": "Inglês Profissional",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Workplace Relationships",
+    "icon": "💼",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Temos uma relação profissional sólida.'?",
+        "options": [
+          {
+            "text": "We rely on each other to get things done.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We have a strong working relationship.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'd be happy to tell you more about my experience.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She is easy to work with.",
+        "words": [
+          "É",
+          "ela.",
+          "talvez",
+          "com",
+          "trabalhar",
+          "fácil"
+        ],
+        "correctOrder": [
+          "É",
+          "fácil",
+          "trabalhar",
+          "com",
+          "ela."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Ele é muito respeitado pelos colegas.'",
+        "options": [
+          {
+            "text": "He is highly respected by his colleagues.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd like to broaden my experience.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I understand where you're coming from.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We rely on each other to get things done.",
+        "correctAnswer": "Contamos uns com os outros para fazer as coisas acontecerem."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Good communication is essential to teamwork.",
+        "words": [
+          "o",
+          "é",
+          "equipe.",
+          "essencial",
+          "Uma",
+          "talvez",
+          "para",
+          "comunicação",
+          "em",
+          "boa",
+          "trabalho"
+        ],
+        "correctOrder": [
+          "Uma",
+          "boa",
+          "comunicação",
+          "é",
+          "essencial",
+          "para",
+          "o",
+          "trabalho",
+          "em",
+          "equipe."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u1_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 1,
+    "unitName": "Inglês Profissional",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Professional Tone",
+    "icon": "💼",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Gostaria de levantar uma preocupação sobre o processo atual.'?",
+        "options": [
+          {
+            "text": "We rely on each other to get things done.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd like to raise a concern about the current process.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "She is easy to work with.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We may need to reconsider our approach.",
+        "words": [
+          "abordagem.",
+          "reconsiderar",
+          "precisemos",
+          "nossa",
+          "talvez",
+          "Talvez"
+        ],
+        "correctOrder": [
+          "Talvez",
+          "precisemos",
+          "reconsiderar",
+          "nossa",
+          "abordagem."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Agradeço seu feedback sobre este assunto.'",
+        "options": [
+          {
+            "text": "I appreciate your feedback on this matter.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd like to raise a concern about the current process.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'm interested in contributing to long-term growth.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I understand where you're coming from.",
+        "correctAnswer": "Entendo seu ponto de vista."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's address the issue before it becomes more serious.",
+        "words": [
+          "mais",
+          "a",
+          "talvez",
+          "torne",
+          "ela",
+          "resolver",
+          "questão",
+          "séria.",
+          "se",
+          "antes",
+          "que",
+          "Vamos"
+        ],
+        "correctOrder": [
+          "Vamos",
+          "resolver",
+          "a",
+          "questão",
+          "antes",
+          "que",
+          "ela",
+          "se",
+          "torne",
+          "mais",
+          "séria."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u1_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 1,
+    "unitName": "Inglês Profissional",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Career Conversations",
+    "icon": "💼",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Quais são as principais prioridades para esta função?'?",
+        "options": [
+          {
+            "text": "What are the main priorities for this role?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "He is highly respected by his colleagues.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I currently work as a project coordinator.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "How would you describe the company culture?",
+        "words": [
+          "descreveria",
+          "talvez",
+          "Como",
+          "cultura",
+          "empresa?",
+          "da",
+          "a",
+          "você"
+        ],
+        "correctOrder": [
+          "Como",
+          "você",
+          "descreveria",
+          "a",
+          "cultura",
+          "da",
+          "empresa?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Quais oportunidades existem para desenvolvimento profissional?'",
+        "options": [
+          {
+            "text": "I'd like to broaden my experience.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "What opportunities are there for professional development?",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I want to take on more challenging projects.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I value environments where people can learn from one another.",
+        "correctAnswer": "Valorizo ambientes onde as pessoas podem aprender umas com as outras."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'm interested in contributing to long-term growth.",
+        "words": [
+          "em",
+          "contribuir",
+          "de",
+          "prazo.",
+          "talvez",
+          "para",
+          "Tenho",
+          "crescimento",
+          "interesse",
+          "longo",
+          "o"
+        ],
+        "correctOrder": [
+          "Tenho",
+          "interesse",
+          "em",
+          "contribuir",
+          "para",
+          "o",
+          "crescimento",
+          "de",
+          "longo",
+          "prazo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u1_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 1,
+    "unitName": "Inglês Profissional",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Inglês Profissional",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Terei prazer em falar mais sobre minha experiência.'?",
+        "options": [
+          {
+            "text": "We rely on each other to get things done.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd be happy to tell you more about my experience.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I specialize in process improvement.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I see this position as an important next step.",
+        "words": [
+          "um",
+          "posição",
+          "Vejo",
+          "passo",
+          "esta",
+          "como",
+          "importante.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Vejo",
+          "esta",
+          "posição",
+          "como",
+          "um",
+          "passo",
+          "importante."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Uma boa comunicação é essencial para o trabalho em equipe.'?",
+        "options": [
+          {
+            "text": "I'd be happy to tell you more about my experience.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Good communication is essential to teamwork.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I have been in this field for over five years.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Let's address the issue before it becomes more serious.",
+        "correctAnswer": "Vamos resolver a questão antes que ela se torne mais séria."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'm interested in contributing to long-term growth.",
+        "words": [
+          "em",
+          "contribuir",
+          "de",
+          "prazo.",
+          "talvez",
+          "para",
+          "Tenho",
+          "crescimento",
+          "interesse",
+          "longo",
+          "o"
+        ],
+        "correctOrder": [
+          "Tenho",
+          "interesse",
+          "em",
+          "contribuir",
+          "para",
+          "o",
+          "crescimento",
+          "de",
+          "longo",
+          "prazo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u2_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 2,
+    "unitName": "Reuniões e Discussões",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Opening a Meeting",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Vamos começar.'?",
+        "options": [
+          {
+            "text": "Let's get started.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'll send a summary after the meeting.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Let me summarize what we've agreed on.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd like to begin by outlining the main objectives.",
+        "words": [
+          "Gostaria",
+          "de",
+          "objetivos.",
+          "apresentando",
+          "principais",
+          "os",
+          "talvez",
+          "começar"
+        ],
+        "correctOrder": [
+          "Gostaria",
+          "de",
+          "começar",
+          "apresentando",
+          "os",
+          "principais",
+          "objetivos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Primeiro, vamos revisar onde estamos.'",
+        "options": [
+          {
+            "text": "First, let's review where we are.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Before we move on, I'd like to mention something.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Please let me know if I missed anything.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The purpose of today's meeting is to discuss the budget.",
+        "correctAnswer": "O objetivo da reunião de hoje é discutir o orçamento."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd like everyone to have a chance to speak.",
+        "words": [
+          "todos",
+          "de",
+          "a",
+          "tivessem",
+          "talvez",
+          "que",
+          "falar.",
+          "oportunidade",
+          "Gostaria"
+        ],
+        "correctOrder": [
+          "Gostaria",
+          "que",
+          "todos",
+          "tivessem",
+          "a",
+          "oportunidade",
+          "de",
+          "falar."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u2_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 2,
+    "unitName": "Reuniões e Discussões",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Interrupting Politely",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Posso acrescentar uma coisa aqui?'?",
+        "options": [
+          {
+            "text": "Could I add something here?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "That's an important point, but we can come back to it later.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'll send a summary after the meeting.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Sorry to interrupt, but may I clarify one point?",
+        "words": [
+          "um",
+          "talvez",
+          "Desculpe",
+          "mas",
+          "interromper,",
+          "posso",
+          "esclarecer",
+          "ponto?"
+        ],
+        "correctOrder": [
+          "Desculpe",
+          "interromper,",
+          "mas",
+          "posso",
+          "esclarecer",
+          "um",
+          "ponto?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Antes de seguirmos, gostaria de mencionar uma coisa.'",
+        "options": [
+          {
+            "text": "Before we move on, I'd like to mention something.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's make sure we don't lose sight of the goal.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "The purpose of today's meeting is to discuss the budget.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "May I jump in for a moment?",
+        "correctAnswer": "Posso fazer uma observação por um momento?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I just wanted to clarify what you meant.",
+        "words": [
+          "talvez",
+          "você",
+          "Eu",
+          "quis",
+          "dizer.",
+          "esclarecer",
+          "só",
+          "o",
+          "que",
+          "queria"
+        ],
+        "correctOrder": [
+          "Eu",
+          "só",
+          "queria",
+          "esclarecer",
+          "o",
+          "que",
+          "você",
+          "quis",
+          "dizer."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u2_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 2,
+    "unitName": "Reuniões e Discussões",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Keeping Focus",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Vamos manter o foco na questão principal.'?",
+        "options": [
+          {
+            "text": "Let's stay focused on the main issue.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The key takeaway is that we need more time.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Sorry to interrupt, but may I clarify one point?",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That's an important point, but we can come back to it later.",
+        "words": [
+          "importante,",
+          "Esse",
+          "ele",
+          "a",
+          "um",
+          "mas",
+          "ponto",
+          "é",
+          "talvez",
+          "mais",
+          "podemos",
+          "tarde.",
+          "voltar"
+        ],
+        "correctOrder": [
+          "Esse",
+          "é",
+          "um",
+          "ponto",
+          "importante,",
+          "mas",
+          "podemos",
+          "voltar",
+          "a",
+          "ele",
+          "mais",
+          "tarde."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Estamos nos desviando um pouco do assunto.'",
+        "options": [
+          {
+            "text": "Before we move on, I'd like to mention something.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We're getting a little off track.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I think we have a workable solution.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Could we bring this back to the original question?",
+        "correctAnswer": "Podemos voltar à pergunta original?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's make sure we don't lose sight of the goal.",
+        "words": [
+          "Vamos",
+          "o",
+          "não",
+          "que",
+          "talvez",
+          "de",
+          "objetivo.",
+          "percamos",
+          "vista",
+          "garantir"
+        ],
+        "correctOrder": [
+          "Vamos",
+          "garantir",
+          "que",
+          "não",
+          "percamos",
+          "de",
+          "vista",
+          "o",
+          "objetivo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u2_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 2,
+    "unitName": "Reuniões e Discussões",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Reaching Agreement",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Parece que estamos de modo geral de acordo.'?",
+        "options": [
+          {
+            "text": "Let's move forward with that approach.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I just wanted to clarify what you meant.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "It sounds like we are broadly in agreement.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Can we agree on the next steps?",
+        "words": [
+          "passos?",
+          "os",
+          "próximos",
+          "sobre",
+          "Podemos",
+          "concordar",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Podemos",
+          "concordar",
+          "sobre",
+          "os",
+          "próximos",
+          "passos?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Acho que temos uma solução viável.'",
+        "options": [
+          {
+            "text": "I think we have a workable solution.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "It sounds like we are broadly in agreement.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Sorry to interrupt, but may I clarify one point?",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Let's move forward with that approach.",
+        "correctAnswer": "Vamos seguir com essa abordagem."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We seem to have reached a consensus.",
+        "words": [
+          "a",
+          "Parece",
+          "consenso.",
+          "que",
+          "talvez",
+          "chegamos",
+          "um"
+        ],
+        "correctOrder": [
+          "Parece",
+          "que",
+          "chegamos",
+          "a",
+          "um",
+          "consenso."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u2_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 2,
+    "unitName": "Reuniões e Discussões",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Summarizing",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Deixe-me resumir o que decidimos.'?",
+        "options": [
+          {
+            "text": "We're getting a little off track.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Could we bring this back to the original question?",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Let me summarize what we've agreed on.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The key takeaway is that we need more time.",
+        "words": [
+          "mais",
+          "A",
+          "é",
+          "conclusão",
+          "de",
+          "principal",
+          "que",
+          "precisamos",
+          "talvez",
+          "tempo."
+        ],
+        "correctOrder": [
+          "A",
+          "principal",
+          "conclusão",
+          "é",
+          "que",
+          "precisamos",
+          "de",
+          "mais",
+          "tempo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Então, recapitulando, o prazo permanece inalterado.'",
+        "options": [
+          {
+            "text": "So, to recap, the deadline remains unchanged.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's make sure we don't lose sight of the goal.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Let's stay focused on the main issue.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'll send a summary after the meeting.",
+        "correctAnswer": "Vou enviar um resumo depois da reunião."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Please let me know if I missed anything.",
+        "words": [
+          "esqueci",
+          "me",
+          "talvez",
+          "alguma",
+          "Por",
+          "avise",
+          "coisa.",
+          "se",
+          "favor,"
+        ],
+        "correctOrder": [
+          "Por",
+          "favor,",
+          "me",
+          "avise",
+          "se",
+          "esqueci",
+          "alguma",
+          "coisa."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u2_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 2,
+    "unitName": "Reuniões e Discussões",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Reuniões e Discussões",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Gostaria que todos tivessem a oportunidade de falar.'?",
+        "options": [
+          {
+            "text": "Before we move on, I'd like to mention something.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Sorry to interrupt, but may I clarify one point?",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'd like everyone to have a chance to speak.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I just wanted to clarify what you meant.",
+        "words": [
+          "talvez",
+          "você",
+          "Eu",
+          "quis",
+          "dizer.",
+          "esclarecer",
+          "só",
+          "o",
+          "que",
+          "queria"
+        ],
+        "correctOrder": [
+          "Eu",
+          "só",
+          "queria",
+          "esclarecer",
+          "o",
+          "que",
+          "você",
+          "quis",
+          "dizer."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Vamos garantir que não percamos de vista o objetivo.'?",
+        "options": [
+          {
+            "text": "I'll send a summary after the meeting.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's make sure we don't lose sight of the goal.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "We seem to have reached a consensus.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We seem to have reached a consensus.",
+        "correctAnswer": "Parece que chegamos a um consenso."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Please let me know if I missed anything.",
+        "words": [
+          "esqueci",
+          "me",
+          "talvez",
+          "alguma",
+          "Por",
+          "avise",
+          "coisa.",
+          "se",
+          "favor,"
+        ],
+        "correctOrder": [
+          "Por",
+          "favor,",
+          "me",
+          "avise",
+          "se",
+          "esqueci",
+          "alguma",
+          "coisa."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u3_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 3,
+    "unitName": "Negociação",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Making an Offer",
+    "icon": "🤝",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Podemos oferecer um pequeno desconto.'?",
+        "options": [
+          {
+            "text": "We can offer a small discount.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd like to propose a different arrangement.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I see your point, although I have a different concern.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd like to propose a different arrangement.",
+        "words": [
+          "de",
+          "diferente.",
+          "um",
+          "talvez",
+          "propor",
+          "Gostaria",
+          "acordo"
+        ],
+        "correctOrder": [
+          "Gostaria",
+          "de",
+          "propor",
+          "um",
+          "acordo",
+          "diferente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Estamos dispostos a chegar a um meio-termo.'",
+        "options": [
+          {
+            "text": "Are we ready to move forward?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We are prepared to meet you halfway.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "We can offer a small discount.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "This is the best offer we can make at this stage.",
+        "correctAnswer": "Esta é a melhor oferta que podemos fazer neste momento."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "There may be some flexibility on the price.",
+        "words": [
+          "flexibilidade",
+          "preço.",
+          "alguma",
+          "haver",
+          "talvez",
+          "no",
+          "Pode"
+        ],
+        "correctOrder": [
+          "Pode",
+          "haver",
+          "alguma",
+          "flexibilidade",
+          "no",
+          "preço."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u3_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 3,
+    "unitName": "Negociação",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Counteroffers",
+    "icon": "🤝",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Seria difícil para nós aceitar isso.'?",
+        "options": [
+          {
+            "text": "I'm glad we were able to reach an agreement.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "That would be difficult for us to accept.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I understand your concern, but there is a reason for the increase.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Could you improve the terms?",
+        "words": [
+          "termos?",
+          "os",
+          "Você",
+          "melhorar",
+          "talvez",
+          "poderia"
+        ],
+        "correctOrder": [
+          "Você",
+          "poderia",
+          "melhorar",
+          "os",
+          "termos?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Precisaríamos de um preço melhor para isso funcionar.'",
+        "options": [
+          {
+            "text": "I don't think that would be practical.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We need to balance cost and quality.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "We'd need a better price to make this work.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "What could you offer in return?",
+        "correctAnswer": "O que você poderia oferecer em troca?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We might be able to adjust the schedule.",
+        "words": [
+          "ajustar",
+          "talvez",
+          "cronograma.",
+          "o",
+          "Talvez",
+          "possamos"
+        ],
+        "correctOrder": [
+          "Talvez",
+          "possamos",
+          "ajustar",
+          "o",
+          "cronograma."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u3_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 3,
+    "unitName": "Negociação",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Negotiating Conditions",
+    "icon": "🤝",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Se você puder estender o prazo, podemos reduzir a taxa.'?",
+        "options": [
+          {
+            "text": "We look forward to working together.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "If you can extend the deadline, we can reduce the fee.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'd like to propose a different arrangement.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That depends on the volume of the order.",
+        "words": [
+          "talvez",
+          "volume",
+          "pedido.",
+          "Isso",
+          "depende",
+          "do",
+          "do"
+        ],
+        "correctOrder": [
+          "Isso",
+          "depende",
+          "do",
+          "volume",
+          "do",
+          "pedido."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Precisaríamos de um compromisso da sua parte.'",
+        "options": [
+          {
+            "text": "We would need a commitment from your side.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The main issue is the additional cost.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "There may be some flexibility on the price.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We can agree to that provided the payment terms remain unchanged.",
+        "correctAnswer": "Podemos concordar com isso desde que as condições de pagamento permaneçam inalteradas."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's see whether we can find a compromise.",
+        "words": [
+          "talvez",
+          "Vamos",
+          "conseguimos",
+          "ver",
+          "encontrar",
+          "se",
+          "meio-termo.",
+          "um"
+        ],
+        "correctOrder": [
+          "Vamos",
+          "ver",
+          "se",
+          "conseguimos",
+          "encontrar",
+          "um",
+          "meio-termo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u3_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 3,
+    "unitName": "Negociação",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Handling Objections",
+    "icon": "🤝",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Entendo sua preocupação, mas há um motivo para o aumento.'?",
+        "options": [
+          {
+            "text": "Are we ready to move forward?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We are prepared to meet you halfway.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I understand your concern, but there is a reason for the increase.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The main issue is the additional cost.",
+        "words": [
+          "A",
+          "questão",
+          "talvez",
+          "principal",
+          "adicional.",
+          "é",
+          "custo",
+          "o"
+        ],
+        "correctOrder": [
+          "A",
+          "principal",
+          "questão",
+          "é",
+          "o",
+          "custo",
+          "adicional."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Não acho que isso seria viável.'",
+        "options": [
+          {
+            "text": "I'm glad we were able to reach an agreement.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We might be able to adjust the schedule.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I don't think that would be practical.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We need to balance cost and quality.",
+        "correctAnswer": "Precisamos equilibrar custo e qualidade."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I see your point, although I have a different concern.",
+        "words": [
+          "diferente.",
+          "ponto,",
+          "eu",
+          "preocupação",
+          "uma",
+          "tenha",
+          "embora",
+          "seu",
+          "talvez",
+          "Entendo"
+        ],
+        "correctOrder": [
+          "Entendo",
+          "seu",
+          "ponto,",
+          "embora",
+          "eu",
+          "tenha",
+          "uma",
+          "preocupação",
+          "diferente."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u3_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 3,
+    "unitName": "Negociação",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Closing a Deal",
+    "icon": "🤝",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Estamos prontos para seguir em frente?'?",
+        "options": [
+          {
+            "text": "Are we ready to move forward?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "We can agree to that provided the payment terms remain unchanged.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "What could you offer in return?",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's put the agreement in writing.",
+        "words": [
+          "por",
+          "acordo",
+          "o",
+          "colocar",
+          "escrito.",
+          "talvez",
+          "Vamos"
+        ],
+        "correctOrder": [
+          "Vamos",
+          "colocar",
+          "o",
+          "acordo",
+          "por",
+          "escrito."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Fico feliz que tenhamos conseguido chegar a um acordo.'",
+        "options": [
+          {
+            "text": "We can agree to that provided the payment terms remain unchanged.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Could you improve the terms?",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'm glad we were able to reach an agreement.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'll have the contract sent over today.",
+        "correctAnswer": "Vou providenciar o envio do contrato hoje."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We look forward to working together.",
+        "words": [
+          "talvez",
+          "ansiosos",
+          "para",
+          "Estamos",
+          "trabalhar",
+          "juntos."
+        ],
+        "correctOrder": [
+          "Estamos",
+          "ansiosos",
+          "para",
+          "trabalhar",
+          "juntos."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u3_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 3,
+    "unitName": "Negociação",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Negociação",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Pode haver alguma flexibilidade no preço.'?",
+        "options": [
+          {
+            "text": "The main issue is the additional cost.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We are prepared to meet you halfway.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "There may be some flexibility on the price.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We might be able to adjust the schedule.",
+        "words": [
+          "ajustar",
+          "talvez",
+          "cronograma.",
+          "o",
+          "Talvez",
+          "possamos"
+        ],
+        "correctOrder": [
+          "Talvez",
+          "possamos",
+          "ajustar",
+          "o",
+          "cronograma."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Vamos ver se conseguimos encontrar um meio-termo.'?",
+        "options": [
+          {
+            "text": "The main issue is the additional cost.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's see whether we can find a compromise.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "If you can extend the deadline, we can reduce the fee.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I see your point, although I have a different concern.",
+        "correctAnswer": "Entendo seu ponto, embora eu tenha uma preocupação diferente."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We look forward to working together.",
+        "words": [
+          "talvez",
+          "ansiosos",
+          "para",
+          "Estamos",
+          "trabalhar",
+          "juntos."
+        ],
+        "correctOrder": [
+          "Estamos",
+          "ansiosos",
+          "para",
+          "trabalhar",
+          "juntos."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u4_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 4,
+    "unitName": "Apresentações",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Opening a Presentation",
+    "icon": "📊",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Hoje gostaria de falar sobre nossos resultados mais recentes.'?",
+        "options": [
+          {
+            "text": "Let's move on to the second point.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Today I'd like to talk about our latest results.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "There was a noticeable increase in demand.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let me give you a brief overview.",
+        "words": [
+          "dar",
+          "Deixe-me",
+          "breve",
+          "visão",
+          "uma",
+          "talvez",
+          "geral."
+        ],
+        "correctOrder": [
+          "Deixe-me",
+          "dar",
+          "uma",
+          "breve",
+          "visão",
+          "geral."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Vou começar apresentando os pontos principais.'",
+        "options": [
+          {
+            "text": "This brings me to my next point.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'll start by outlining the main points.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "Thank you for your attention.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "By the end of the presentation, you'll have a clearer picture of the plan.",
+        "correctAnswer": "Ao final da apresentação, você terá uma visão mais clara do plano."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Thank you for being here today.",
+        "words": [
+          "por",
+          "talvez",
+          "Obrigado",
+          "aqui",
+          "estarem",
+          "hoje."
+        ],
+        "correctOrder": [
+          "Obrigado",
+          "por",
+          "estarem",
+          "aqui",
+          "hoje."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u4_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 4,
+    "unitName": "Apresentações",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Structuring Ideas",
+    "icon": "📊",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Vamos passar ao segundo ponto.'?",
+        "options": [
+          {
+            "text": "There are three main factors to consider.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's move on to the second point.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "Today I'd like to talk about our latest results.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "There are three main factors to consider.",
+        "words": [
+          "principais",
+          "fatores",
+          "talvez",
+          "três",
+          "considerar.",
+          "a",
+          "Há"
+        ],
+        "correctOrder": [
+          "Há",
+          "três",
+          "fatores",
+          "principais",
+          "a",
+          "considerar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Gostaria de me concentrar em uma questão específica.'",
+        "options": [
+          {
+            "text": "I'd like to focus on one issue in particular.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Thank you for being here today.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'll start by outlining the main points.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "This brings me to my next point.",
+        "correctAnswer": "Isso me leva ao meu próximo ponto."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "To put this into perspective, look at these figures.",
+        "words": [
+          "colocar",
+          "números.",
+          "talvez",
+          "em",
+          "estes",
+          "isso",
+          "perspectiva,",
+          "veja",
+          "Para"
+        ],
+        "correctOrder": [
+          "Para",
+          "colocar",
+          "isso",
+          "em",
+          "perspectiva,",
+          "veja",
+          "estes",
+          "números."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u4_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 4,
+    "unitName": "Apresentações",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Explaining Data",
+    "icon": "📊",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'As vendas aumentaram significativamente no último trimestre.'?",
+        "options": [
+          {
+            "text": "The trend appears to be continuing.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "That's outside the scope of today's presentation.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Sales increased significantly over the last quarter.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The figures show a steady decline.",
+        "words": [
+          "constante.",
+          "Os",
+          "talvez",
+          "mostram",
+          "números",
+          "declínio",
+          "um"
+        ],
+        "correctOrder": [
+          "Os",
+          "números",
+          "mostram",
+          "um",
+          "declínio",
+          "constante."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Houve um aumento perceptível na demanda.'",
+        "options": [
+          {
+            "text": "There was a noticeable increase in demand.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The results were slightly above expectations.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Thank you for your attention.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The results were slightly above expectations.",
+        "correctAnswer": "Os resultados ficaram ligeiramente acima das expectativas."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The trend appears to be continuing.",
+        "words": [
+          "parece",
+          "talvez",
+          "continuando.",
+          "A",
+          "tendência",
+          "estar"
+        ],
+        "correctOrder": [
+          "A",
+          "tendência",
+          "parece",
+          "estar",
+          "continuando."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u4_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 4,
+    "unitName": "Apresentações",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Handling Questions",
+    "icon": "📊",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Essa é uma pergunta interessante.'?",
+        "options": [
+          {
+            "text": "That's an interesting question.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The figures show a steady decline.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'd like to finish with one final thought.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let me explain what I mean.",
+        "words": [
+          "talvez",
+          "o",
+          "que",
+          "Deixe-me",
+          "explicar",
+          "quero",
+          "dizer."
+        ],
+        "correctOrder": [
+          "Deixe-me",
+          "explicar",
+          "o",
+          "que",
+          "quero",
+          "dizer."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Voltarei a isso em um momento.'",
+        "options": [
+          {
+            "text": "I'll come back to that in a moment.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let me give you a brief overview.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'll start by outlining the main points.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'm afraid I don't have that information at hand.",
+        "correctAnswer": "Receio não ter essa informação em mãos."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That's outside the scope of today's presentation.",
+        "words": [
+          "do",
+          "está",
+          "talvez",
+          "Isso",
+          "da",
+          "escopo",
+          "fora",
+          "de",
+          "hoje.",
+          "apresentação"
+        ],
+        "correctOrder": [
+          "Isso",
+          "está",
+          "fora",
+          "do",
+          "escopo",
+          "da",
+          "apresentação",
+          "de",
+          "hoje."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u4_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 4,
+    "unitName": "Apresentações",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Closing a Presentation",
+    "icon": "📊",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Para resumir, temos três prioridades principais.'?",
+        "options": [
+          {
+            "text": "Let's move on to the second point.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let me explain what I mean.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "To sum up, we have three key priorities.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd like to finish with one final thought.",
+        "words": [
+          "Gostaria",
+          "de",
+          "talvez",
+          "terminar",
+          "uma",
+          "reflexão.",
+          "última",
+          "com"
+        ],
+        "correctOrder": [
+          "Gostaria",
+          "de",
+          "terminar",
+          "com",
+          "uma",
+          "última",
+          "reflexão."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Obrigado pela atenção.'",
+        "options": [
+          {
+            "text": "I'll come back to that in a moment.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Thank you for your attention.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "Today I'd like to talk about our latest results.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'm happy to take any questions.",
+        "correctAnswer": "Fico à disposição para quaisquer perguntas."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I hope this gives you a clear idea of our direction.",
+        "words": [
+          "talvez",
+          "ideia",
+          "uma",
+          "que",
+          "clara",
+          "Espero",
+          "dê",
+          "isso",
+          "da",
+          "direção.",
+          "nossa"
+        ],
+        "correctOrder": [
+          "Espero",
+          "que",
+          "isso",
+          "dê",
+          "uma",
+          "ideia",
+          "clara",
+          "da",
+          "nossa",
+          "direção."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u4_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 4,
+    "unitName": "Apresentações",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Apresentações",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Obrigado por estarem aqui hoje.'?",
+        "options": [
+          {
+            "text": "I'll come back to that in a moment.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The figures show a steady decline.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Thank you for being here today.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "To put this into perspective, look at these figures.",
+        "words": [
+          "colocar",
+          "números.",
+          "talvez",
+          "em",
+          "estes",
+          "isso",
+          "perspectiva,",
+          "veja",
+          "Para"
+        ],
+        "correctOrder": [
+          "Para",
+          "colocar",
+          "isso",
+          "em",
+          "perspectiva,",
+          "veja",
+          "estes",
+          "números."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'A tendência parece estar continuando.'?",
+        "options": [
+          {
+            "text": "There was a noticeable increase in demand.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The trend appears to be continuing.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "This brings me to my next point.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "That's outside the scope of today's presentation.",
+        "correctAnswer": "Isso está fora do escopo da apresentação de hoje."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I hope this gives you a clear idea of our direction.",
+        "words": [
+          "talvez",
+          "ideia",
+          "uma",
+          "que",
+          "clara",
+          "Espero",
+          "dê",
+          "isso",
+          "da",
+          "direção.",
+          "nossa"
+        ],
+        "correctOrder": [
+          "Espero",
+          "que",
+          "isso",
+          "dê",
+          "uma",
+          "ideia",
+          "clara",
+          "da",
+          "nossa",
+          "direção."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u5_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 5,
+    "unitName": "Debate e Argumentação",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Building an Argument",
+    "icon": "⚖️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O principal argumento a favor dessa abordagem é sua flexibilidade.'?",
+        "options": [
+          {
+            "text": "We should therefore reconsider the original assumption.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The main argument in favor of this approach is its flexibility.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "The data supports this interpretation.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "There are several reasons to support this view.",
+        "words": [
+          "talvez",
+          "visão.",
+          "para",
+          "apoiar",
+          "várias",
+          "essa",
+          "Há",
+          "razões"
+        ],
+        "correctOrder": [
+          "Há",
+          "várias",
+          "razões",
+          "para",
+          "apoiar",
+          "essa",
+          "visão."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Isso sugere que o problema é mais complexo do que parece.'",
+        "options": [
+          {
+            "text": "That's a fair point.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "This suggests that the problem is more complex than it seems.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I agree that this is a valid concern.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The evidence points to a different conclusion.",
+        "correctAnswer": "As evidências apontam para uma conclusão diferente."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "From my perspective, the benefits outweigh the risks.",
+        "words": [
+          "talvez",
+          "Do",
+          "superam",
+          "riscos.",
+          "de",
+          "ponto",
+          "os",
+          "meu",
+          "vista,",
+          "benefícios",
+          "os"
+        ],
+        "correctOrder": [
+          "Do",
+          "meu",
+          "ponto",
+          "de",
+          "vista,",
+          "os",
+          "benefícios",
+          "superam",
+          "os",
+          "riscos."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u5_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 5,
+    "unitName": "Debate e Argumentação",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Challenging an Argument",
+    "icon": "⚖️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Não estou convencido de que essas evidências sejam suficientes.'?",
+        "options": [
+          {
+            "text": "The evidence points to a different conclusion.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "A good example of this can be seen in education.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'm not convinced that this evidence is sufficient.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That assumption may not apply in every situation.",
+        "words": [
+          "não",
+          "situações.",
+          "a",
+          "aplicar",
+          "pode",
+          "talvez",
+          "as",
+          "suposição",
+          "Essa",
+          "se",
+          "todas"
+        ],
+        "correctOrder": [
+          "Essa",
+          "suposição",
+          "pode",
+          "não",
+          "se",
+          "aplicar",
+          "a",
+          "todas",
+          "as",
+          "situações."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Há outra maneira de olhar para a questão.'",
+        "options": [
+          {
+            "text": "There's another way of looking at the issue.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Taken together, these points suggest a different solution.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "You may be right to some extent.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The conclusion seems to overlook several factors.",
+        "correctAnswer": "A conclusão parece ignorar vários fatores."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd question whether that comparison is fair.",
+        "words": [
+          "se",
+          "é",
+          "justa.",
+          "talvez",
+          "comparação",
+          "Eu",
+          "essa",
+          "questionaria"
+        ],
+        "correctOrder": [
+          "Eu",
+          "questionaria",
+          "se",
+          "essa",
+          "comparação",
+          "é",
+          "justa."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u5_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 5,
+    "unitName": "Debate e Argumentação",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Conceding a Point",
+    "icon": "⚖️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Concordo que esta é uma preocupação válida.'?",
+        "options": [
+          {
+            "text": "Taken together, these points suggest a different solution.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I agree that this is a valid concern.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "This case illustrates the problem particularly well.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That's a fair point.",
+        "words": [
+          "É",
+          "ponto",
+          "um",
+          "justo.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "É",
+          "um",
+          "ponto",
+          "justo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Aceito que há vantagens nessa abordagem.'",
+        "options": [
+          {
+            "text": "I accept that there are advantages to that approach.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "For example, consider what happened last year.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "A good example of this can be seen in education.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "You may be right to some extent.",
+        "correctAnswer": "Você pode estar certo até certo ponto."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I agree with the principle, although not with the conclusion.",
+        "words": [
+          "não",
+          "com",
+          "conclusão.",
+          "Concordo",
+          "talvez",
+          "princípio,",
+          "a",
+          "embora",
+          "o",
+          "com"
+        ],
+        "correctOrder": [
+          "Concordo",
+          "com",
+          "o",
+          "princípio,",
+          "embora",
+          "não",
+          "com",
+          "a",
+          "conclusão."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u5_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 5,
+    "unitName": "Debate e Argumentação",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Evidence and Examples",
+    "icon": "⚖️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Por exemplo, considere o que aconteceu no ano passado.'?",
+        "options": [
+          {
+            "text": "You may be right to some extent.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "For example, consider what happened last year.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "There's another way of looking at the issue.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The data supports this interpretation.",
+        "words": [
+          "apoiam",
+          "dados",
+          "essa",
+          "interpretação.",
+          "Os",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Os",
+          "dados",
+          "apoiam",
+          "essa",
+          "interpretação."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Um bom exemplo disso pode ser visto na educação.'",
+        "options": [
+          {
+            "text": "The data supports this interpretation.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I agree that this is a valid concern.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "A good example of this can be seen in education.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Research has shown a similar pattern.",
+        "correctAnswer": "Pesquisas mostraram um padrão semelhante."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "This case illustrates the problem particularly well.",
+        "words": [
+          "problema",
+          "bem.",
+          "talvez",
+          "caso",
+          "o",
+          "particularmente",
+          "Este",
+          "ilustra"
+        ],
+        "correctOrder": [
+          "Este",
+          "caso",
+          "ilustra",
+          "o",
+          "problema",
+          "particularmente",
+          "bem."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u5_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 5,
+    "unitName": "Debate e Argumentação",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Drawing Conclusions",
+    "icon": "⚖️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Considerados em conjunto, esses pontos sugerem uma solução diferente.'?",
+        "options": [
+          {
+            "text": "Taken together, these points suggest a different solution.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The conclusion seems to overlook several factors.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I agree that this is a valid concern.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "This leads us to an important conclusion.",
+        "words": [
+          "a",
+          "leva",
+          "Isso",
+          "importante.",
+          "talvez",
+          "uma",
+          "conclusão",
+          "nos"
+        ],
+        "correctOrder": [
+          "Isso",
+          "nos",
+          "leva",
+          "a",
+          "uma",
+          "conclusão",
+          "importante."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'No geral, as evidências são bastante convincentes.'",
+        "options": [
+          {
+            "text": "This leads us to an important conclusion.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Overall, the evidence is fairly convincing.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "This case illustrates the problem particularly well.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We should therefore reconsider the original assumption.",
+        "correctAnswer": "Portanto, deveríamos reconsiderar a suposição original."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The issue is more nuanced than it first appears.",
+        "words": [
+          "talvez",
+          "é",
+          "questão",
+          "que",
+          "complexa",
+          "primeira",
+          "A",
+          "do",
+          "mais",
+          "vista.",
+          "parece",
+          "à"
+        ],
+        "correctOrder": [
+          "A",
+          "questão",
+          "é",
+          "mais",
+          "complexa",
+          "do",
+          "que",
+          "parece",
+          "à",
+          "primeira",
+          "vista."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u5_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 5,
+    "unitName": "Debate e Argumentação",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Debate e Argumentação",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Do meu ponto de vista, os benefícios superam os riscos.'?",
+        "options": [
+          {
+            "text": "The evidence points to a different conclusion.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The conclusion seems to overlook several factors.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "From my perspective, the benefits outweigh the risks.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd question whether that comparison is fair.",
+        "words": [
+          "se",
+          "é",
+          "justa.",
+          "talvez",
+          "comparação",
+          "Eu",
+          "essa",
+          "questionaria"
+        ],
+        "correctOrder": [
+          "Eu",
+          "questionaria",
+          "se",
+          "essa",
+          "comparação",
+          "é",
+          "justa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Concordo com o princípio, embora não com a conclusão.'?",
+        "options": [
+          {
+            "text": "I agree that this is a valid concern.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "A good example of this can be seen in education.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I agree with the principle, although not with the conclusion.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "This case illustrates the problem particularly well.",
+        "correctAnswer": "Este caso ilustra o problema particularmente bem."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The issue is more nuanced than it first appears.",
+        "words": [
+          "talvez",
+          "é",
+          "questão",
+          "que",
+          "complexa",
+          "primeira",
+          "A",
+          "do",
+          "mais",
+          "vista.",
+          "parece",
+          "à"
+        ],
+        "correctOrder": [
+          "A",
+          "questão",
+          "é",
+          "mais",
+          "complexa",
+          "do",
+          "que",
+          "parece",
+          "à",
+          "primeira",
+          "vista."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u6_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 6,
+    "unitName": "Nuances e Contexto",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Tone and Implication",
+    "icon": "🧠",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Suponho que essa seja uma maneira de ver isso.'?",
+        "options": [
+          {
+            "text": "I suppose that's one way of looking at it.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Perhaps we could approach it differently.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "The meaning depends heavily on the context.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That's not exactly what I had in mind.",
+        "words": [
+          "isso",
+          "talvez",
+          "em",
+          "eu",
+          "exatamente",
+          "que",
+          "mente.",
+          "tinha",
+          "é",
+          "Não"
+        ],
+        "correctOrder": [
+          "Não",
+          "é",
+          "exatamente",
+          "isso",
+          "que",
+          "eu",
+          "tinha",
+          "em",
+          "mente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Talvez valha a pena reconsiderar.'",
+        "options": [
+          {
+            "text": "It might be worth reconsidering.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I wonder whether there might be a better option.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "She implied that the deadline might change.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I wouldn't necessarily agree with that.",
+        "correctAnswer": "Eu não necessariamente concordaria com isso."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "You could say that, although the situation is more complicated.",
+        "words": [
+          "embora",
+          "isso,",
+          "dizer",
+          "Pode-se",
+          "complicada.",
+          "talvez",
+          "seja",
+          "mais",
+          "situação",
+          "a"
+        ],
+        "correctOrder": [
+          "Pode-se",
+          "dizer",
+          "isso,",
+          "embora",
+          "a",
+          "situação",
+          "seja",
+          "mais",
+          "complicada."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u6_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 6,
+    "unitName": "Nuances e Contexto",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Formal vs Informal",
+    "icon": "🧠",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Agradeço sua ajuda.'?",
+        "options": [
+          {
+            "text": "Thanks for your help.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The same words can have very different effects.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I appreciate your assistance.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Thanks for your help.",
+        "words": [
+          "Obrigado",
+          "sua",
+          "pela",
+          "talvez",
+          "ajuda."
+        ],
+        "correctOrder": [
+          "Obrigado",
+          "pela",
+          "sua",
+          "ajuda."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você se importaria de dar uma olhada?'",
+        "options": [
+          {
+            "text": "I'm not entirely sure that's the case.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Would you mind taking a look?",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I may be mistaken, but I think there's an issue here.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Can you take a look?",
+        "correctAnswer": "Você pode dar uma olhada?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I regret to inform you that we cannot proceed.",
+        "words": [
+          "prosseguir.",
+          "que",
+          "talvez",
+          "não",
+          "podemos",
+          "Lamento",
+          "informar"
+        ],
+        "correctOrder": [
+          "Lamento",
+          "informar",
+          "que",
+          "não",
+          "podemos",
+          "prosseguir."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u6_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 6,
+    "unitName": "Nuances e Contexto",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Softening Statements",
+    "icon": "🧠",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Posso estar enganado, mas acho que há um problema aqui.'?",
+        "options": [
+          {
+            "text": "You need to consider who you're speaking to.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The same words can have very different effects.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I may be mistaken, but I think there's an issue here.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'm not entirely sure that's the case.",
+        "words": [
+          "Não",
+          "o",
+          "absoluta",
+          "certeza",
+          "que",
+          "tenho",
+          "caso.",
+          "seja",
+          "de",
+          "talvez",
+          "esse"
+        ],
+        "correctOrder": [
+          "Não",
+          "tenho",
+          "certeza",
+          "absoluta",
+          "de",
+          "que",
+          "seja",
+          "esse",
+          "o",
+          "caso."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Parece que pode ter havido um mal-entendido.'",
+        "options": [
+          {
+            "text": "I appreciate your assistance.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Thanks for your help.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "It seems there may have been a misunderstanding.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Perhaps we could approach it differently.",
+        "correctAnswer": "Talvez pudéssemos abordar isso de outra maneira."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I wonder whether there might be a better option.",
+        "words": [
+          "poderia",
+          "que",
+          "uma",
+          "talvez",
+          "Será",
+          "opção",
+          "haver",
+          "melhor?"
+        ],
+        "correctOrder": [
+          "Será",
+          "que",
+          "poderia",
+          "haver",
+          "uma",
+          "opção",
+          "melhor?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u6_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 6,
+    "unitName": "Nuances e Contexto",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Reading Between the Lines",
+    "icon": "🧠",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'A resposta dele pareceu deliberadamente vaga.'?",
+        "options": [
+          {
+            "text": "The same words can have very different effects.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "His response seemed deliberately vague.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "That expression can sound different depending on the situation.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She implied that the deadline might change.",
+        "words": [
+          "deu",
+          "entender",
+          "talvez",
+          "prazo",
+          "Ela",
+          "que",
+          "poderia",
+          "o",
+          "a",
+          "mudar."
+        ],
+        "correctOrder": [
+          "Ela",
+          "deu",
+          "a",
+          "entender",
+          "que",
+          "o",
+          "prazo",
+          "poderia",
+          "mudar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'A mensagem sugere que eles não estão totalmente satisfeitos.'",
+        "options": [
+          {
+            "text": "That expression can sound different depending on the situation.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Choosing the right tone is just as important as choosing the right words.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "The message suggests that they are not fully satisfied.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The tone of the email sounded somewhat defensive.",
+        "correctAnswer": "O tom do e-mail pareceu um pouco defensivo."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "There may be more to the situation than we know.",
+        "words": [
+          "sabemos.",
+          "que",
+          "nessa",
+          "mais",
+          "situação",
+          "haver",
+          "do",
+          "Pode",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Pode",
+          "haver",
+          "mais",
+          "nessa",
+          "situação",
+          "do",
+          "que",
+          "sabemos."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u6_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 6,
+    "unitName": "Nuances e Contexto",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Context Matters",
+    "icon": "🧠",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O significado depende muito do contexto.'?",
+        "options": [
+          {
+            "text": "She implied that the deadline might change.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The meaning depends heavily on the context.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "There may be more to the situation than we know.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That expression can sound different depending on the situation.",
+        "words": [
+          "dependendo",
+          "expressão",
+          "pode",
+          "da",
+          "Essa",
+          "diferente",
+          "soar",
+          "situação.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Essa",
+          "expressão",
+          "pode",
+          "soar",
+          "diferente",
+          "dependendo",
+          "da",
+          "situação."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você precisa considerar com quem está falando.'",
+        "options": [
+          {
+            "text": "That's not exactly what I had in mind.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I wouldn't necessarily agree with that.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "You need to consider who you're speaking to.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The same words can have very different effects.",
+        "correctAnswer": "As mesmas palavras podem ter efeitos muito diferentes."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Choosing the right tone is just as important as choosing the right words.",
+        "words": [
+          "Escolher",
+          "talvez",
+          "é",
+          "tão",
+          "importante",
+          "o",
+          "as",
+          "certo",
+          "quanto",
+          "escolher",
+          "tom",
+          "palavras",
+          "certas."
+        ],
+        "correctOrder": [
+          "Escolher",
+          "o",
+          "tom",
+          "certo",
+          "é",
+          "tão",
+          "importante",
+          "quanto",
+          "escolher",
+          "as",
+          "palavras",
+          "certas."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u6_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 6,
+    "unitName": "Nuances e Contexto",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Nuances e Contexto",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Pode-se dizer isso, embora a situação seja mais complicada.'?",
+        "options": [
+          {
+            "text": "You could say that, although the situation is more complicated.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "That's not exactly what I had in mind.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "That expression can sound different depending on the situation.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I regret to inform you that we cannot proceed.",
+        "words": [
+          "prosseguir.",
+          "que",
+          "talvez",
+          "não",
+          "podemos",
+          "Lamento",
+          "informar"
+        ],
+        "correctOrder": [
+          "Lamento",
+          "informar",
+          "que",
+          "não",
+          "podemos",
+          "prosseguir."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Será que poderia haver uma opção melhor?'?",
+        "options": [
+          {
+            "text": "That's not exactly what I had in mind.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I wonder whether there might be a better option.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I regret to inform you that we cannot proceed.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "There may be more to the situation than we know.",
+        "correctAnswer": "Pode haver mais nessa situação do que sabemos."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Choosing the right tone is just as important as choosing the right words.",
+        "words": [
+          "Escolher",
+          "talvez",
+          "é",
+          "tão",
+          "importante",
+          "o",
+          "as",
+          "certo",
+          "quanto",
+          "escolher",
+          "tom",
+          "palavras",
+          "certas."
+        ],
+        "correctOrder": [
+          "Escolher",
+          "o",
+          "tom",
+          "certo",
+          "é",
+          "tão",
+          "importante",
+          "quanto",
+          "escolher",
+          "as",
+          "palavras",
+          "certas."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u7_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 7,
+    "unitName": "Idioms e Expressões Naturais",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Common Idioms",
+    "icon": "💡",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Vamos encerrar por hoje.'?",
+        "options": [
+          {
+            "text": "That caught me off guard.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's call it a day.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "Let's put off the meeting until Friday.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That's easier said than done.",
+        "words": [
+          "talvez",
+          "é",
+          "falar",
+          "fácil",
+          "que",
+          "do",
+          "Isso",
+          "fazer.",
+          "mais"
+        ],
+        "correctOrder": [
+          "Isso",
+          "é",
+          "mais",
+          "fácil",
+          "falar",
+          "do",
+          "que",
+          "fazer."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Isso não faz o meu estilo.'",
+        "options": [
+          {
+            "text": "That caught me off guard.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's put off the meeting until Friday.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "It's not my cup of tea.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We need to think outside the box.",
+        "correctAnswer": "Precisamos pensar fora da caixa."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'm feeling under the weather.",
+        "words": [
+          "indisposto.",
+          "talvez",
+          "me",
+          "Estou",
+          "sentindo"
+        ],
+        "correctOrder": [
+          "Estou",
+          "me",
+          "sentindo",
+          "indisposto."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u7_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 7,
+    "unitName": "Idioms e Expressões Naturais",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Phrasal Verbs",
+    "icon": "💡",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Precisamos encontrar uma solução.'?",
+        "options": [
+          {
+            "text": "We need to think outside the box.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I hadn't thought of it that way.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "We need to work out a solution.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll look into the issue.",
+        "words": [
+          "a",
+          "investigar",
+          "Vou",
+          "talvez",
+          "questão."
+        ],
+        "correctOrder": [
+          "Vou",
+          "investigar",
+          "a",
+          "questão."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Ela recusou a oferta.'",
+        "options": [
+          {
+            "text": "I'll take that into account.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We are in the same boat.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "She turned down the offer.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "They carried out the plan successfully.",
+        "correctAnswer": "Eles executaram o plano com sucesso."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's put off the meeting until Friday.",
+        "words": [
+          "adiar",
+          "sexta-feira.",
+          "Vamos",
+          "reunião",
+          "a",
+          "até",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Vamos",
+          "adiar",
+          "a",
+          "reunião",
+          "até",
+          "sexta-feira."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u7_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 7,
+    "unitName": "Idioms e Expressões Naturais",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Natural Reactions",
+    "icon": "💡",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Isso faz todo sentido.'?",
+        "options": [
+          {
+            "text": "Let's not jump to conclusions.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'll look into the issue.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "That makes perfect sense.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I hadn't thought of it that way.",
+        "words": [
+          "não",
+          "talvez",
+          "tinha",
+          "Eu",
+          "pensado",
+          "forma.",
+          "dessa"
+        ],
+        "correctOrder": [
+          "Eu",
+          "não",
+          "tinha",
+          "pensado",
+          "dessa",
+          "forma."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Justo.'",
+        "options": [
+          {
+            "text": "We're on the same page.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "You have a point there.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Fair enough.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "You have a point there.",
+        "correctAnswer": "Você tem razão nesse ponto."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That caught me off guard.",
+        "words": [
+          "me",
+          "talvez",
+          "Isso",
+          "de",
+          "pegou",
+          "surpresa."
+        ],
+        "correctOrder": [
+          "Isso",
+          "me",
+          "pegou",
+          "de",
+          "surpresa."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u7_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 7,
+    "unitName": "Idioms e Expressões Naturais",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Everyday Expressions",
+    "icon": "💡",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Avise-me antes de sair.'?",
+        "options": [
+          {
+            "text": "Give me a heads-up before you leave.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I hadn't thought of it that way.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "She turned down the offer.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll keep you posted.",
+        "words": [
+          "Vou",
+          "talvez",
+          "manter",
+          "você",
+          "informado."
+        ],
+        "correctOrder": [
+          "Vou",
+          "manter",
+          "você",
+          "informado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Esqueci sem querer.'",
+        "options": [
+          {
+            "text": "That's easier said than done.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'm feeling under the weather.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "It slipped my mind.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We're on the same page.",
+        "correctAnswer": "Estamos alinhados."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That came out of nowhere.",
+        "words": [
+          "surgiu",
+          "nada.",
+          "Isso",
+          "talvez",
+          "do"
+        ],
+        "correctOrder": [
+          "Isso",
+          "surgiu",
+          "do",
+          "nada."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u7_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 7,
+    "unitName": "Idioms e Expressões Naturais",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Using Expressions in Context",
+    "icon": "💡",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Precisamos começar as coisas.'?",
+        "options": [
+          {
+            "text": "We need to get the ball rolling.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's not jump to conclusions.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'll keep you posted.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll get back to you once I have more information.",
+        "words": [
+          "assim",
+          "talvez",
+          "informações.",
+          "você",
+          "que",
+          "mais",
+          "retornar",
+          "para",
+          "Vou",
+          "tiver"
+        ],
+        "correctOrder": [
+          "Vou",
+          "retornar",
+          "para",
+          "você",
+          "assim",
+          "que",
+          "tiver",
+          "mais",
+          "informações."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Não vamos tirar conclusões precipitadas.'",
+        "options": [
+          {
+            "text": "That came out of nowhere.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Let's not jump to conclusions.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "We need to think outside the box.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We are in the same boat.",
+        "correctAnswer": "Estamos no mesmo barco."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll take that into account.",
+        "words": [
+          "talvez",
+          "consideração.",
+          "levar",
+          "Vou",
+          "isso",
+          "em"
+        ],
+        "correctOrder": [
+          "Vou",
+          "levar",
+          "isso",
+          "em",
+          "consideração."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u7_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 7,
+    "unitName": "Idioms e Expressões Naturais",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Idioms e Expressões Naturais",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Estou me sentindo indisposto.'?",
+        "options": [
+          {
+            "text": "Let's not jump to conclusions.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'm feeling under the weather.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'll look into the issue.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's put off the meeting until Friday.",
+        "words": [
+          "adiar",
+          "sexta-feira.",
+          "Vamos",
+          "reunião",
+          "a",
+          "até",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Vamos",
+          "adiar",
+          "a",
+          "reunião",
+          "até",
+          "sexta-feira."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Isso me pegou de surpresa.'?",
+        "options": [
+          {
+            "text": "I'll look into the issue.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "That caught me off guard.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "We need to get the ball rolling.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "That came out of nowhere.",
+        "correctAnswer": "Isso surgiu do nada."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll take that into account.",
+        "words": [
+          "talvez",
+          "consideração.",
+          "levar",
+          "Vou",
+          "isso",
+          "em"
+        ],
+        "correctOrder": [
+          "Vou",
+          "levar",
+          "isso",
+          "em",
+          "consideração."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u8_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 8,
+    "unitName": "Inglês Acadêmico",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Academic Language",
+    "icon": "🎓",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Este estudo examina a relação entre estresse e sono.'?",
+        "options": [
+          {
+            "text": "Several limitations should be taken into account.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The findings indicate a significant difference.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "This study examines the relationship between stress and sleep.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The research focuses on several key factors.",
+        "words": [
+          "concentra",
+          "A",
+          "se",
+          "talvez",
+          "fatores",
+          "em",
+          "vários",
+          "pesquisa",
+          "importantes."
+        ],
+        "correctOrder": [
+          "A",
+          "pesquisa",
+          "se",
+          "concentra",
+          "em",
+          "vários",
+          "fatores",
+          "importantes."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Os resultados indicam uma diferença significativa.'",
+        "options": [
+          {
+            "text": "The findings indicate a significant difference.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The research focuses on several key factors.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Overall, the study provides valuable insights into the issue.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "This paper explores the impact of technology on education.",
+        "correctAnswer": "Este artigo explora o impacto da tecnologia na educação."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The authors argue that further research is needed.",
+        "words": [
+          "autores",
+          "necessárias.",
+          "mais",
+          "pesquisas",
+          "que",
+          "argumentam",
+          "talvez",
+          "Os",
+          "são"
+        ],
+        "correctOrder": [
+          "Os",
+          "autores",
+          "argumentam",
+          "que",
+          "mais",
+          "pesquisas",
+          "são",
+          "necessárias."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u8_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 8,
+    "unitName": "Inglês Acadêmico",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Cause and Effect",
+    "icon": "🎓",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Isso pode levar a consequências sérias.'?",
+        "options": [
+          {
+            "text": "The argument is based on limited evidence.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "This may lead to serious consequences.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "The second study takes a different approach.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "As a result, overall performance improved.",
+        "words": [
+          "talvez",
+          "melhorou.",
+          "desempenho",
+          "resultado,",
+          "o",
+          "Como",
+          "geral"
+        ],
+        "correctOrder": [
+          "Como",
+          "resultado,",
+          "o",
+          "desempenho",
+          "geral",
+          "melhorou."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'A mudança ocorreu em grande parte devido ao aumento da demanda.'",
+        "options": [
+          {
+            "text": "The research focuses on several key factors.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The change was largely due to increased demand.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "The evidence suggests that the policy was ineffective.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "This factor contributes to the problem.",
+        "correctAnswer": "Esse fator contribui para o problema."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The decline can be attributed to several causes.",
+        "words": [
+          "atribuído",
+          "pode",
+          "declínio",
+          "talvez",
+          "ser",
+          "várias",
+          "O",
+          "a",
+          "causas."
+        ],
+        "correctOrder": [
+          "O",
+          "declínio",
+          "pode",
+          "ser",
+          "atribuído",
+          "a",
+          "várias",
+          "causas."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u8_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 8,
+    "unitName": "Inglês Acadêmico",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Comparing Research",
+    "icon": "🎓",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Os dois estudos chegam a conclusões semelhantes.'?",
+        "options": [
+          {
+            "text": "Both studies reach similar conclusions.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The evidence suggests that the policy was ineffective.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "This factor contributes to the problem.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The second study takes a different approach.",
+        "words": [
+          "O",
+          "diferente.",
+          "segundo",
+          "estudo",
+          "abordagem",
+          "talvez",
+          "uma",
+          "adota"
+        ],
+        "correctOrder": [
+          "O",
+          "segundo",
+          "estudo",
+          "adota",
+          "uma",
+          "abordagem",
+          "diferente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Em contraste, a pesquisa posterior não encontrou efeito significativo.'",
+        "options": [
+          {
+            "text": "The results are broadly consistent with previous research.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "In contrast, the later research found no significant effect.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "The authors argue that further research is needed.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The results are broadly consistent with previous research.",
+        "correctAnswer": "Os resultados são amplamente consistentes com pesquisas anteriores."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "There is some disagreement in the existing literature.",
+        "words": [
+          "alguma",
+          "literatura",
+          "Há",
+          "talvez",
+          "divergência",
+          "existente.",
+          "na"
+        ],
+        "correctOrder": [
+          "Há",
+          "alguma",
+          "divergência",
+          "na",
+          "literatura",
+          "existente."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u8_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 8,
+    "unitName": "Inglês Acadêmico",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Writing and Analysis",
+    "icon": "🎓",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'As evidências sugerem que a política foi ineficaz.'?",
+        "options": [
+          {
+            "text": "Overall, the study provides valuable insights into the issue.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The evidence suggests that the policy was ineffective.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "The change was largely due to increased demand.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "It is important to distinguish between correlation and causation.",
+        "words": [
+          "É",
+          "causalidade.",
+          "talvez",
+          "correlação",
+          "distinguir",
+          "de",
+          "importante"
+        ],
+        "correctOrder": [
+          "É",
+          "importante",
+          "distinguir",
+          "correlação",
+          "de",
+          "causalidade."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Essa interpretação requer mais consideração.'",
+        "options": [
+          {
+            "text": "There is some disagreement in the existing literature.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "This interpretation requires further consideration.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "As a result, overall performance improved.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The argument is based on limited evidence.",
+        "correctAnswer": "O argumento é baseado em evidências limitadas."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "A broader perspective may provide a clearer explanation.",
+        "words": [
+          "pode",
+          "Uma",
+          "mais",
+          "uma",
+          "fornecer",
+          "mais",
+          "clara.",
+          "explicação",
+          "talvez",
+          "perspectiva",
+          "ampla"
+        ],
+        "correctOrder": [
+          "Uma",
+          "perspectiva",
+          "mais",
+          "ampla",
+          "pode",
+          "fornecer",
+          "uma",
+          "explicação",
+          "mais",
+          "clara."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u8_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 8,
+    "unitName": "Inglês Acadêmico",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Academic Conclusions",
+    "icon": "🎓",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Em conclusão, os resultados apoiam a hipótese original.'?",
+        "options": [
+          {
+            "text": "In conclusion, the findings support the original hypothesis.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The findings indicate a significant difference.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "The results are broadly consistent with previous research.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Further studies could provide additional evidence.",
+        "words": [
+          "evidências",
+          "Estudos",
+          "poderiam",
+          "talvez",
+          "fornecer",
+          "adicionais.",
+          "futuros"
+        ],
+        "correctOrder": [
+          "Estudos",
+          "futuros",
+          "poderiam",
+          "fornecer",
+          "evidências",
+          "adicionais."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Os resultados devem ser interpretados com cautela.'",
+        "options": [
+          {
+            "text": "The change was largely due to increased demand.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The results should be interpreted with caution.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "The second study takes a different approach.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Several limitations should be taken into account.",
+        "correctAnswer": "Várias limitações devem ser levadas em consideração."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Overall, the study provides valuable insights into the issue.",
+        "words": [
+          "estudo",
+          "o",
+          "talvez",
+          "sobre",
+          "geral,",
+          "a",
+          "questão.",
+          "percepções",
+          "No",
+          "valiosas",
+          "oferece"
+        ],
+        "correctOrder": [
+          "No",
+          "geral,",
+          "o",
+          "estudo",
+          "oferece",
+          "percepções",
+          "valiosas",
+          "sobre",
+          "a",
+          "questão."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u8_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 8,
+    "unitName": "Inglês Acadêmico",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Inglês Acadêmico",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Os autores argumentam que mais pesquisas são necessárias.'?",
+        "options": [
+          {
+            "text": "Several limitations should be taken into account.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "It is important to distinguish between correlation and causation.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "The authors argue that further research is needed.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The decline can be attributed to several causes.",
+        "words": [
+          "atribuído",
+          "pode",
+          "declínio",
+          "talvez",
+          "ser",
+          "várias",
+          "O",
+          "a",
+          "causas."
+        ],
+        "correctOrder": [
+          "O",
+          "declínio",
+          "pode",
+          "ser",
+          "atribuído",
+          "a",
+          "várias",
+          "causas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Há alguma divergência na literatura existente.'?",
+        "options": [
+          {
+            "text": "There is some disagreement in the existing literature.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The second study takes a different approach.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "This study examines the relationship between stress and sleep.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "A broader perspective may provide a clearer explanation.",
+        "correctAnswer": "Uma perspectiva mais ampla pode fornecer uma explicação mais clara."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Overall, the study provides valuable insights into the issue.",
+        "words": [
+          "estudo",
+          "o",
+          "talvez",
+          "sobre",
+          "geral,",
+          "a",
+          "questão.",
+          "percepções",
+          "No",
+          "valiosas",
+          "oferece"
+        ],
+        "correctOrder": [
+          "No",
+          "geral,",
+          "o",
+          "estudo",
+          "oferece",
+          "percepções",
+          "valiosas",
+          "sobre",
+          "a",
+          "questão."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u9_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 9,
+    "unitName": "Escrita e Comunicação Avançada",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Polished Emails",
+    "icon": "✍️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Estou escrevendo para dar continuidade à nossa conversa.'?",
+        "options": [
+          {
+            "text": "We regret to inform you that your request was unsuccessful.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I am writing to follow up on our conversation.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I appreciate the effort, but some changes may be necessary.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I would appreciate it if you could confirm the details.",
+        "words": [
+          "os",
+          "você",
+          "Eu",
+          "confirmar",
+          "se",
+          "pudesse",
+          "agradeceria",
+          "detalhes.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Eu",
+          "agradeceria",
+          "se",
+          "você",
+          "pudesse",
+          "confirmar",
+          "os",
+          "detalhes."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Não hesite em entrar em contato caso precise de mais alguma coisa.'",
+        "options": [
+          {
+            "text": "I understand your position, although I have some reservations.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Please don't hesitate to contact me should you need anything further.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "The proposal aims to reduce costs without affecting quality.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I look forward to discussing this with you in greater detail.",
+        "correctAnswer": "Aguardo a oportunidade de discutir isso com você em mais detalhes."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Thank you for your time and consideration.",
+        "words": [
+          "tempo",
+          "pelo",
+          "consideração.",
+          "Obrigado",
+          "talvez",
+          "e",
+          "seu"
+        ],
+        "correctOrder": [
+          "Obrigado",
+          "pelo",
+          "seu",
+          "tempo",
+          "e",
+          "consideração."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u9_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 9,
+    "unitName": "Escrita e Comunicação Avançada",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Formal Requests",
+    "icon": "✍️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu ficaria grato se você pudesse fornecer esclarecimentos adicionais.'?",
+        "options": [
+          {
+            "text": "I would be grateful if you could provide further clarification.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I would appreciate your prompt attention to this matter.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I understand your position, although I have some reservations.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Could you please let me know whether this is feasible?",
+        "words": [
+          "se",
+          "é",
+          "talvez",
+          "isso",
+          "poderia",
+          "Você",
+          "viável?",
+          "informar",
+          "me"
+        ],
+        "correctOrder": [
+          "Você",
+          "poderia",
+          "me",
+          "informar",
+          "se",
+          "isso",
+          "é",
+          "viável?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Gostaria de solicitar uma extensão do prazo.'",
+        "options": [
+          {
+            "text": "I would like to request an extension of the deadline.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I would appreciate it if you could confirm the details.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I hope you understand why we need to be cautious.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Would it be possible to arrange a meeting next week?",
+        "correctAnswer": "Seria possível marcar uma reunião na próxima semana?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I would appreciate your prompt attention to this matter.",
+        "words": [
+          "assunto.",
+          "este",
+          "Agradeceria",
+          "sua",
+          "talvez",
+          "a",
+          "imediata",
+          "atenção"
+        ],
+        "correctOrder": [
+          "Agradeceria",
+          "sua",
+          "atenção",
+          "imediata",
+          "a",
+          "este",
+          "assunto."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u9_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 9,
+    "unitName": "Escrita e Comunicação Avançada",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Clear and Concise Writing",
+    "icon": "✍️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'A proposta visa reduzir custos sem afetar a qualidade.'?",
+        "options": [
+          {
+            "text": "The proposal aims to reduce costs without affecting quality.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I would like to request an extension of the deadline.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I hope you understand why we need to be cautious.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The main issue is a lack of reliable data.",
+        "words": [
+          "talvez",
+          "A",
+          "a",
+          "confiáveis.",
+          "principal",
+          "de",
+          "dados",
+          "é",
+          "questão",
+          "falta"
+        ],
+        "correctOrder": [
+          "A",
+          "principal",
+          "questão",
+          "é",
+          "a",
+          "falta",
+          "de",
+          "dados",
+          "confiáveis."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Essa abordagem nos permitiria responder mais rapidamente.'",
+        "options": [
+          {
+            "text": "This approach would allow us to respond more quickly.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I would appreciate your prompt attention to this matter.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Would it be possible to arrange a meeting next week?",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The results are consistent with our expectations.",
+        "correctAnswer": "Os resultados são consistentes com nossas expectativas."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "There is no clear evidence to support that claim.",
+        "words": [
+          "Não",
+          "evidências",
+          "talvez",
+          "claras",
+          "há",
+          "essa",
+          "para",
+          "afirmação.",
+          "apoiar"
+        ],
+        "correctOrder": [
+          "Não",
+          "há",
+          "evidências",
+          "claras",
+          "para",
+          "apoiar",
+          "essa",
+          "afirmação."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u9_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 9,
+    "unitName": "Escrita e Comunicação Avançada",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Tone and Diplomacy",
+    "icon": "✍️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Entendo sua posição, embora tenha algumas ressalvas.'?",
+        "options": [
+          {
+            "text": "Please find attached the final version for your review.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I understand your position, although I have some reservations.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "We regret to inform you that your request was unsuccessful.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We may want to consider an alternative approach.",
+        "words": [
+          "uma",
+          "seja",
+          "interessante",
+          "Talvez",
+          "talvez",
+          "considerarmos",
+          "abordagem",
+          "alternativa."
+        ],
+        "correctOrder": [
+          "Talvez",
+          "seja",
+          "interessante",
+          "considerarmos",
+          "uma",
+          "abordagem",
+          "alternativa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Agradeço o esforço, mas algumas mudanças podem ser necessárias.'",
+        "options": [
+          {
+            "text": "Would it be possible to arrange a meeting next week?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I appreciate the effort, but some changes may be necessary.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I am writing to follow up on our conversation.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "It would be helpful to clarify this point before proceeding.",
+        "correctAnswer": "Seria útil esclarecer este ponto antes de prosseguir."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I hope you understand why we need to be cautious.",
+        "words": [
+          "entenda",
+          "que",
+          "Espero",
+          "que",
+          "você",
+          "ser",
+          "cautelosos.",
+          "por",
+          "precisamos",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Espero",
+          "que",
+          "você",
+          "entenda",
+          "por",
+          "que",
+          "precisamos",
+          "ser",
+          "cautelosos."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u9_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 9,
+    "unitName": "Escrita e Comunicação Avançada",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Advanced Correspondence",
+    "icon": "✍️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Tenho o prazer de confirmar que a proposta foi aprovada.'?",
+        "options": [
+          {
+            "text": "We regret to inform you that your request was unsuccessful.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The proposal aims to reduce costs without affecting quality.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "I am pleased to confirm that the proposal has been approved.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We regret to inform you that your request was unsuccessful.",
+        "words": [
+          "não",
+          "que",
+          "Lamentamos",
+          "aprovada.",
+          "informar",
+          "solicitação",
+          "sua",
+          "talvez",
+          "foi"
+        ],
+        "correctOrder": [
+          "Lamentamos",
+          "informar",
+          "que",
+          "sua",
+          "solicitação",
+          "não",
+          "foi",
+          "aprovada."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Após nossa recente discussão, revisamos o acordo.'",
+        "options": [
+          {
+            "text": "Following our recent discussion, we have revised the agreement.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I am writing to follow up on our conversation.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Would it be possible to arrange a meeting next week?",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Please find attached the final version for your review.",
+        "correctAnswer": "Segue em anexo a versão final para sua análise."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I trust this information will be useful moving forward.",
+        "words": [
+          "estas",
+          "Espero",
+          "úteis",
+          "que",
+          "frente.",
+          "para",
+          "informações",
+          "sejam",
+          "daqui",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Espero",
+          "que",
+          "estas",
+          "informações",
+          "sejam",
+          "úteis",
+          "daqui",
+          "para",
+          "frente."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u9_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 9,
+    "unitName": "Escrita e Comunicação Avançada",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Escrita e Comunicação Avançada",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Obrigado pelo seu tempo e consideração.'?",
+        "options": [
+          {
+            "text": "The results are consistent with our expectations.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I would appreciate it if you could confirm the details.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Thank you for your time and consideration.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I would appreciate your prompt attention to this matter.",
+        "words": [
+          "assunto.",
+          "este",
+          "Agradeceria",
+          "sua",
+          "talvez",
+          "a",
+          "imediata",
+          "atenção"
+        ],
+        "correctOrder": [
+          "Agradeceria",
+          "sua",
+          "atenção",
+          "imediata",
+          "a",
+          "este",
+          "assunto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Não há evidências claras para apoiar essa afirmação.'?",
+        "options": [
+          {
+            "text": "Following our recent discussion, we have revised the agreement.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "There is no clear evidence to support that claim.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I appreciate the effort, but some changes may be necessary.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I hope you understand why we need to be cautious.",
+        "correctAnswer": "Espero que você entenda por que precisamos ser cautelosos."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I trust this information will be useful moving forward.",
+        "words": [
+          "estas",
+          "Espero",
+          "úteis",
+          "que",
+          "frente.",
+          "para",
+          "informações",
+          "sejam",
+          "daqui",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Espero",
+          "que",
+          "estas",
+          "informações",
+          "sejam",
+          "úteis",
+          "daqui",
+          "para",
+          "frente."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u10_l1",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 10,
+    "unitName": "Fluência e Naturalidade",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Speaking with Ease",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Deixe-me pensar por um segundo.'?",
+        "options": [
+          {
+            "text": "Let me think for a second.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "That is to say, we need to rethink the strategy.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Ultimately, the decision will depend on what we value most.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "What I mean is that we need a different approach.",
+        "words": [
+          "O",
+          "quero",
+          "abordagem",
+          "é",
+          "diferente.",
+          "precisamos",
+          "talvez",
+          "uma",
+          "de",
+          "que",
+          "que",
+          "dizer"
+        ],
+        "correctOrder": [
+          "O",
+          "que",
+          "quero",
+          "dizer",
+          "é",
+          "que",
+          "precisamos",
+          "de",
+          "uma",
+          "abordagem",
+          "diferente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Quanto a mim, a decisão já foi tomada.'",
+        "options": [
+          {
+            "text": "As far as I'm concerned, the decision has already been made.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "That's a difficult question to answer definitively.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "That is to say, we need to rethink the strategy.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "To be honest, I wasn't expecting that.",
+        "correctAnswer": "Para ser sincero, eu não esperava isso."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The way I see it, we have two realistic options.",
+        "words": [
+          "vejo,",
+          "duas",
+          "realistas.",
+          "talvez",
+          "Da",
+          "opções",
+          "maneira",
+          "que",
+          "temos"
+        ],
+        "correctOrder": [
+          "Da",
+          "maneira",
+          "que",
+          "vejo,",
+          "temos",
+          "duas",
+          "opções",
+          "realistas."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u10_l2",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 10,
+    "unitName": "Fluência e Naturalidade",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Rephrasing Naturally",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Em outras palavras, precisamos começar de novo.'?",
+        "options": [
+          {
+            "text": "I wouldn't rule it out entirely.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "In other words, we need to start again.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "The way I see it, we have two realistic options.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "What I'm trying to say is that timing matters.",
+        "words": [
+          "O",
+          "dizer",
+          "talvez",
+          "que",
+          "estou",
+          "que",
+          "é",
+          "o",
+          "momento",
+          "tentando",
+          "importa."
+        ],
+        "correctOrder": [
+          "O",
+          "que",
+          "estou",
+          "tentando",
+          "dizer",
+          "é",
+          "que",
+          "o",
+          "momento",
+          "importa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Em termos simples, o plano não é realista.'",
+        "options": [
+          {
+            "text": "Ultimately, the decision will depend on what we value most.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Put simply, the plan isn't realistic.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'm inclined to agree, but I'd like to consider the alternatives.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Another way of putting it would be that we need more flexibility.",
+        "correctAnswer": "Outra maneira de colocar isso seria dizer que precisamos de mais flexibilidade."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That is to say, we need to rethink the strategy.",
+        "words": [
+          "Ou",
+          "repensar",
+          "estratégia.",
+          "a",
+          "talvez",
+          "precisamos",
+          "seja,"
+        ],
+        "correctOrder": [
+          "Ou",
+          "seja,",
+          "precisamos",
+          "repensar",
+          "a",
+          "estratégia."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u10_l3",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 10,
+    "unitName": "Fluência e Naturalidade",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Advanced Conversation",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Entendo o seu ponto de vista.'?",
+        "options": [
+          {
+            "text": "I see where you're coming from.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Having considered all the options, I believe this is the best course of action.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "It's difficult to predict what will happen next.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That's not quite how I understood it.",
+        "words": [
+          "exatamente",
+          "que",
+          "foi",
+          "eu",
+          "assim",
+          "entendi.",
+          "Não",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Não",
+          "foi",
+          "exatamente",
+          "assim",
+          "que",
+          "eu",
+          "entendi."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Estou inclinado a concordar, mas gostaria de considerar as alternativas.'",
+        "options": [
+          {
+            "text": "I'm inclined to agree, but I'd like to consider the alternatives.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "There is a good chance that the situation will change.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "What I mean is that we need a different approach.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "That's a difficult question to answer definitively.",
+        "correctAnswer": "Essa é uma pergunta difícil de responder de forma definitiva."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I wouldn't rule it out entirely.",
+        "words": [
+          "isso",
+          "descartaria",
+          "não",
+          "Eu",
+          "completamente.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Eu",
+          "não",
+          "descartaria",
+          "isso",
+          "completamente."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u10_l4",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 10,
+    "unitName": "Fluência e Naturalidade",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Expressing Uncertainty",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Há uma boa chance de que a situação mude.'?",
+        "options": [
+          {
+            "text": "It's difficult to predict what will happen next.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "There is a good chance that the situation will change.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I see where you're coming from.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "It is too early to say for certain.",
+        "words": [
+          "para",
+          "talvez",
+          "dizer",
+          "cedo",
+          "demais",
+          "com",
+          "É",
+          "certeza."
+        ],
+        "correctOrder": [
+          "É",
+          "cedo",
+          "demais",
+          "para",
+          "dizer",
+          "com",
+          "certeza."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Suspeito que possa haver outra explicação.'",
+        "options": [
+          {
+            "text": "Put simply, the plan isn't realistic.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I suspect that there may be another explanation.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "Even though the plan has limitations, it remains our most practical option.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We can't rule out the possibility.",
+        "correctAnswer": "Não podemos descartar a possibilidade."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "It's difficult to predict what will happen next.",
+        "words": [
+          "difícil",
+          "É",
+          "seguir.",
+          "a",
+          "prever",
+          "que",
+          "acontecerá",
+          "o",
+          "talvez"
+        ],
+        "correctOrder": [
+          "É",
+          "difícil",
+          "prever",
+          "o",
+          "que",
+          "acontecerá",
+          "a",
+          "seguir."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u10_l5",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 10,
+    "unitName": "Fluência e Naturalidade",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Fluency Challenge",
+    "icon": "🗣️",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Quanto mais cedo resolvermos a questão, mais fácil será solucioná-la.'?",
+        "options": [
+          {
+            "text": "The way I see it, we have two realistic options.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Even though the plan has limitations, it remains our most practical option.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "The sooner we address the issue, the easier it will be to solve.",
+            "isCorrect": true,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Having considered all the options, I believe this is the best course of action.",
+        "words": [
+          "melhor",
+          "que",
+          "opções,",
+          "a",
+          "de",
+          "acredito",
+          "talvez",
+          "as",
+          "caminho",
+          "seguir.",
+          "considerar",
+          "este",
+          "Depois",
+          "todas",
+          "seja",
+          "o"
+        ],
+        "correctOrder": [
+          "Depois",
+          "de",
+          "considerar",
+          "todas",
+          "as",
+          "opções,",
+          "acredito",
+          "que",
+          "este",
+          "seja",
+          "o",
+          "melhor",
+          "caminho",
+          "a",
+          "seguir."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'O que mais importa é como respondemos à situação.'",
+        "options": [
+          {
+            "text": "Even though the plan has limitations, it remains our most practical option.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "What matters most is how we respond to the situation.",
+            "isCorrect": true,
+            "emoji": "📌"
+          },
+          {
+            "text": "I'm inclined to agree, but I'd like to consider the alternatives.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Even though the plan has limitations, it remains our most practical option.",
+        "correctAnswer": "Embora o plano tenha limitações, ele continua sendo nossa opção mais prática."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Ultimately, the decision will depend on what we value most.",
+        "words": [
+          "das",
+          "talvez",
+          "do",
+          "dependerá",
+          "a",
+          "contas,",
+          "No",
+          "mais.",
+          "decisão",
+          "que",
+          "valorizamos",
+          "fim"
+        ],
+        "correctOrder": [
+          "No",
+          "fim",
+          "das",
+          "contas,",
+          "a",
+          "decisão",
+          "dependerá",
+          "do",
+          "que",
+          "valorizamos",
+          "mais."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced_u10_review",
+    "level": "advanced",
+    "levelName": "Avançado",
+    "unit": 10,
+    "unitName": "Fluência e Naturalidade",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Fluência e Naturalidade",
+    "icon": "🏆",
+    "difficulty": "hard",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Da maneira que vejo, temos duas opções realistas.'?",
+        "options": [
+          {
+            "text": "The way I see it, we have two realistic options.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "That is to say, we need to rethink the strategy.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "Ultimately, the decision will depend on what we value most.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That is to say, we need to rethink the strategy.",
+        "words": [
+          "Ou",
+          "repensar",
+          "estratégia.",
+          "a",
+          "talvez",
+          "precisamos",
+          "seja,"
+        ],
+        "correctOrder": [
+          "Ou",
+          "seja,",
+          "precisamos",
+          "repensar",
+          "a",
+          "estratégia."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu não descartaria isso completamente.'?",
+        "options": [
+          {
+            "text": "I wouldn't rule it out entirely.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Having considered all the options, I believe this is the best course of action.",
+            "isCorrect": false,
+            "emoji": "📌"
+          },
+          {
+            "text": "We can't rule out the possibility.",
+            "isCorrect": false,
+            "emoji": "🎯"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "It's difficult to predict what will happen next.",
+        "correctAnswer": "É difícil prever o que acontecerá a seguir."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Ultimately, the decision will depend on what we value most.",
+        "words": [
+          "das",
+          "talvez",
+          "do",
+          "dependerá",
+          "a",
+          "contas,",
+          "No",
+          "mais.",
+          "decisão",
+          "que",
+          "valorizamos",
+          "fim"
+        ],
+        "correctOrder": [
+          "No",
+          "fim",
+          "das",
+          "contas,",
+          "a",
+          "decisão",
+          "dependerá",
+          "do",
+          "que",
+          "valorizamos",
+          "mais."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6296 @@
+[
+  {
+    "id": "intermediate_u1_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 1,
+    "unitName": "Conversação Natural",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Small Talk",
+    "icon": "💬",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Como foi o seu fim de semana?'",
+        "options": [
+          {
+            "text": "That sounds interesting.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "How was your weekend?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I have been working a lot lately.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "It was pretty relaxing.",
+        "words": [
+          "talvez",
+          "Foi",
+          "bem",
+          "tranquilo."
+        ],
+        "correctOrder": [
+          "Foi",
+          "bem",
+          "tranquilo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O que você tem feito?'?",
+        "options": [
+          {
+            "text": "What have you been up to?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "It was nice talking to you.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "That reminds me of something.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I have been working a lot lately.",
+        "correctAnswer": "Tenho trabalhado muito ultimamente."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That sounds interesting.",
+        "words": [
+          "parece",
+          "talvez",
+          "interessante.",
+          "Isso"
+        ],
+        "correctOrder": [
+          "Isso",
+          "parece",
+          "interessante."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u1_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 1,
+    "unitName": "Conversação Natural",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Making Plans",
+    "icon": "💬",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você está livre hoje à noite?'",
+        "options": [
+          {
+            "text": "Would you like to grab dinner?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "That sounds interesting.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Are you free tonight?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Would you like to grab dinner?",
+        "words": [
+          "Você",
+          "talvez",
+          "jantar?",
+          "gostaria",
+          "de"
+        ],
+        "correctOrder": [
+          "Você",
+          "gostaria",
+          "de",
+          "jantar?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Que tal nos encontrarmos às sete?'?",
+        "options": [
+          {
+            "text": "It was pretty relaxing.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "How about meeting at seven?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "How was your weekend?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I can meet you after work.",
+        "correctAnswer": "Posso encontrar você depois do trabalho."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's keep in touch.",
+        "words": [
+          "talvez",
+          "Vamos",
+          "contato.",
+          "manter"
+        ],
+        "correctOrder": [
+          "Vamos",
+          "manter",
+          "contato."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u1_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 1,
+    "unitName": "Conversação Natural",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Opinions",
+    "icon": "💬",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'O que você acha disso?'",
+        "options": [
+          {
+            "text": "What do you think about it?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Would you like to grab dinner?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "How about meeting at seven?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "In my opinion, it is worth trying.",
+        "words": [
+          "minha",
+          "Na",
+          "talvez",
+          "opinião,",
+          "a",
+          "pena",
+          "vale",
+          "tentar."
+        ],
+        "correctOrder": [
+          "Na",
+          "minha",
+          "opinião,",
+          "vale",
+          "a",
+          "pena",
+          "tentar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu concordo totalmente com você.'?",
+        "options": [
+          {
+            "text": "What have you been up to?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have been working a lot lately.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I totally agree with you.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'm not sure I agree.",
+        "correctAnswer": "Não tenho certeza se concordo."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That is a good point.",
+        "words": [
+          "é",
+          "ponto.",
+          "bom",
+          "um",
+          "talvez",
+          "Esse"
+        ],
+        "correctOrder": [
+          "Esse",
+          "é",
+          "um",
+          "bom",
+          "ponto."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u1_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 1,
+    "unitName": "Conversação Natural",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Clarifying",
+    "icon": "💬",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você poderia dizer isso de novo?'",
+        "options": [
+          {
+            "text": "I can meet you after work.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Let's keep in touch.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Could you say that again?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "What exactly do you mean?",
+        "words": [
+          "talvez",
+          "quer",
+          "O",
+          "exatamente",
+          "que",
+          "dizer?",
+          "você"
+        ],
+        "correctOrder": [
+          "O",
+          "que",
+          "exatamente",
+          "você",
+          "quer",
+          "dizer?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Deixe-me ter certeza de que entendi.'?",
+        "options": [
+          {
+            "text": "Let me make sure I understand.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Are you free tonight?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "That sounds interesting.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Could you give me an example?",
+        "correctAnswer": "Você poderia me dar um exemplo?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Now it makes sense.",
+        "words": [
+          "sentido.",
+          "Agora",
+          "faz",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Agora",
+          "faz",
+          "sentido."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u1_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 1,
+    "unitName": "Conversação Natural",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Keeping a Conversation Going",
+    "icon": "💬",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'O que aconteceu depois?'",
+        "options": [
+          {
+            "text": "In my opinion, it is worth trying.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "What do you think about it?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "What happened next?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "How did you feel about that?",
+        "words": [
+          "relação",
+          "talvez",
+          "você",
+          "a",
+          "em",
+          "se",
+          "isso?",
+          "Como",
+          "sentiu"
+        ],
+        "correctOrder": [
+          "Como",
+          "você",
+          "se",
+          "sentiu",
+          "em",
+          "relação",
+          "a",
+          "isso?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Conte-me mais sobre isso.'?",
+        "options": [
+          {
+            "text": "Would you like to grab dinner?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "How about meeting at seven?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Tell me more about it.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "That reminds me of something.",
+        "correctAnswer": "Isso me lembra de uma coisa."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "It was nice talking to you.",
+        "words": [
+          "você.",
+          "Foi",
+          "bom",
+          "conversar",
+          "com",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Foi",
+          "bom",
+          "conversar",
+          "com",
+          "você."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u1_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 1,
+    "unitName": "Conversação Natural",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Conversação Natural",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Como foi o seu fim de semana?'?",
+        "options": [
+          {
+            "text": "In my opinion, it is worth trying.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "How was your weekend?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I totally agree with you.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Are you free tonight?",
+        "words": [
+          "talvez",
+          "hoje",
+          "à",
+          "noite?",
+          "está",
+          "livre",
+          "Você"
+        ],
+        "correctOrder": [
+          "Você",
+          "está",
+          "livre",
+          "hoje",
+          "à",
+          "noite?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O que você acha disso?'?",
+        "options": [
+          {
+            "text": "What exactly do you mean?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "What do you think about it?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Could you say that again?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Could you say that again?",
+        "correctAnswer": "Você poderia dizer isso de novo?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "What happened next?",
+        "words": [
+          "aconteceu",
+          "talvez",
+          "O",
+          "que",
+          "depois?"
+        ],
+        "correctOrder": [
+          "O",
+          "que",
+          "aconteceu",
+          "depois?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u2_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 2,
+    "unitName": "Passado e Experiências",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Past Simple Review",
+    "icon": "🕰️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Visitei meus pais no último domingo.'",
+        "options": [
+          {
+            "text": "I visited my parents last Sunday.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "He forgot his keys.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "They arrived late.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She called me yesterday.",
+        "words": [
+          "talvez",
+          "ligou",
+          "Ela",
+          "me",
+          "ontem."
+        ],
+        "correctOrder": [
+          "Ela",
+          "me",
+          "ligou",
+          "ontem."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Assistimos a um filme depois do jantar.'?",
+        "options": [
+          {
+            "text": "That place brings back good memories.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "We watched a movie after dinner.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I will never forget that moment.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "They arrived late.",
+        "correctAnswer": "Eles chegaram tarde."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "He forgot his keys.",
+        "words": [
+          "chaves.",
+          "talvez",
+          "Ele",
+          "esqueceu",
+          "as"
+        ],
+        "correctOrder": [
+          "Ele",
+          "esqueceu",
+          "as",
+          "chaves."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u2_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 2,
+    "unitName": "Passado e Experiências",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Present Perfect",
+    "icon": "🕰️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Eu nunca experimentei sushi.'",
+        "options": [
+          {
+            "text": "I have never tried sushi.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She has already finished the report.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "He forgot his keys.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She has already finished the report.",
+        "words": [
+          "terminou",
+          "relatório.",
+          "Ela",
+          "talvez",
+          "já",
+          "o"
+        ],
+        "correctOrder": [
+          "Ela",
+          "já",
+          "terminou",
+          "o",
+          "relatório."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Você já esteve no Canadá?'?",
+        "options": [
+          {
+            "text": "Have you ever been to Canada?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She called me yesterday.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I visited my parents last Sunday.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We have lived here for three years.",
+        "correctAnswer": "Moramos aqui há três anos."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "He has just left the office.",
+        "words": [
+          "escritório.",
+          "talvez",
+          "sair",
+          "Ele",
+          "de",
+          "acabou",
+          "do"
+        ],
+        "correctOrder": [
+          "Ele",
+          "acabou",
+          "de",
+          "sair",
+          "do",
+          "escritório."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u2_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 2,
+    "unitName": "Passado e Experiências",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Life Experiences",
+    "icon": "🕰️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Viajei sozinho duas vezes.'",
+        "options": [
+          {
+            "text": "Have you ever been to Canada?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have traveled alone twice.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "She has already finished the report.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She has worked abroad.",
+        "words": [
+          "Ela",
+          "exterior.",
+          "trabalhou",
+          "talvez",
+          "no"
+        ],
+        "correctOrder": [
+          "Ela",
+          "trabalhou",
+          "no",
+          "exterior."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eles nunca viram neve.'?",
+        "options": [
+          {
+            "text": "We watched a movie after dinner.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "They arrived late.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "They have never seen snow.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Have you ever spoken in public?",
+        "correctAnswer": "Você já falou em público?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I learned a lot from that experience.",
+        "words": [
+          "muito",
+          "com",
+          "talvez",
+          "experiência.",
+          "Aprendi",
+          "essa"
+        ],
+        "correctOrder": [
+          "Aprendi",
+          "muito",
+          "com",
+          "essa",
+          "experiência."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u2_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 2,
+    "unitName": "Passado e Experiências",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Stories and Sequences",
+    "icon": "🕰️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Primeiro, perdemos o ônibus.'",
+        "options": [
+          {
+            "text": "He has just left the office.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "We have lived here for three years.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "First, we missed the bus.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Then we decided to walk.",
+        "words": [
+          "talvez",
+          "decidimos",
+          "ir",
+          "a",
+          "pé.",
+          "Então"
+        ],
+        "correctOrder": [
+          "Então",
+          "decidimos",
+          "ir",
+          "a",
+          "pé."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Depois disso, começou a chover.'?",
+        "options": [
+          {
+            "text": "After that, it started to rain.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have never tried sushi.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "He forgot his keys.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Eventually, we found the hotel.",
+        "correctAnswer": "Por fim, encontramos o hotel."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "In the end, everything worked out.",
+        "words": [
+          "deu",
+          "talvez",
+          "No",
+          "certo.",
+          "fim,",
+          "tudo"
+        ],
+        "correctOrder": [
+          "No",
+          "fim,",
+          "tudo",
+          "deu",
+          "certo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u2_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 2,
+    "unitName": "Passado e Experiências",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Memories",
+    "icon": "🕰️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Eu me lembro daquele dia claramente.'",
+        "options": [
+          {
+            "text": "She has worked abroad.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I remember that day clearly.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I have traveled alone twice.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We used to play outside as children.",
+        "words": [
+          "costumávamos",
+          "de",
+          "crianças.",
+          "éramos",
+          "do",
+          "lado",
+          "quando",
+          "talvez",
+          "brincar",
+          "Nós",
+          "fora"
+        ],
+        "correctOrder": [
+          "Nós",
+          "costumávamos",
+          "brincar",
+          "do",
+          "lado",
+          "de",
+          "fora",
+          "quando",
+          "éramos",
+          "crianças."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu não costumava gostar de café.'?",
+        "options": [
+          {
+            "text": "Have you ever been to Canada?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "She has already finished the report.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I didn't use to like coffee.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "That place brings back good memories.",
+        "correctAnswer": "Aquele lugar traz boas lembranças."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I will never forget that moment.",
+        "words": [
+          "talvez",
+          "vou",
+          "momento.",
+          "aquele",
+          "Eu",
+          "esquecer",
+          "nunca"
+        ],
+        "correctOrder": [
+          "Eu",
+          "nunca",
+          "vou",
+          "esquecer",
+          "aquele",
+          "momento."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u2_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 2,
+    "unitName": "Passado e Experiências",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Passado e Experiências",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Ela me ligou ontem.'?",
+        "options": [
+          {
+            "text": "Have you ever spoken in public?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "She called me yesterday.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I learned a lot from that experience.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She has already finished the report.",
+        "words": [
+          "terminou",
+          "relatório.",
+          "Ela",
+          "talvez",
+          "já",
+          "o"
+        ],
+        "correctOrder": [
+          "Ela",
+          "já",
+          "terminou",
+          "o",
+          "relatório."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Ela trabalhou no exterior.'?",
+        "options": [
+          {
+            "text": "After that, it started to rain.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Eventually, we found the hotel.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "She has worked abroad.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Then we decided to walk.",
+        "correctAnswer": "Então decidimos ir a pé."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We used to play outside as children.",
+        "words": [
+          "costumávamos",
+          "de",
+          "crianças.",
+          "éramos",
+          "do",
+          "lado",
+          "quando",
+          "talvez",
+          "brincar",
+          "Nós",
+          "fora"
+        ],
+        "correctOrder": [
+          "Nós",
+          "costumávamos",
+          "brincar",
+          "do",
+          "lado",
+          "de",
+          "fora",
+          "quando",
+          "éramos",
+          "crianças."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u3_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 3,
+    "unitName": "Planos e Futuro",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Going to",
+    "icon": "🔮",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Vou começar um novo curso.'",
+        "options": [
+          {
+            "text": "It is going to rain.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "We are going to move next year.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'm going to start a new course.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She is going to visit her sister.",
+        "words": [
+          "irmã.",
+          "a",
+          "talvez",
+          "Ela",
+          "visitar",
+          "vai"
+        ],
+        "correctOrder": [
+          "Ela",
+          "vai",
+          "visitar",
+          "a",
+          "irmã."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Você vai ficar aqui?'?",
+        "options": [
+          {
+            "text": "Are you going to stay here?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Let's order some food.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I can pick you up at eight.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We are going to move next year.",
+        "correctAnswer": "Vamos nos mudar no ano que vem."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "It is going to rain.",
+        "words": [
+          "Vai",
+          "chover.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Vai",
+          "chover."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u3_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 3,
+    "unitName": "Planos e Futuro",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Will and Predictions",
+    "icon": "🔮",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Acho que vai ficar tudo bem.'",
+        "options": [
+          {
+            "text": "The meeting will probably end early.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "It is going to rain.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I think it will be fine.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The meeting will probably end early.",
+        "words": [
+          "provavelmente",
+          "terminar",
+          "A",
+          "reunião",
+          "vai",
+          "cedo.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "A",
+          "reunião",
+          "provavelmente",
+          "vai",
+          "terminar",
+          "cedo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Vou ligar para você amanhã.'?",
+        "options": [
+          {
+            "text": "She is going to visit her sister.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'll call you tomorrow.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'm going to start a new course.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I don't think they will agree.",
+        "correctAnswer": "Não acho que eles vão concordar."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "You will enjoy the trip.",
+        "words": [
+          "Você",
+          "vai",
+          "aproveitar",
+          "talvez",
+          "a",
+          "viagem."
+        ],
+        "correctOrder": [
+          "Você",
+          "vai",
+          "aproveitar",
+          "a",
+          "viagem."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u3_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 3,
+    "unitName": "Planos e Futuro",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Arrangements",
+    "icon": "🔮",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Vou me encontrar com Sarah às seis.'",
+        "options": [
+          {
+            "text": "I'll call you tomorrow.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'm meeting Sarah at six.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The meeting will probably end early.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We are flying on Friday.",
+        "words": [
+          "de",
+          "talvez",
+          "viajar",
+          "Vamos",
+          "avião",
+          "sexta-feira.",
+          "na"
+        ],
+        "correctOrder": [
+          "Vamos",
+          "viajar",
+          "de",
+          "avião",
+          "na",
+          "sexta-feira."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O trem parte às oito.'?",
+        "options": [
+          {
+            "text": "The train leaves at eight.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "We are going to move next year.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Are you going to stay here?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I have an appointment tomorrow.",
+        "correctAnswer": "Tenho uma consulta amanhã."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Are you coming to the party?",
+        "words": [
+          "para",
+          "talvez",
+          "a",
+          "festa?",
+          "Você",
+          "vem"
+        ],
+        "correctOrder": [
+          "Você",
+          "vem",
+          "para",
+          "a",
+          "festa?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u3_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 3,
+    "unitName": "Planos e Futuro",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Goals",
+    "icon": "🔮",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Quero melhorar meu inglês.'",
+        "options": [
+          {
+            "text": "I don't think they will agree.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I want to improve my English.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "You will enjoy the trip.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She hopes to get a promotion.",
+        "words": [
+          "conseguir",
+          "espera",
+          "Ela",
+          "talvez",
+          "promoção.",
+          "uma"
+        ],
+        "correctOrder": [
+          "Ela",
+          "espera",
+          "conseguir",
+          "uma",
+          "promoção."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Planejamos economizar mais dinheiro.'?",
+        "options": [
+          {
+            "text": "It is going to rain.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "We plan to save more money.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I think it will be fine.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "He is trying to exercise regularly.",
+        "correctAnswer": "Ele está tentando se exercitar regularmente."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "My goal is to become more confident.",
+        "words": [
+          "mais",
+          "confiante.",
+          "Meu",
+          "objetivo",
+          "é",
+          "talvez",
+          "ficar"
+        ],
+        "correctOrder": [
+          "Meu",
+          "objetivo",
+          "é",
+          "ficar",
+          "mais",
+          "confiante."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u3_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 3,
+    "unitName": "Planos e Futuro",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Decisions and Offers",
+    "icon": "🔮",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Vou ajudar você com isso.'",
+        "options": [
+          {
+            "text": "We are flying on Friday.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'll help you with that.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'm meeting Sarah at six.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Would you like me to call them?",
+        "words": [
+          "eu",
+          "para",
+          "que",
+          "ligasse",
+          "Você",
+          "talvez",
+          "eles?",
+          "gostaria"
+        ],
+        "correctOrder": [
+          "Você",
+          "gostaria",
+          "que",
+          "eu",
+          "ligasse",
+          "para",
+          "eles?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu vou cuidar disso.'?",
+        "options": [
+          {
+            "text": "I'll take care of it.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The meeting will probably end early.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'll call you tomorrow.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Let's order some food.",
+        "correctAnswer": "Vamos pedir alguma comida."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I can pick you up at eight.",
+        "words": [
+          "oito.",
+          "buscar",
+          "Posso",
+          "talvez",
+          "você",
+          "às"
+        ],
+        "correctOrder": [
+          "Posso",
+          "buscar",
+          "você",
+          "às",
+          "oito."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u3_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 3,
+    "unitName": "Planos e Futuro",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Planos e Futuro",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Você vai ficar aqui?'?",
+        "options": [
+          {
+            "text": "Are you going to stay here?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "She hopes to get a promotion.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I want to improve my English.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll call you tomorrow.",
+        "words": [
+          "amanhã.",
+          "Vou",
+          "talvez",
+          "você",
+          "ligar",
+          "para"
+        ],
+        "correctOrder": [
+          "Vou",
+          "ligar",
+          "para",
+          "você",
+          "amanhã."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O trem parte às oito.'?",
+        "options": [
+          {
+            "text": "My goal is to become more confident.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'll help you with that.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The train leaves at eight.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We plan to save more money.",
+        "correctAnswer": "Planejamos economizar mais dinheiro."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll take care of it.",
+        "words": [
+          "vou",
+          "talvez",
+          "cuidar",
+          "disso.",
+          "Eu"
+        ],
+        "correctOrder": [
+          "Eu",
+          "vou",
+          "cuidar",
+          "disso."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u4_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 4,
+    "unitName": "Trabalho e Profissão",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Work Routine",
+    "icon": "💼",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Normalmente começo a trabalhar às oito.'",
+        "options": [
+          {
+            "text": "He checks his email every morning.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "We take a short break at noon.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I usually start work at eight.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She works from home twice a week.",
+        "words": [
+          "por",
+          "talvez",
+          "de",
+          "casa",
+          "trabalha",
+          "duas",
+          "Ela",
+          "vezes",
+          "semana."
+        ],
+        "correctOrder": [
+          "Ela",
+          "trabalha",
+          "de",
+          "casa",
+          "duas",
+          "vezes",
+          "por",
+          "semana."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Tenho uma reunião depois do almoço.'?",
+        "options": [
+          {
+            "text": "I am ready for more responsibility.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "This experience could open new doors.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I have a meeting after lunch.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "He checks his email every morning.",
+        "correctAnswer": "Ele verifica o e-mail todas as manhãs."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We take a short break at noon.",
+        "words": [
+          "meio-dia.",
+          "pausa",
+          "ao",
+          "Fazemos",
+          "uma",
+          "pequena",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Fazemos",
+          "uma",
+          "pequena",
+          "pausa",
+          "ao",
+          "meio-dia."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u4_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 4,
+    "unitName": "Trabalho e Profissão",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Responsibilities",
+    "icon": "💼",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Sou responsável pela equipe de vendas.'",
+        "options": [
+          {
+            "text": "She manages several projects.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'm responsible for the sales team.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "We take a short break at noon.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She manages several projects.",
+        "words": [
+          "vários",
+          "talvez",
+          "Ela",
+          "projetos.",
+          "gerencia"
+        ],
+        "correctOrder": [
+          "Ela",
+          "gerencia",
+          "vários",
+          "projetos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Ele cuida das solicitações dos clientes.'?",
+        "options": [
+          {
+            "text": "He handles customer requests.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I usually start work at eight.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "She works from home twice a week.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We need to meet the deadline.",
+        "correctAnswer": "Precisamos cumprir o prazo."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I report directly to the manager.",
+        "words": [
+          "Reporto-me",
+          "gerente.",
+          "diretamente",
+          "talvez",
+          "ao"
+        ],
+        "correctOrder": [
+          "Reporto-me",
+          "diretamente",
+          "ao",
+          "gerente."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u4_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 4,
+    "unitName": "Trabalho e Profissão",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Workplace Communication",
+    "icon": "💼",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você poderia me enviar o arquivo?'",
+        "options": [
+          {
+            "text": "She manages several projects.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "He handles customer requests.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Could you send me the file?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll get back to you this afternoon.",
+        "words": [
+          "Vou",
+          "tarde.",
+          "para",
+          "retornar",
+          "você",
+          "esta",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Vou",
+          "retornar",
+          "para",
+          "você",
+          "esta",
+          "tarde."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Deixe-me verificar os detalhes.'?",
+        "options": [
+          {
+            "text": "Let me check the details.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "He checks his email every morning.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I have a meeting after lunch.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Please keep me updated.",
+        "correctAnswer": "Por favor, mantenha-me informado."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Thanks for getting back to me.",
+        "words": [
+          "Obrigado",
+          "talvez",
+          "responder.",
+          "me",
+          "por"
+        ],
+        "correctOrder": [
+          "Obrigado",
+          "por",
+          "me",
+          "responder."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u4_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 4,
+    "unitName": "Trabalho e Profissão",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Job Interviews",
+    "icon": "💼",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Fale-me sobre sua experiência.'",
+        "options": [
+          {
+            "text": "Tell me about your experience.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I report directly to the manager.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We need to meet the deadline.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Why are you interested in this position?",
+        "words": [
+          "está",
+          "interessado",
+          "que",
+          "nesta",
+          "vaga?",
+          "Por",
+          "talvez",
+          "você"
+        ],
+        "correctOrder": [
+          "Por",
+          "que",
+          "você",
+          "está",
+          "interessado",
+          "nesta",
+          "vaga?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Tenho cinco anos de experiência.'?",
+        "options": [
+          {
+            "text": "I have five years of experience.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'm responsible for the sales team.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We take a short break at noon.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "One of my strengths is communication.",
+        "correctAnswer": "Um dos meus pontos fortes é a comunicação."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'm looking for a new challenge.",
+        "words": [
+          "um",
+          "talvez",
+          "procurando",
+          "Estou",
+          "novo",
+          "desafio."
+        ],
+        "correctOrder": [
+          "Estou",
+          "procurando",
+          "um",
+          "novo",
+          "desafio."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u4_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 4,
+    "unitName": "Trabalho e Profissão",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Career Development",
+    "icon": "💼",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Gostaria de desenvolver novas habilidades.'",
+        "options": [
+          {
+            "text": "I would like to develop new skills.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'll get back to you this afternoon.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Could you send me the file?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She is taking a leadership course.",
+        "words": [
+          "um",
+          "está",
+          "liderança.",
+          "de",
+          "fazendo",
+          "Ela",
+          "talvez",
+          "curso"
+        ],
+        "correctOrder": [
+          "Ela",
+          "está",
+          "fazendo",
+          "um",
+          "curso",
+          "de",
+          "liderança."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Ele quer entrar na área de gestão.'?",
+        "options": [
+          {
+            "text": "He handles customer requests.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "He wants to move into management.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "She manages several projects.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "This experience could open new doors.",
+        "correctAnswer": "Essa experiência pode abrir novas portas."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I am ready for more responsibility.",
+        "words": [
+          "pronto",
+          "talvez",
+          "mais",
+          "para",
+          "Estou",
+          "responsabilidade."
+        ],
+        "correctOrder": [
+          "Estou",
+          "pronto",
+          "para",
+          "mais",
+          "responsabilidade."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u4_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 4,
+    "unitName": "Trabalho e Profissão",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Trabalho e Profissão",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Ele verifica o e-mail todas as manhãs.'?",
+        "options": [
+          {
+            "text": "One of my strengths is communication.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have five years of experience.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "He checks his email every morning.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We need to meet the deadline.",
+        "words": [
+          "prazo.",
+          "o",
+          "talvez",
+          "Precisamos",
+          "cumprir"
+        ],
+        "correctOrder": [
+          "Precisamos",
+          "cumprir",
+          "o",
+          "prazo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Por favor, mantenha-me informado.'?",
+        "options": [
+          {
+            "text": "She is taking a leadership course.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "He wants to move into management.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Please keep me updated.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "One of my strengths is communication.",
+        "correctAnswer": "Um dos meus pontos fortes é a comunicação."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "This experience could open new doors.",
+        "words": [
+          "Essa",
+          "abrir",
+          "pode",
+          "experiência",
+          "talvez",
+          "novas",
+          "portas."
+        ],
+        "correctOrder": [
+          "Essa",
+          "experiência",
+          "pode",
+          "abrir",
+          "novas",
+          "portas."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u5_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 5,
+    "unitName": "Viagens com Mais Profundidade",
+    "lesson": 1,
+    "isReview": false,
+    "title": "At the Airport",
+    "icon": "✈️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Onde fica o balcão de check-in?'",
+        "options": [
+          {
+            "text": "What time does boarding start?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I only have a carry-on bag.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Where is the check-in desk?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "My flight has been delayed.",
+        "words": [
+          "voo",
+          "talvez",
+          "Meu",
+          "atrasado.",
+          "foi"
+        ],
+        "correctOrder": [
+          "Meu",
+          "voo",
+          "foi",
+          "atrasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Você poderia me dizer de qual portão eu preciso?'?",
+        "options": [
+          {
+            "text": "Don't forget to check the weather.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Could you tell me which gate I need?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I recommend visiting the old town.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I only have a carry-on bag.",
+        "correctAnswer": "Tenho apenas uma bagagem de mão."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "What time does boarding start?",
+        "words": [
+          "começa",
+          "horas",
+          "Que",
+          "embarque?",
+          "o",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Que",
+          "horas",
+          "começa",
+          "o",
+          "embarque?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u5_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 5,
+    "unitName": "Viagens com Mais Profundidade",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Hotel Problems",
+    "icon": "✈️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Há um problema com o meu quarto.'",
+        "options": [
+          {
+            "text": "There is a problem with my room.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "What time does boarding start?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The air conditioner isn't working.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The air conditioner isn't working.",
+        "words": [
+          "talvez",
+          "funcionando.",
+          "não",
+          "ar-condicionado",
+          "O",
+          "está"
+        ],
+        "correctOrder": [
+          "O",
+          "ar-condicionado",
+          "não",
+          "está",
+          "funcionando."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu poderia trocar de quarto?'?",
+        "options": [
+          {
+            "text": "Could I change rooms?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "My flight has been delayed.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Where is the check-in desk?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The room was not ready when I arrived.",
+        "correctAnswer": "O quarto não estava pronto quando cheguei."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Could you send someone to fix it?",
+        "words": [
+          "poderia",
+          "para",
+          "isso?",
+          "consertar",
+          "talvez",
+          "Você",
+          "mandar",
+          "alguém"
+        ],
+        "correctOrder": [
+          "Você",
+          "poderia",
+          "mandar",
+          "alguém",
+          "para",
+          "consertar",
+          "isso?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u5_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 5,
+    "unitName": "Viagens com Mais Profundidade",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Getting Around",
+    "icon": "✈️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Quanto tempo leva para chegar lá?'",
+        "options": [
+          {
+            "text": "Could I change rooms?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "The air conditioner isn't working.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "How long does it take to get there?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Is there a subway station nearby?",
+        "words": [
+          "uma",
+          "por",
+          "perto?",
+          "metrô",
+          "estação",
+          "de",
+          "talvez",
+          "Há"
+        ],
+        "correctOrder": [
+          "Há",
+          "uma",
+          "estação",
+          "de",
+          "metrô",
+          "por",
+          "perto?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Qual ônibus devo pegar?'?",
+        "options": [
+          {
+            "text": "Could you tell me which gate I need?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Which bus should I take?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I only have a carry-on bag.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Could you drop me off here?",
+        "correctAnswer": "Você poderia me deixar aqui?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We got stuck in traffic.",
+        "words": [
+          "no",
+          "trânsito.",
+          "presos",
+          "talvez",
+          "Ficamos"
+        ],
+        "correctOrder": [
+          "Ficamos",
+          "presos",
+          "no",
+          "trânsito."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u5_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 5,
+    "unitName": "Viagens com Mais Profundidade",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Travel Experiences",
+    "icon": "✈️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Tivemos uma viagem incrível.'",
+        "options": [
+          {
+            "text": "Could you send someone to fix it?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "The room was not ready when I arrived.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We had an amazing trip.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The city was even better than I expected.",
+        "words": [
+          "cidade",
+          "A",
+          "eu",
+          "ainda",
+          "que",
+          "melhor",
+          "do",
+          "talvez",
+          "esperava.",
+          "foi"
+        ],
+        "correctOrder": [
+          "A",
+          "cidade",
+          "foi",
+          "ainda",
+          "melhor",
+          "do",
+          "que",
+          "eu",
+          "esperava."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu definitivamente voltaria.'?",
+        "options": [
+          {
+            "text": "There is a problem with my room.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I would definitely go back.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "What time does boarding start?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The food was one of the highlights.",
+        "correctAnswer": "A comida foi um dos destaques."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I learned a lot about the local culture.",
+        "words": [
+          "local.",
+          "Aprendi",
+          "talvez",
+          "sobre",
+          "a",
+          "cultura",
+          "muito"
+        ],
+        "correctOrder": [
+          "Aprendi",
+          "muito",
+          "sobre",
+          "a",
+          "cultura",
+          "local."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u5_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 5,
+    "unitName": "Viagens com Mais Profundidade",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Travel Advice",
+    "icon": "✈️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você deveria reservar as passagens com antecedência.'",
+        "options": [
+          {
+            "text": "How long does it take to get there?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "You should book the tickets in advance.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Is there a subway station nearby?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Make sure you have travel insurance.",
+        "words": [
+          "tem",
+          "de",
+          "talvez",
+          "de",
+          "seguro",
+          "você",
+          "viagem.",
+          "que",
+          "Certifique-se"
+        ],
+        "correctOrder": [
+          "Certifique-se",
+          "de",
+          "que",
+          "você",
+          "tem",
+          "seguro",
+          "de",
+          "viagem."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'É melhor evitar o horário de pico.'?",
+        "options": [
+          {
+            "text": "The air conditioner isn't working.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "It is better to avoid rush hour.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Could I change rooms?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Don't forget to check the weather.",
+        "correctAnswer": "Não se esqueça de verificar o clima."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I recommend visiting the old town.",
+        "words": [
+          "talvez",
+          "visitar",
+          "Recomendo",
+          "antiga.",
+          "a",
+          "cidade"
+        ],
+        "correctOrder": [
+          "Recomendo",
+          "visitar",
+          "a",
+          "cidade",
+          "antiga."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u5_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 5,
+    "unitName": "Viagens com Mais Profundidade",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Viagens com Mais Profundidade",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Que horas começa o embarque?'?",
+        "options": [
+          {
+            "text": "You should book the tickets in advance.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "What time does boarding start?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I learned a lot about the local culture.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Could you send someone to fix it?",
+        "words": [
+          "poderia",
+          "para",
+          "isso?",
+          "consertar",
+          "talvez",
+          "Você",
+          "mandar",
+          "alguém"
+        ],
+        "correctOrder": [
+          "Você",
+          "poderia",
+          "mandar",
+          "alguém",
+          "para",
+          "consertar",
+          "isso?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Ficamos presos no trânsito.'?",
+        "options": [
+          {
+            "text": "Don't forget to check the weather.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I recommend visiting the old town.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We got stuck in traffic.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I learned a lot about the local culture.",
+        "correctAnswer": "Aprendi muito sobre a cultura local."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I recommend visiting the old town.",
+        "words": [
+          "talvez",
+          "visitar",
+          "Recomendo",
+          "antiga.",
+          "a",
+          "cidade"
+        ],
+        "correctOrder": [
+          "Recomendo",
+          "visitar",
+          "a",
+          "cidade",
+          "antiga."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u6_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 6,
+    "unitName": "Saúde e Bem-estar",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Describing Symptoms",
+    "icon": "❤️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Estou com dor de cabeça desde esta manhã.'",
+        "options": [
+          {
+            "text": "My back has been hurting all day.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have had a headache since this morning.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I have a slight fever.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "My throat hurts when I swallow.",
+        "words": [
+          "talvez",
+          "dói",
+          "Minha",
+          "quando",
+          "engulo.",
+          "garganta"
+        ],
+        "correctOrder": [
+          "Minha",
+          "garganta",
+          "dói",
+          "quando",
+          "engulo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Tenho me sentido cansado ultimamente.'?",
+        "options": [
+          {
+            "text": "I've been feeling tired lately.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Small changes can make a big difference.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I feel better when I exercise.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I have a slight fever.",
+        "correctAnswer": "Estou com uma febre leve."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "My back has been hurting all day.",
+        "words": [
+          "doendo",
+          "talvez",
+          "Minha",
+          "o",
+          "está",
+          "todo.",
+          "coluna",
+          "dia"
+        ],
+        "correctOrder": [
+          "Minha",
+          "coluna",
+          "está",
+          "doendo",
+          "o",
+          "dia",
+          "todo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u6_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 6,
+    "unitName": "Saúde e Bem-estar",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Doctor's Appointment",
+    "icon": "❤️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Gostaria de marcar uma consulta.'",
+        "options": [
+          {
+            "text": "How long have you had these symptoms?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "My back has been hurting all day.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd like to make an appointment.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "How long have you had these symptoms?",
+        "words": [
+          "com",
+          "sintomas?",
+          "esses",
+          "está",
+          "Há",
+          "talvez",
+          "quanto",
+          "tempo",
+          "você"
+        ],
+        "correctOrder": [
+          "Há",
+          "quanto",
+          "tempo",
+          "você",
+          "está",
+          "com",
+          "esses",
+          "sintomas?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Você tomou alguma coisa para a dor?'?",
+        "options": [
+          {
+            "text": "I have had a headache since this morning.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "My throat hurts when I swallow.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Have you taken anything for the pain?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The doctor recommended some rest.",
+        "correctAnswer": "O médico recomendou um pouco de descanso."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "You should come back next week.",
+        "words": [
+          "Você",
+          "próxima",
+          "talvez",
+          "deveria",
+          "na",
+          "semana.",
+          "voltar"
+        ],
+        "correctOrder": [
+          "Você",
+          "deveria",
+          "voltar",
+          "na",
+          "próxima",
+          "semana."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u6_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 6,
+    "unitName": "Saúde e Bem-estar",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Healthy Habits",
+    "icon": "❤️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Tento beber bastante água.'",
+        "options": [
+          {
+            "text": "How long have you had these symptoms?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Have you taken anything for the pain?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I try to drink plenty of water.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She has started exercising regularly.",
+        "words": [
+          "regularmente.",
+          "a",
+          "se",
+          "talvez",
+          "Ela",
+          "exercitar",
+          "começou"
+        ],
+        "correctOrder": [
+          "Ela",
+          "começou",
+          "a",
+          "se",
+          "exercitar",
+          "regularmente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Dormir o suficiente é importante.'?",
+        "options": [
+          {
+            "text": "I have a slight fever.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I've been feeling tired lately.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Getting enough sleep is important.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I need to cut down on sugar.",
+        "correctAnswer": "Preciso reduzir o consumo de açúcar."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We should eat more vegetables.",
+        "words": [
+          "comer",
+          "Deveríamos",
+          "vegetais.",
+          "talvez",
+          "mais"
+        ],
+        "correctOrder": [
+          "Deveríamos",
+          "comer",
+          "mais",
+          "vegetais."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u6_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 6,
+    "unitName": "Saúde e Bem-estar",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Advice",
+    "icon": "❤️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você deveria descansar um pouco.'",
+        "options": [
+          {
+            "text": "You should get some rest.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "You should come back next week.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The doctor recommended some rest.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "You might want to see a doctor.",
+        "words": [
+          "consultar",
+          "Talvez",
+          "médico.",
+          "melhor",
+          "talvez",
+          "um",
+          "seja"
+        ],
+        "correctOrder": [
+          "Talvez",
+          "seja",
+          "melhor",
+          "consultar",
+          "um",
+          "médico."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Por que você não tenta beber mais água?'?",
+        "options": [
+          {
+            "text": "My back has been hurting all day.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Why don't you try drinking more water?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd like to make an appointment.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "You shouldn't ignore that pain.",
+        "correctAnswer": "Você não deveria ignorar essa dor."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "It would be a good idea to slow down.",
+        "words": [
+          "diminuir",
+          "boa",
+          "ritmo.",
+          "ideia",
+          "o",
+          "talvez",
+          "Seria",
+          "uma"
+        ],
+        "correctOrder": [
+          "Seria",
+          "uma",
+          "boa",
+          "ideia",
+          "diminuir",
+          "o",
+          "ritmo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u6_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 6,
+    "unitName": "Saúde e Bem-estar",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Lifestyle Choices",
+    "icon": "❤️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Estou tentando manter uma rotina equilibrada.'",
+        "options": [
+          {
+            "text": "I try to drink plenty of water.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "She has started exercising regularly.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I am trying to maintain a balanced routine.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "She decided to quit smoking.",
+        "words": [
+          "de",
+          "talvez",
+          "parar",
+          "decidiu",
+          "fumar.",
+          "Ela"
+        ],
+        "correctOrder": [
+          "Ela",
+          "decidiu",
+          "parar",
+          "de",
+          "fumar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Ele passa tempo demais sentado.'?",
+        "options": [
+          {
+            "text": "Have you taken anything for the pain?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "He spends too much time sitting.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "How long have you had these symptoms?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I feel better when I exercise.",
+        "correctAnswer": "Sinto-me melhor quando faço exercícios."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Small changes can make a big difference.",
+        "words": [
+          "talvez",
+          "fazer",
+          "uma",
+          "diferença.",
+          "Pequenas",
+          "grande",
+          "podem",
+          "mudanças"
+        ],
+        "correctOrder": [
+          "Pequenas",
+          "mudanças",
+          "podem",
+          "fazer",
+          "uma",
+          "grande",
+          "diferença."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u6_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 6,
+    "unitName": "Saúde e Bem-estar",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Saúde e Bem-estar",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Estou com dor de cabeça desde esta manhã.'?",
+        "options": [
+          {
+            "text": "He spends too much time sitting.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have had a headache since this morning.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "She decided to quit smoking.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd like to make an appointment.",
+        "words": [
+          "Gostaria",
+          "uma",
+          "marcar",
+          "de",
+          "consulta.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Gostaria",
+          "de",
+          "marcar",
+          "uma",
+          "consulta."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Tento beber bastante água.'?",
+        "options": [
+          {
+            "text": "I try to drink plenty of water.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "I have had a headache since this morning.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "My throat hurts when I swallow.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "You should get some rest.",
+        "correctAnswer": "Você deveria descansar um pouco."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I am trying to maintain a balanced routine.",
+        "words": [
+          "tentando",
+          "talvez",
+          "rotina",
+          "equilibrada.",
+          "manter",
+          "uma",
+          "Estou"
+        ],
+        "correctOrder": [
+          "Estou",
+          "tentando",
+          "manter",
+          "uma",
+          "rotina",
+          "equilibrada."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u7_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 7,
+    "unitName": "Situações Sociais",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Invitations",
+    "icon": "🤝",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você gostaria de vir jantar em casa?'",
+        "options": [
+          {
+            "text": "Thanks, but I already have plans.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Maybe another time.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Would you like to come over for dinner?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Are you doing anything this weekend?",
+        "words": [
+          "neste",
+          "vai",
+          "coisa",
+          "alguma",
+          "fazer",
+          "semana?",
+          "fim",
+          "talvez",
+          "de",
+          "Você"
+        ],
+        "correctOrder": [
+          "Você",
+          "vai",
+          "fazer",
+          "alguma",
+          "coisa",
+          "neste",
+          "fim",
+          "de",
+          "semana?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu adoraria, obrigado.'?",
+        "options": [
+          {
+            "text": "It was great meeting you.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Where did you grow up?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd love to, thanks.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Thanks, but I already have plans.",
+        "correctAnswer": "Obrigado, mas já tenho planos."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Maybe another time.",
+        "words": [
+          "hora.",
+          "Talvez",
+          "talvez",
+          "outra"
+        ],
+        "correctOrder": [
+          "Talvez",
+          "outra",
+          "hora."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u7_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 7,
+    "unitName": "Situações Sociais",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Making Requests Politely",
+    "icon": "🤝",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você poderia me ajudar por um momento?'",
+        "options": [
+          {
+            "text": "Maybe another time.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Could you help me for a moment?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Would you mind opening the window?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Would you mind opening the window?",
+        "words": [
+          "Você",
+          "importaria",
+          "a",
+          "de",
+          "janela?",
+          "se",
+          "abrir",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Você",
+          "se",
+          "importaria",
+          "de",
+          "abrir",
+          "a",
+          "janela?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu poderia pegar sua caneta emprestada?'?",
+        "options": [
+          {
+            "text": "Could I borrow your pen?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Are you doing anything this weekend?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Would you like to come over for dinner?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Would it be possible to change the time?",
+        "correctAnswer": "Seria possível mudar o horário?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'd appreciate your help.",
+        "words": [
+          "Eu",
+          "ajuda.",
+          "talvez",
+          "sua",
+          "agradeceria"
+        ],
+        "correctOrder": [
+          "Eu",
+          "agradeceria",
+          "sua",
+          "ajuda."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u7_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 7,
+    "unitName": "Situações Sociais",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Agreeing and Disagreeing",
+    "icon": "🤝",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Concordo totalmente.'",
+        "options": [
+          {
+            "text": "Could I borrow your pen?",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I completely agree.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Would you mind opening the window?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I see your point, but I disagree.",
+        "words": [
+          "Entendo",
+          "talvez",
+          "mas",
+          "ponto,",
+          "seu",
+          "discordo."
+        ],
+        "correctOrder": [
+          "Entendo",
+          "seu",
+          "ponto,",
+          "mas",
+          "discordo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'É exatamente o que eu penso.'?",
+        "options": [
+          {
+            "text": "Thanks, but I already have plans.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'd love to, thanks.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "That's exactly what I think.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'm afraid I see it differently.",
+        "correctAnswer": "Receio que eu veja isso de outra forma."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We may have to agree to disagree.",
+        "words": [
+          "talvez",
+          "Talvez",
+          "concordar",
+          "tenhamos",
+          "em",
+          "que",
+          "discordar."
+        ],
+        "correctOrder": [
+          "Talvez",
+          "tenhamos",
+          "que",
+          "concordar",
+          "em",
+          "discordar."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u7_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 7,
+    "unitName": "Situações Sociais",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Apologies and Responses",
+    "icon": "🤝",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Desculpe por estar atrasado.'",
+        "options": [
+          {
+            "text": "I'd appreciate your help.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'm sorry I'm late.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Would it be possible to change the time?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I didn't mean to upset you.",
+        "words": [
+          "Não",
+          "chatear",
+          "talvez",
+          "quis",
+          "você."
+        ],
+        "correctOrder": [
+          "Não",
+          "quis",
+          "chatear",
+          "você."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Tudo bem. Não se preocupe com isso.'?",
+        "options": [
+          {
+            "text": "That's okay. Don't worry about it.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Could you help me for a moment?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Maybe another time.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I apologize for the misunderstanding.",
+        "correctAnswer": "Peço desculpas pelo mal-entendido."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Thanks for understanding.",
+        "words": [
+          "entender.",
+          "Obrigado",
+          "talvez",
+          "por"
+        ],
+        "correctOrder": [
+          "Obrigado",
+          "por",
+          "entender."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u7_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 7,
+    "unitName": "Situações Sociais",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Social Conversations",
+    "icon": "🤝",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Como você conhece o anfitrião?'",
+        "options": [
+          {
+            "text": "I completely agree.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "How do you know the host?",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I see your point, but I disagree.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Have you been here before?",
+        "words": [
+          "esteve",
+          "já",
+          "Você",
+          "talvez",
+          "aqui",
+          "antes?"
+        ],
+        "correctOrder": [
+          "Você",
+          "já",
+          "esteve",
+          "aqui",
+          "antes?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O que você faz da vida?'?",
+        "options": [
+          {
+            "text": "What do you do for a living?",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Could I borrow your pen?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Would you mind opening the window?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Where did you grow up?",
+        "correctAnswer": "Onde você cresceu?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "It was great meeting you.",
+        "words": [
+          "Foi",
+          "conhecer",
+          "ótimo",
+          "você.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Foi",
+          "ótimo",
+          "conhecer",
+          "você."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u7_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 7,
+    "unitName": "Situações Sociais",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Situações Sociais",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Você vai fazer alguma coisa neste fim de semana?'?",
+        "options": [
+          {
+            "text": "It was great meeting you.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Where did you grow up?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Are you doing anything this weekend?",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Would you mind opening the window?",
+        "words": [
+          "Você",
+          "importaria",
+          "a",
+          "de",
+          "janela?",
+          "se",
+          "abrir",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Você",
+          "se",
+          "importaria",
+          "de",
+          "abrir",
+          "a",
+          "janela?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Entendo seu ponto, mas discordo.'?",
+        "options": [
+          {
+            "text": "I see your point, but I disagree.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Thanks, but I already have plans.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd love to, thanks.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I didn't mean to upset you.",
+        "correctAnswer": "Não quis chatear você."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Have you been here before?",
+        "words": [
+          "esteve",
+          "já",
+          "Você",
+          "talvez",
+          "aqui",
+          "antes?"
+        ],
+        "correctOrder": [
+          "Você",
+          "já",
+          "esteve",
+          "aqui",
+          "antes?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u8_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 8,
+    "unitName": "Opiniões e Argumentação",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Giving Reasons",
+    "icon": "⚖️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Acho que deveríamos sair cedo por causa do trânsito.'",
+        "options": [
+          {
+            "text": "I chose it because it was more practical.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I think we should leave early because of the traffic.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "That's why I decided to stay.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The main reason is that we need more time.",
+        "words": [
+          "mais",
+          "O",
+          "talvez",
+          "é",
+          "de",
+          "motivo",
+          "precisamos",
+          "tempo.",
+          "principal",
+          "que"
+        ],
+        "correctOrder": [
+          "O",
+          "principal",
+          "motivo",
+          "é",
+          "que",
+          "precisamos",
+          "de",
+          "mais",
+          "tempo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Esta opção é melhor porque custa menos.'?",
+        "options": [
+          {
+            "text": "This option is better because it costs less.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "We need to look at the bigger picture.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Overall, I think it is a reasonable solution.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I chose it because it was more practical.",
+        "correctAnswer": "Escolhi porque era mais prático."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That's why I decided to stay.",
+        "words": [
+          "isso",
+          "É",
+          "ficar.",
+          "por",
+          "talvez",
+          "decidi",
+          "que"
+        ],
+        "correctOrder": [
+          "É",
+          "por",
+          "isso",
+          "que",
+          "decidi",
+          "ficar."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u8_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 8,
+    "unitName": "Opiniões e Argumentação",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Comparing Options",
+    "icon": "⚖️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Este é mais barato que o outro.'",
+        "options": [
+          {
+            "text": "That's why I decided to stay.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "This one is cheaper than the other one.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The second option seems more practical.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The second option seems more practical.",
+        "words": [
+          "parece",
+          "A",
+          "mais",
+          "segunda",
+          "opção",
+          "prática.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "A",
+          "segunda",
+          "opção",
+          "parece",
+          "mais",
+          "prática."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'As duas opções têm vantagens.'?",
+        "options": [
+          {
+            "text": "I think we should leave early because of the traffic.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "The main reason is that we need more time.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Both choices have advantages.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "This solution would be less expensive.",
+        "correctAnswer": "Esta solução seria menos cara."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I prefer the first option overall.",
+        "words": [
+          "primeira",
+          "prefiro",
+          "geral,",
+          "opção.",
+          "talvez",
+          "a",
+          "No"
+        ],
+        "correctOrder": [
+          "No",
+          "geral,",
+          "prefiro",
+          "a",
+          "primeira",
+          "opção."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u8_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 8,
+    "unitName": "Opiniões e Argumentação",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Agreeing with Nuance",
+    "icon": "⚖️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Concordo até certo ponto.'",
+        "options": [
+          {
+            "text": "I agree to some extent.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Both choices have advantages.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The second option seems more practical.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That's true in some cases.",
+        "words": [
+          "alguns",
+          "é",
+          "em",
+          "verdade",
+          "talvez",
+          "Isso",
+          "casos."
+        ],
+        "correctOrder": [
+          "Isso",
+          "é",
+          "verdade",
+          "em",
+          "alguns",
+          "casos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Concordo, mas há outra questão.'?",
+        "options": [
+          {
+            "text": "I chose it because it was more practical.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I agree, but there is another issue.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "This option is better because it costs less.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "You may be right about that.",
+        "correctAnswer": "Você pode estar certo sobre isso."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I can see why you think that.",
+        "words": [
+          "você",
+          "que",
+          "pensa",
+          "talvez",
+          "assim.",
+          "Entendo",
+          "por"
+        ],
+        "correctOrder": [
+          "Entendo",
+          "por",
+          "que",
+          "você",
+          "pensa",
+          "assim."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u8_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 8,
+    "unitName": "Opiniões e Argumentação",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Disagreeing Politely",
+    "icon": "⚖️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Não estou convencido de que esta seja a melhor escolha.'",
+        "options": [
+          {
+            "text": "I prefer the first option overall.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "This solution would be less expensive.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'm not convinced that this is the best choice.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I understand your point, but I have some concerns.",
+        "words": [
+          "seu",
+          "talvez",
+          "tenho",
+          "mas",
+          "preocupações.",
+          "algumas",
+          "Entendo",
+          "ponto,"
+        ],
+        "correctOrder": [
+          "Entendo",
+          "seu",
+          "ponto,",
+          "mas",
+          "tenho",
+          "algumas",
+          "preocupações."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Eu vejo as coisas de uma maneira um pouco diferente.'?",
+        "options": [
+          {
+            "text": "I see things a little differently.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "That's why I decided to stay.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "This one is cheaper than the other one.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I'm not sure that would work.",
+        "correctAnswer": "Não tenho certeza de que isso funcionaria."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Perhaps we should consider another option.",
+        "words": [
+          "outra",
+          "talvez",
+          "considerar",
+          "opção.",
+          "devêssemos",
+          "Talvez"
+        ],
+        "correctOrder": [
+          "Talvez",
+          "devêssemos",
+          "considerar",
+          "outra",
+          "opção."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u8_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 8,
+    "unitName": "Opiniões e Argumentação",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Mini Debates",
+    "icon": "⚖️",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Há vários fatores a considerar.'",
+        "options": [
+          {
+            "text": "I agree to some extent.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "That's true in some cases.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "There are several factors to consider.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The evidence suggests that it works.",
+        "words": [
+          "As",
+          "sugerem",
+          "funciona.",
+          "talvez",
+          "evidências",
+          "que"
+        ],
+        "correctOrder": [
+          "As",
+          "evidências",
+          "sugerem",
+          "que",
+          "funciona."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Esse argumento ignora um detalhe importante.'?",
+        "options": [
+          {
+            "text": "The second option seems more practical.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Both choices have advantages.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "That argument overlooks an important detail.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "We need to look at the bigger picture.",
+        "correctAnswer": "Precisamos olhar para o quadro geral."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Overall, I think it is a reasonable solution.",
+        "words": [
+          "uma",
+          "No",
+          "razoável.",
+          "solução",
+          "que",
+          "acho",
+          "é",
+          "geral,",
+          "talvez"
+        ],
+        "correctOrder": [
+          "No",
+          "geral,",
+          "acho",
+          "que",
+          "é",
+          "uma",
+          "solução",
+          "razoável."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u8_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 8,
+    "unitName": "Opiniões e Argumentação",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Opiniões e Argumentação",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Esta opção é melhor porque custa menos.'?",
+        "options": [
+          {
+            "text": "This option is better because it costs less.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The main reason is that we need more time.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I think we should leave early because of the traffic.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Both choices have advantages.",
+        "words": [
+          "As",
+          "duas",
+          "talvez",
+          "vantagens.",
+          "têm",
+          "opções"
+        ],
+        "correctOrder": [
+          "As",
+          "duas",
+          "opções",
+          "têm",
+          "vantagens."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Concordo, mas há outra questão.'?",
+        "options": [
+          {
+            "text": "That's why I decided to stay.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I agree, but there is another issue.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "This one is cheaper than the other one.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I see things a little differently.",
+        "correctAnswer": "Eu vejo as coisas de uma maneira um pouco diferente."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "That argument overlooks an important detail.",
+        "words": [
+          "ignora",
+          "detalhe",
+          "importante.",
+          "talvez",
+          "um",
+          "Esse",
+          "argumento"
+        ],
+        "correctOrder": [
+          "Esse",
+          "argumento",
+          "ignora",
+          "um",
+          "detalhe",
+          "importante."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u9_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 9,
+    "unitName": "Notícias, Mídia e Cultura",
+    "lesson": 1,
+    "isReview": false,
+    "title": "News Basics",
+    "icon": "📰",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'O artigo foi publicado esta manhã.'",
+        "options": [
+          {
+            "text": "The article was published this morning.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The event attracted a lot of attention.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The company released a statement.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "According to the report, sales increased.",
+        "words": [
+          "talvez",
+          "com",
+          "vendas",
+          "De",
+          "relatório,",
+          "aumentaram.",
+          "o",
+          "as",
+          "acordo"
+        ],
+        "correctOrder": [
+          "De",
+          "acordo",
+          "com",
+          "o",
+          "relatório,",
+          "as",
+          "vendas",
+          "aumentaram."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'A notícia se espalhou rapidamente online.'?",
+        "options": [
+          {
+            "text": "Different sources reported the story differently.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "We need to be careful with misleading headlines.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The story quickly spread online.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The company released a statement.",
+        "correctAnswer": "A empresa divulgou um comunicado."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The event attracted a lot of attention.",
+        "words": [
+          "muita",
+          "evento",
+          "talvez",
+          "atraiu",
+          "O",
+          "atenção."
+        ],
+        "correctOrder": [
+          "O",
+          "evento",
+          "atraiu",
+          "muita",
+          "atenção."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u9_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 9,
+    "unitName": "Notícias, Mídia e Cultura",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Movies and Shows",
+    "icon": "📰",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'O filme foi baseado em uma história real.'",
+        "options": [
+          {
+            "text": "The event attracted a lot of attention.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "The movie was based on a true story.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I found the ending disappointing.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I found the ending disappointing.",
+        "words": [
+          "talvez",
+          "decepcionante.",
+          "o",
+          "Achei",
+          "final"
+        ],
+        "correctOrder": [
+          "Achei",
+          "o",
+          "final",
+          "decepcionante."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O personagem principal muda muito.'?",
+        "options": [
+          {
+            "text": "The article was published this morning.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "According to the report, sales increased.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The main character changes a lot.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The series has become very popular.",
+        "correctAnswer": "A série se tornou muito popular."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I would recommend it to anyone who likes drama.",
+        "words": [
+          "que",
+          "qualquer",
+          "drama.",
+          "goste",
+          "de",
+          "pessoa",
+          "talvez",
+          "recomendaria",
+          "para",
+          "Eu"
+        ],
+        "correctOrder": [
+          "Eu",
+          "recomendaria",
+          "para",
+          "qualquer",
+          "pessoa",
+          "que",
+          "goste",
+          "de",
+          "drama."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u9_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 9,
+    "unitName": "Notícias, Mídia e Cultura",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Books and Reading",
+    "icon": "📰",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Estou na metade do livro.'",
+        "options": [
+          {
+            "text": "I'm halfway through the book.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The main character changes a lot.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I found the ending disappointing.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The author explores several interesting ideas.",
+        "words": [
+          "O",
+          "interessantes.",
+          "ideias",
+          "explora",
+          "talvez",
+          "várias",
+          "autor"
+        ],
+        "correctOrder": [
+          "O",
+          "autor",
+          "explora",
+          "várias",
+          "ideias",
+          "interessantes."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Este capítulo foi difícil de entender.'?",
+        "options": [
+          {
+            "text": "The company released a statement.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "This chapter was difficult to understand.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The story quickly spread online.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "The book made me think about the topic differently.",
+        "correctAnswer": "O livro me fez pensar sobre o tema de uma maneira diferente."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I prefer reading before bed.",
+        "words": [
+          "talvez",
+          "ler",
+          "dormir.",
+          "Prefiro",
+          "antes",
+          "de"
+        ],
+        "correctOrder": [
+          "Prefiro",
+          "ler",
+          "antes",
+          "de",
+          "dormir."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u9_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 9,
+    "unitName": "Notícias, Mídia e Cultura",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Culture and Traditions",
+    "icon": "📰",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Cada região tem suas próprias tradições.'",
+        "options": [
+          {
+            "text": "I would recommend it to anyone who likes drama.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Every region has its own traditions.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The series has become very popular.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The festival takes place every year.",
+        "words": [
+          "anos.",
+          "os",
+          "talvez",
+          "festival",
+          "acontece",
+          "O",
+          "todos"
+        ],
+        "correctOrder": [
+          "O",
+          "festival",
+          "acontece",
+          "todos",
+          "os",
+          "anos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'A comida desempenha um papel importante na celebração.'?",
+        "options": [
+          {
+            "text": "The event attracted a lot of attention.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Food plays an important role in the celebration.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The movie was based on a true story.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Visitors are expected to respect local customs.",
+        "correctAnswer": "Espera-se que os visitantes respeitem os costumes locais."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The tradition has been passed down for generations.",
+        "words": [
+          "passada",
+          "talvez",
+          "de",
+          "geração.",
+          "foi",
+          "geração",
+          "tradição",
+          "em",
+          "A"
+        ],
+        "correctOrder": [
+          "A",
+          "tradição",
+          "foi",
+          "passada",
+          "de",
+          "geração",
+          "em",
+          "geração."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u9_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 9,
+    "unitName": "Notícias, Mídia e Cultura",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Media and Information",
+    "icon": "📰",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Você deveria verificar a fonte antes de compartilhar isso.'",
+        "options": [
+          {
+            "text": "The author explores several interesting ideas.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'm halfway through the book.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "You should check the source before sharing it.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The information turned out to be inaccurate.",
+        "words": [
+          "acabou",
+          "imprecisa.",
+          "sendo",
+          "informação",
+          "A",
+          "talvez"
+        ],
+        "correctOrder": [
+          "A",
+          "informação",
+          "acabou",
+          "sendo",
+          "imprecisa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'É difícil saber o que é confiável online.'?",
+        "options": [
+          {
+            "text": "The main character changes a lot.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I found the ending disappointing.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "It's hard to tell what is reliable online.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Different sources reported the story differently.",
+        "correctAnswer": "Diferentes fontes relataram a notícia de maneiras diferentes."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We need to be careful with misleading headlines.",
+        "words": [
+          "enganosas.",
+          "ter",
+          "com",
+          "talvez",
+          "Precisamos",
+          "manchetes",
+          "cuidado"
+        ],
+        "correctOrder": [
+          "Precisamos",
+          "ter",
+          "cuidado",
+          "com",
+          "manchetes",
+          "enganosas."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u9_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 9,
+    "unitName": "Notícias, Mídia e Cultura",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Notícias, Mídia e Cultura",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'A empresa divulgou um comunicado.'?",
+        "options": [
+          {
+            "text": "The company released a statement.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "The story quickly spread online.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "The event attracted a lot of attention.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "The series has become very popular.",
+        "words": [
+          "talvez",
+          "tornou",
+          "série",
+          "se",
+          "popular.",
+          "A",
+          "muito"
+        ],
+        "correctOrder": [
+          "A",
+          "série",
+          "se",
+          "tornou",
+          "muito",
+          "popular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O livro me fez pensar sobre o tema de uma maneira diferente.'?",
+        "options": [
+          {
+            "text": "I found the ending disappointing.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "The book made me think about the topic differently.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "The main character changes a lot.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Visitors are expected to respect local customs.",
+        "correctAnswer": "Espera-se que os visitantes respeitem os costumes locais."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Different sources reported the story differently.",
+        "words": [
+          "notícia",
+          "Diferentes",
+          "de",
+          "talvez",
+          "fontes",
+          "diferentes.",
+          "a",
+          "relataram",
+          "maneiras"
+        ],
+        "correctOrder": [
+          "Diferentes",
+          "fontes",
+          "relataram",
+          "a",
+          "notícia",
+          "de",
+          "maneiras",
+          "diferentes."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u10_l1",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 10,
+    "unitName": "Comunicação Profissional",
+    "lesson": 1,
+    "isReview": false,
+    "title": "Emails",
+    "icon": "📈",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Estou escrevendo para perguntar sobre o cronograma.'",
+        "options": [
+          {
+            "text": "Thanks in advance for your help.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I look forward to hearing from you.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'm writing to ask about the schedule.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Please let me know if you have any questions.",
+        "words": [
+          "se",
+          "tiver",
+          "avise-me",
+          "dúvida.",
+          "alguma",
+          "favor,",
+          "talvez",
+          "Por"
+        ],
+        "correctOrder": [
+          "Por",
+          "favor,",
+          "avise-me",
+          "se",
+          "tiver",
+          "alguma",
+          "dúvida."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Anexei o documento atualizado.'?",
+        "options": [
+          {
+            "text": "I feel more confident than I did last year.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I want to contribute more to the team.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I've attached the updated document.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I look forward to hearing from you.",
+        "correctAnswer": "Aguardo seu retorno."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Thanks in advance for your help.",
+        "words": [
+          "ajuda.",
+          "sua",
+          "Agradeço",
+          "pela",
+          "antecipadamente",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Agradeço",
+          "antecipadamente",
+          "pela",
+          "sua",
+          "ajuda."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u10_l2",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 10,
+    "unitName": "Comunicação Profissional",
+    "lesson": 2,
+    "isReview": false,
+    "title": "Meetings",
+    "icon": "📈",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Vamos começar com a questão principal.'",
+        "options": [
+          {
+            "text": "Let's start with the main issue.",
+            "isCorrect": true,
+            "emoji": "✅"
+          },
+          {
+            "text": "Could we come back to that later?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Thanks in advance for your help.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Could we come back to that later?",
+        "words": [
+          "voltar",
+          "tarde?",
+          "Poderíamos",
+          "isso",
+          "a",
+          "talvez",
+          "mais"
+        ],
+        "correctOrder": [
+          "Poderíamos",
+          "voltar",
+          "a",
+          "isso",
+          "mais",
+          "tarde?"
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Gostaria de acrescentar uma coisa aqui.'?",
+        "options": [
+          {
+            "text": "I'm writing to ask about the schedule.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'd like to add something here.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Please let me know if you have any questions.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Can we summarize the key points?",
+        "correctAnswer": "Podemos resumir os pontos principais?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's agree on the next steps.",
+        "words": [
+          "talvez",
+          "próximos",
+          "Vamos",
+          "os",
+          "definir",
+          "passos."
+        ],
+        "correctOrder": [
+          "Vamos",
+          "definir",
+          "os",
+          "próximos",
+          "passos."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u10_l3",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 10,
+    "unitName": "Comunicação Profissional",
+    "lesson": 3,
+    "isReview": false,
+    "title": "Deadlines and Priorities",
+    "icon": "📈",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Precisamos terminar isso até sexta-feira.'",
+        "options": [
+          {
+            "text": "I'd like to add something here.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Could we come back to that later?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We need to finish this by Friday.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "This task should be our top priority.",
+        "words": [
+          "prioridade.",
+          "ser",
+          "deveria",
+          "nossa",
+          "talvez",
+          "principal",
+          "Esta",
+          "tarefa"
+        ],
+        "correctOrder": [
+          "Esta",
+          "tarefa",
+          "deveria",
+          "ser",
+          "nossa",
+          "principal",
+          "prioridade."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Estamos ficando sem tempo.'?",
+        "options": [
+          {
+            "text": "I've attached the updated document.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "We're running out of time.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "I look forward to hearing from you.",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Could we extend the deadline?",
+        "correctAnswer": "Poderíamos estender o prazo?"
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I'll prioritize the most urgent items.",
+        "words": [
+          "urgentes.",
+          "Vou",
+          "mais",
+          "priorizar",
+          "itens",
+          "talvez",
+          "os"
+        ],
+        "correctOrder": [
+          "Vou",
+          "priorizar",
+          "os",
+          "itens",
+          "mais",
+          "urgentes."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u10_l4",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 10,
+    "unitName": "Comunicação Profissional",
+    "lesson": 4,
+    "isReview": false,
+    "title": "Customer Communication",
+    "icon": "📈",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Obrigado por chamar nossa atenção para isso.'",
+        "options": [
+          {
+            "text": "Let's agree on the next steps.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Thanks for bringing this to our attention.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Can we summarize the key points?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "We are looking into the problem.",
+        "words": [
+          "talvez",
+          "o",
+          "problema.",
+          "investigando",
+          "Estamos"
+        ],
+        "correctOrder": [
+          "Estamos",
+          "investigando",
+          "o",
+          "problema."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Pedimos desculpas pelo transtorno.'?",
+        "options": [
+          {
+            "text": "Let's start with the main issue.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Thanks in advance for your help.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "We apologize for the inconvenience.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Here is what we can offer you.",
+        "correctAnswer": "Aqui está o que podemos oferecer a você."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Please contact us if the issue continues.",
+        "words": [
+          "se",
+          "conosco",
+          "o",
+          "contato",
+          "problema",
+          "em",
+          "Entre",
+          "continuar.",
+          "talvez"
+        ],
+        "correctOrder": [
+          "Entre",
+          "em",
+          "contato",
+          "conosco",
+          "se",
+          "o",
+          "problema",
+          "continuar."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u10_l5",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 10,
+    "unitName": "Comunicação Profissional",
+    "lesson": 5,
+    "isReview": false,
+    "title": "Professional Growth",
+    "icon": "📈",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Selecione a tradução de 'Gostaria de assumir mais responsabilidades.'",
+        "options": [
+          {
+            "text": "This task should be our top priority.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "We need to finish this by Friday.",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "I'd like to take on more responsibility.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I am working on improving my presentation skills.",
+        "words": [
+          "Estou",
+          "apresentação.",
+          "trabalhando",
+          "talvez",
+          "melhorar",
+          "habilidades",
+          "de",
+          "para",
+          "minhas"
+        ],
+        "correctOrder": [
+          "Estou",
+          "trabalhando",
+          "para",
+          "melhorar",
+          "minhas",
+          "habilidades",
+          "de",
+          "apresentação."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'O feedback me ajuda a identificar áreas para melhorar.'?",
+        "options": [
+          {
+            "text": "I'd like to add something here.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Could we come back to that later?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Feedback helps me identify areas for improvement.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "I want to contribute more to the team.",
+        "correctAnswer": "Quero contribuir mais com a equipe."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I feel more confident than I did last year.",
+        "words": [
+          "ano",
+          "talvez",
+          "Sinto-me",
+          "passado.",
+          "mais",
+          "que",
+          "no",
+          "do",
+          "confiante"
+        ],
+        "correctOrder": [
+          "Sinto-me",
+          "mais",
+          "confiante",
+          "do",
+          "que",
+          "no",
+          "ano",
+          "passado."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intermediate_u10_review",
+    "level": "intermediate",
+    "levelName": "Intermediário",
+    "unit": 10,
+    "unitName": "Comunicação Profissional",
+    "lesson": 6,
+    "isReview": true,
+    "title": "Revisão — Comunicação Profissional",
+    "icon": "🏆",
+    "difficulty": "medium",
+    "exercises": [
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Agradeço antecipadamente pela sua ajuda.'?",
+        "options": [
+          {
+            "text": "Let's start with the main issue.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "Could we come back to that later?",
+            "isCorrect": false,
+            "emoji": "💬"
+          },
+          {
+            "text": "Thanks in advance for your help.",
+            "isCorrect": true,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "Let's agree on the next steps.",
+        "words": [
+          "talvez",
+          "próximos",
+          "Vamos",
+          "os",
+          "definir",
+          "passos."
+        ],
+        "correctOrder": [
+          "Vamos",
+          "definir",
+          "os",
+          "próximos",
+          "passos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Qual frase significa 'Vou priorizar os itens mais urgentes.'?",
+        "options": [
+          {
+            "text": "Let's agree on the next steps.",
+            "isCorrect": false,
+            "emoji": "✅"
+          },
+          {
+            "text": "I'll prioritize the most urgent items.",
+            "isCorrect": true,
+            "emoji": "💬"
+          },
+          {
+            "text": "Can we summarize the key points?",
+            "isCorrect": false,
+            "emoji": "📌"
+          }
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Traduza digitando",
+        "english": "Please contact us if the issue continues.",
+        "correctAnswer": "Entre em contato conosco se o problema continuar."
+      },
+      {
+        "type": "build_sentence",
+        "question": "Monte a frase em português",
+        "english": "I feel more confident than I did last year.",
+        "words": [
+          "ano",
+          "talvez",
+          "Sinto-me",
+          "passado.",
+          "mais",
+          "que",
+          "no",
+          "do",
+          "confiante"
+        ],
+        "correctOrder": [
+          "Sinto-me",
+          "mais",
+          "confiante",
+          "do",
+          "que",
+          "no",
+          "ano",
+          "passado."
+        ]
+      }
+    ]
+  }
+]
