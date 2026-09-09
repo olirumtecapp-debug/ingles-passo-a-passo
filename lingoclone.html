@@ -2384,6 +2384,245 @@
         }
     }, true);
 
+    
+    // ==========================================
+    // SISTEMA DE MONETIZAÇÃO, PIX & AVISOS GLOBAIS
+    // ==========================================
+    const DEFAULT_PIX_SETTINGS = {
+        pixKey: "admin@elevateidiomas.com.br",
+        beneficiaryName: "ELEVATE IDIOMAS",
+        city: "SAO PAULO",
+        whatsapp: "5511999999999",
+        prices: {
+            monthly: 19.90,
+            annual: 97.00,
+            lifetime: 147.00
+        }
+    };
+
+    const DEFAULT_BANNER_SETTINGS = {
+        active: true,
+        title: "⚡ ACESSO VIP ELEVATE",
+        text: "Tenha vidas infinitas e libere mais de 250 aulas de Inglês e Espanhol!"
+    };
+
+    let currentSelectedPlan = 'annual';
+
+    function getPixSettings() {
+        try {
+            const saved = localStorage.getItem('elevate_pix_settings');
+            return saved ? { ...DEFAULT_PIX_SETTINGS, ...JSON.parse(saved) } : DEFAULT_PIX_SETTINGS;
+        } catch(e) {
+            return DEFAULT_PIX_SETTINGS;
+        }
+    }
+
+    function getBannerSettings() {
+        try {
+            const saved = localStorage.getItem('elevate_banner_settings');
+            return saved ? { ...DEFAULT_BANNER_SETTINGS, ...JSON.parse(saved) } : DEFAULT_BANNER_SETTINGS;
+        } catch(e) {
+            return DEFAULT_BANNER_SETTINGS;
+        }
+    }
+
+    function initAnnouncementBanner() {
+        const banner = document.getElementById('global-announcement-banner');
+        if (!banner) return;
+        const config = getBannerSettings();
+        if (config.active && !sessionStorage.getItem('elevate_dismiss_banner')) {
+            const titleEl = document.getElementById('announcement-title');
+            const textEl = document.getElementById('announcement-text');
+            if (titleEl) titleEl.innerText = config.title;
+            if (textEl) textEl.innerText = config.text;
+            banner.classList.remove('hidden');
+        } else {
+            banner.classList.add('hidden');
+        }
+    }
+
+    function dismissAnnouncement() {
+        const banner = document.getElementById('global-announcement-banner');
+        if (banner) banner.classList.add('hidden');
+        sessionStorage.setItem('elevate_dismiss_banner', 'true');
+    }
+
+    function saveAdminBannerSettings() {
+        const title = document.getElementById('adm-banner-title-input')?.value?.trim() || DEFAULT_BANNER_SETTINGS.title;
+        const text = document.getElementById('adm-banner-text-input')?.value?.trim() || DEFAULT_BANNER_SETTINGS.text;
+        const active = !!document.getElementById('adm-banner-active-checkbox')?.checked;
+
+        const config = { active, title, text };
+        localStorage.setItem('elevate_banner_settings', JSON.stringify(config));
+        initAnnouncementBanner();
+        showToast("📢 Banner de avisos atualizado com sucesso!", "success");
+    }
+
+    function toggleAdminBannerStatus() {
+        saveAdminBannerSettings();
+    }
+
+    function saveAdminPixSettings() {
+        const key = document.getElementById('adm-pix-key-input')?.value?.trim() || DEFAULT_PIX_SETTINGS.pixKey;
+        const name = document.getElementById('adm-pix-name-input')?.value?.trim() || DEFAULT_PIX_SETTINGS.beneficiaryName;
+        const whatsapp = document.getElementById('adm-pix-whatsapp-input')?.value?.trim() || DEFAULT_PIX_SETTINGS.whatsapp;
+        const monthly = parseFloat(document.getElementById('adm-price-monthly-input')?.value) || DEFAULT_PIX_SETTINGS.prices.monthly;
+        const annual = parseFloat(document.getElementById('adm-price-annual-input')?.value) || DEFAULT_PIX_SETTINGS.prices.annual;
+        const lifetime = parseFloat(document.getElementById('adm-price-lifetime-input')?.value) || DEFAULT_PIX_SETTINGS.prices.lifetime;
+
+        const config = {
+            pixKey: key,
+            beneficiaryName: name,
+            city: "SAO PAULO",
+            whatsapp: whatsapp,
+            prices: { monthly, annual, lifetime }
+        };
+
+        localStorage.setItem('elevate_pix_settings', JSON.stringify(config));
+        showToast("💾 Configurações de PIX salvas com sucesso!", "success");
+    }
+
+    function loadAdminPixForm() {
+        const config = getPixSettings();
+        const bannerConfig = getBannerSettings();
+
+        if (document.getElementById('adm-pix-key-input')) document.getElementById('adm-pix-key-input').value = config.pixKey;
+        if (document.getElementById('adm-pix-name-input')) document.getElementById('adm-pix-name-input').value = config.beneficiaryName;
+        if (document.getElementById('adm-pix-whatsapp-input')) document.getElementById('adm-pix-whatsapp-input').value = config.whatsapp;
+        if (document.getElementById('adm-price-monthly-input')) document.getElementById('adm-price-monthly-input').value = config.prices.monthly.toFixed(2);
+        if (document.getElementById('adm-price-annual-input')) document.getElementById('adm-price-annual-input').value = config.prices.annual.toFixed(2);
+        if (document.getElementById('adm-price-lifetime-input')) document.getElementById('adm-price-lifetime-input').value = config.prices.lifetime.toFixed(2);
+
+        if (document.getElementById('adm-banner-title-input')) document.getElementById('adm-banner-title-input').value = bannerConfig.title;
+        if (document.getElementById('adm-banner-text-input')) document.getElementById('adm-banner-text-input').value = bannerConfig.text;
+        if (document.getElementById('adm-banner-active-checkbox')) document.getElementById('adm-banner-active-checkbox').checked = bannerConfig.active;
+    }
+
+    function openPixCheckoutModal() {
+        const config = getPixSettings();
+        
+        // Update display prices
+        const mEl = document.getElementById('display-price-monthly');
+        const aEl = document.getElementById('display-price-annual');
+        const lEl = document.getElementById('display-price-lifetime');
+        if (mEl) mEl.innerText = 'R$ ' + config.prices.monthly.toFixed(2).replace('.', ',');
+        if (aEl) aEl.innerText = 'R$ ' + config.prices.annual.toFixed(2).replace('.', ',');
+        if (lEl) lEl.innerText = 'R$ ' + config.prices.lifetime.toFixed(2).replace('.', ',');
+
+        const bNameEl = document.getElementById('pix-beneficiary-name');
+        if (bNameEl) bNameEl.innerText = config.beneficiaryName;
+
+        selectPixPlan(currentSelectedPlan || 'annual');
+        openModal('modal-pix-checkout');
+    }
+
+    function selectPixPlan(planKey) {
+        currentSelectedPlan = planKey;
+        const config = getPixSettings();
+        const price = config.prices[planKey] || 97.00;
+
+        ['monthly', 'annual', 'lifetime'].forEach(key => {
+            const card = document.getElementById('plan-card-' + key);
+            if (!card) return;
+            if (key === planKey) {
+                card.className = 'cursor-pointer border-2 border-emerald-500 bg-emerald-50/70 rounded-2xl p-2.5 transition flex flex-col justify-between relative shadow-xs';
+            } else {
+                card.className = 'cursor-pointer border-2 border-gray-200 hover:border-emerald-500 rounded-2xl p-2.5 transition flex flex-col justify-between bg-gray-50';
+            }
+        });
+
+        const priceEl = document.getElementById('pix-selected-price');
+        if (priceEl) priceEl.innerText = 'R$ ' + price.toFixed(2).replace('.', ',');
+
+        const pixPayload = generatePixPayload(config.pixKey, config.beneficiaryName, config.city, price, 'ELEVATE' + planKey.toUpperCase());
+        const input = document.getElementById('pix-copia-cola-input');
+        if (input) input.value = pixPayload;
+
+        const qrImg = document.getElementById('pix-qr-code-img');
+        if (qrImg) {
+            qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=' + encodeURIComponent(pixPayload);
+        }
+    }
+
+    function generatePixPayload(key, name, city, amount, txid) {
+        const cleanKey = (key || '').trim();
+        const cleanName = (name || 'ELEVATE IDIOMAS').normalize('NFD').replace(/[\u0300-\u036f]/g, '').substring(0, 25).toUpperCase();
+        const cleanCity = (city || 'SAO PAULO').normalize('NFD').replace(/[\u0300-\u036f]/g, '').substring(0, 15).toUpperCase();
+        const strAmount = Number(amount).toFixed(2);
+        const cleanTxId = (txid || 'ELEVATEVIP').substring(0, 25);
+
+        function formatField(id, value) {
+            const len = String(value.length).padStart(2, '0');
+            return id + len + value;
+        }
+
+        const gui = formatField('00', 'br.gov.bcb.pix');
+        const keyField = formatField('01', cleanKey);
+        const merchantAccountInfo = formatField('26', gui + keyField);
+
+        let payload = 
+            formatField('00', '01') +
+            merchantAccountInfo +
+            formatField('52', '0000') +
+            formatField('53', '986') +
+            formatField('54', strAmount) +
+            formatField('58', 'BR') +
+            formatField('59', cleanName) +
+            formatField('60', cleanCity) +
+            formatField('62', formatField('05', cleanTxId)) +
+            '6304';
+
+        function crc16(str) {
+            let crc = 0xFFFF;
+            for (let i = 0; i < str.length; i++) {
+                crc ^= str.charCodeAt(i) << 8;
+                for (let j = 0; j < 8; j++) {
+                    if ((crc & 0x8000) !== 0) {
+                        crc = ((crc << 1) ^ 0x1021) & 0xFFFF;
+                    } else {
+                        crc = (crc << 1) & 0xFFFF;
+                    }
+                }
+            }
+            return crc.toString(16).toUpperCase().padStart(4, '0');
+        }
+
+        return payload + crc16(payload);
+    }
+
+    function copyPixCode() {
+        const input = document.getElementById('pix-copia-cola-input');
+        if (!input || !input.value) return;
+        input.select();
+        navigator.clipboard.writeText(input.value).then(() => {
+            showToast("📋 Código PIX Copia e Cola copiado com sucesso!", "success");
+        }).catch(() => {
+            document.execCommand('copy');
+            showToast("📋 Código PIX copiado!", "success");
+        });
+    }
+
+    function sendPixProofViaWhatsApp() {
+        const config = getPixSettings();
+        const planName = currentSelectedPlan === 'monthly' ? 'Mensal' : currentSelectedPlan === 'annual' ? 'Anual' : 'Vitalício';
+        const price = config.prices[currentSelectedPlan] || 97.00;
+        const studentName = userData.name || 'Aluno';
+        const studentEmail = userData.email || '';
+
+        const message = 'Olá! Sou o aluno *' + studentName + '* (' + studentEmail + '). Realizei o pagamento via PIX do *Plano VIP ' + planName + '* (R$ ' + price.toFixed(2).replace('.', ',') + ') no ELEVATE Idiomas. Segue meu comprovante para liberação!';
+        const phone = config.whatsapp.replace(/\D/g, '') || '5511999999999';
+        const url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
+        window.open(url, '_blank');
+    }
+
+    function replyFeedbackViaWhatsApp(studentName, studentMessage) {
+        const config = getPixSettings();
+        const message = 'Olá ' + studentName + '! Aqui é do suporte do ELEVATE Idiomas. Vimos seu feedback: "' + studentMessage + '". Como podemos te ajudar mais?';
+        const phone = config.whatsapp.replace(/\D/g, '') || '5511999999999';
+        const url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
+        window.open(url, '_blank');
+    }
+
     function initApp() {
         initAnnouncementBanner();
         updateAdminVisibilityUI();
