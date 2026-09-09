@@ -1970,6 +1970,131 @@
         }
     }
 
+    
+    // ==========================================
+    // GESTÃO DE USUÁRIOS VIP & CUPONS
+    // ==========================================
+    const DEFAULT_VIP_COUPONS = ["VIP-ELEVATE-TESTER", "ADM-2026", "VIP-ALUNO-PRO", "FLUENCIA-100"];
+
+    function getVipCoupons() {
+        const saved = localStorage.getItem('elevate_vip_coupons');
+        if (saved) {
+            try { return JSON.parse(saved); } catch(e) {}
+        }
+        localStorage.setItem('elevate_vip_coupons', JSON.stringify(DEFAULT_VIP_COUPONS));
+        return DEFAULT_VIP_COUPONS;
+    }
+
+    function saveVipCoupons(list) {
+        localStorage.setItem('elevate_vip_coupons', JSON.stringify(list));
+        renderAdmCoupons();
+    }
+
+    function addVipCoupon() {
+        const input = document.getElementById('adm-coupon-input');
+        const code = input?.value?.trim().toUpperCase();
+        if (!code) {
+            showToast("Digite o código do cupom!", "error");
+            return;
+        }
+        const list = getVipCoupons();
+        if (list.includes(code)) {
+            showToast("Este cupom já existe!", "error");
+            return;
+        }
+        list.push(code);
+        saveVipCoupons(list);
+        if (input) input.value = '';
+        showToast(`Cupom ${code} criado com sucesso!`, "success");
+    }
+
+    function renderAdmCoupons() {
+        const container = document.getElementById('adm-coupons-list');
+        if (!container) return;
+        const list = getVipCoupons();
+        container.innerHTML = list.map(c => `
+            <span class="inline-flex items-center gap-1 text-[10px] font-black bg-white border border-amber-300 text-amber-900 px-2 py-0.5 rounded-lg shadow-2xs font-code">
+                ${c}
+                <button onclick="removeVipCoupon('${c}')" class="text-red-500 hover:text-red-700 font-bold ml-1">✕</button>
+            </span>
+        `).join('');
+    }
+
+    function removeVipCoupon(code) {
+        let list = getVipCoupons().filter(c => c !== code);
+        saveVipCoupons(list);
+        showToast(`Cupom ${code} removido.`, "info");
+    }
+
+    function toggleVipMode() {
+        userData.isVip = !userData.isVip;
+        if (userData.isVip) {
+            userData.hearts = 999;
+            showToast("👑 Modo VIP ATIVADO! Vidas infinitas e todas as aulas liberadas.", "success");
+        } else {
+            userData.hearts = 5;
+            showToast("Modo VIP desativado.", "info");
+        }
+        saveData();
+        updateVipUI();
+        renderMap();
+    }
+
+    function redeemVipCoupon() {
+        const input = document.getElementById('user-coupon-input');
+        const code = input?.value?.trim().toUpperCase();
+        if (!code) {
+            showToast("Digite o código do cupom!", "error");
+            return;
+        }
+        const validCoupons = getVipCoupons();
+        if (validCoupons.includes(code)) {
+            userData.isVip = true;
+            userData.hearts = 999;
+            userData.vipCouponUsed = code;
+            saveData();
+            updateVipUI();
+            renderMap();
+            if (input) input.value = '';
+            closeModal('modal-preferences');
+            showToast("🎉 PARABÉNS! Cupom VIP validado! Vidas infinitas e acesso total liberados.", "success");
+        } else {
+            showToast("❌ Cupom inválido ou expirado.", "error");
+        }
+    }
+
+    function updateVipUI() {
+        const isVip = !!userData.isVip;
+        
+        // Update user badge in preferences
+        const userBadge = document.getElementById('user-vip-badge');
+        if (userBadge) {
+            userBadge.innerText = isVip ? '👑 VIP ATIVO (Ilimitado)' : 'Gratuito';
+            userBadge.className = isVip 
+                ? 'text-[10px] font-black px-2 py-0.5 rounded-full bg-amber-400 text-amber-950 shadow-xs'
+                : 'text-[10px] font-black px-2 py-0.5 rounded-full bg-white border border-amber-300 text-amber-800';
+        }
+
+        // Update ADM badge
+        const admBadge = document.getElementById('adm-vip-status-badge');
+        const admBtn = document.getElementById('adm-toggle-vip-btn');
+        if (admBadge) {
+            admBadge.innerText = isVip ? '👑 VIP ATIVO' : 'Modo Grátis';
+        }
+        if (admBtn) {
+            admBtn.innerText = isVip ? '✕ Desativar Modo VIP' : '👑 Ativar Acesso VIP Ilimitado';
+            admBtn.className = isVip
+                ? 'btn-3d bg-gray-700 text-white font-black text-xs py-2.5 px-3 rounded-xl'
+                : 'btn-3d bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-xs py-2.5 px-3 rounded-xl shadow-xs';
+        }
+
+        // Update Hearts display if VIP
+        const heartsEl = document.getElementById('stat-hearts');
+        if (heartsEl && isVip) {
+            heartsEl.innerHTML = '∞ <span class="text-xs text-amber-500 font-bold">VIP</span>';
+        }
+    }
+
     function loadData() {
         const savedData = localStorage.getItem('elevate_user_v2') || localStorage.getItem('elevate_user_v1') || localStorage.getItem('lingoclone_user_v5');
         if (savedData) {
@@ -2100,6 +2225,7 @@
     }
 
     function updateStatsUI() {
+        updateVipUI();
         updateVipUI();
         const streakEl1 = document.getElementById('desktop-streak');
         const gemsEl1 = document.getElementById('desktop-gems');
