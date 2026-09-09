@@ -599,7 +599,7 @@
             id: "beginner_u1_l1", level: "beginner", levelName: "Iniciante", unit: 1, unitName: "Primeiros Passos",
             lesson: 1, isReview: false, title: "Cumprimentos", icon: "👋", difficulty: "easy",
             exercises: [
-                { type: "multiple_choice", question: "Qual significa 'Olá'?", options: [ { text: "Goodbye", isCorrect: false, emoji: "👋" }, { text: "Hello", isCorrect: true, emoji: "🗣️" }, { text: "Car", isCorrect: false, emoji: "🚗" } ] },
+                { type: "multiple_choice", question: "Qual significa 'Olá'?", options: [ { text: "Goodbye", isCorrect: false }, { text: "Hello", isCorrect: true }, { text: "Car", isCorrect: false } ] },
                 { type: "build_sentence", question: "Traduza esta frase", english: "Hello, how are you?", words: ["Olá", "como", "você", "está", "carro", "gato"], correctOrder: ["Olá", "como", "você", "está"] }
             ]
         },
@@ -614,14 +614,14 @@
             id: "beginner_u1_review", level: "beginner", levelName: "Iniciante", unit: 1, unitName: "Primeiros Passos",
             lesson: 3, isReview: true, title: "Revisão", icon: "🏆", difficulty: "medium",
             exercises: [
-                { type: "multiple_choice", question: "Qual significa 'Adeus'?", options: [ { text: "Goodbye", isCorrect: true, emoji: "👋" }, { text: "Apple", isCorrect: false, emoji: "🍎" }, { text: "Dog", isCorrect: false, emoji: "🐶" } ] }
+                { type: "multiple_choice", question: "Qual significa 'Adeus'?", options: [ { text: "Goodbye", isCorrect: true }, { text: "Apple", isCorrect: false }, { text: "Dog", isCorrect: false } ] }
             ]
         },
         {
             id: "beginner_u2_l1", level: "beginner", levelName: "Iniciante", unit: 2, unitName: "Pessoas",
             lesson: 1, isReview: false, title: "Família", icon: "👨‍👩‍👧", difficulty: "medium",
             exercises: [
-                { type: "multiple_choice", question: "Traduza 'Mãe'", options: [ { text: "Mother", isCorrect: true, emoji: "👩" }, { text: "Father", isCorrect: false, emoji: "👨" }, { text: "Brother", isCorrect: false, emoji: "👦" } ] }
+                { type: "multiple_choice", question: "Traduza 'Mãe'", options: [ { text: "Mother", isCorrect: true }, { text: "Father", isCorrect: false }, { text: "Brother", isCorrect: false } ] }
             ]
         },
         {
@@ -1664,7 +1664,7 @@ SCHEMA DE RESPOSTA ESPERADO:
         const type = document.getElementById('add-ex-type').value;
         let newEx = null;
         if(type === 'multiple_choice') {
-            newEx = { type: "multiple_choice", question: "Traduza", options: [ {text: "Opção 1", isCorrect: true, emoji: "1️⃣"}, {text: "Opção 2", isCorrect: false, emoji: "2️⃣"}, {text: "Opção 3", isCorrect: false, emoji: "3️⃣"} ] };
+            newEx = { type: "multiple_choice", question: "Traduza", options: [ {text: "Opção 1", isCorrect: true}, {text: "Opção 2", isCorrect: false}, {text: "Opção 3", isCorrect: false} ] };
         } else if (type === 'build_sentence') {
             newEx = { type: "build_sentence", question: "Traduza", english: "Hello", words: ["Olá", "Mundo"], correctOrder: ["Olá"] };
         } else if (type === 'translate') {
@@ -1808,10 +1808,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual é a resposta mais adequada e educada para a frase 'Nice to meet you'?",
             english: "Nice to meet you.", audioText: "Nice to meet you",
             options: [
-                { text: "Nice to meet you too.", isCorrect: true, emoji: "🤝" },
-                { text: "I have two cars.", isCorrect: false, emoji: "🚗" },
-                { text: "See you yesterday.", isCorrect: false, emoji: "📅" },
-                { text: "Good night, bye!", isCorrect: false, emoji: "🌙" }
+                { text: "Nice to meet you too.", isCorrect: true },
+                { text: "I have two cars.", isCorrect: false },
+                { text: "See you yesterday.", isCorrect: false },
+                { text: "Good night, bye!", isCorrect: false }
             ],
             explanation: "'Nice to meet you too' (Prazer em conhecê-lo também) é a resposta padrão de cortesia."
         },
@@ -1820,10 +1820,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a frase corretamente: 'She ___ a talented doctor at the hospital.'",
             english: "She ___ a doctor.", audioText: "She is a doctor",
             options: [
-                { text: "is", isCorrect: true, emoji: "👩‍⚕️" },
-                { text: "are", isCorrect: false, emoji: "❌" },
-                { text: "am", isCorrect: false, emoji: "❌" },
-                { text: "be", isCorrect: false, emoji: "❌" }
+                { text: "is", isCorrect: true },
+                { text: "are", isCorrect: false },
+                { text: "am", isCorrect: false },
+                { text: "be", isCorrect: false }
             ],
             explanation: "Para a 3ª pessoa do singular (He/She/It), usamos 'is' no presente do verbo To Be."
         },
@@ -1832,10 +1832,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual número representa a palavra em inglês 'seventy-five'?",
             english: "Seventy-five", audioText: "Seventy-five",
             options: [
-                { text: "75", isCorrect: true, emoji: "🔢" },
-                { text: "57", isCorrect: false, emoji: "❌" },
-                { text: "705", isCorrect: false, emoji: "❌" },
-                { text: "15", isCorrect: false, emoji: "❌" }
+                { text: "75", isCorrect: true },
+                { text: "57", isCorrect: false },
+                { text: "705", isCorrect: false },
+                { text: "15", isCorrect: false }
             ],
             explanation: "'Seventy' é 70 e 'five' é 5, formando 75."
         },
@@ -1844,10 +1844,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual frase está gramaticalmente correta no Present Simple?",
             english: "He plays soccer every weekend.", audioText: "He plays soccer every weekend",
             options: [
-                { text: "He plays soccer every weekend.", isCorrect: true, emoji: "⚽" },
-                { text: "He play soccer every weekend.", isCorrect: false, emoji: "❌" },
-                { text: "He playing soccer every weekend.", isCorrect: false, emoji: "❌" },
-                { text: "He is play soccer every weekend.", isCorrect: false, emoji: "❌" }
+                { text: "He plays soccer every weekend.", isCorrect: true },
+                { text: "He play soccer every weekend.", isCorrect: false },
+                { text: "He playing soccer every weekend.", isCorrect: false },
+                { text: "He is play soccer every weekend.", isCorrect: false }
             ],
             explanation: "No Present Simple com He/She/It, adiciona-se '-s' ao verbo: 'He plays'."
         },
@@ -1856,10 +1856,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a frase: 'I saw ___ elephant at the city zoo.'",
             english: "I saw ___ elephant at the zoo.", audioText: "I saw an elephant at the zoo",
             options: [
-                { text: "an", isCorrect: true, emoji: "🐘" },
-                { text: "a", isCorrect: false, emoji: "❌" },
-                { text: "the a", isCorrect: false, emoji: "❌" },
-                { text: "one of", isCorrect: false, emoji: "❌" }
+                { text: "an", isCorrect: true },
+                { text: "a", isCorrect: false },
+                { text: "the a", isCorrect: false },
+                { text: "one of", isCorrect: false }
             ],
             explanation: "Usamos o artigo indefinido 'an' antes de palavras iniciadas por som vocálico ('elephant')."
         },
@@ -1868,10 +1868,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual é o plural correto do substantivo 'child'?",
             english: "One child, two ___.", audioText: "One child, two children",
             options: [
-                { text: "children", isCorrect: true, emoji: "🧒" },
-                { text: "childs", isCorrect: false, emoji: "❌" },
-                { text: "childrens", isCorrect: false, emoji: "❌" },
-                { text: "childes", isCorrect: false, emoji: "❌" }
+                { text: "children", isCorrect: true },
+                { text: "childs", isCorrect: false },
+                { text: "childrens", isCorrect: false },
+                { text: "childes", isCorrect: false }
             ],
             explanation: "'Child' é um substantivo com plural irregular: 'children'."
         },
@@ -1880,10 +1880,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual dia da semana vem imediatamente após 'Tuesday'?",
             english: "Tuesday -> ___", audioText: "Tuesday, Wednesday",
             options: [
-                { text: "Wednesday", isCorrect: true, emoji: "📅" },
-                { text: "Thursday", isCorrect: false, emoji: "❌" },
-                { text: "Monday", isCorrect: false, emoji: "❌" },
-                { text: "Friday", isCorrect: false, emoji: "❌" }
+                { text: "Wednesday", isCorrect: true },
+                { text: "Thursday", isCorrect: false },
+                { text: "Monday", isCorrect: false },
+                { text: "Friday", isCorrect: false }
             ],
             explanation: "A ordem é: Monday (segunda), Tuesday (terça), Wednesday (quarta)."
         },
@@ -1892,10 +1892,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete: 'This is my sister. ___ name is Sarah.'",
             english: "This is my sister. ___ name is Sarah.", audioText: "This is my sister. Her name is Sarah",
             options: [
-                { text: "Her", isCorrect: true, emoji: "👧" },
-                { text: "His", isCorrect: false, emoji: "❌" },
-                { text: "Your", isCorrect: false, emoji: "❌" },
-                { text: "Their", isCorrect: false, emoji: "❌" }
+                { text: "Her", isCorrect: true },
+                { text: "His", isCorrect: false },
+                { text: "Your", isCorrect: false },
+                { text: "Their", isCorrect: false }
             ],
             explanation: "Para indicar posse referente a ela (sister / she), usamos o pronome possessivo 'Her'."
         },
@@ -1904,10 +1904,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual preposição de tempo é usada com horários específicos? 'The meeting is ___ 3 PM.'",
             english: "The meeting is ___ 3 PM.", audioText: "The meeting is at 3 PM",
             options: [
-                { text: "at", isCorrect: true, emoji: "⏰" },
-                { text: "in", isCorrect: false, emoji: "❌" },
-                { text: "on", isCorrect: false, emoji: "❌" },
-                { text: "by on", isCorrect: false, emoji: "❌" }
+                { text: "at", isCorrect: true },
+                { text: "in", isCorrect: false },
+                { text: "on", isCorrect: false },
+                { text: "by on", isCorrect: false }
             ],
             explanation: "Para horários exatos e específicos do relógio usamos a preposição 'at'."
         },
@@ -1916,10 +1916,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Como formar a negação correta: 'They ___ spicy food.'",
             english: "They ___ spicy food.", audioText: "They do not like spicy food",
             options: [
-                { text: "don't like", isCorrect: true, emoji: "🌶️" },
-                { text: "doesn't like", isCorrect: false, emoji: "❌" },
-                { text: "not like", isCorrect: false, emoji: "❌" },
-                { text: "aren't like", isCorrect: false, emoji: "❌" }
+                { text: "don't like", isCorrect: true },
+                { text: "doesn't like", isCorrect: false },
+                { text: "not like", isCorrect: false },
+                { text: "aren't like", isCorrect: false }
             ],
             explanation: "Com o pronome 'They' no Present Simple, o verbo auxiliar negativo é 'don't' (do not)."
         },
@@ -1928,10 +1928,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete com a cor correta: 'The sky is clear and ___ on a sunny day.'",
             english: "The sky is clear and ___.", audioText: "The sky is clear and blue",
             options: [
-                { text: "blue", isCorrect: true, emoji: "☀️" },
-                { text: "green", isCorrect: false, emoji: "❌" },
-                { text: "red", isCorrect: false, emoji: "❌" },
-                { text: "yellow", isCorrect: false, emoji: "❌" }
+                { text: "blue", isCorrect: true },
+                { text: "green", isCorrect: false },
+                { text: "red", isCorrect: false },
+                { text: "yellow", isCorrect: false }
             ],
             explanation: "'Blue' significa azul."
         },
@@ -1940,10 +1940,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a pergunta: '___ is your English teacher?' - 'Mr. Johnson.'",
             english: "___ is your English teacher?", audioText: "Who is your English teacher?",
             options: [
-                { text: "Who", isCorrect: true, emoji: "👨‍🏫" },
-                { text: "Where", isCorrect: false, emoji: "❌" },
-                { text: "When", isCorrect: false, emoji: "❌" },
-                { text: "What time", isCorrect: false, emoji: "❌" }
+                { text: "Who", isCorrect: true },
+                { text: "Where", isCorrect: false },
+                { text: "When", isCorrect: false },
+                { text: "What time", isCorrect: false }
             ],
             explanation: "'Who' (Quem) é a palavra interrogativa usada para perguntar sobre pessoas."
         },
@@ -1954,10 +1954,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete: 'While I ___ dinner, the doorbell suddenly rang.'",
             english: "While I ___ dinner, the doorbell rang.", audioText: "While I was cooking dinner, the doorbell rang",
             options: [
-                { text: "was cooking", isCorrect: true, emoji: "🍳" },
-                { text: "cooked", isCorrect: false, emoji: "❌" },
-                { text: "have cooked", isCorrect: false, emoji: "❌" },
-                { text: "had been cook", isCorrect: false, emoji: "❌" }
+                { text: "was cooking", isCorrect: true },
+                { text: "cooked", isCorrect: false },
+                { text: "have cooked", isCorrect: false },
+                { text: "had been cook", isCorrect: false }
             ],
             explanation: "A ação contínua em progresso no passado quando interrompida usa o Past Continuous: 'was cooking'."
         },
@@ -1966,10 +1966,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual opção expressa uma ação que começou no passado e continua no presente?",
             english: "She has lived in London for five years.", audioText: "She has lived in London for five years",
             options: [
-                { text: "She has lived in London for five years.", isCorrect: true, emoji: "🇬🇧" },
-                { text: "She lived in London five years ago.", isCorrect: false, emoji: "❌" },
-                { text: "She was living in London for five years.", isCorrect: false, emoji: "❌" },
-                { text: "She had lived in London since five years.", isCorrect: false, emoji: "❌" }
+                { text: "She has lived in London for five years.", isCorrect: true },
+                { text: "She lived in London five years ago.", isCorrect: false },
+                { text: "She was living in London for five years.", isCorrect: false },
+                { text: "She had lived in London since five years.", isCorrect: false }
             ],
             explanation: "O Present Perfect ('has lived ... for five years') indica conexão com o momento presente."
         },
@@ -1978,10 +1978,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete com a obrigação legal: 'Drivers ___ stop when the traffic light is red.'",
             english: "Drivers ___ stop at red lights.", audioText: "Drivers must stop when the traffic light is red",
             options: [
-                { text: "must", isCorrect: true, emoji: "🚦" },
-                { text: "might", isCorrect: false, emoji: "❌" },
-                { text: "could", isCorrect: false, emoji: "❌" },
-                { text: "would", isCorrect: false, emoji: "❌" }
+                { text: "must", isCorrect: true },
+                { text: "might", isCorrect: false },
+                { text: "could", isCorrect: false },
+                { text: "would", isCorrect: false }
             ],
             explanation: "'Must' expressa forte obrigação, regra ou exigência legal mandatória."
         },
@@ -1990,10 +1990,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual forma comparativa está correta? 'This modern laptop is ___ than the old desktop.'",
             english: "This laptop is ___ than the old one.", audioText: "This laptop is more expensive than the old one",
             options: [
-                { text: "more expensive", isCorrect: true, emoji: "💻" },
-                { text: "expensiver", isCorrect: false, emoji: "❌" },
-                { text: "most expensive", isCorrect: false, emoji: "❌" },
-                { text: "as expensive than", isCorrect: false, emoji: "❌" }
+                { text: "more expensive", isCorrect: true },
+                { text: "expensiver", isCorrect: false },
+                { text: "most expensive", isCorrect: false },
+                { text: "as expensive than", isCorrect: false }
             ],
             explanation: "Para adjetivos com três ou mais sílabas ('expensive'), o comparativo de superioridade usa 'more'."
         },
@@ -2002,10 +2002,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a frase: 'The professor walked ___ the lecture hall and began speaking.'",
             english: "The professor walked ___ the hall.", audioText: "The professor walked into the lecture hall",
             options: [
-                { text: "into", isCorrect: true, emoji: "🚪" },
-                { text: "onto", isCorrect: false, emoji: "❌" },
-                { text: "inside of to", isCorrect: false, emoji: "❌" },
-                { text: "towards in", isCorrect: false, emoji: "❌" }
+                { text: "into", isCorrect: true },
+                { text: "onto", isCorrect: false },
+                { text: "inside of to", isCorrect: false },
+                { text: "towards in", isCorrect: false }
             ],
             explanation: "'Into' indica movimento de fora para dentro de um espaço tridimensional."
         },
@@ -2014,10 +2014,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete: 'If the weather is good tomorrow, we ___ our friends at the beach.'",
             english: "If the weather is good, we ___ our friends.", audioText: "If the weather is good tomorrow, we will meet our friends",
             options: [
-                { text: "will meet", isCorrect: true, emoji: "🏖️" },
-                { text: "would meet", isCorrect: false, emoji: "❌" },
-                { text: "met", isCorrect: false, emoji: "❌" },
-                { text: "have met", isCorrect: false, emoji: "❌" }
+                { text: "will meet", isCorrect: true },
+                { text: "would meet", isCorrect: false },
+                { text: "met", isCorrect: false },
+                { text: "have met", isCorrect: false }
             ],
             explanation: "A First Conditional (condição real no futuro) segue a estrutura: If + Present Simple, will + verbo base."
         },
@@ -2026,10 +2026,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "O que significa o phrasal verb 'give up' na frase: 'Never give up on your goals'?",
             english: "Never give up on your goals.", audioText: "Never give up on your goals",
             options: [
-                { text: "Desistir", isCorrect: true, emoji: "💪" },
-                { text: "Continuar", isCorrect: false, emoji: "❌" },
-                { text: "Acelerar", isCorrect: false, emoji: "❌" },
-                { text: "Esquecer", isCorrect: false, emoji: "❌" }
+                { text: "Desistir", isCorrect: true },
+                { text: "Continuar", isCorrect: false },
+                { text: "Acelerar", isCorrect: false },
+                { text: "Esquecer", isCorrect: false }
             ],
             explanation: "'Give up' é um phrasal verb consagrado que significa abandonar ou desistir de algo."
         },
@@ -2038,10 +2038,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a frase: 'He studied tirelessly for weeks; ___, he did not achieve the top grade.'",
             english: "He studied tirelessly; ___, he didn't win.", audioText: "He studied tirelessly, however, he did not achieve the top grade",
             options: [
-                { text: "however", isCorrect: true, emoji: "📖" },
-                { text: "because", isCorrect: false, emoji: "❌" },
-                { text: "furthermore", isCorrect: false, emoji: "❌" },
-                { text: "so that", isCorrect: false, emoji: "❌" }
+                { text: "however", isCorrect: true },
+                { text: "because", isCorrect: false },
+                { text: "furthermore", isCorrect: false },
+                { text: "so that", isCorrect: false }
             ],
             explanation: "'However' (no entanto/contudo) expressa forte contraste entre duas orações independentes."
         },
@@ -2050,10 +2050,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete: 'When I lived in the countryside, I ___ swim in the river every summer.'",
             english: "I ___ swim in the river every summer.", audioText: "I used to swim in the river every summer",
             options: [
-                { text: "used to", isCorrect: true, emoji: "🏊" },
-                { text: "am used to", isCorrect: false, emoji: "❌" },
-                { text: "use to", isCorrect: false, emoji: "❌" },
-                { text: "was used", isCorrect: false, emoji: "❌" }
+                { text: "used to", isCorrect: true },
+                { text: "am used to", isCorrect: false },
+                { text: "use to", isCorrect: false },
+                { text: "was used", isCorrect: false }
             ],
             explanation: "'Used to + verbo' descreve hábitos ou estados que eram frequentes no passado, mas não ocorrem mais."
         },
@@ -2062,10 +2062,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a question tag: 'You have visited New York before, ___?'",
             english: "You have visited New York before, ___?", audioText: "You have visited New York before, haven't you?",
             options: [
-                { text: "haven't you", isCorrect: true, emoji: "🗽" },
-                { text: "didn't you", isCorrect: false, emoji: "❌" },
-                { text: "don't you", isCorrect: false, emoji: "❌" },
-                { text: "hadn't you", isCorrect: false, emoji: "❌" }
+                { text: "haven't you", isCorrect: true },
+                { text: "didn't you", isCorrect: false },
+                { text: "don't you", isCorrect: false },
+                { text: "hadn't you", isCorrect: false }
             ],
             explanation: "Para orações afirmativas no Present Perfect com 'have', a question tag correspondente é 'haven't you?'."
         },
@@ -2074,10 +2074,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a voz passiva: 'The Mona Lisa ___ painted in the early 16th century.'",
             english: "The Mona Lisa ___ painted in the 16th century.", audioText: "The Mona Lisa was painted in the early 16th century",
             options: [
-                { text: "was", isCorrect: true, emoji: "🎨" },
-                { text: "has", isCorrect: false, emoji: "❌" },
-                { text: "did", isCorrect: false, emoji: "❌" },
-                { text: "been", isCorrect: false, emoji: "❌" }
+                { text: "was", isCorrect: true },
+                { text: "has", isCorrect: false },
+                { text: "did", isCorrect: false },
+                { text: "been", isCorrect: false }
             ],
             explanation: "A voz passiva no Simple Past para sujeito singular é formada por 'was + particípio passado'."
         },
@@ -2086,10 +2086,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete: 'We don't have ___ time left before the flight boards.'",
             english: "We don't have ___ time left.", audioText: "We do not have much time left before the flight boards",
             options: [
-                { text: "much", isCorrect: true, emoji: "✈️" },
-                { text: "many", isCorrect: false, emoji: "❌" },
-                { text: "few", isCorrect: false, emoji: "❌" },
-                { text: "a lot", isCorrect: false, emoji: "❌" }
+                { text: "much", isCorrect: true },
+                { text: "many", isCorrect: false },
+                { text: "few", isCorrect: false },
+                { text: "a lot", isCorrect: false }
             ],
             explanation: "'Time' no sentido de tempo contínuo é incontável; portanto, em frases negativas usa-se 'much'."
         },
@@ -2100,10 +2100,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete: 'If I ___ about the heavy storm, I would not have taken the mountain pass.'",
             english: "If I ___ about the storm, I would not have left.", audioText: "If I had known about the heavy storm, I would not have taken the mountain pass",
             options: [
-                { text: "had known", isCorrect: true, emoji: "🏔️" },
-                { text: "knew", isCorrect: false, emoji: "❌" },
-                { text: "have known", isCorrect: false, emoji: "❌" },
-                { text: "would know", isCorrect: false, emoji: "❌" }
+                { text: "had known", isCorrect: true },
+                { text: "knew", isCorrect: false },
+                { text: "have known", isCorrect: false },
+                { text: "would know", isCorrect: false }
             ],
             explanation: "A 3ª Condicional (passado hipotético) usa 'If + Past Perfect (had + particípio), would have + particípio'."
         },
@@ -2112,10 +2112,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Escolha a estrutura formal com inversão adverbial correta:",
             english: "Seldom have I witnessed such dedication.", audioText: "Seldom have I witnessed such extraordinary dedication",
             options: [
-                { text: "Seldom have I witnessed such dedication.", isCorrect: true, emoji: "🌟" },
-                { text: "Seldom I have witnessed such dedication.", isCorrect: false, emoji: "❌" },
-                { text: "Seldom witnessed I such dedication.", isCorrect: false, emoji: "❌" },
-                { text: "Seldom I witnessed such dedication.", isCorrect: false, emoji: "❌" }
+                { text: "Seldom have I witnessed such dedication.", isCorrect: true },
+                { text: "Seldom I have witnessed such dedication.", isCorrect: false },
+                { text: "Seldom witnessed I such dedication.", isCorrect: false },
+                { text: "Seldom I witnessed such dedication.", isCorrect: false }
             ],
             explanation: "Advérbios negativos ou restritivos no início da frase exigem inversão sujeito-auxiliar: 'Seldom have I'."
         },
@@ -2124,10 +2124,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete o condicional misto: 'If she had accepted that prestigious job last year, she ___ in New York today.'",
             english: "If she had taken the job, she ___ in New York today.", audioText: "If she had accepted that job last year, she would be living in New York today",
             options: [
-                { text: "would be living", isCorrect: true, emoji: "🏙️" },
-                { text: "would have lived", isCorrect: false, emoji: "❌" },
-                { text: "will live", isCorrect: false, emoji: "❌" },
-                { text: "had lived", isCorrect: false, emoji: "❌" }
+                { text: "would be living", isCorrect: true },
+                { text: "would have lived", isCorrect: false },
+                { text: "will live", isCorrect: false },
+                { text: "had lived", isCorrect: false }
             ],
             explanation: "Condicional misto: condição hipotética no passado ('had accepted') com consequência no presente ('would be living today')."
         },
@@ -2136,10 +2136,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual é o sentido exato do idioma inglês 'to bite the bullet'?",
             english: "He decided to bite the bullet and confess.", audioText: "He decided to bite the bullet and face the consequences",
             options: [
-                { text: "Encarar uma situação inevitável e difícil com coragem", isCorrect: true, emoji: "🎯" },
-                { text: "Atacar fisicamente alguém em um conflito", isCorrect: false, emoji: "❌" },
-                { text: "Cometer um erro acidental por distração", isCorrect: false, emoji: "❌" },
-                { text: "Adiar indefinidamente uma decisão importante", isCorrect: false, emoji: "❌" }
+                { text: "Encarar uma situação inevitável e difícil com coragem", isCorrect: true },
+                { text: "Atacar fisicamente alguém em um conflito", isCorrect: false },
+                { text: "Cometer um erro acidental por distração", isCorrect: false },
+                { text: "Adiar indefinidamente uma decisão importante", isCorrect: false }
             ],
             explanation: "'Bite the bullet' significa aceitar e suportar com firmeza uma situação dolorosa ou desafiadora."
         },
@@ -2148,10 +2148,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete com o subjuntivo mandatório: 'The board insisted that the CEO ___ immediate action.'",
             english: "The board insisted that he ___ action.", audioText: "The board insisted that the CEO take immediate action",
             options: [
-                { text: "take", isCorrect: true, emoji: "💼" },
-                { text: "takes", isCorrect: false, emoji: "❌" },
-                { text: "took", isCorrect: false, emoji: "❌" },
-                { text: "will take", isCorrect: false, emoji: "❌" }
+                { text: "take", isCorrect: true },
+                { text: "takes", isCorrect: false },
+                { text: "took", isCorrect: false },
+                { text: "will take", isCorrect: false }
             ],
             explanation: "Verbos de exigência/recomendação ('insist that', 'demand that') regem o Present Subjunctive com verbo base ('take')."
         },
@@ -2160,10 +2160,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a regência preposicional: 'His arguments are entirely compatible ___ our core strategic objectives.'",
             english: "Compatible ___ our objectives.", audioText: "His arguments are entirely compatible with our core strategic objectives",
             options: [
-                { text: "with", isCorrect: true, emoji: "🎯" },
-                { text: "to", isCorrect: false, emoji: "❌" },
-                { text: "for", isCorrect: false, emoji: "❌" },
-                { text: "about", isCorrect: false, emoji: "❌" }
+                { text: "with", isCorrect: true },
+                { text: "to", isCorrect: false },
+                { text: "for", isCorrect: false },
+                { text: "about", isCorrect: false }
             ],
             explanation: "O adjetivo 'compatible' rege a preposição 'with' (compatível com)."
         },
@@ -2172,10 +2172,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete com o phrasal verb que significa adiar/cancelar: 'The committee decided to call ___ the symposium due to logistical hurdles.'",
             english: "They decided to call ___ the event.", audioText: "The committee decided to call off the symposium due to logistical hurdles",
             options: [
-                { text: "off", isCorrect: true, emoji: "🛑" },
-                { text: "out", isCorrect: false, emoji: "❌" },
-                { text: "up", isCorrect: false, emoji: "❌" },
-                { text: "away", isCorrect: false, emoji: "❌" }
+                { text: "off", isCorrect: true },
+                { text: "out", isCorrect: false },
+                { text: "up", isCorrect: false },
+                { text: "away", isCorrect: false }
             ],
             explanation: "'Call off' significa expressamente cancelar um evento ou compromisso agendado."
         },
@@ -2184,10 +2184,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual adjetivo melhor completa o sentido de 'irrefutável / persuasivo': 'She presented a ___ case that won over the skeptics.'",
             english: "She presented a ___ case.", audioText: "She presented a compelling case that won over the skeptics",
             options: [
-                { text: "compelling", isCorrect: true, emoji: "💡" },
-                { text: "mundane", isCorrect: false, emoji: "❌" },
-                { text: "superficial", isCorrect: false, emoji: "❌" },
-                { text: "tedious", isCorrect: false, emoji: "❌" }
+                { text: "compelling", isCorrect: true },
+                { text: "mundane", isCorrect: false },
+                { text: "superficial", isCorrect: false },
+                { text: "tedious", isCorrect: false }
             ],
             explanation: "'Compelling' significa altamente convincente, persuasivo e irresistível à razão."
         },
@@ -2196,10 +2196,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Qual expressão formal substitui adequadamente: 'We turned down their initial buyout proposal'?",
             english: "We rejected their initial buyout proposal.", audioText: "We declined their initial buyout proposal",
             options: [
-                { text: "declined", isCorrect: true, emoji: "🤝" },
-                { text: "put away", isCorrect: false, emoji: "❌" },
-                { text: "backed down", isCorrect: false, emoji: "❌" },
-                { text: "gave in", isCorrect: false, emoji: "❌" }
+                { text: "declined", isCorrect: true },
+                { text: "put away", isCorrect: false },
+                { text: "backed down", isCorrect: false },
+                { text: "gave in", isCorrect: false }
             ],
             explanation: "'To decline a proposal' é a formulação formal mais refinada em inglês corporativo para recusar uma oferta."
         },
@@ -2208,10 +2208,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a oração participial perfeita: '___ all necessary qualifications, Dr. Evans was granted full tenure.'",
             english: "___ all qualifications, she was hired.", audioText: "Having fulfilled all necessary qualifications, Dr. Evans was granted full tenure",
             options: [
-                { text: "Having fulfilled", isCorrect: true, emoji: "🎓" },
-                { text: "Fulfilled having", isCorrect: false, emoji: "❌" },
-                { text: "To fulfill having", isCorrect: false, emoji: "❌" },
-                { text: "On fulfilling had", isCorrect: false, emoji: "❌" }
+                { text: "Having fulfilled", isCorrect: true },
+                { text: "Fulfilled having", isCorrect: false },
+                { text: "To fulfill having", isCorrect: false },
+                { text: "On fulfilling had", isCorrect: false }
             ],
             explanation: "'Having fulfilled' (tendo cumprido) expressa uma oração participial que antecede cronologicamente a oração principal."
         },
@@ -2220,10 +2220,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete a estrutura de ênfase (Cleft sentence): 'It was Maria ___ spearheaded the revolutionary clinical research.'",
             english: "It was Maria ___ spearheaded the research.", audioText: "It was Maria who spearheaded the revolutionary clinical research",
             options: [
-                { text: "who", isCorrect: true, emoji: "🔬" },
-                { text: "which", isCorrect: false, emoji: "❌" },
-                { text: "what", isCorrect: false, emoji: "❌" },
-                { text: "whose", isCorrect: false, emoji: "❌" }
+                { text: "who", isCorrect: true },
+                { text: "which", isCorrect: false },
+                { text: "what", isCorrect: false },
+                { text: "whose", isCorrect: false }
             ],
             explanation: "Na Cleft sentence enfatizando uma pessoa ('It was Maria...'), utiliza-se 'who' ou 'that'."
         },
@@ -2232,10 +2232,10 @@ SCHEMA DE RESPOSTA ESPERADO:
             question: "Complete com a colocação idiomática natural: 'The breakthrough discovery made a ___ impact on the scientific community.'",
             english: "The discovery made a ___ impact.", audioText: "The breakthrough discovery made a profound impact on the scientific community",
             options: [
-                { text: "profound", isCorrect: true, emoji: "🧬" },
-                { text: "deeply", isCorrect: false, emoji: "❌" },
-                { text: "steep", isCorrect: false, emoji: "❌" },
-                { text: "dense", isCorrect: false, emoji: "❌" }
+                { text: "profound", isCorrect: true },
+                { text: "deeply", isCorrect: false },
+                { text: "steep", isCorrect: false },
+                { text: "dense", isCorrect: false }
             ],
             explanation: "'Profound impact' é a colocação léxica padrão de alto nível para 'impacto profundo e duradouro'."
         }
@@ -2344,10 +2344,10 @@ SCHEMA DE RESPOSTA ESPERADO:
 
             <div id="placement-options-grid" class="grid grid-cols-1 gap-3 w-full">
                 ${q.options.map((opt, idx) => `
-                    <div id="placement-opt-${idx}" onclick="selectPlacementOption(${idx})" class="option-card flex items-center justify-between p-4 sm:p-5 text-left text-base sm:text-lg">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">${opt.emoji || '💬'}</span>
-                            <span class="font-extrabold text-gray-800">${opt.text}</span>
+                    <div id="placement-opt-${idx}" onclick="selectPlacementOption(${idx})" class="option-card flex items-center justify-between p-4 sm:p-5 text-left text-base sm:text-lg cursor-pointer hover:border-blue-400 transition-all">
+                        <div class="flex items-center gap-3.5">
+                            <span class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 font-black flex items-center justify-center text-sm border border-gray-200 opt-letter shadow-sm">${['A','B','C','D'][idx] || (idx + 1)}</span>
+                            <span class="font-extrabold text-gray-800 text-base sm:text-lg">${opt.text}</span>
                         </div>
                         <div class="w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center font-bold text-xs text-transparent indicator-circle">✓</div>
                     </div>
@@ -2428,12 +2428,30 @@ SCHEMA DE RESPOSTA ESPERADO:
         q.options.forEach((opt, idx) => {
             const card = document.getElementById(`placement-opt-${idx}`);
             if (!card) return;
+            const letter = card.querySelector('.opt-letter');
+            const circle = card.querySelector('.indicator-circle');
             if (opt.isCorrect) {
                 card.style.borderColor = 'var(--primary)';
                 card.style.background = '#e8f8d8';
+                if (letter) {
+                    letter.className = 'w-8 h-8 rounded-xl bg-green-500 text-white font-black flex items-center justify-center text-sm border border-green-600 opt-letter shadow-sm';
+                    letter.innerText = '✓';
+                }
+                if (circle) {
+                    circle.className = 'w-6 h-6 rounded-full border-2 border-green-500 bg-green-500 text-white flex items-center justify-center font-bold text-xs indicator-circle';
+                    circle.innerText = '✓';
+                }
             } else if (idx === placementSelectedOption && !isCorrect) {
                 card.style.borderColor = 'var(--danger)';
                 card.style.background = '#ffebee';
+                if (letter) {
+                    letter.className = 'w-8 h-8 rounded-xl bg-red-500 text-white font-black flex items-center justify-center text-sm border border-red-600 opt-letter shadow-sm';
+                    letter.innerText = '✕';
+                }
+                if (circle) {
+                    circle.className = 'w-6 h-6 rounded-full border-2 border-red-500 bg-red-500 text-white flex items-center justify-center font-bold text-xs indicator-circle';
+                    circle.innerText = '✕';
+                }
             }
         });
 
