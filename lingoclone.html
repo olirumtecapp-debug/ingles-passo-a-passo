@@ -2480,7 +2480,19 @@
     // ==========================================
     // 5. AJUSTAR PREFERÊNCIAS DO PERFIL
     // ==========================================
+    
+    function openAdminModalDirect() {
+        if (adminState && adminState.isLoggedIn) {
+            updateVipUI();
+            renderAdmCoupons();
+            openModal('modal-admin-manager');
+        } else {
+            openModal('modal-admin-login');
+        }
+    }
+
     function openPreferencesModal() {
+        updateVipUI();
         document.getElementById('pref-daily-goal').value = String(userData.onboarding?.dailyGoal || 10);
         
         const curReasons = userData.onboarding?.reasons || [];
