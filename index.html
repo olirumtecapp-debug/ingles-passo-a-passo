@@ -1425,8 +1425,12 @@
 
         <!-- Ações Inferiores: Confirmação Automática & Cupom -->
         <div class="flex flex-col gap-1.5">
-            <button onclick="grantModuleAccess(currentSelectedModule || 'combo')" class="btn-3d bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-3 text-xs font-black rounded-xl cursor-pointer shadow-xs flex items-center justify-center gap-1.5">
-                <span>✨ Confirmar Pagamento Automático</span>
+            <div id="pix-student-status-box" class="flex items-center justify-center gap-2 py-2 px-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-800 text-[11px] font-bold">
+                <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                <span>Aguardando recebimento via PIX...</span>
+            </div>
+            <button id="btn-admin-simulate-pix" onclick="grantModuleAccess(currentSelectedModule || 'combo')" class="hidden btn-3d bg-purple-600 hover:bg-purple-700 text-white py-1.5 px-3 text-[11px] font-black rounded-xl cursor-pointer shadow-xs flex items-center justify-center gap-1.5">
+                <span>👑 Simular Aprovação PIX (Apenas ADM)</span>
             </button>
             <button onclick="openModal('modal-vip-store'); closeModal('modal-pix-checkout');" class="btn-3d bg-gray-100 hover:bg-gray-200 text-gray-700 py-1 px-2 text-[10px] font-bold flex items-center justify-center gap-1 cursor-pointer rounded-xl">
                 <span>🎟️ Resgatar Cupom</span>
@@ -2291,7 +2295,8 @@
             'nav-desktop-editor',
             'nav-mobile-creator',
             'nav-mobile-editor',
-            'sidebar-admin-badge'
+            'sidebar-admin-badge',
+            'btn-admin-simulate-pix'
         ];
         adminElementIds.forEach(id => {
             const el = document.getElementById(id);
@@ -2564,6 +2569,17 @@
     }
 
     function openPixCheckoutModal() {
+        // Mostra botão de simulação apenas se for Administrador
+        const simBtn = document.getElementById('btn-admin-simulate-pix');
+        if (simBtn) {
+            if (typeof isAdminAuthenticated === 'function' && isAdminAuthenticated()) {
+                simBtn.classList.remove('hidden');
+                simBtn.style.display = 'flex';
+            } else {
+                simBtn.classList.add('hidden');
+                simBtn.style.display = 'none';
+            }
+        }
         selectPaymentModule(currentSelectedModule || 'combo');
         openModal('modal-pix-checkout');
     }
