@@ -994,20 +994,24 @@
 
 <!-- Modal: Seleção / Troca de Idioma -->
 <div id="modal-language-selector" class="modal-overlay hidden">
-    <div class="modal-content max-w-md p-6">
-        <h3 class="text-xl font-black text-gray-900 mb-1 flex items-center gap-2">
-            <span>🌎</span> Selecionar Idioma
-        </h3>
-        <p class="text-xs text-gray-500 font-bold mb-5">Escolha o idioma para estudar:</p>
+    <div class="modal-content max-w-md p-6 text-left">
+        <div class="flex items-center justify-between pb-3 border-b border-gray-100 mb-4">
+            <h3 class="text-xl font-black text-gray-900 flex items-center gap-2">
+                <span>🌎</span> Selecionar Idioma
+            </h3>
+            <button onclick="closeModal('modal-language-selector')" class="text-gray-400 hover:text-gray-600 text-xl font-bold p-1">✕</button>
+        </div>
+        <p class="text-xs text-gray-500 font-bold mb-4">Escolha o idioma que você deseja estudar ou praticar:</p>
 
-        <div class="flex flex-col gap-3 mb-6">
-            <div onclick="setActiveLanguage('en')" class="selectable-card selected">
-                <div class="flex items-center gap-3.5">
-                    <span class="text-3xl">🇺🇸</span>
-                    <div>
-                        <div class="font-black text-gray-900 text-sm">Inglês</div>
-                        <div class="text-xs font-bold text-gray-500">180 aulas • Progresso ativo</div>
-                    </div>
+        <div id="language-options-container" class="flex flex-col gap-3 mb-6">
+            <!-- As opções de idioma são renderizadas dinamicamente pela função renderLanguageModalOptions() -->
+        </div>
+
+        <button onclick="closeModal('modal-language-selector')" class="btn-3d btn-outline w-full p-3 text-sm">
+            Fechar
+        </button>
+    </div>
+</div>
                 </div>
                 <span class="text-xs font-black text-blue-600">✓ Ativo</span>
             </div>
@@ -2027,21 +2031,21 @@
             const count = courseDatabase.filter(l => (l.language || "en") === lang.id).length;
 
             return `
-                <div onclick="setActiveLanguage('${lang.id}')" class="border-2 p-3.5 rounded-2xl cursor-pointer transition-all flex items-center justify-between group ${isActive ? 'border-blue-500 bg-blue-50/70 shadow-xs ring-2 ring-blue-400/20' : 'border-gray-200 hover:border-blue-300 hover:bg-gray-50'}">
-                    <div class="flex items-center gap-3">
+                <div onclick="setActiveLanguage('${lang.id}')" class="border-2 p-4 rounded-2xl cursor-pointer transition-all flex items-center justify-between group ${isActive ? 'border-blue-500 bg-blue-50/80 shadow-md ring-2 ring-blue-400/20' : 'border-gray-200 hover:border-blue-300 hover:bg-gray-50'}">
+                    <div class="flex items-center gap-3.5">
                         <span class="text-3xl">${lang.flag}</span>
                         <div class="text-left">
-                            <div class="font-black text-gray-900 text-sm flex items-center gap-1.5">
+                            <div class="font-black text-gray-900 text-base flex items-center gap-2">
                                 <span>${lang.name}</span>
-                                <span class="text-[11px] font-bold text-gray-400 font-sans">(${lang.nativeName})</span>
+                                <span class="text-xs font-bold text-gray-400 font-sans">(${lang.nativeName})</span>
                             </div>
-                            <div class="text-[11px] font-bold ${isActive ? 'text-blue-600' : 'text-gray-500'} mt-0.5">
-                                ${count} ${count === 1 ? 'aula' : 'aulas'} • ${isActive ? 'Em estudo' : (count > 0 ? 'Disponível' : 'Pronto para criar')}
+                            <div class="text-xs font-bold ${isActive ? 'text-blue-600' : 'text-gray-500'} mt-0.5">
+                                ${count} ${count === 1 ? 'aula' : 'aulas'} • ${isActive ? 'Curso Ativo' : (count > 0 ? 'Disponível' : 'Pronto para estudar')}
                             </div>
                         </div>
                     </div>
                     <div>
-                        ${isActive ? '<span class="text-xs font-black text-blue-600 bg-white border-2 border-blue-200 px-2.5 py-1 rounded-xl shadow-xs">✓ Ativo</span>' : '<span class="text-xs font-black text-gray-600 bg-white border border-gray-200 px-2.5 py-1 rounded-xl group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">Trocar</span>'}
+                        ${isActive ? '<span class="text-xs font-black text-blue-600 bg-white border-2 border-blue-200 px-3 py-1.5 rounded-xl shadow-xs">✓ Ativo</span>' : '<span class="text-xs font-black text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-xl group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">Selecionar</span>'}
                     </div>
                 </div>
             `;
