@@ -1558,12 +1558,15 @@
         updateLanguageUI();
         switchTab('learn');
 
-        // Abre Onboarding se o usuário ainda não completou
-        if (!userData.onboarding?.completed) {
+        const hasProgress = (userData.xp > 0) || (userData.progressByLanguage?.[userData.learningLanguage]?.completedLessons?.length > 0) || !!userData.onboarding?.completed;
+        const onboardingEl = document.getElementById('modal-onboarding');
+
+        if (!hasProgress) {
             startOnboardingFlow();
+        } else {
+            if (onboardingEl) onboardingEl.classList.add('hidden');
         }
     }
-
     function loadData() {
         const savedData = localStorage.getItem('elevate_user_v2') || localStorage.getItem('elevate_user_v1') || localStorage.getItem('lingoclone_user_v5');
         if (savedData) {
@@ -1584,6 +1587,8 @@
                     enPlacement = parsed.placementTest;
                 }
 
+                const hasExistingProgress = (parsed.xp > 0) || (enLessons.length > 0) || (parsed.gems > 0) || (parsed.streak > 1) || !!parsed.welcomed;
+
                 userData = {
                     xp: parsed.xp || 0,
                     gems: parsed.gems || 0,
@@ -1591,8 +1596,8 @@
                     streak: parsed.streak || 1,
                     learningLanguage: parsed.learningLanguage || "en",
                     onboarding: parsed.onboarding || {
-                        completed: !!parsed.welcomed || !!parsed.onboarding?.completed,
-                        learningLanguage: "en",
+                        completed: hasExistingProgress,
+                        learningLanguage: parsed.learningLanguage || "en",
                         reasons: ["Viagens", "Carreira"],
                         dailyGoal: 10,
                         selfAssessment: 1,
@@ -1607,17 +1612,19 @@
                         es: parsed.placementByLanguage?.es || null
                     }
                 };
+
+                if (hasExistingProgress) {
+                    userData.onboarding.completed = true;
+                }
             } catch(e) {
                 console.error("Erro na carga do perfil:", e);
             }
         }
 
-        // Garante que o idioma selecionado seja válido
         if (!userData.learningLanguage || !LANGUAGES[userData.learningLanguage]) {
             userData.learningLanguage = "en";
         }
         
-        // Garante integridade do banco de aulas (mínimo 180 lições padrão)
         const savedCourse = localStorage.getItem('elevate_course_v2') || localStorage.getItem('elevate_course_v1') || localStorage.getItem('lingoclone_course_v5');
         if (savedCourse) {
             try {
@@ -1635,7 +1642,6 @@
             courseDatabase = DEFAULT_180_LESSONS.slice();
         }
 
-        // Assegura campo language em todas as aulas
         courseDatabase = courseDatabase.map(l => ({ ...l, language: l.language || "en" }));
     }
     function saveData() {
