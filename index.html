@@ -428,7 +428,14 @@
             max-width: 440px;
             max-height: 92vh;
             overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
             box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        }
+        .modal-content::-webkit-scrollbar {
+            display: none;
+            width: 0;
+            height: 0;
         }
         .fullscreen-modal {
             position: fixed;
@@ -1945,32 +1952,32 @@
 
 <!-- Modal: Seletor de Seções / Níveis (Estilo Duolingo) -->
 <div id="modal-section-drawer" class="modal-overlay hidden" onclick="if(event.target===this) closeModal('modal-section-drawer')">
-    <div class="modal-content max-w-md w-full bg-white rounded-3xl p-4 sm:p-6 shadow-2xl border-2 border-gray-200 relative animate-scaleIn">
-        <!-- Header do Drawer -->
-        <div class="flex items-center justify-between pb-3 mb-3 border-b border-gray-100">
-            <div class="flex items-center gap-2.5">
-                <span class="text-2xl">🗺️</span>
+    <div class="modal-content max-w-sm sm:max-w-md w-full bg-white rounded-3xl p-3.5 sm:p-4 shadow-2xl border-2 border-gray-200 relative animate-scaleIn" style="max-height: 94dvh; overflow: hidden;">
+        <!-- Header do Drawer Compacto -->
+        <div class="flex items-center justify-between pb-2 mb-2 border-b border-gray-100">
+            <div class="flex items-center gap-2">
+                <span class="text-xl">🗺️</span>
                 <div>
-                    <h3 class="text-base sm:text-lg font-black text-gray-900 leading-tight">Mapa de Seções</h3>
-                    <p class="text-xs text-gray-500 font-bold">Alterne entre os níveis do seu curso</p>
+                    <h3 class="text-sm sm:text-base font-black text-gray-900 leading-tight">Mapa de Seções</h3>
+                    <p class="text-[10px] sm:text-xs text-gray-500 font-bold">Alterne entre os níveis do seu curso</p>
                 </div>
             </div>
-            <button onclick="closeModal('modal-section-drawer')" class="text-gray-400 hover:text-gray-600 p-1.5 rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <button onclick="closeModal('modal-section-drawer')" class="text-gray-400 hover:text-gray-600 p-1 rounded-full hover:bg-gray-100 transition-colors cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </div>
 
-        <!-- Lista Dinâmica de Níveis -->
-        <div id="section-drawer-list" class="space-y-2.5 mb-4">
+        <!-- Lista Dinâmica de Níveis Compacta -->
+        <div id="section-drawer-list" class="space-y-1.5 mb-2.5">
             <!-- Gerado via renderSectionDrawer() -->
         </div>
 
-        <!-- Dica / Teste de Nivelamento Rápido -->
-        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-3 flex items-center justify-between gap-3 text-xs">
-            <div class="text-blue-900 font-bold">
-                <span class="font-black">💡 Quer pular de nível?</span> Faça o teste de nivelamento rápido!
+        <!-- Dica / Teste de Nivelamento Rápido Compacto -->
+        <div class="bg-blue-50/80 border border-blue-200 rounded-xl p-2 sm:p-2.5 flex items-center justify-between gap-2 text-[10.5px]">
+            <div class="text-blue-900 font-bold leading-tight">
+                <span class="font-black">💡 Pular de nível?</span> Avaliação rápida!
             </div>
-            <button onclick="closeModal('modal-section-drawer'); openPlacementIntroModal();" class="btn-3d bg-blue-600 text-white px-3 py-1.5 text-[11px] font-black rounded-xl shrink-0 cursor-pointer">
+            <button onclick="closeModal('modal-section-drawer'); openPlacementIntroModal();" class="btn-3d bg-blue-600 text-white px-2.5 py-1 text-[10px] font-black rounded-lg shrink-0 cursor-pointer">
                 Testar ➔
             </button>
         </div>
@@ -4195,7 +4202,7 @@
             const m = meta[level];
 
             const card = document.createElement('div');
-            card.className = `p-3 sm:p-3.5 rounded-2xl border-2 transition-all ${
+            card.className = `p-2 sm:p-2.5 rounded-xl sm:rounded-2xl border-2 transition-all ${
                 isCurrent
                     ? `${m.activeClass} cursor-pointer`
                     : isUnlocked
@@ -4204,26 +4211,26 @@
             }`;
 
             card.innerHTML = `
-                <div class="flex items-center justify-between gap-3 mb-1.5">
+                <div class="flex items-center justify-between gap-2 mb-1">
                     <div class="flex items-center gap-2">
-                        <span class="text-xl">${m.icon}</span>
+                        <span class="text-base sm:text-lg">${m.icon}</span>
                         <div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-[10px] font-black uppercase tracking-wider text-gray-400">SEÇÃO ${m.num}</span>
-                                ${isCurrent ? '<span class="text-[9px] sm:text-[10px] font-black text-blue-600 bg-blue-100 px-1.5 py-0.5 rounded-md">ATUAL</span>' : ''}
+                            <div class="flex items-center gap-1.5">
+                                <span class="text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-gray-400">SEÇÃO ${m.num}</span>
+                                ${isCurrent ? '<span class="text-[8px] sm:text-[9px] font-black text-blue-600 bg-blue-100 px-1 py-0.2 rounded">ATUAL</span>' : ''}
                             </div>
-                            <div class="text-sm sm:text-base font-black text-gray-900 leading-tight">${m.title}</div>
+                            <div class="text-xs sm:text-sm font-black text-gray-900 leading-tight">${m.title}</div>
                         </div>
                     </div>
                     ${!isUnlocked 
-                        ? '<span class="text-[11px] font-black text-gray-500 flex items-center gap-1 bg-gray-200/80 px-2 py-1 rounded-lg">🔒 Bloqueado</span>' 
+                        ? '<span class="text-[10px] font-black text-gray-500 flex items-center gap-1 bg-gray-200/80 px-1.5 py-0.5 rounded-md">🔒 Bloqueado</span>' 
                         : progress === 100 
-                            ? '<span class="text-[11px] font-black text-emerald-700 flex items-center gap-1 bg-emerald-100 px-2 py-1 rounded-lg">✅ Concluído</span>' 
-                            : `<span class="text-[11px] font-black text-blue-600 bg-blue-50 px-2 py-1 rounded-lg border border-blue-200">${progress}%</span>`
+                            ? '<span class="text-[10px] font-black text-emerald-700 flex items-center gap-1 bg-emerald-100 px-1.5 py-0.5 rounded-md">✅ Concluído</span>' 
+                            : `<span class="text-[10px] font-black text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-md border border-blue-200">${progress}%</span>`
                     }
                 </div>
-                <p class="text-[11px] text-gray-500 font-bold mb-2">${m.desc}</p>
-                <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+                <p class="text-[10px] sm:text-[10.5px] leading-tight text-gray-500 font-bold mb-1.5">${m.desc}</p>
+                <div class="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden">
                     <div class="bg-blue-500 h-full rounded-full transition-all duration-300" style="width: ${progress}%"></div>
                 </div>
             `;
