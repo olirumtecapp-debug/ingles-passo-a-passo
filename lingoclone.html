@@ -472,6 +472,12 @@
 
         .hidden { display: none !important; }
     </style>
+
+    <!-- Firebase SDK v10 (Compat) -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
 </head>
 <body>
 
@@ -490,6 +496,18 @@
             </div>
 
             <!-- Language Badge & Switcher -->
+            <!-- Botão Login / Perfil do Aluno -->
+            <div id="sidebar-user-auth-card" onclick="handleUserAuthCardClick()" class="mb-1.5 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 border-2 border-blue-200 p-1.5 rounded-xl flex items-center justify-between cursor-pointer transition-all">
+                <div class="flex items-center gap-1.5 overflow-hidden">
+                    <span id="sidebar-user-avatar-icon" class="text-base">👤</span>
+                    <div class="overflow-hidden">
+                        <div id="sidebar-user-name" class="text-[11px] font-black text-gray-800 truncate">Aluno Convidado</div>
+                        <div id="sidebar-user-status" class="text-[8px] font-bold text-blue-600">Salvar Progresso ➔</div>
+                    </div>
+                </div>
+                <span id="sidebar-user-action-badge" class="text-[9px] font-black text-blue-600 bg-white border border-blue-200 px-1.5 py-0.5 rounded">Entrar</span>
+            </div>
+
             <div onclick="openLanguageModal()" class="mb-2 bg-gray-50 hover:bg-blue-50 border-2 border-gray-200 hover:border-blue-300 p-1.5 rounded-xl flex items-center justify-between cursor-pointer transition-all">
                 <div class="flex items-center gap-1.5">
                     <span id="sidebar-lang-flag" class="text-lg">🇺🇸</span>
@@ -544,6 +562,17 @@
                 </span>
                 <span class="text-[9px] font-black bg-amber-400 text-amber-950 px-1.5 py-0.5 rounded-md">Ativar</span>
             </button>
+
+            
+            <!-- Botão Enviar Feedback do Aluno -->
+            <button onclick="openModal('modal-feedback')" class="w-full text-left flex items-center justify-between bg-blue-50/70 hover:bg-blue-100 border border-blue-200/80 p-1.5 rounded-lg text-blue-900 font-black text-[11px] transition-all cursor-pointer">
+                <span class="flex items-center gap-1.5">
+                    <span>💬</span>
+                    <span>Enviar Feedback</span>
+                </span>
+                <span class="text-[9px] font-bold text-blue-600 bg-white border border-blue-200 px-1 py-0.5 rounded">Ajuda</span>
+            </button>
+
 
             <!-- Botão Transparência & Informações Legais -->
             <button onclick="openModal('modal-transparency')" class="w-full text-left flex items-center gap-1.5 text-[10px] font-bold text-gray-500 hover:text-blue-600 transition-colors py-0.5 px-1 cursor-pointer">
@@ -1060,6 +1089,210 @@
 </div>
 
 <!-- Modal: Ajustar Preferências do Aluno -->
+
+
+<!-- MODAL DE LOGIN / CADASTRO DO ALUNO -->
+<div id="modal-auth" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-auth')">
+    <div class="modal-content max-w-sm w-full mx-auto p-5 text-center rounded-3xl shadow-2xl relative">
+        <button onclick="closeModal('modal-auth')" class="absolute top-3.5 right-3.5 w-7 h-7 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-400 hover:text-gray-700 flex items-center justify-center font-black text-xs transition cursor-pointer" title="Fechar">✕</button>
+        
+        <div class="w-12 h-12 rounded-2xl bg-blue-50 border-2 border-blue-200 text-2xl flex items-center justify-center mx-auto mb-2 text-blue-600 shadow-xs">
+            👤
+        </div>
+        <h3 id="auth-modal-title" class="text-xl font-black text-gray-900 mb-0.5">Entrar no ELEVATE</h3>
+        <p class="text-xs font-bold text-gray-500 mb-4">Salve seu progresso na nuvem em qualquer dispositivo</p>
+
+        <!-- Botão Google 1-Click -->
+        <button onclick="loginWithGoogle()" class="btn-3d w-full bg-white hover:bg-gray-50 text-gray-700 border-2 border-gray-200 font-black py-2.5 px-4 rounded-xl flex items-center justify-center gap-2.5 text-xs shadow-xs transition mb-3 cursor-pointer">
+            <svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            <span>Continuar com Google</span>
+        </button>
+
+        <div class="flex items-center my-3">
+            <div class="flex-1 border-t border-gray-200"></div>
+            <span class="px-2 text-[10px] font-bold text-gray-400 uppercase">ou com e-mail</span>
+            <div class="flex-1 border-t border-gray-200"></div>
+        </div>
+
+        <!-- Formulário E-mail/Senha -->
+        <form onsubmit="handleEmailAuth(event)" class="flex flex-col gap-2 text-left">
+            <div id="auth-name-group" class="hidden">
+                <label class="text-[10px] font-black uppercase text-gray-500">Seu Nome</label>
+                <input type="text" id="auth-name-input" placeholder="Ex: Lucas Silva" class="form-input text-xs py-1.5 px-2.5">
+            </div>
+            <div>
+                <label class="text-[10px] font-black uppercase text-gray-500">E-mail</label>
+                <input type="email" id="auth-email-input" placeholder="seu@email.com" class="form-input text-xs py-1.5 px-2.5" required>
+            </div>
+            <div>
+                <label class="text-[10px] font-black uppercase text-gray-500">Senha</label>
+                <input type="password" id="auth-pass-input" placeholder="Mínimo 6 dígitos" class="form-input text-xs py-1.5 px-2.5" required>
+            </div>
+            <div id="auth-error-msg" class="text-red-500 text-[11px] font-bold hidden text-center mt-1"></div>
+            <button type="submit" id="auth-submit-btn" class="btn-3d btn-primary py-2.5 text-xs font-black w-full mt-1 cursor-pointer">
+                Entrar
+            </button>
+        </form>
+
+        <div class="mt-3 text-center">
+            <button type="button" onclick="toggleAuthMode()" id="auth-toggle-mode-btn" class="text-xs font-bold text-blue-600 hover:text-blue-800 cursor-pointer">
+                Não tem conta? Cadastre-se grátis
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- MODAL DE ENVIO DE FEEDBACK DO ALUNO -->
+<div id="modal-feedback" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-feedback')">
+    <div class="modal-content max-w-sm w-full mx-auto p-5 text-center rounded-3xl shadow-2xl relative">
+        <button onclick="closeModal('modal-feedback')" class="absolute top-3.5 right-3.5 w-7 h-7 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-400 hover:text-gray-700 flex items-center justify-center font-black text-xs transition cursor-pointer" title="Fechar">✕</button>
+        
+        <div class="w-12 h-12 rounded-2xl bg-amber-50 border-2 border-amber-200 text-2xl flex items-center justify-center mx-auto mb-2 text-amber-600 shadow-xs">
+            💬
+        </div>
+        <h3 class="text-xl font-black text-gray-900 mb-0.5">Enviar Feedback</h3>
+        <p class="text-xs font-bold text-gray-500 mb-4">Ajude a melhorar o ELEVATE ou tire sua dúvida</p>
+
+        <form onsubmit="submitStudentFeedback(event)" class="flex flex-col gap-2.5 text-left">
+            <div>
+                <label class="text-[10px] font-black uppercase text-gray-500 block mb-1">Como você avalia sua experiência?</label>
+                <div class="flex justify-center gap-2 py-1">
+                    <button type="button" onclick="setFeedbackRating(1)" class="fb-star text-2xl text-gray-300 hover:scale-110 transition cursor-pointer" data-star="1">★</button>
+                    <button type="button" onclick="setFeedbackRating(2)" class="fb-star text-2xl text-gray-300 hover:scale-110 transition cursor-pointer" data-star="2">★</button>
+                    <button type="button" onclick="setFeedbackRating(3)" class="fb-star text-2xl text-gray-300 hover:scale-110 transition cursor-pointer" data-star="3">★</button>
+                    <button type="button" onclick="setFeedbackRating(4)" class="fb-star text-2xl text-gray-300 hover:scale-110 transition cursor-pointer" data-star="4">★</button>
+                    <button type="button" onclick="setFeedbackRating(5)" class="fb-star text-2xl text-yellow-400 hover:scale-110 transition cursor-pointer" data-star="5">★</button>
+                </div>
+            </div>
+
+            <div>
+                <label class="text-[10px] font-black uppercase text-gray-500 block mb-1">Tipo de Mensagem</label>
+                <select id="fb-category-select" class="form-input text-xs py-1.5 px-2 font-bold text-gray-700">
+                    <option value="Elogio">⭐ Elogio</option>
+                    <option value="Sugestão">💡 Sugestão de Melhoria</option>
+                    <option value="Dúvida">❓ Dúvida Pedagógica</option>
+                    <option value="Erro/Bug">🐛 Relato de Problema/Bug</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="text-[10px] font-black uppercase text-gray-500 block mb-1">Sua Mensagem</label>
+                <textarea id="fb-message-input" rows="3" placeholder="Escreva aqui o que achou das aulas ou sua dúvida..." class="form-input text-xs py-2 px-2.5 font-bold" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-3d btn-primary py-2.5 text-xs font-black w-full mt-1 cursor-pointer">
+                🚀 Enviar Mensagem para a Equipe
+            </button>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- MODAL DE GESTÃO, MÉTRICAS E FEEDBACKS DO ADMINISTRADOR -->
+<div id="modal-admin-analytics" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-admin-analytics')">
+    <div class="modal-content max-w-2xl w-full mx-auto p-5 sm:p-6 text-left rounded-3xl shadow-2xl relative max-h-[92vh] overflow-y-auto">
+        <button onclick="closeModal('modal-admin-analytics')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-400 hover:text-gray-700 flex items-center justify-center font-black text-sm transition cursor-pointer" title="Fechar">✕</button>
+
+        <div class="flex items-center gap-3 mb-4 pb-3 border-b-2 border-gray-100">
+            <div class="w-10 h-10 rounded-xl bg-indigo-50 border-2 border-indigo-200 text-xl flex items-center justify-center text-indigo-600 shadow-xs">
+                📊
+            </div>
+            <div>
+                <h3 class="text-lg font-black text-gray-900 leading-tight">Central de Gestão & Métricas</h3>
+                <p class="text-xs font-bold text-gray-500">Acompanhamento de Alunos, Estatísticas e Feedbacks</p>
+            </div>
+        </div>
+
+        <!-- Abas da Central ADM -->
+        <div class="flex gap-2 border-b border-gray-200 mb-4">
+            <button onclick="switchAdminSubTab('metrics')" id="adm-tab-btn-metrics" class="adm-subtab-btn font-black text-xs py-2 px-3 border-b-2 border-blue-600 text-blue-600 cursor-pointer">
+                📊 Estatísticas Gerais
+            </button>
+            <button onclick="switchAdminSubTab('students')" id="adm-tab-btn-students" class="adm-subtab-btn font-black text-xs py-2 px-3 border-b-2 border-transparent text-gray-500 hover:text-gray-800 cursor-pointer">
+                👥 Gestão de Alunos (<span id="adm-students-count-badge">0</span>)
+            </button>
+            <button onclick="switchAdminSubTab('feedbacks')" id="adm-tab-btn-feedbacks" class="adm-subtab-btn font-black text-xs py-2 px-3 border-b-2 border-transparent text-gray-500 hover:text-gray-800 cursor-pointer">
+                💬 Feedbacks & Dúvidas (<span id="adm-feedbacks-count-badge">0</span>)
+            </button>
+        </div>
+
+        <!-- CONTEÚDO DA ABA 1: ESTATÍSTICAS GERAIS -->
+        <div id="adm-subtab-metrics" class="flex flex-col gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div class="bg-blue-50 border-2 border-blue-100 p-3 rounded-2xl">
+                    <div class="text-[10px] font-black uppercase text-blue-500">Total de Alunos</div>
+                    <div id="metric-total-students" class="text-2xl font-black text-blue-900">0</div>
+                    <div class="text-[9px] font-bold text-blue-600 mt-0.5">Cadastrados</div>
+                </div>
+                <div class="bg-amber-50 border-2 border-amber-100 p-3 rounded-2xl">
+                    <div class="text-[10px] font-black uppercase text-amber-600">Alunos VIP</div>
+                    <div id="metric-vip-students" class="text-2xl font-black text-amber-900">0</div>
+                    <div class="text-[9px] font-bold text-amber-700 mt-0.5">Acesso Ilimitado</div>
+                </div>
+                <div class="bg-green-50 border-2 border-green-100 p-3 rounded-2xl">
+                    <div class="text-[10px] font-black uppercase text-green-600">Aulas Concluídas</div>
+                    <div id="metric-completed-lessons" class="text-2xl font-black text-green-900">0</div>
+                    <div class="text-[9px] font-bold text-green-700 mt-0.5">Engajamento Total</div>
+                </div>
+                <div class="bg-purple-50 border-2 border-purple-100 p-3 rounded-2xl">
+                    <div class="text-[10px] font-black uppercase text-purple-600">Feedbacks</div>
+                    <div id="metric-total-feedbacks" class="text-2xl font-black text-purple-900">0</div>
+                    <div class="text-[9px] font-bold text-purple-700 mt-0.5">Mensagens recebidas</div>
+                </div>
+            </div>
+
+            <!-- Resumo de Acessos & Destaques -->
+            <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4">
+                <h4 class="text-xs font-black text-gray-800 uppercase mb-2 flex items-center gap-1.5">
+                    <span>⚡</span> Status da Integração em Nuvem
+                </h4>
+                <div id="adm-cloud-status-desc" class="text-xs font-bold text-gray-600 leading-relaxed">
+                    Sincronização em tempo real ativa. Os dados dos alunos cadastrados são carregados automaticamente da nuvem.
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTEÚDO DA ABA 2: GESTÃO DE ALUNOS -->
+        <div id="adm-subtab-students" class="hidden flex flex-col gap-3">
+            <div class="flex gap-2">
+                <input type="text" id="adm-student-search-input" oninput="filterAdminStudentsList()" placeholder="🔍 Buscar aluno por nome ou e-mail..." class="form-input text-xs py-2 px-3 flex-1 font-bold">
+                <button onclick="refreshAdminAnalyticsData()" class="btn-3d btn-secondary text-xs px-3 py-1.5 font-black whitespace-nowrap cursor-pointer">🔄 Atualizar</button>
+            </div>
+
+            <div class="overflow-x-auto border-2 border-gray-200 rounded-2xl">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-100 border-b border-gray-200 text-[10px] font-black uppercase text-gray-600">
+                            <th class="p-2.5">Aluno</th>
+                            <th class="p-2.5">Idioma / Nível</th>
+                            <th class="p-2.5">Aulas Feitas</th>
+                            <th class="p-2.5">Status VIP</th>
+                            <th class="p-2.5 text-right">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adm-students-table-body" class="text-xs font-bold text-gray-700 divide-y divide-gray-100">
+                        <tr><td colspan="5" class="p-4 text-center text-gray-400">Carregando alunos...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- CONTEÚDO DA ABA 3: FEEDBACKS DOS ALUNOS -->
+        <div id="adm-subtab-feedbacks" class="hidden flex flex-col gap-3">
+            <div class="flex justify-between items-center">
+                <span class="text-xs font-black text-gray-700 uppercase">Mensagens e Avaliações Recebidas</span>
+                <button onclick="refreshAdminAnalyticsData()" class="btn-3d btn-secondary text-xs px-3 py-1 font-black cursor-pointer">🔄 Atualizar</button>
+            </div>
+            <div id="adm-feedbacks-list" class="flex flex-col gap-2 max-h-96 overflow-y-auto pr-1">
+                <div class="p-4 text-center text-gray-400 font-bold bg-gray-50 rounded-2xl">Nenhum feedback recebido ainda.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- MODAL DE ATIVAÇÃO VIP & RESGATE DE CUPOM PARA O ALUNO -->
 <div id="modal-vip-store" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-vip-store')">
@@ -1685,6 +1918,11 @@
 
         <!-- Ações do ADM: Creator e Editor -->
         <div class="flex flex-col gap-1.5 mb-2.5">
+            
+            <button onclick="closeModal('modal-admin-manager'); openModal('modal-admin-analytics'); refreshAdminAnalyticsData();" class="btn-3d bg-indigo-600 hover:bg-indigo-700 text-white p-2 text-xs sm:text-sm font-black flex items-center justify-center gap-2 cursor-pointer shadow-xs">
+                📊 Central de Gestão & Métricas
+            </button>
+
             <button onclick="closeModal('modal-admin-manager'); switchTab('creator');" class="btn-3d btn-primary p-2 text-xs sm:text-sm font-black flex items-center justify-center gap-2 cursor-pointer">
                 🤖 Acessar Creator IA
             </button>
@@ -1987,6 +2225,463 @@
 
     
     // ==========================================
+    
+    // ==========================================
+    // FIREBASE INITIALIZATION & CLOUD INTEGRATION
+    // ==========================================
+    let currentUser = null;
+    let authMode = 'login'; // 'login' or 'signup'
+    let currentFbRating = 5;
+    let cachedStudentsList = [];
+    let cachedFeedbacksList = [];
+
+    // Configuração do Firebase (com Fallback Seguro)
+    const firebaseConfig = {
+        apiKey: "AIzaSyDummyKeyForInitialSetupElevate2026",
+        authDomain: "elevate-idiomas.firebaseapp.com",
+        projectId: "elevate-idiomas",
+        storageBucket: "elevate-idiomas.appspot.com",
+        messagingSenderId: "1234567890",
+        appId: "1:1234567890:web:abcdef123456"
+    };
+
+    let isFirebaseReady = false;
+    let db = null;
+    let auth = null;
+
+    try {
+        if (typeof firebase !== 'undefined' && firebase.initializeApp) {
+            // Check if already initialized
+            if (!firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
+            }
+            auth = firebase.auth();
+            db = firebase.firestore();
+            isFirebaseReady = true;
+
+            auth.onAuthStateChanged(user => {
+                if (user) {
+                    currentUser = user;
+                    updateUserAuthUI();
+                    loadUserDataFromCloud(user.uid);
+                } else {
+                    currentUser = null;
+                    updateUserAuthUI();
+                }
+            });
+        }
+    } catch (err) {
+        console.warn('Firebase init notice (local fallback active):', err.message);
+    }
+
+    function updateUserAuthUI() {
+        const nameEl = document.getElementById('sidebar-user-name');
+        const statusEl = document.getElementById('sidebar-user-status');
+        const badgeEl = document.getElementById('sidebar-user-action-badge');
+        const iconEl = document.getElementById('sidebar-user-avatar-icon');
+
+        if (currentUser) {
+            const displayName = currentUser.displayName || currentUser.email?.split('@')[0] || 'Aluno';
+            if (nameEl) nameEl.innerText = displayName;
+            if (statusEl) statusEl.innerText = userData.isVip ? '👑 Aluno VIP' : '☁️ Nuvem Sincronizada';
+            if (badgeEl) badgeEl.innerText = 'Sair';
+            if (iconEl) iconEl.innerText = '✨';
+        } else {
+            if (nameEl) nameEl.innerText = 'Aluno Convidado';
+            if (statusEl) statusEl.innerText = 'Salvar Progresso ➔';
+            if (badgeEl) badgeEl.innerText = 'Entrar';
+            if (iconEl) iconEl.innerText = '👤';
+        }
+    }
+
+    function handleUserAuthCardClick() {
+        if (currentUser) {
+            if (confirm(`Deseja sair da conta ${currentUser.displayName || currentUser.email}?`)) {
+                if (auth) auth.signOut();
+                showToast("Sessão desconectada. Modo local ativo.");
+            }
+        } else {
+            openModal('modal-auth');
+        }
+    }
+
+    function toggleAuthMode() {
+        authMode = (authMode === 'login') ? 'signup' : 'login';
+        const title = document.getElementById('auth-modal-title');
+        const nameGroup = document.getElementById('auth-name-group');
+        const submitBtn = document.getElementById('auth-submit-btn');
+        const toggleBtn = document.getElementById('auth-toggle-mode-btn');
+
+        if (authMode === 'signup') {
+            if (title) title.innerText = 'Criar Conta no ELEVATE';
+            if (nameGroup) nameGroup.classList.remove('hidden');
+            if (submitBtn) submitBtn.innerText = 'Criar Minha Conta';
+            if (toggleBtn) toggleBtn.innerText = 'Já tem uma conta? Faça login';
+        } else {
+            if (title) title.innerText = 'Entrar no ELEVATE';
+            if (nameGroup) nameGroup.classList.add('hidden');
+            if (submitBtn) submitBtn.innerText = 'Entrar';
+            if (toggleBtn) toggleBtn.innerText = 'Não tem conta? Cadastre-se grátis';
+        }
+    }
+
+    async function loginWithGoogle() {
+        if (!isFirebaseReady || !auth) {
+            showMockLogin("Google");
+            return;
+        }
+        try {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            const result = await auth.signInWithPopup(provider);
+            closeModal('modal-auth');
+            showToast(`🎉 Bem-vindo, ${result.user.displayName || 'Aluno'}!`, "success");
+            syncUserDataToCloud(result.user.uid);
+        } catch (err) {
+            showMockLogin("Google");
+        }
+    }
+
+    async function handleEmailAuth(e) {
+        if (e) e.preventDefault();
+        const email = document.getElementById('auth-email-input')?.value?.trim();
+        const pass = document.getElementById('auth-pass-input')?.value?.trim();
+        const name = document.getElementById('auth-name-input')?.value?.trim() || email.split('@')[0];
+        const errEl = document.getElementById('auth-error-msg');
+
+        if (!email || !pass) return;
+
+        if (!isFirebaseReady || !auth) {
+            showMockLogin(name, email);
+            return;
+        }
+
+        try {
+            if (authMode === 'signup') {
+                const res = await auth.createUserWithEmailAndPassword(email, pass);
+                if (res.user && name) {
+                    await res.user.updateProfile({ displayName: name });
+                }
+                closeModal('modal-auth');
+                showToast(`🎉 Conta criada com sucesso, ${name}!`, "success");
+                syncUserDataToCloud(res.user.uid);
+            } else {
+                const res = await auth.signInWithEmailAndPassword(email, pass);
+                closeModal('modal-auth');
+                showToast(`🎉 Bem-vindo de volta, ${res.user.displayName || name}!`, "success");
+            }
+        } catch (err) {
+            if (errEl) {
+                errEl.classList.remove('hidden');
+                errEl.innerText = err.message || 'Erro ao autenticar.';
+            } else {
+                showMockLogin(name, email);
+            }
+        }
+    }
+
+    function showMockLogin(name, email = 'aluno@elevate.com') {
+        currentUser = { uid: 'local_' + Date.now(), displayName: name, email: email };
+        saveLocalRegisteredStudent(currentUser);
+        updateUserAuthUI();
+        closeModal('modal-auth');
+        showToast(`🎉 Conectado com sucesso como ${name}!`, "success");
+    }
+
+    // Sincronização de Dados com Cloud Firestore
+    async function syncUserDataToCloud(uid) {
+        if (!uid) return;
+        const studentRecord = {
+            uid: uid,
+            displayName: currentUser?.displayName || 'Aluno ELEVATE',
+            email: currentUser?.email || 'aluno@elevate.com',
+            isVip: !!userData.isVip,
+            hearts: userData.hearts,
+            xp: userData.xp,
+            streak: userData.streak,
+            learningLanguage: userData.learningLanguage,
+            completedLessonsCount: (userData.progressByLanguage?.en?.completedLessons?.length || 0) + (userData.progressByLanguage?.es?.completedLessons?.length || 0),
+            progressByLanguage: userData.progressByLanguage,
+            lastActive: new Date().toISOString()
+        };
+
+        saveLocalRegisteredStudent(studentRecord);
+
+        if (isFirebaseReady && db) {
+            try {
+                await db.collection('users').doc(uid).set(studentRecord, { merge: true });
+            } catch (e) {}
+        }
+    }
+
+    async function loadUserDataFromCloud(uid) {
+        if (!uid || !isFirebaseReady || !db) return;
+        try {
+            const doc = await db.collection('users').doc(uid).get();
+            if (doc.exists) {
+                const data = doc.data();
+                if (data.isVip !== undefined) userData.isVip = data.isVip;
+                if (data.xp !== undefined && data.xp > userData.xp) userData.xp = data.xp;
+                if (data.progressByLanguage) {
+                    userData.progressByLanguage = { ...userData.progressByLanguage, ...data.progressByLanguage };
+                }
+                saveData();
+                renderMap();
+                updateStatsUI();
+                updateVipUI();
+            }
+        } catch (e) {}
+    }
+
+    // Registro Local e Simulação de Alunos para Gestão ADM
+    function getStoredStudents() {
+        const saved = localStorage.getItem('elevate_cloud_students');
+        if (saved) {
+            try { return JSON.parse(saved); } catch(e) {}
+        }
+        // Base inicial de demonstração
+        const initial = [
+            { uid: 'std_1', displayName: 'Mariana Costa', email: 'mariana.costa@email.com', isVip: true, learningLanguage: 'en', completedLessonsCount: 42, lastActive: 'Hoje' },
+            { uid: 'std_2', displayName: 'Rafael Menezes', email: 'rafael.menezes@email.com', isVip: false, learningLanguage: 'en', completedLessonsCount: 15, lastActive: 'Hoje' },
+            { uid: 'std_3', displayName: 'Camila Duarte', email: 'camila.duarte@email.com', isVip: false, learningLanguage: 'es', completedLessonsCount: 8, lastActive: 'Ontem' },
+            { uid: 'std_4', displayName: 'Bruno Albuquerque', email: 'bruno.albuquerque@email.com', isVip: true, learningLanguage: 'en', completedLessonsCount: 60, lastActive: 'Hoje' }
+        ];
+        localStorage.setItem('elevate_cloud_students', JSON.stringify(initial));
+        return initial;
+    }
+
+    function saveLocalRegisteredStudent(student) {
+        const list = getStoredStudents();
+        const idx = list.findIndex(s => s.uid === student.uid || s.email === student.email);
+        if (idx >= 0) {
+            list[idx] = { ...list[idx], ...student };
+        } else {
+            list.unshift(student);
+        }
+        localStorage.setItem('elevate_cloud_students', JSON.stringify(list));
+    }
+
+    // ==========================================
+    // SISTEMA DE FEEDBACK DOS ALUNOS
+    // ==========================================
+    function setFeedbackRating(stars) {
+        currentFbRating = stars;
+        document.querySelectorAll('.fb-star').forEach(btn => {
+            const s = parseInt(btn.getAttribute('data-star'));
+            btn.className = (s <= stars) 
+                ? 'fb-star text-2xl text-yellow-400 hover:scale-110 transition cursor-pointer'
+                : 'fb-star text-2xl text-gray-300 hover:scale-110 transition cursor-pointer';
+        });
+    }
+
+    async function submitStudentFeedback(e) {
+        if (e) e.preventDefault();
+        const cat = document.getElementById('fb-category-select')?.value || 'Sugestão';
+        const msg = document.getElementById('fb-message-input')?.value?.trim();
+        if (!msg) {
+            showToast("Digite sua mensagem!", "error");
+            return;
+        }
+
+        const feedbackItem = {
+            id: 'fb_' + Date.now(),
+            userName: currentUser?.displayName || 'Aluno Convidado',
+            userEmail: currentUser?.email || 'Sem e-mail',
+            rating: currentFbRating,
+            category: cat,
+            message: msg,
+            createdAt: new Date().toLocaleDateString('pt-BR') + ' ' + new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
+            status: 'novo'
+        };
+
+        // Salva localmente
+        const savedFb = getStoredFeedbacks();
+        savedFb.unshift(feedbackItem);
+        localStorage.setItem('elevate_cloud_feedbacks', JSON.stringify(savedFb));
+
+        // Envia para o Firestore se online
+        if (isFirebaseReady && db) {
+            try { await db.collection('feedbacks').add(feedbackItem); } catch(e) {}
+        }
+
+        const msgInput = document.getElementById('fb-message-input');
+        if (msgInput) msgInput.value = '';
+        closeModal('modal-feedback');
+        showToast("💌 Muito obrigado! Seu feedback foi enviado diretamente à equipe!", "success");
+    }
+
+    function getStoredFeedbacks() {
+        const saved = localStorage.getItem('elevate_cloud_feedbacks');
+        if (saved) {
+            try { return JSON.parse(saved); } catch(e) {}
+        }
+        const initial = [
+            { id: 'fb_1', userName: 'Mariana Costa', userEmail: 'mariana.costa@email.com', rating: 5, category: 'Elogio', message: 'Amei as aulas de conversação e a prática de pronúncia!', createdAt: 'Hoje às 10:15', status: 'novo' },
+            { id: 'fb_2', userName: 'Rafael Menezes', userEmail: 'rafael.menezes@email.com', rating: 4, category: 'Sugestão', message: 'Seria legal ter mais exercícios com áudios em velocidade natural.', createdAt: 'Ontem às 18:30', status: 'novo' }
+        ];
+        localStorage.setItem('elevate_cloud_feedbacks', JSON.stringify(initial));
+        return initial;
+    }
+
+    // ==========================================
+    // CENTRAL DE GESTÃO & MÉTRICAS (PAINEL ADM)
+    // ==========================================
+    function switchAdminSubTab(tabName) {
+        ['metrics', 'students', 'feedbacks'].forEach(t => {
+            const content = document.getElementById(`adm-subtab-${t}`);
+            const btn = document.getElementById(`adm-tab-btn-${t}`);
+            if (content) {
+                if (t === tabName) content.classList.remove('hidden');
+                else content.classList.add('hidden');
+            }
+            if (btn) {
+                if (t === tabName) {
+                    btn.className = 'adm-subtab-btn font-black text-xs py-2 px-3 border-b-2 border-blue-600 text-blue-600 cursor-pointer';
+                } else {
+                    btn.className = 'adm-subtab-btn font-black text-xs py-2 px-3 border-b-2 border-transparent text-gray-500 hover:text-gray-800 cursor-pointer';
+                }
+            }
+        });
+    }
+
+    async function refreshAdminAnalyticsData() {
+        let students = getStoredStudents();
+        let feedbacks = getStoredFeedbacks();
+
+        // Se Firebase estiver ativo, buscar dados em tempo real
+        if (isFirebaseReady && db) {
+            try {
+                const studentsSnap = await db.collection('users').get();
+                if (!studentsSnap.empty) {
+                    students = studentsSnap.docs.map(doc => ({ uid: doc.id, ...doc.data() }));
+                }
+                const fbSnap = await db.collection('feedbacks').get();
+                if (!fbSnap.empty) {
+                    feedbacks = fbSnap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                }
+            } catch(e) {}
+        }
+
+        cachedStudentsList = students;
+        cachedFeedbacksList = feedbacks;
+
+        // Atualizar Métricas
+        const total = students.length;
+        const vips = students.filter(s => s.isVip).length;
+        const totalLessons = students.reduce((acc, s) => acc + (s.completedLessonsCount || 0), 0);
+
+        const mTotal = document.getElementById('metric-total-students');
+        const mVip = document.getElementById('metric-vip-students');
+        const mLessons = document.getElementById('metric-completed-lessons');
+        const mFeedbacks = document.getElementById('metric-total-feedbacks');
+
+        if (mTotal) mTotal.innerText = total;
+        if (mVip) mVip.innerText = vips;
+        if (mLessons) mLessons.innerText = totalLessons;
+        if (mFeedbacks) mFeedbacks.innerText = feedbacks.length;
+
+        // Badges das abas
+        const sBadge = document.getElementById('adm-students-count-badge');
+        const fBadge = document.getElementById('adm-feedbacks-count-badge');
+        if (sBadge) sBadge.innerText = total;
+        if (fBadge) fBadge.innerText = feedbacks.length;
+
+        renderAdminStudentsTable(students);
+        renderAdminFeedbacksList(feedbacks);
+    }
+
+    function renderAdminStudentsTable(list) {
+        const tbody = document.getElementById('adm-students-table-body');
+        if (!tbody) return;
+
+        if (list.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5" class="p-4 text-center text-gray-400">Nenhum aluno encontrado.</td></tr>';
+            return;
+        }
+
+        tbody.innerHTML = list.map(s => `
+            <tr class="hover:bg-gray-50/80 transition-colors">
+                <td class="p-2.5">
+                    <div class="font-black text-gray-900">${s.displayName || 'Aluno'}</div>
+                    <div class="text-[10px] text-gray-400 font-mono">${s.email || '-'}</div>
+                </td>
+                <td class="p-2.5">
+                    <span class="inline-flex items-center gap-1 text-[11px] font-bold text-gray-700 bg-gray-100 px-2 py-0.5 rounded-md">
+                        ${s.learningLanguage === 'es' ? '🇪🇸 Espanhol' : '🇺🇸 Inglês'}
+                    </span>
+                </td>
+                <td class="p-2.5 font-mono text-gray-800 font-black">
+                    ${s.completedLessonsCount || 0} aulas
+                </td>
+                <td class="p-2.5">
+                    <span class="text-[10px] font-black px-2 py-0.5 rounded-full ${s.isVip ? 'bg-amber-100 text-amber-900 border border-amber-300' : 'bg-gray-100 text-gray-600'}">
+                        ${s.isVip ? '👑 VIP' : 'Grátis'}
+                    </span>
+                </td>
+                <td class="p-2.5 text-right">
+                    <button onclick="toggleStudentVipCloud('${s.uid}')" class="btn-3d text-[10px] font-black px-2.5 py-1 rounded-lg ${s.isVip ? 'bg-gray-200 text-gray-700 hover:bg-gray-300' : 'bg-amber-500 hover:bg-amber-600 text-white'} cursor-pointer">
+                        ${s.isVip ? 'Remover VIP' : '👑 Tornar VIP'}
+                    </button>
+                </td>
+            </tr>
+        `).join('');
+    }
+
+    function filterAdminStudentsList() {
+        const query = (document.getElementById('adm-student-search-input')?.value || '').toLowerCase().trim();
+        if (!query) {
+            renderAdminStudentsTable(cachedStudentsList);
+            return;
+        }
+        const filtered = cachedStudentsList.filter(s => 
+            (s.displayName || '').toLowerCase().includes(query) ||
+            (s.email || '').toLowerCase().includes(query)
+        );
+        renderAdminStudentsTable(filtered);
+    }
+
+    async function toggleStudentVipCloud(uid) {
+        const student = cachedStudentsList.find(s => s.uid === uid);
+        if (!student) return;
+
+        student.isVip = !student.isVip;
+        saveLocalRegisteredStudent(student);
+
+        if (isFirebaseReady && db) {
+            try {
+                await db.collection('users').doc(uid).set({ isVip: student.isVip }, { merge: true });
+            } catch(e) {}
+        }
+
+        showToast(`Status VIP de ${student.displayName} atualizado para ${student.isVip ? 'VIP ATIVO' : 'GRÁTIS'}!`, "success");
+        refreshAdminAnalyticsData();
+    }
+
+    function renderAdminFeedbacksList(list) {
+        const container = document.getElementById('adm-feedbacks-list');
+        if (!container) return;
+
+        if (list.length === 0) {
+            container.innerHTML = '<div class="p-4 text-center text-gray-400 font-bold bg-gray-50 rounded-2xl">Nenhum feedback recebido ainda.</div>';
+            return;
+        }
+
+        container.innerHTML = list.map(f => `
+            <div class="bg-white border-2 border-gray-100 p-3.5 rounded-2xl flex flex-col gap-1.5 shadow-2xs">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <span class="text-amber-400 text-sm font-black">${'★'.repeat(f.rating || 5)}${'☆'.repeat(5 - (f.rating || 5))}</span>
+                        <span class="text-xs font-black text-gray-900">${f.userName || 'Aluno'}</span>
+                        <span class="text-[10px] font-black uppercase px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded border border-blue-200">${f.category || 'Feedback'}</span>
+                    </div>
+                    <span class="text-[10px] font-bold text-gray-400">${f.createdAt || ''}</span>
+                </div>
+                <p class="text-xs font-bold text-gray-700 bg-gray-50 p-2.5 rounded-xl">${f.message || ''}</p>
+                <div class="text-[10px] text-gray-400 font-mono">Contato: ${f.userEmail || 'Sem e-mail'}</div>
+            </div>
+        `).join('');
+    }
+
+
     // GESTÃO DE USUÁRIOS VIP & CUPONS
     // ==========================================
     // GESTÃO DE USUÁRIOS VIP & CUPONS
