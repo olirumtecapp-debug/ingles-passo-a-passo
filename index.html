@@ -1269,9 +1269,21 @@
 
         <!-- CONTEÚDO DA ABA 2: GESTÃO DE ALUNOS -->
         <div id="adm-subtab-students" class="hidden flex flex-col gap-3">
-            <div class="flex gap-2">
-                <input type="text" id="adm-student-search-input" oninput="filterAdminStudentsList()" placeholder="🔍 Buscar aluno por nome ou e-mail..." class="form-input text-xs py-2 px-3 flex-1 font-bold">
-                <button onclick="refreshAdminAnalyticsData()" class="btn-3d btn-secondary text-xs px-3 py-1.5 font-black whitespace-nowrap cursor-pointer">🔄 Atualizar</button>
+            <div class="flex flex-wrap gap-2 items-center justify-between">
+                <div class="flex gap-2 flex-1 min-w-[200px]">
+                    <input type="text" id="adm-student-search-input" oninput="filterAdminStudentsList()" placeholder="🔍 Buscar aluno por nome ou e-mail..." class="form-input text-xs py-1.5 px-3 flex-1 font-bold">
+                    <select id="adm-student-filter-type" onchange="filterAdminStudentsList()" class="form-input text-xs py-1.5 px-2 font-bold w-32 bg-white">
+                        <option value="all">👥 Todos</option>
+                        <option value="vip">👑 Apenas VIP</option>
+                        <option value="free">👤 Apenas Grátis</option>
+                    </select>
+                </div>
+                <div class="flex gap-1.5">
+                    <button onclick="exportStudentsCSV()" class="btn-3d bg-green-600 hover:bg-green-700 text-white text-xs px-2.5 py-1.5 font-black rounded-xl flex items-center gap-1 cursor-pointer shadow-xs" title="Exportar Planilha Excel/CSV">
+                        📥 Exportar CSV
+                    </button>
+                    <button onclick="refreshAdminAnalyticsData()" class="btn-3d btn-secondary text-xs px-2.5 py-1.5 font-black whitespace-nowrap cursor-pointer">🔄 Atualizar</button>
+                </div>
             </div>
 
             <div class="overflow-x-auto border-2 border-gray-200 rounded-2xl">
@@ -2655,10 +2667,15 @@
                         ${s.isVip ? '👑 VIP' : 'Grátis'}
                     </span>
                 </td>
-                <td class="p-2.5 text-right">
-                    <button onclick="toggleStudentVipCloud('${s.uid}')" class="btn-3d text-[10px] font-black px-2.5 py-1 rounded-lg ${s.isVip ? 'bg-gray-200 text-gray-700 hover:bg-gray-300' : 'bg-amber-500 hover:bg-amber-600 text-white'} cursor-pointer">
-                        ${s.isVip ? 'Remover VIP' : '👑 Tornar VIP'}
-                    </button>
+                <td class="p-2.5 text-right whitespace-nowrap">
+                    <div class="inline-flex gap-1.5 items-center justify-end">
+                        <button onclick="toggleStudentVipCloud('${s.uid}')" class="btn-3d text-[10px] font-black px-2 py-1 rounded-lg ${s.isVip ? 'bg-gray-200 text-gray-700 hover:bg-gray-300' : 'bg-amber-500 hover:bg-amber-600 text-white'} cursor-pointer" title="Alternar status VIP">
+                            ${s.isVip ? 'Remover VIP' : '👑 Tornar VIP'}
+                        </button>
+                        <button onclick="resetStudentProgressCloud('${s.uid}', '${(s.displayName || 'Aluno').replace(/'/g, '')}')" class="btn-3d bg-red-50 hover:bg-red-100 text-red-600 border border-red-200 text-[10px] font-black px-2 py-1 rounded-lg cursor-pointer" title="Zerar todas as aulas e progresso">
+                            🔄 Zerar
+                        </button>
+                    </div>
                 </td>
             </tr>
         `).join('');
@@ -2693,6 +2710,102 @@
         showToast(`Status VIP de ${student.displayName} atualizado para ${student.isVip ? 'VIP ATIVO' : 'GRÁTIS'}!`, "success");
         refreshAdminAnalyticsData();
     }
+
+    
+    // Zerar Progresso de um Aluno Específico
+    async function resetStudentProgressCloud(uid, studentName) {
+        if (!confirm(`⚠️ Tem certeza que deseja ZERAR todo o progresso do aluno "${studentName}"?\n\nIsso redefinirá todas as aulas concluídas, XP e ofensiva para o início.`)) {
+            return;
+        }
+
+        const student = cachedStudentsList.find(s => s.uid === uid);
+        if (student) {
+            student.completedLessonsCount = 0;
+            student.xp = 0;
+            student.streak = 1;
+            student.progressByLanguage = { en: { completedLessons: [] }, es: { completedLessons: [] } };
+            saveLocalRegisteredStudent(student);
+        }
+
+        // Se o aluno resetado for o usuário atual
+        if (currentUser && currentUser.uid === uid) {
+            userData.xp = 0;
+            userData.streak = 1;
+            userData.progressByLanguage = { en: { completedLessons: [] }, es: { completedLessons: [] } };
+            saveData();
+            renderMap();
+            updateStatsUI();
+        }
+
+        if (isFirebaseReady && db) {
+            try {
+                await db.collection('users').doc(uid).set({
+                    completedLessonsCount: 0,
+                    xp: 0,
+                    streak: 1,
+                    progressByLanguage: { en: { completedLessons: [] }, es: { completedLessons: [] } }
+                }, { merge: true });
+            } catch(e) {}
+        }
+
+        showToast(`🔄 Progresso de "${studentName}" foi zerado com sucesso!`, "info");
+        refreshAdminAnalyticsData();
+    }
+
+    // Exportar Lista de Alunos em formato CSV / Excel
+    function exportStudentsCSV() {
+        const list = cachedStudentsList.length ? cachedStudentsList : getStoredStudents();
+        if (!list || list.length === 0) {
+            showToast("Nenhum aluno para exportar!", "error");
+            return;
+        }
+
+        let csvContent = "data:text/csv;charset=utf-8,ID,Nome,Email,Idioma,Aulas Concluidas,Status VIP,Ultimo Acesso\n";
+        list.forEach(s => {
+            const row = [
+                s.uid || '',
+                `"${(s.displayName || 'Aluno').replace(/"/g, '""')}"`,
+                `"${(s.email || '').replace(/"/g, '""')}"`,
+                s.learningLanguage === 'es' ? 'Espanhol' : 'Inglês',
+                s.completedLessonsCount || 0,
+                s.isVip ? 'VIP' : 'Gratuito',
+                `"${s.lastActive || 'Hoje'}"`
+            ];
+            csvContent += row.join(',') + "\n";
+        });
+
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", `elevate_alunos_${new Date().toISOString().slice(0, 10)}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        showToast("📥 Relatório de alunos exportado em CSV!", "success");
+    }
+
+    function filterAdminStudentsList() {
+        const query = (document.getElementById('adm-student-search-input')?.value || '').toLowerCase().trim();
+        const filterType = document.getElementById('adm-student-filter-type')?.value || 'all';
+
+        let filtered = cachedStudentsList;
+
+        if (filterType === 'vip') {
+            filtered = filtered.filter(s => !!s.isVip);
+        } else if (filterType === 'free') {
+            filtered = filtered.filter(s => !s.isVip);
+        }
+
+        if (query) {
+            filtered = filtered.filter(s => 
+                (s.displayName || '').toLowerCase().includes(query) ||
+                (s.email || '').toLowerCase().includes(query)
+            );
+        }
+
+        renderAdminStudentsTable(filtered);
+    }
+
 
     function renderAdminFeedbacksList(list) {
         const container = document.getElementById('adm-feedbacks-list');
@@ -3447,6 +3560,27 @@
                 </div>
             `;
         }
+    }
+
+    
+    function resetMyCurrentStudentProgress() {
+        if (!confirm("⚠️ Deseja realmente reiniciar seu progresso?\n\nTodas as aulas feitas deste idioma serão desmarcadas para você recomeçar do zero.")) {
+            return;
+        }
+        const curLang = userData.learningLanguage || 'en';
+        if (userData.progressByLanguage?.[curLang]) {
+            userData.progressByLanguage[curLang].completedLessons = [];
+        }
+        userData.xp = 0;
+        userData.streak = 1;
+        saveData();
+        renderMap();
+        updateStatsUI();
+        if (currentUser) {
+            syncUserDataToCloud(currentUser.uid);
+        }
+        closeModal('modal-preferences');
+        showToast("🔄 Seu progresso foi reiniciado. Bons estudos!", "info");
     }
 
     function renderLevelTabs() {
