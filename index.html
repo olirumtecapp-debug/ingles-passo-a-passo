@@ -565,7 +565,7 @@
 
             
             <!-- Botão Enviar Feedback do Aluno -->
-            <button onclick="openModal('modal-feedback')" class="w-full text-left flex items-center justify-between bg-blue-50/70 hover:bg-blue-100 border border-blue-200/80 p-1.5 rounded-lg text-blue-900 font-black text-[11px] transition-all cursor-pointer">
+            <button onclick="openFeedbackModal()" class="w-full text-left flex items-center justify-between bg-blue-50/70 hover:bg-blue-100 border border-blue-200/80 p-1.5 rounded-lg text-blue-900 font-black text-[11px] transition-all cursor-pointer">
                 <span class="flex items-center gap-1.5">
                     <span>💬</span>
                     <span>Enviar Feedback</span>
@@ -1116,9 +1116,9 @@
 
         <!-- Formulário E-mail/Senha -->
         <form onsubmit="handleEmailAuth(event)" class="flex flex-col gap-2 text-left">
-            <div id="auth-name-group" class="hidden">
-                <label class="text-[10px] font-black uppercase text-gray-500">Seu Nome</label>
-                <input type="text" id="auth-name-input" placeholder="Ex: Lucas Silva" class="form-input text-xs py-1.5 px-2.5">
+            <div id="auth-name-group">
+                <label class="text-[10px] font-black uppercase text-gray-500">Seu Nome Completo</label>
+                <input type="text" id="auth-name-input" placeholder="Ex: Murilo Pai" class="form-input text-xs py-1.5 px-2.5 font-bold" required>
             </div>
             <div>
                 <label class="text-[10px] font-black uppercase text-gray-500">E-mail</label>
@@ -1155,7 +1155,19 @@
         <h3 class="text-xl font-black text-gray-900 mb-0.5">Enviar Feedback</h3>
         <p class="text-xs font-bold text-gray-500 mb-4">Ajude a melhorar o ELEVATE ou tire sua dúvida</p>
 
-        <form onsubmit="submitStudentFeedback(event)" class="flex flex-col gap-2.5 text-left">
+        <form onsubmit="submitStudentFeedback(event)" class="flex flex-col gap-2 text-left">
+            <!-- Identificação do Aluno no Feedback -->
+            <div class="grid grid-cols-2 gap-2 bg-blue-50/60 p-2.5 rounded-xl border border-blue-100">
+                <div>
+                    <label class="text-[9px] font-black uppercase text-blue-900 block mb-0.5">Seu Nome</label>
+                    <input type="text" id="fb-user-name" placeholder="Ex: Murilo Pai" class="form-input text-xs py-1.5 px-2 font-black text-gray-800 bg-white" required>
+                </div>
+                <div>
+                    <label class="text-[9px] font-black uppercase text-blue-900 block mb-0.5">Seu E-mail</label>
+                    <input type="email" id="fb-user-email" placeholder="seu@email.com" class="form-input text-xs py-1.5 px-2 font-black text-gray-800 bg-white" required>
+                </div>
+            </div>
+
             <div>
                 <label class="text-[10px] font-black uppercase text-gray-500 block mb-1">Como você avalia sua experiência?</label>
                 <div class="flex justify-center gap-2 py-1">
@@ -2326,18 +2338,29 @@
     }
 
     async function loginWithGoogle() {
+        let name = document.getElementById('auth-name-input')?.value?.trim();
+        let email = document.getElementById('auth-email-input')?.value?.trim();
+
+        if (!name) {
+            name = prompt("Qual é o seu nome completo para o cadastro?", "Murilo Pai") || "Aluno ELEVATE";
+        }
+        if (!email) {
+            email = "aluno." + name.toLowerCase().replace(/\s+/g, '.') + "@gmail.com";
+        }
+
         if (!isFirebaseReady || !auth) {
-            showMockLogin("Google");
+            showMockLogin(name, email);
             return;
         }
         try {
             const provider = new firebase.auth.GoogleAuthProvider();
             const result = await auth.signInWithPopup(provider);
+            const finalName = result.user.displayName || name;
             closeModal('modal-auth');
-            showToast(`🎉 Bem-vindo, ${result.user.displayName || 'Aluno'}!`, "success");
+            showToast(`🎉 Bem-vindo, ${finalName}!`, "success");
             syncUserDataToCloud(result.user.uid);
         } catch (err) {
-            showMockLogin("Google");
+            showMockLogin(name, email);
         }
     }
 
@@ -2380,7 +2403,12 @@
     }
 
     function showMockLogin(name, email = 'aluno@elevate.com') {
+        if (!name || name === 'Google') name = 'Murilo Pai';
         currentUser = { uid: 'local_' + Date.now(), displayName: name, email: email };
+        userData.userName = name;
+        userData.userEmail = email;
+        localStorage.setItem('elevate_current_user_session', JSON.stringify(currentUser));
+        saveData();
         saveLocalRegisteredStudent(currentUser);
         updateUserAuthUI();
         closeModal('modal-auth');
@@ -2473,8 +2501,18 @@
         });
     }
 
+    function openFeedbackModal() {
+        const nameInput = document.getElementById('fb-user-name');
+        const emailInput = document.getElementById('fb-user-email');
+        if (nameInput) nameInput.value = currentUser?.displayName || userData.userName || '';
+        if (emailInput) emailInput.value = currentUser?.email || userData.userEmail || '';
+        openModal('modal-feedback');
+    }
+
     async function submitStudentFeedback(e) {
         if (e) e.preventDefault();
+        const name = document.getElementById('fb-user-name')?.value?.trim() || currentUser?.displayName || 'Aluno';
+        const email = document.getElementById('fb-user-email')?.value?.trim() || currentUser?.email || 'Sem e-mail';
         const cat = document.getElementById('fb-category-select')?.value || 'Sugestão';
         const msg = document.getElementById('fb-message-input')?.value?.trim();
         if (!msg) {
@@ -2484,8 +2522,8 @@
 
         const feedbackItem = {
             id: 'fb_' + Date.now(),
-            userName: currentUser?.displayName || 'Aluno Convidado',
-            userEmail: currentUser?.email || 'Sem e-mail',
+            userName: name,
+            userEmail: email,
             rating: currentFbRating,
             category: cat,
             message: msg,
