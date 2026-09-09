@@ -23,5 +23,5 @@ Plataforma educacional completa e interativa para aprendizado da língua inglesa
 ---
 
 ## 🌐 Deploy e Acesso
-* **Vercel**: [https://ingles-passo-a-passo.vercel.app](https://ingles-passo-a-passo.vercel.app)
+* **Vercel**: [https://elevate.vercel.app](https://elevate.vercel.app)
 * **Repositório GitHub**: [https://github.com/olirumtecapp-debug/ingles-passo-a-passo](https://github.com/olirumtecapp-debug/ingles-passo-a-passo)
