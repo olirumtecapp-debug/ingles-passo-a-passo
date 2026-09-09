@@ -583,6 +583,15 @@
             </button>
 
             
+            <!-- Botão Apoie o Projeto (Lanches PIX) -->
+            <button onclick="openSupportModal()" id="sidebar-support-btn" class="w-full text-left flex items-center justify-between bg-gradient-to-r from-rose-50 to-pink-50 hover:from-rose-100 hover:to-pink-100 border-2 border-rose-200 p-2 rounded-2xl cursor-pointer transition shadow-2xs">
+                <span class="flex items-center gap-2">
+                    <span class="text-sm">❤️</span>
+                    <span class="text-xs font-black text-rose-950">Apoie o Projeto</span>
+                </span>
+                <span class="text-[9px] font-black bg-rose-500 text-white px-1.5 py-0.5 rounded-md">PIX</span>
+            </button>
+
             <!-- Botão Enviar Feedback do Aluno -->
             <button onclick="openFeedbackModal()" class="w-full text-left flex items-center justify-between bg-blue-50/70 hover:bg-blue-100 border border-blue-200/80 p-1.5 rounded-lg text-blue-900 font-black text-[11px] transition-all cursor-pointer">
                 <span class="flex items-center gap-1.5">
@@ -1978,6 +1987,67 @@
     </div>
 </div>
 
+<!-- Modal: Apoie o Projeto ELEVATE (Lanches no PIX) -->
+<div id="modal-support-project" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-support-project')">
+    <div class="modal-content max-w-sm w-full mx-auto p-4 sm:p-5 my-auto max-h-[94vh] overflow-y-auto rounded-3xl shadow-2xl relative bg-white border-2 border-rose-300 text-center" style="scrollbar-width: none;">
+        <!-- Botão Fechar X -->
+        <button onclick="closeModal('modal-support-project')" class="absolute top-3.5 right-3.5 w-7 h-7 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-400 hover:text-gray-700 flex items-center justify-center font-black text-xs transition cursor-pointer" title="Fechar">
+            ✕
+        </button>
+
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-rose-500 to-pink-500 text-2xl flex items-center justify-center mx-auto mb-2 text-white shadow-md">
+            ❤️
+        </div>
+        <h3 class="text-lg font-black text-gray-900 leading-tight mb-0.5">Apoie o Projeto ELEVATE</h3>
+        <p class="text-xs font-bold text-gray-500 mb-3">Ajude a manter a plataforma no ar e evoluindo!</p>
+
+        <p class="text-[11.5px] font-medium text-gray-600 bg-rose-50/70 border border-rose-200 rounded-xl p-2.5 mb-3 leading-snug">
+            O <strong>ELEVATE</strong> é feito com dedicação para ensinar de verdade sem comerciais chatos. Se você gosta do método, pague um cafézinho ou lanche para o criador no PIX!
+        </p>
+
+        <!-- Seleção de Lanches -->
+        <div class="grid grid-cols-3 gap-2 mb-3">
+            <button onclick="selectSupportTip(5)" id="tip-btn-5" class="p-2 rounded-xl border-2 border-rose-500 bg-rose-50 text-center cursor-pointer transition-all">
+                <span class="text-xl block mb-0.5">☕</span>
+                <span class="text-[10px] font-black uppercase text-gray-500 block">Cafézinho</span>
+                <span class="text-xs font-black text-rose-700">R$ 5,00</span>
+            </button>
+            <button onclick="selectSupportTip(10)" id="tip-btn-10" class="p-2 rounded-xl border-2 border-gray-200 bg-white text-center cursor-pointer transition-all hover:border-rose-300">
+                <span class="text-xl block mb-0.5">🥖</span>
+                <span class="text-[10px] font-black uppercase text-gray-500 block">Pão c/ Pingado</span>
+                <span class="text-xs font-black text-rose-700">R$ 10,00</span>
+            </button>
+            <button onclick="selectSupportTip(15)" id="tip-btn-15" class="p-2 rounded-xl border-2 border-gray-200 bg-white text-center cursor-pointer transition-all hover:border-rose-300">
+                <span class="text-xl block mb-0.5">🥪</span>
+                <span class="text-[10px] font-black uppercase text-gray-500 block">Misto Quente</span>
+                <span class="text-xs font-black text-rose-700">R$ 15,00</span>
+            </button>
+        </div>
+
+        <!-- Box do QR Code e Chave PIX -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-3 mb-3 text-center">
+            <div class="w-36 h-36 mx-auto bg-white p-2 rounded-xl border border-gray-200 shadow-xs mb-2 flex items-center justify-center">
+                <img id="support-qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=00020101021126420014br.gov.bcb.pix0120olirumdev1@gmail.com52040000530398654045.005802BR5921MURILO%20FERREIRA%20SILVA6008BRASILIA62070503***63041FB7" class="w-full h-full object-contain" alt="QR Code PIX Apoio">
+            </div>
+
+            <div class="text-[11px] font-black text-gray-700 mb-1">
+                Favorecido: <strong>MURILO FERREIRA SILVA</strong>
+            </div>
+
+            <div class="flex gap-1.5">
+                <input type="text" id="support-pix-copia-cola" readonly class="flex-1 text-[10px] font-mono p-1.5 rounded-lg border border-gray-300 bg-white text-gray-700 select-all" value="00020101021126420014br.gov.bcb.pix0120olirumdev1@gmail.com52040000530398654045.005802BR5921MURILO FERREIRA SILVA6008BRASILIA62070503***63041FB7">
+                <button onclick="handleCopySupportPix()" id="btn-copy-support-pix" class="btn-3d bg-rose-600 hover:bg-rose-700 text-white text-xs px-3 py-1 font-black rounded-lg cursor-pointer whitespace-nowrap">
+                    📋 Copiar
+                </button>
+            </div>
+        </div>
+
+        <button onclick="closeModal('modal-support-project'); showToast('Muito obrigado pelo carinho e apoio ao ELEVATE! ❤️', 'success');" class="btn-3d bg-gray-900 text-white w-full py-2 text-xs font-black rounded-xl">
+            Já fiz o PIX de Apoio!
+        </button>
+    </div>
+</div>
+
 <!-- Modal: Escolha Manual de Nível -->
 <div id="modal-placement-choose" class="modal-overlay hidden">
     <div class="modal-content max-w-md p-6 text-center">
@@ -2666,6 +2736,83 @@
         if (qrImg) {
             qrImg.src = modData.qrBase64;
         }
+    }
+
+    
+    const SUPPORT_PIX_PACKAGES = {
+        5: {
+            amount: 5.00,
+            payload: "00020101021126420014br.gov.bcb.pix0120olirumdev1@gmail.com52040000530398654045.005802BR5921MURILO FERREIRA SILVA6008BRASILIA62070503***63041FB7"
+        },
+        10: {
+            amount: 10.00,
+            payload: "00020101021126420014br.gov.bcb.pix0120olirumdev1@gmail.com520400005303986540510.005802BR5921MURILO FERREIRA SILVA6008BRASILIA62070503***63042B04"
+        },
+        15: {
+            amount: 15.00,
+            payload: "00020101021126420014br.gov.bcb.pix0120olirumdev1@gmail.com520400005303986540515.005802BR5921MURILO FERREIRA SILVA6008BRASILIA62070503***6304AF89"
+        }
+    };
+
+    function openSupportModal() {
+        selectSupportTip(5);
+        openModal('modal-support-project');
+    }
+
+    function selectSupportTip(val) {
+        [5, 10, 15].forEach(v => {
+            const btn = document.getElementById(`tip-btn-${v}`);
+            if (btn) {
+                if (v === val) {
+                    btn.className = 'p-2 rounded-xl border-2 border-rose-500 bg-rose-50 text-center cursor-pointer transition-all shadow-xs';
+                } else {
+                    btn.className = 'p-2 rounded-xl border-2 border-gray-200 bg-white text-center cursor-pointer transition-all hover:border-rose-300';
+                }
+            }
+        });
+
+        const pkg = SUPPORT_PIX_PACKAGES[val] || SUPPORT_PIX_PACKAGES[5];
+        const qrImg = document.getElementById('support-qr-img');
+        const input = document.getElementById('support-pix-copia-cola');
+
+        if (input) input.value = pkg.payload;
+        if (qrImg) {
+            qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(pkg.payload)}`;
+        }
+    }
+
+    function handleCopySupportPix() {
+        const input = document.getElementById('support-pix-copia-cola');
+        if (!input) return;
+        input.select();
+        input.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(input.value).then(() => {
+            const btn = document.getElementById('btn-copy-support-pix');
+            if (btn) {
+                const old = btn.innerText;
+                btn.innerText = "✓ Copiado!";
+                setTimeout(() => btn.innerText = old, 2000);
+            }
+            showToast("Código PIX copiado! Muito obrigado pelo apoio! ❤️", "success");
+        });
+    }
+
+    function isModulePurchased(lang) {
+        if (userData.isVip) return true;
+        const unl = userData.unlockedModules || [];
+        if (unl.includes('combo')) return true;
+        if (lang === 'en' && unl.includes('english')) return true;
+        if (lang === 'es' && unl.includes('spanish')) return true;
+        return false;
+    }
+
+    function openFreemiumUnitPaywall(unitNum) {
+        const curLang = userData.learningLanguage || 'en';
+        const langName = curLang === 'es' ? 'Espanhol' : 'Inglês';
+        currentSelectedModule = curLang === 'es' ? 'spanish' : 'english';
+        updatePixModuleSelection(currentSelectedModule);
+        openModal('modal-pix-checkout');
+        showToast(`🎉 Você concluiu a Unidade 1 de degustação de ${langName}! Ative o acesso VIP para liberar a Unidade ${unitNum} e todas as lições.`, 'info');
     }
 
     function handleCopyPixCode() {
