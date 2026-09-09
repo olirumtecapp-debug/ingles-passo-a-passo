@@ -554,14 +554,8 @@
                     <span class="text-lg">🎯</span>
                     <span>Nivelamento</span>
                 </button>
-                <button onclick="switchTab('creator')" id="nav-desktop-creator" class="nav-btn hidden flex items-center gap-2.5 text-sm py-2 px-2.5 rounded-xl font-black">
-                    <span class="text-lg">🤖</span>
-                    <span>Creator IA</span>
-                </button>
-                <button onclick="switchTab('editor')" id="nav-desktop-editor" class="nav-btn hidden flex items-center gap-2.5 text-sm py-2 px-2.5 rounded-xl font-black">
-                    <span class="text-lg">🛠️</span>
-                    <span>Editor</span>
-                </button>
+                
+                
             </nav>
         </div>
 
@@ -662,7 +656,7 @@
         <div id="view-creator" class="content-wrapper hidden max-w-3xl">
             <div class="w-full flex items-center justify-between mb-6 pb-4 border-b-2 border-gray-200">
                 <div class="flex items-center gap-3">
-                    <button id="btn-creator-back-to-learn" onclick="switchTab('learn')" class="btn-3d bg-gray-100 hover:bg-gray-200 text-gray-800 font-black px-3 py-1.5 text-xs rounded-xl flex items-center gap-1 cursor-pointer mr-2">← Trilha</button>
+                    <button id="btn-creator-back-to-learn" onclick="switchTab('learn')" class="btn-3d bg-gray-100 hover:bg-gray-200 text-gray-800 font-black px-3 py-1.5 text-xs rounded-xl flex items-center gap-1 cursor-pointer mr-1">← Trilha</button><button onclick="openModal('modal-admin-manager')" class="btn-3d bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-black px-3 py-1.5 text-xs rounded-xl flex items-center gap-1 cursor-pointer mr-2 border border-indigo-200">👑 Painel ADM</button>
                     <span class="text-3xl">🤖</span>
                     <div>
                         <h2 class="text-2xl font-black text-gray-900">ELEVATE Creator IA</h2>
@@ -753,7 +747,7 @@
         <div id="view-editor" class="content-wrapper hidden max-w-4xl">
             <div class="w-full flex justify-between items-center mb-6 flex-wrap gap-4 pb-4 border-b-2 border-gray-200">
                 <div class="flex items-center gap-3">
-                    <button id="btn-editor-back-to-learn" onclick="switchTab('learn')" class="btn-3d bg-gray-100 hover:bg-gray-200 text-gray-800 font-black px-3 py-1.5 text-xs rounded-xl flex items-center gap-1 cursor-pointer mr-2">← Trilha</button>
+                    <button id="btn-editor-back-to-learn" onclick="switchTab('learn')" class="btn-3d bg-gray-100 hover:bg-gray-200 text-gray-800 font-black px-3 py-1.5 text-xs rounded-xl flex items-center gap-1 cursor-pointer mr-1">← Trilha</button><button onclick="openModal('modal-admin-manager')" class="btn-3d bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-black px-3 py-1.5 text-xs rounded-xl flex items-center gap-1 cursor-pointer mr-2 border border-indigo-200">👑 Painel ADM</button>
                     <span class="text-3xl">🛠️</span>
                     <div>
                         <h2 class="text-2xl font-black text-gray-900">ELEVATE Editor de Aulas</h2>
@@ -6278,6 +6272,48 @@ RETORNE APENAS O ARRAY JSON VÁLIDO (sem markdown ou texto extra):
                     <div class="bg-white p-2 rounded-xl border border-amber-200">
                         <span class="text-lg block mb-0.5">⚡</span> PIX Instantâneo
                     </div>
+                </div>
+            </div>
+
+            <!-- Seção: Ciclo do Aluno, Gamificação e Estratégia de Monetização -->
+            <div class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 border-2 border-indigo-300 rounded-2xl p-4">
+                <h3 class="text-sm font-black text-indigo-950 flex items-center gap-2 mb-2">
+                    <span>🎯</span> 3. Jornada do Aluno & Modelo de Negócio (Estratégia Duolingo vs Elevate)
+                </h3>
+                
+                <div class="space-y-3 text-[11.5px] text-gray-700">
+                    
+                    <!-- Passo a Passo do Aluno -->
+                    <div class="bg-white p-3 rounded-xl border border-indigo-100 shadow-xs">
+                        <h4 class="font-black text-indigo-900 text-xs mb-1 flex items-center gap-1.5">
+                            <span>1️⃣</span> O Ciclo de Entrada e Estudo do Aluno:
+                        </h4>
+                        <ol class="list-decimal pl-4 space-y-1 text-gray-600 font-bold">
+                            <li><strong>Entrada & Onboarding</strong>: O aluno entra, escolhe o idioma que quer aprender (Inglês ou Espanhol) e sua meta diária (5 a 15 min).</li>
+                            <li><strong>Trilha Progressiva</strong>: Ele começa na Aula 1 da Seção 1 (Iniciante). Cada aula concluída com acertos concede +15 XP e +2 Diamantes, liberando a próxima aula na trilha.</li>
+                            <li><strong>Unidades e Seções</strong>: Ao completar todas as aulas da Unidade 1, a Unidade 2 se abre. Ao concluir todas as aulas do Iniciante, a Seção Intermediária se desbloqueia automaticamente.</li>
+                            <li><strong>Troca de Língua</strong>: A qualquer momento o aluno pode tocar no botão <em>"🌎 Idioma"</em> e alternar entre Inglês (180 lições) e Espanhol (75 lições). O progresso de cada língua é salvo separadamente!</li>
+                        </ol>
+                    </div>
+
+                    <!-- Estratégia Duolingo vs Modelo Elevate -->
+                    <div class="bg-white p-3 rounded-xl border border-indigo-100 shadow-xs">
+                        <h4 class="font-black text-indigo-900 text-xs mb-1 flex items-center gap-1.5">
+                            <span>2️⃣</span> Como o Duolingo Monetiza x Como o ELEVATE Faz:
+                        </h4>
+                        <p class="text-gray-600 font-medium mb-1.5 leading-snug">
+                            No <strong>Duolingo</strong>, o aluno recebe 5 vidas (corações). Se errar questões, as vidas acabam e ele é forçado a parar de estudar por horas ou pagar o <em>Super Duolingo</em> para ter vidas infinitas.
+                        </p>
+                        <p class="text-gray-600 font-medium leading-snug">
+                            No <strong>ELEVATE</strong>, aplicamos o modelo de <strong>Degustação da Unidade 1 + Acesso VIP Vitalício no PIX</strong>:
+                        </p>
+                        <ul class="list-disc pl-4 space-y-1 text-gray-600 font-bold mt-1">
+                            <li><strong>Modo Gratuito</strong>: O aluno tem 5 vidas para experimentar as primeiras lições, conhecer a metodologia e se encantar com a pronúncia.</li>
+                            <li><strong>Momento da Venda</strong>: O aluno é incentivado a comprar o VIP para ter <strong>Vidas Infinitas (∞)</strong> e acesso completo vitalício às 180 lições de Inglês (R$ 19,90), 75 de Espanhol (R$ 15,99) ou Combo Total (R$ 35,99).</li>
+                            <li><strong>Pagamento Instantâneo</strong>: O aluno escaneia o QR Code no seu banco. Com a aprovação, o status VIP é liberado e todos os bloqueios desaparecem!</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 
