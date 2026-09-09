@@ -1877,25 +1877,74 @@
     // 3. SELEÇÃO & TROCA DE IDIOMA
     // ==========================================
     function openLanguageModal() {
+        renderLanguageModalOptions();
         document.getElementById('modal-language-selector').classList.remove('hidden');
     }
 
+    function renderLanguageModalOptions() {
+        const container = document.getElementById('language-options-container');
+        if (!container) return;
+        const curLang = userData.learningLanguage || "en";
+
+        container.innerHTML = Object.values(LANGUAGES).map(lang => {
+            const isActive = lang.id === curLang;
+            const count = courseDatabase.filter(l => (l.language || "en") === lang.id).length;
+
+            return `
+                <div onclick="setActiveLanguage('${lang.id}')" class="border-2 p-3.5 rounded-2xl cursor-pointer transition-all flex items-center justify-between group ${isActive ? 'border-blue-500 bg-blue-50/70 shadow-xs ring-2 ring-blue-400/20' : 'border-gray-200 hover:border-blue-300 hover:bg-gray-50'}">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl">${lang.flag}</span>
+                        <div class="text-left">
+                            <div class="font-black text-gray-900 text-sm flex items-center gap-1.5">
+                                <span>${lang.name}</span>
+                                <span class="text-[11px] font-bold text-gray-400 font-sans">(${lang.nativeName})</span>
+                            </div>
+                            <div class="text-[11px] font-bold ${isActive ? 'text-blue-600' : 'text-gray-500'} mt-0.5">
+                                ${count} ${count === 1 ? 'aula' : 'aulas'} • ${isActive ? 'Em estudo' : (count > 0 ? 'Disponível' : 'Pronto para criar')}
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        ${isActive ? '<span class="text-xs font-black text-blue-600 bg-white border-2 border-blue-200 px-2.5 py-1 rounded-xl shadow-xs">✓ Ativo</span>' : '<span class="text-xs font-black text-gray-600 bg-white border border-gray-200 px-2.5 py-1 rounded-xl group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">Trocar</span>'}
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+
     function setActiveLanguage(langKey) {
-        if (!LANGUAGES[langKey] || !LANGUAGES[langKey].available) {
-            showToast("Este idioma estará disponível em breve!", "info");
-            return;
-        }
+        if (!LANGUAGES[langKey]) return;
+
         userData.learningLanguage = langKey;
         if (!userData.progressByLanguage[langKey]) {
             userData.progressByLanguage[langKey] = { completedLessons: [] };
         }
+        if (!userData.placementByLanguage[langKey]) {
+            userData.placementByLanguage[langKey] = null;
+        }
         saveData();
         closeModal('modal-language-selector');
+        updateLanguageUI();
         renderPlacementBanner();
         renderLevelTabs();
         renderMap();
         updateStatsUI();
-        showToast(`Idioma alterado para ${LANGUAGES[langKey].name}!`, "success");
+        showToast(`🌐 Idioma alterado para ${LANGUAGES[langKey].name} ${LANGUAGES[langKey].flag}!`, "success");
+    }
+
+    function updateLanguageUI() {
+        const curLang = userData.learningLanguage || "en";
+        const lang = LANGUAGES[curLang] || LANGUAGES.en;
+
+        const sFlag = document.getElementById('sidebar-lang-flag');
+        const sName = document.getElementById('sidebar-lang-name');
+        if (sFlag) sFlag.innerText = lang.flag;
+        if (sName) sName.innerText = lang.name;
+
+        const mFlag = document.getElementById('mobile-lang-flag');
+        const mName = document.getElementById('mobile-lang-name');
+        if (mFlag) mFlag.innerText = lang.flag;
+        if (mName) mName.innerText = lang.name;
     }
 
     // ==========================================
