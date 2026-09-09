@@ -1348,6 +1348,7 @@
 
 <!-- Modal: Checkout PIX & Planos VIP -->
 <!-- Modal: Checkout PIX Asaas & Módulos -->
+<!-- Modal: Checkout PIX Asaas & Módulos -->
 <div id="modal-pix-checkout" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-pix-checkout')">
     <div class="modal-content max-w-sm w-full mx-auto p-4 my-auto max-h-[94vh] overflow-hidden text-center rounded-3xl shadow-2xl relative bg-white flex flex-col justify-between">
         <!-- Botão Fechar X -->
@@ -1362,13 +1363,13 @@
                     ⚡
                 </div>
                 <div class="text-left">
-                    <h3 class="text-base font-black text-gray-900 leading-tight">Escolha seu Módulo</h3>
+                    <h3 class="text-base font-black text-gray-900 leading-tight">Pagamento Seguro Asaas</h3>
                     <p class="text-[10px] font-bold text-gray-400">Liberação automática após pagamento</p>
                 </div>
             </div>
 
             <!-- Seletor de Módulos (Inglês, Espanhol, Combo) -->
-            <div class="grid grid-cols-3 gap-1.5 mb-2.5 text-left mt-2">
+            <div class="grid grid-cols-3 gap-1.5 mb-2 text-left mt-1.5">
                 <div id="module-card-english" onclick="selectPaymentModule('english')" class="cursor-pointer border-2 border-gray-200 hover:border-emerald-500 rounded-2xl p-2 transition flex flex-col justify-between bg-gray-50">
                     <div>
                         <span class="text-[9px] font-black uppercase text-blue-600 block">🇺🇸 Inglês</span>
@@ -1396,8 +1397,8 @@
             </div>
 
             <!-- Área do QR Code PIX Asaas -->
-            <div class="bg-gray-50 border-2 border-gray-100 rounded-2xl p-2.5 mb-2.5 text-center">
-                <div class="w-28 h-28 mx-auto bg-white p-1 rounded-xl border border-gray-200 shadow-2xs flex items-center justify-center mb-1.5 relative">
+            <div class="bg-gray-50 border-2 border-gray-100 rounded-2xl p-2.5 mb-2 text-center">
+                <div class="w-28 h-28 mx-auto bg-white p-1 rounded-xl border border-gray-200 shadow-2xs flex items-center justify-center mb-1 relative">
                     <img id="pix-qr-code-img" src="" alt="QR Code PIX Asaas" class="w-full h-full object-contain rounded-lg">
                     <div id="pix-qr-loading" class="hidden absolute inset-0 bg-white/90 flex flex-col items-center justify-center text-[10px] font-black text-emerald-700">
                         <span class="animate-spin text-lg mb-1">⏳</span> Gerando PIX...
@@ -1414,11 +1415,11 @@
                 <!-- Status de Polling Automático -->
                 <div id="pix-status-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 mt-1 bg-amber-50 border border-amber-200 rounded-full text-[10px] font-black text-amber-700">
                     <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                    <span id="pix-status-text">Aguardando pagamento no banco...</span>
+                    <span id="pix-status-text">Aguardando pagamento Asaas...</span>
                 </div>
 
                 <!-- PIX Copia e Cola -->
-                <div class="flex gap-1.5 mt-2">
+                <div class="flex gap-1.5 mt-1.5">
                     <input type="text" id="pix-copia-cola-input" readonly class="form-input text-[10px] font-mono flex-1 py-1 px-2 bg-white text-gray-700 border-gray-300" value="">
                     <button onclick="copyPixCode()" class="btn-3d bg-emerald-600 hover:bg-emerald-700 text-white text-xs px-2.5 py-1 font-black rounded-xl cursor-pointer whitespace-nowrap">
                         📋 Copiar
@@ -1427,8 +1428,12 @@
             </div>
         </div>
 
-        <!-- Ações Inferiores -->
+        <!-- Ações Inferiores: Link Asaas & Cupom -->
         <div class="flex flex-col gap-1.5">
+            <a id="asaas-checkout-direct-btn" href="https://www.asaas.com/c/svbvti9vjke57oyn" target="_blank" rel="noopener noreferrer" class="btn-3d bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white py-2 px-3 text-xs font-black rounded-xl cursor-pointer shadow-xs flex items-center justify-center gap-1.5">
+                <span>🔒 Pagar na Página Segura Asaas</span>
+                <span>➔</span>
+            </a>
             <button onclick="openModal('modal-vip-store'); closeModal('modal-pix-checkout');" class="btn-3d bg-gray-100 hover:bg-gray-200 text-gray-700 py-1.5 px-3 text-[11px] font-bold flex items-center justify-center gap-1 cursor-pointer rounded-xl">
                 <span>🎟️ Possui um Cupom? Ativar aqui</span>
             </button>
@@ -2079,24 +2084,21 @@
                 <span class="text-xs font-black text-gray-800 flex items-center gap-1.5">
                     <span>⚡</span> Gateway PIX Asaas & Módulos
                 </span>
-                <span id="adm-asaas-status-badge" class="text-[10px] font-black uppercase px-1.5 py-0.5 bg-emerald-100 text-emerald-700 rounded">API Asaas</span>
+                <span id="adm-asaas-status-badge" class="text-[10px] font-black uppercase px-1.5 py-0.5 bg-emerald-100 text-emerald-700 rounded">Asaas Oficial</span>
             </div>
             <div class="space-y-2">
                 <div>
-                    <label class="text-[10px] font-bold text-gray-500 block">Chave de API do Asaas (API Key):</label>
-                    <input type="password" id="adm-asaas-key-input" class="form-input text-xs font-mono py-1 px-2" placeholder="$aact_YTU5YTE0M2M6N2I4MTY...">
+                    <label class="text-[10px] font-bold text-gray-500 block">Link de Pagamento Asaas (Combo Completo):</label>
+                    <input type="text" id="adm-asaas-url-combo" class="form-input text-xs font-mono py-1 px-2" value="https://www.asaas.com/c/svbvti9vjke57oyn">
                 </div>
                 <div class="grid grid-cols-2 gap-2">
                     <div>
-                        <label class="text-[10px] font-bold text-gray-500 block">Ambiente Asaas:</label>
-                        <select id="adm-asaas-env-select" class="form-input text-xs py-1 px-2 font-bold">
-                            <option value="production">🚀 Produção (api.asaas.com)</option>
-                            <option value="sandbox">🧪 Sandbox / Testes</option>
-                        </select>
+                        <label class="text-[10px] font-bold text-gray-500 block">Link Asaas (Inglês):</label>
+                        <input type="text" id="adm-asaas-url-english" class="form-input text-xs font-mono py-1 px-2" value="https://www.asaas.com/c/3xyskqpirl26h26g">
                     </div>
                     <div>
-                        <label class="text-[10px] font-bold text-gray-500 block">Chave PIX Alternativa:</label>
-                        <input type="text" id="adm-pix-key-input" class="form-input text-xs font-mono py-1 px-2" placeholder="contato@elevate.com">
+                        <label class="text-[10px] font-bold text-gray-500 block">Link Asaas (Espanhol):</label>
+                        <input type="text" id="adm-asaas-url-spanish" class="form-input text-xs font-mono py-1 px-2" value="https://www.asaas.com/c/3xyskqpirl26h26g">
                     </div>
                 </div>
                 <div class="grid grid-cols-3 gap-1.5 pt-1">
@@ -2412,8 +2414,11 @@
     // SISTEMA DE MONETIZAÇÃO & ASAAS PIX GATEWAY
     // ==========================================
     const DEFAULT_ASAAS_SETTINGS = {
-        apiKey: "",
-        environment: "production",
+        checkoutUrls: {
+            english: "https://www.asaas.com/c/3xyskqpirl26h26g",
+            spanish: "https://www.asaas.com/c/3xyskqpirl26h26g",
+            combo: "https://www.asaas.com/c/svbvti9vjke57oyn"
+        },
         pixKey: "admin@elevateidiomas.com.br",
         beneficiaryName: "ELEVATE IDIOMAS",
         city: "SAO PAULO",
@@ -2489,17 +2494,16 @@
     }
 
     function saveAdminAsaasSettings() {
-        const apiKey = document.getElementById('adm-asaas-key-input')?.value?.trim() || "";
-        const env = document.getElementById('adm-asaas-env-select')?.value || "production";
-        const pixKey = document.getElementById('adm-pix-key-input')?.value?.trim() || DEFAULT_ASAAS_SETTINGS.pixKey;
+        const urlCombo = document.getElementById('adm-asaas-url-combo')?.value?.trim() || DEFAULT_ASAAS_SETTINGS.checkoutUrls.combo;
+        const urlEnglish = document.getElementById('adm-asaas-url-english')?.value?.trim() || DEFAULT_ASAAS_SETTINGS.checkoutUrls.english;
+        const urlSpanish = document.getElementById('adm-asaas-url-spanish')?.value?.trim() || DEFAULT_ASAAS_SETTINGS.checkoutUrls.spanish;
         const english = parseFloat(document.getElementById('adm-price-english-input')?.value) || DEFAULT_ASAAS_SETTINGS.prices.english;
         const spanish = parseFloat(document.getElementById('adm-price-spanish-input')?.value) || DEFAULT_ASAAS_SETTINGS.prices.spanish;
         const combo = parseFloat(document.getElementById('adm-price-combo-input')?.value) || DEFAULT_ASAAS_SETTINGS.prices.combo;
 
         const config = {
-            apiKey: apiKey,
-            environment: env,
-            pixKey: pixKey,
+            checkoutUrls: { english: urlEnglish, spanish: urlSpanish, combo: urlCombo },
+            pixKey: "admin@elevateidiomas.com.br",
             beneficiaryName: "ELEVATE IDIOMAS",
             city: "SAO PAULO",
             prices: { english, spanish, combo }
@@ -2513,12 +2517,12 @@
         const config = getAsaasSettings();
         const bannerConfig = getBannerSettings();
 
-        if (document.getElementById('adm-asaas-key-input')) document.getElementById('adm-asaas-key-input').value = config.apiKey || "";
-        if (document.getElementById('adm-asaas-env-select')) document.getElementById('adm-asaas-env-select').value = config.environment || "production";
-        if (document.getElementById('adm-pix-key-input')) document.getElementById('adm-pix-key-input').value = config.pixKey || "";
-        if (document.getElementById('adm-price-english-input')) document.getElementById('adm-price-english-input').value = (config.prices.english || 19.90).toFixed(2);
-        if (document.getElementById('adm-price-spanish-input')) document.getElementById('adm-price-spanish-input').value = (config.prices.spanish || 15.99).toFixed(2);
-        if (document.getElementById('adm-price-combo-input')) document.getElementById('adm-price-combo-input').value = (config.prices.combo || 35.99).toFixed(2);
+        if (document.getElementById('adm-asaas-url-combo')) document.getElementById('adm-asaas-url-combo').value = config.checkoutUrls?.combo || DEFAULT_ASAAS_SETTINGS.checkoutUrls.combo;
+        if (document.getElementById('adm-asaas-url-english')) document.getElementById('adm-asaas-url-english').value = config.checkoutUrls?.english || DEFAULT_ASAAS_SETTINGS.checkoutUrls.english;
+        if (document.getElementById('adm-asaas-url-spanish')) document.getElementById('adm-asaas-url-spanish').value = config.checkoutUrls?.spanish || DEFAULT_ASAAS_SETTINGS.checkoutUrls.spanish;
+        if (document.getElementById('adm-price-english-input')) document.getElementById('adm-price-english-input').value = (config.prices?.english || 19.90).toFixed(2);
+        if (document.getElementById('adm-price-spanish-input')) document.getElementById('adm-price-spanish-input').value = (config.prices?.spanish || 15.99).toFixed(2);
+        if (document.getElementById('adm-price-combo-input')) document.getElementById('adm-price-combo-input').value = (config.prices?.combo || 35.99).toFixed(2);
 
         if (document.getElementById('adm-banner-title-input')) document.getElementById('adm-banner-title-input').value = bannerConfig.title;
         if (document.getElementById('adm-banner-text-input')) document.getElementById('adm-banner-text-input').value = bannerConfig.text;
@@ -2531,25 +2535,20 @@
         const eEl = document.getElementById('display-price-english');
         const sEl = document.getElementById('display-price-spanish');
         const cEl = document.getElementById('display-price-combo');
-        if (eEl) eEl.innerText = 'R$ ' + (config.prices.english || 19.90).toFixed(2).replace('.', ',');
-        if (sEl) sEl.innerText = 'R$ ' + (config.prices.spanish || 15.99).toFixed(2).replace('.', ',');
-        if (cEl) cEl.innerText = 'R$ ' + (config.prices.combo || 35.99).toFixed(2).replace('.', ',');
+        if (eEl) eEl.innerText = 'R$ ' + (config.prices?.english || 19.90).toFixed(2).replace('.', ',');
+        if (sEl) sEl.innerText = 'R$ ' + (config.prices?.spanish || 15.99).toFixed(2).replace('.', ',');
+        if (cEl) cEl.innerText = 'R$ ' + (config.prices?.combo || 35.99).toFixed(2).replace('.', ',');
 
         selectPaymentModule(currentSelectedModule || 'combo');
         openModal('modal-pix-checkout');
     }
 
-    async function selectPaymentModule(moduleKey) {
+    function selectPaymentModule(moduleKey) {
         currentSelectedModule = moduleKey;
         const config = getAsaasSettings();
-        const price = config.prices[moduleKey] || (moduleKey === 'english' ? 19.90 : moduleKey === 'spanish' ? 15.99 : 35.99);
+        const price = config.prices?.[moduleKey] || (moduleKey === 'english' ? 19.90 : moduleKey === 'spanish' ? 15.99 : 35.99);
 
-        const titles = {
-            english: 'Módulo Inglês (180 aulas)',
-            spanish: 'Módulo Espanhol (75 aulas)',
-            combo: 'Combo Completo (Inglês + Espanhol + VIP)'
-        };
-
+        // Visual selection
         ['english', 'spanish', 'combo'].forEach(key => {
             const card = document.getElementById('module-card-' + key);
             if (!card) return;
@@ -2566,74 +2565,18 @@
         const priceEl = document.getElementById('pix-selected-price');
         if (priceEl) priceEl.innerText = 'R$ ' + price.toFixed(2).replace('.', ',');
 
+        // Update Direct Asaas URL
+        const asaasBtn = document.getElementById('asaas-checkout-direct-btn');
+        if (asaasBtn) {
+            const directUrl = config.checkoutUrls?.[moduleKey] || DEFAULT_ASAAS_SETTINGS.checkoutUrls[moduleKey];
+            asaasBtn.href = directUrl;
+        }
+
         const statusText = document.getElementById('pix-status-text');
-        if (statusText) statusText.innerText = 'Aguardando pagamento no banco...';
+        if (statusText) statusText.innerText = 'Aguardando pagamento Asaas...';
 
-        if (asaasPollingInterval) {
-            clearInterval(asaasPollingInterval);
-            asaasPollingInterval = null;
-        }
-
-        if (config.apiKey && config.apiKey.startsWith('$aact_')) {
-            await createAsaasPixCharge(moduleKey, price, titles[moduleKey], config);
-        } else {
-            generateFallbackPix(moduleKey, price, config);
-        }
-    }
-
-    async function createAsaasPixCharge(moduleKey, price, description, config) {
-        const baseUrl = config.environment === 'sandbox' ? 'https://sandbox.asaas.com/api/v3' : 'https://api.asaas.com/v3';
-        const loadingEl = document.getElementById('pix-qr-loading');
-        if (loadingEl) loadingEl.classList.remove('hidden');
-
-        try {
-            const dueDate = new Date();
-            dueDate.setDate(dueDate.getDate() + 1);
-            const formattedDate = dueDate.toISOString().split('T')[0];
-
-            const paymentRes = await fetch(`${baseUrl}/payments`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'access_token': config.apiKey
-                },
-                body: JSON.stringify({
-                    customer: 'cus_elevate_student',
-                    billingType: 'PIX',
-                    value: price,
-                    dueDate: formattedDate,
-                    description: 'ELEVATE Idiomas - ' + description,
-                    postalService: false
-                })
-            });
-
-            const paymentData = await paymentRes.json();
-            if (paymentData.id) {
-                currentAsaasPaymentId = paymentData.id;
-
-                const qrRes = await fetch(`${baseUrl}/payments/${paymentData.id}/pixQrCode`, {
-                    headers: { 'access_token': config.apiKey }
-                });
-                const qrData = await qrRes.json();
-
-                if (qrData.encodedImage && qrData.payload) {
-                    const qrImg = document.getElementById('pix-qr-code-img');
-                    if (qrImg) qrImg.src = 'data:image/png;base64,' + qrData.encodedImage;
-
-                    const input = document.getElementById('pix-copia-cola-input');
-                    if (input) input.value = qrData.payload;
-
-                    startAsaasPolling(paymentData.id, moduleKey, baseUrl, config.apiKey);
-                }
-            } else {
-                generateFallbackPix(moduleKey, price, config);
-            }
-        } catch(err) {
-            console.warn('Asaas API call fallback:', err);
-            generateFallbackPix(moduleKey, price, config);
-        } finally {
-            if (loadingEl) loadingEl.classList.add('hidden');
-        }
+        // Generate PIX QR Code & Copia e Cola
+        generateFallbackPix(moduleKey, price, config);
     }
 
     function generateFallbackPix(moduleKey, price, config) {
@@ -2645,24 +2588,6 @@
         if (qrImg) {
             qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(pixPayload);
         }
-    }
-
-    function startAsaasPolling(paymentId, moduleKey, baseUrl, apiKey) {
-        if (asaasPollingInterval) clearInterval(asaasPollingInterval);
-
-        asaasPollingInterval = setInterval(async () => {
-            try {
-                const res = await fetch(`${baseUrl}/payments/${paymentId}`, {
-                    headers: { 'access_token': apiKey }
-                });
-                const data = await res.json();
-                if (data.status === 'RECEIVED' || data.status === 'CONFIRMED') {
-                    clearInterval(asaasPollingInterval);
-                    asaasPollingInterval = null;
-                    grantModuleAccess(moduleKey);
-                }
-            } catch(e) {}
-        }, 4000);
     }
 
     function grantModuleAccess(moduleKey) {
@@ -2685,7 +2610,7 @@
         updateVipUI();
         renderMap();
         closeModal('modal-pix-checkout');
-        showToast("🎉 PAGAMENTO CONFIRMADO! Módulo liberado com sucesso!", "success");
+        showToast("🎉 PAGAMENTO APROVADO! Módulo liberado com sucesso!", "success");
     }
 
     function generatePixPayload(key, name, city, amount, txid) {
