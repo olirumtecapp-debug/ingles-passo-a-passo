@@ -2063,6 +2063,9 @@
         <!-- Ações do ADM: Creator e Editor -->
         <div class="flex flex-col gap-1.5 mb-2.5">
             
+            <button onclick="closeModal('modal-admin-manager'); openModal('modal-admin-manual');" class="btn-3d bg-amber-500 hover:bg-amber-600 text-white p-2 text-xs sm:text-sm font-black flex items-center justify-center gap-2 cursor-pointer shadow-xs">
+                📖 Manual do Administrador & Guia
+            </button>
             <button onclick="closeModal('modal-admin-manager'); openModal('modal-admin-analytics'); refreshAdminAnalyticsData();" class="btn-3d bg-indigo-600 hover:bg-indigo-700 text-white p-2 text-xs sm:text-sm font-black flex items-center justify-center gap-2 cursor-pointer shadow-xs">
                 📊 Central de Gestão & Métricas
             </button>
@@ -6069,6 +6072,167 @@ RETORNE APENAS O ARRAY JSON VÁLIDO (sem markdown ou texto extra):
 
     window.addEventListener('DOMContentLoaded', initApp);
 </script>
+
+
+<!-- ========================================== -->
+<!-- MODAL: MANUAL COMPLETO DO ADMINISTRADOR    -->
+<!-- ========================================== -->
+<div id="modal-admin-manual" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-admin-manual')">
+    <div class="modal-content max-w-2xl w-full mx-auto p-4 sm:p-6 my-auto max-h-[92vh] overflow-y-auto text-left rounded-3xl shadow-2xl relative bg-white border-2 border-amber-300">
+        <!-- Botão Fechar X -->
+        <button onclick="closeModal('modal-admin-manual'); openModal('modal-admin-manager');" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gray-800 flex items-center justify-center font-black text-sm transition cursor-pointer" title="Voltar ao Painel">
+            ✕
+        </button>
+
+        <!-- Cabeçalho do Manual -->
+        <div class="flex items-center gap-3 mb-4 pb-3 border-b-2 border-gray-100">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-400 to-orange-500 text-2xl flex items-center justify-center text-white shadow-md">
+                📖
+            </div>
+            <div>
+                <h2 class="text-xl font-black text-gray-900 leading-tight">Manual Operacional do Administrador</h2>
+                <p class="text-xs font-bold text-gray-500">Guia completo de arquitetura, ferramentas e monetização do ELEVATE IDIOMAS</p>
+            </div>
+        </div>
+
+        <!-- Seções do Manual em Cards HQ -->
+        <div class="space-y-4 text-xs font-medium text-gray-700 leading-relaxed">
+            
+            <!-- Seção 1: Visão Geral e Filosofia -->
+            <div class="bg-amber-50/70 border-2 border-amber-200 rounded-2xl p-3.5">
+                <h3 class="text-sm font-black text-amber-950 flex items-center gap-2 mb-1.5">
+                    <span>🌟</span> 1. Visão Geral da Plataforma
+                </h3>
+                <p class="mb-2">
+                    O <strong>ELEVATE IDIOMAS</strong> é uma aplicação web progressiva desenvolvida para aprendizado autônomo e acelerado de idiomas. A interface utiliza princípios de design <strong>Pop Art / Quadrinhos (HQ)</strong> com bordas marcadas, cores vibrantes e microinterações táteis para maximizar o engajamento e a retenção do aluno.
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-[10px] font-black uppercase mt-2">
+                    <div class="bg-white p-2 rounded-xl border border-amber-200">
+                        <span class="text-lg block mb-0.5">🧠</span> Repetição Espaçada
+                    </div>
+                    <div class="bg-white p-2 rounded-xl border border-amber-200">
+                        <span class="text-lg block mb-0.5">🎮</span> Gamificação
+                    </div>
+                    <div class="bg-white p-2 rounded-xl border border-amber-200">
+                        <span class="text-lg block mb-0.5">🔊</span> Áudio Nativo
+                    </div>
+                    <div class="bg-white p-2 rounded-xl border border-amber-200">
+                        <span class="text-lg block mb-0.5">⚡</span> PIX Instantâneo
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção 2: Estrutura Curricular e Aulas -->
+            <div class="bg-blue-50/70 border-2 border-blue-200 rounded-2xl p-3.5">
+                <h3 class="text-sm font-black text-blue-950 flex items-center gap-2 mb-1.5">
+                    <span>🎓</span> 2. Estrutura de Cursos e Lições
+                </h3>
+                <ul class="list-disc pl-4 space-y-1 mb-2 text-gray-800">
+                    <li><strong>Módulo de Inglês Completo</strong>: 180 lições distribuídas em 3 blocos (Iniciante, Intermediário e Avançado).</li>
+                    <li><strong>Módulo de Espanhol Completo</strong>: 75 lições cobrindo vocabulário prático, gramática contextual e expressões cotidianas.</li>
+                    <li><strong>Teste de Nivelamento (Placement Test)</strong>: Exibido no topo da trilha de lições para permitir que alunos com conhecimento prévio pulem etapas iniciais.</li>
+                    <li><strong>Síntese de Voz (TTS)</strong>: Utiliza a Web Speech API do navegador para pronúncia humana em <code>en-US</code> e <code>es-ES</code>.</li>
+                </ul>
+            </div>
+
+            <!-- Seção 3: Gamificação e Economia de Vidas -->
+            <div class="bg-red-50/70 border-2 border-red-200 rounded-2xl p-3.5">
+                <h3 class="text-sm font-black text-red-950 flex items-center gap-2 mb-1.5">
+                    <span>❤️</span> 3. Gamificação e Economia de Vidas
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-1">
+                    <div class="bg-white p-2.5 rounded-xl border border-red-200">
+                        <strong class="text-red-600 block text-xs mb-0.5">❤️ Vidas (Corações)</strong>
+                        O aluno comum possui 5 vidas. Cada resposta errada desconta 1 vida. Ao zerar, o aluno precisa praticar ou assinar o VIP.
+                    </div>
+                    <div class="bg-white p-2.5 rounded-xl border border-red-200">
+                        <strong class="text-amber-600 block text-xs mb-0.5">🔥 Ofensiva (Streak)</strong>
+                        Registra os dias consecutivos de estudo. O sistema premia a constância para evitar o abandono do curso.
+                    </div>
+                    <div class="bg-white p-2.5 rounded-xl border border-red-200">
+                        <strong class="text-emerald-600 block text-xs mb-0.5">💎 Gemas & XP</strong>
+                        Pontos de experiência acumulados para subir de liga e moedas para desbloquear itens cosméticos e recuperar vidas.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção 4: Monetização e Checkout PIX -->
+            <div class="bg-emerald-50/70 border-2 border-emerald-200 rounded-2xl p-3.5">
+                <h3 class="text-sm font-black text-emerald-950 flex items-center gap-2 mb-1.5">
+                    <span>💳</span> 4. Sistema Financeiro & Checkout PIX
+                </h3>
+                <p class="mb-2">
+                    A plataforma opera com preços acessíveis e ativação instantânea via <strong>PIX Banco Central</strong>:
+                </p>
+                <div class="grid grid-cols-3 gap-2 text-center mb-2">
+                    <div class="bg-white p-2 rounded-xl border border-emerald-300">
+                        <span class="text-[10px] font-black text-blue-600 block">🇺🇸 Inglês</span>
+                        <span class="text-xs font-black text-gray-900">R$ 19,90</span>
+                        <span class="text-[9px] text-gray-400 block">180 Aulas</span>
+                    </div>
+                    <div class="bg-white p-2 rounded-xl border border-emerald-300">
+                        <span class="text-[10px] font-black text-amber-600 block">🇪🇸 Espanhol</span>
+                        <span class="text-xs font-black text-gray-900">R$ 15,99</span>
+                        <span class="text-[9px] text-gray-400 block">75 Aulas</span>
+                    </div>
+                    <div class="bg-white p-2 rounded-xl border-2 border-emerald-500 bg-emerald-50/50">
+                        <span class="text-[10px] font-black text-emerald-800 block">👑 Combo VIP</span>
+                        <span class="text-xs font-black text-emerald-900">R$ 35,99</span>
+                        <span class="text-[9px] text-emerald-700 font-bold block">Tudo + Vidas ∞</span>
+                    </div>
+                </div>
+                <ul class="list-disc pl-4 space-y-1 text-[11px] text-gray-700">
+                    <li><strong>Chave PIX Oficial</strong>: <code>olirumdev1@gmail.com</code> (Favorecido: <strong>MURILO FERREIRA SILVA</strong> — Brasília).</li>
+                    <li><strong>QR Code + Copia e Cola</strong>: O QR Code atende alunos no computador; o Copia e Cola atende 100% dos alunos no celular.</li>
+                    <li><strong>Botão de Simulação</strong>: Oculto para alunos e visível apenas para administradores logados (permite testes rápidos).</li>
+                </ul>
+            </div>
+
+            <!-- Seção 5: Ferramentas do Administrador (Creator IA, Editor e Métricas) -->
+            <div class="bg-purple-50/70 border-2 border-purple-200 rounded-2xl p-3.5">
+                <h3 class="text-sm font-black text-purple-950 flex items-center gap-2 mb-1.5">
+                    <span>🛠️</span> 5. Ferramentas Administrativas Exclusivas
+                </h3>
+                <div class="space-y-2 mt-1">
+                    <div class="bg-white p-2.5 rounded-xl border border-purple-200">
+                        <strong class="text-purple-700 block text-xs">🤖 Creator IA</strong>
+                        Permite gerar lições e exercícios interativos completos a partir de um tema digitado (ex: "Entrevista de Emprego", "Viagem e Hotel"), com criação automática de perguntas, respostas certas e pegadinhas.
+                    </div>
+                    <div class="bg-white p-2.5 rounded-xl border border-purple-200">
+                        <strong class="text-purple-700 block text-xs">🛠️ Editor de Aulas</strong>
+                        Ferramenta visual para editar frases, alterar opções, corrigir enunciados e reorganizar a ordem de qualquer lição diretamente no app.
+                    </div>
+                    <div class="bg-white p-2.5 rounded-xl border border-purple-200">
+                        <strong class="text-purple-700 block text-xs">📊 Central de Gestão & Métricas</strong>
+                        Painel com dados agregados de alunos, porcentagem de conclusão de lições, taxa de acerto e ferramenta de <strong>Zerar Progresso</strong> caso um aluno precise reiniciar a trilha do zero.
+                    </div>
+                    <div class="bg-white p-2.5 rounded-xl border border-purple-200">
+                        <strong class="text-purple-700 block text-xs">📢 Banner de Avisos Globais</strong>
+                        Ative comunicados, promoções relâmpago ou avisos importantes que aparecem no topo de todo o site para todos os visitantes.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção 6: Atalhos e Acessos -->
+            <div class="bg-gray-100 border-2 border-gray-300 rounded-2xl p-3 text-[11px]">
+                <h4 class="font-black text-gray-900 mb-1 flex items-center gap-1.5">
+                    <span>🔑</span> Atalhos e Segurança
+                </h4>
+                <p>
+                    • Pressione <kbd class="px-1.5 py-0.5 bg-white border border-gray-300 rounded font-mono text-gray-800">Alt</kbd> + <kbd class="px-1.5 py-0.5 bg-white border border-gray-300 rounded font-mono text-gray-800">Shift</kbd> + <kbd class="px-1.5 py-0.5 bg-white border border-gray-300 rounded font-mono text-gray-800">M</kbd> em qualquer tela para abrir o login/painel de gestão.<br>
+                    • Usuário padrão: <code class="font-mono text-indigo-700 font-bold">admplus</code>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botão Voltar -->
+        <div class="mt-4 pt-3 border-t-2 border-gray-100 flex justify-end">
+            <button onclick="closeModal('modal-admin-manual'); openModal('modal-admin-manager');" class="btn-3d bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-5 text-xs font-black rounded-xl cursor-pointer">
+                ← Voltar ao Painel ADM
+            </button>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
