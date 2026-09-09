@@ -826,18 +826,18 @@
                                 <div class="text-xs font-bold text-gray-500">180 aulas disponíveis • Do Iniciante ao Avançado</div>
                             </div>
                         </div>
-                        <span class="text-sm font-black text-blue-600">✓ Ativo</span>
+                        <span id="onb-check-en" class="text-sm font-black text-blue-600">✓ Selecionado</span>
                     </div>
 
-                    <div class="selectable-card disabled">
+                    <div onclick="selectOnboardingLanguage('es')" id="onb-lang-es" class="selectable-card">
                         <div class="flex items-center gap-4">
                             <span class="text-3xl">🇪🇸</span>
                             <div>
-                                <div class="text-base font-black text-gray-700">Espanhol</div>
-                                <div class="text-xs font-bold text-gray-400">Em breve • Curso completo em desenvolvimento</div>
+                                <div class="text-base font-black text-gray-900">Espanhol</div>
+                                <div class="text-xs font-bold text-gray-500">Disponível • Pronto para estudar ou criar</div>
                             </div>
                         </div>
-                        <span class="text-xs font-extrabold text-gray-400 bg-gray-100 px-2.5 py-1 rounded-lg">🔒 Em breve</span>
+                        <span id="onb-check-es" class="text-sm font-black text-blue-600 hidden">✓ Selecionado</span>
                     </div>
                 </div>
             </div>
@@ -2013,9 +2013,17 @@
 
     function selectOnboardingLanguage(lang) {
         onboardingTempData.learningLanguage = lang;
-        nextOnboardingStep();
-    }
+        document.querySelectorAll('#onboarding-step-2 .selectable-card').forEach(c => c.classList.remove('selected'));
+        const enCheck = document.getElementById('onb-check-en');
+        const esCheck = document.getElementById('onb-check-es');
+        if (enCheck) enCheck.classList.add('hidden');
+        if (esCheck) esCheck.classList.add('hidden');
 
+        const el = document.getElementById(`onb-lang-${lang}`);
+        const checkEl = document.getElementById(`onb-check-${lang}`);
+        if (el) el.classList.add('selected');
+        if (checkEl) checkEl.classList.remove('hidden');
+    }
     function toggleOnboardingReason(cardEl, reason) {
         cardEl.classList.toggle('selected');
         const idx = onboardingTempData.reasons.indexOf(reason);
