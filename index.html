@@ -4441,20 +4441,33 @@
             unit.lessons.forEach(lesson => {
                 const curCompleted = userData.progressByLanguage[curLang]?.completedLessons || [];
                 const isCompleted = curCompleted.includes(lesson.id);
+                const isPaidModule = isModulePurchased(curLang);
+                // Unidade 1 é 100% gratuita. Unidade 2 em diante exige o módulo/VIP.
+                const isUnitPaywallLocked = (lesson.unit > 1) && !isPaidModule;
                 const isAvailable = isCompleted || previousLessonCompleted || !!userData.isVip;
 
                 const nodeContainer = document.createElement('div');
                 nodeContainer.className = 'lesson-node-container';
 
                 const node = document.createElement('div');
-                node.className = `lesson-node ${lesson.isReview ? 'review' : ''} ${isCompleted ? 'completed' : (isAvailable ? 'available' : 'locked')}`;
-                node.innerHTML = isCompleted ? '⭐' : (lesson.isReview ? '🏆' : (lesson.icon || '📖'));
+                
+                if (isUnitPaywallLocked && !isCompleted) {
+                    node.className = 'lesson-node border-2 border-amber-400 bg-amber-50 text-amber-900 shadow-md cursor-pointer';
+                    node.innerHTML = '👑';
+                } else {
+                    node.className = `lesson-node ${lesson.isReview ? 'review' : ''} ${isCompleted ? 'completed' : (isAvailable ? 'available' : 'locked')}`;
+                    node.innerHTML = isCompleted ? '⭐' : (lesson.isReview ? '🏆' : (lesson.icon || '📖'));
+                }
                 
                 const currentOffset = offsets[offsetIndex % offsets.length];
                 node.style.transform = `translateX(${currentOffset}px)`;
                 offsetIndex++;
 
                 node.onclick = () => {
+                    if (isUnitPaywallLocked && !isCompleted) {
+                        openFreemiumUnitPaywall(lesson.unit);
+                        return;
+                    }
                     if(!isAvailable) {
                         showToast("Complete a aula anterior primeiro!", "error");
                         return;
