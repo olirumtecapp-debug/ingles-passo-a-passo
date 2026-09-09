@@ -617,6 +617,26 @@
 
         <!-- VIEW: MAPA DE APRENDIZADO -->
         <div id="view-learn" class="content-wrapper">
+
+            <!-- Banner de Avisos Globais (Gerenciado pelo Admin) -->
+            <div id="global-announcement-banner" class="hidden w-full mb-3 p-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white shadow-md flex items-center justify-between gap-3 transition-all duration-300">
+                <div class="flex items-center gap-3">
+                    <span class="text-xl animate-bounce">📢</span>
+                    <div>
+                        <div id="announcement-title" class="text-xs font-black tracking-wide uppercase">Aviso Importante</div>
+                        <div id="announcement-text" class="text-xs font-bold text-amber-50">Bem-vindo ao ELEVATE Idiomas!</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button id="announcement-action-btn" onclick="openPixCheckoutModal()" class="px-3 py-1.5 rounded-xl bg-white text-amber-800 text-xs font-black shadow-xs hover:bg-amber-50 transition cursor-pointer whitespace-nowrap">
+                        👑 Seja VIP
+                    </button>
+                    <button onclick="dismissAnnouncement()" class="w-6 h-6 rounded-full bg-black/20 hover:bg-black/40 text-white flex items-center justify-center text-xs font-black transition cursor-pointer" title="Ocultar aviso">
+                        ✕
+                    </button>
+                </div>
+            </div>
+
             <!-- Banner de Nivelamento -->
             <div id="placement-banner-container" class="w-full mb-4"></div>
             
@@ -1319,6 +1339,83 @@
 
 
 <!-- MODAL DE ATIVAÇÃO VIP & RESGATE DE CUPOM PARA O ALUNO -->
+
+<!-- Modal: Checkout PIX & Planos VIP -->
+<div id="modal-pix-checkout" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-pix-checkout')">
+    <div class="modal-content max-w-md w-full mx-auto p-5 sm:p-6 my-auto max-h-[94vh] overflow-y-auto text-center rounded-3xl shadow-2xl relative bg-white">
+        <!-- Botão Fechar X -->
+        <button onclick="closeModal('modal-pix-checkout')" class="absolute top-3.5 right-3.5 w-7 h-7 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-400 hover:text-gray-700 flex items-center justify-center font-black text-xs transition cursor-pointer" title="Fechar">
+            ✕
+        </button>
+
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-500 text-2xl flex items-center justify-center mx-auto mb-2 text-white shadow-md">
+            ⚡
+        </div>
+        <h3 class="text-xl font-black text-gray-900 mb-0.5">Assinatura & Acesso VIP</h3>
+        <p class="text-xs font-bold text-gray-500 mb-4">Pagamento instantâneo via PIX com liberação imediata</p>
+
+        <!-- Seletor de Planos -->
+        <div class="grid grid-cols-3 gap-2 mb-4 text-left">
+            <div id="plan-card-monthly" onclick="selectPixPlan('monthly')" class="cursor-pointer border-2 border-gray-200 hover:border-emerald-500 rounded-2xl p-2.5 transition flex flex-col justify-between bg-gray-50">
+                <div>
+                    <span class="text-[9px] font-black uppercase text-gray-400 block mb-0.5">Mensal</span>
+                    <div class="text-sm font-black text-gray-900" id="display-price-monthly">R$ 19,90</div>
+                    <span class="text-[10px] font-bold text-gray-500">/mês</span>
+                </div>
+            </div>
+            <div id="plan-card-annual" onclick="selectPixPlan('annual')" class="cursor-pointer border-2 border-emerald-500 bg-emerald-50/50 rounded-2xl p-2.5 transition flex flex-col justify-between relative shadow-xs">
+                <span class="absolute -top-2.5 right-2 bg-emerald-600 text-white text-[8px] font-black uppercase px-1.5 py-0.5 rounded-full shadow-xs">Popular</span>
+                <div>
+                    <span class="text-[9px] font-black uppercase text-emerald-700 block mb-0.5">Anual</span>
+                    <div class="text-sm font-black text-emerald-900" id="display-price-annual">R$ 97,00</div>
+                    <span class="text-[10px] font-bold text-emerald-700">/ano</span>
+                </div>
+            </div>
+            <div id="plan-card-lifetime" onclick="selectPixPlan('lifetime')" class="cursor-pointer border-2 border-gray-200 hover:border-amber-500 rounded-2xl p-2.5 transition flex flex-col justify-between bg-gray-50">
+                <div>
+                    <span class="text-[9px] font-black uppercase text-amber-600 block mb-0.5">Vitalício</span>
+                    <div class="text-sm font-black text-gray-900" id="display-price-lifetime">R$ 147,00</div>
+                    <span class="text-[10px] font-bold text-gray-500">único</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área do QR Code e Copia e Cola -->
+        <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-4 mb-4 text-center">
+            <div class="text-[11px] font-black uppercase text-gray-600 mb-2 flex items-center justify-center gap-1">
+                <span>📱 Escaneie o QR Code PIX</span>
+            </div>
+            <div class="w-40 h-40 mx-auto bg-white p-2 rounded-2xl border-2 border-gray-200 shadow-xs flex items-center justify-center mb-3">
+                <img id="pix-qr-code-img" src="" alt="QR Code PIX" class="w-full h-full object-contain rounded-lg">
+            </div>
+            <div class="text-[11px] font-bold text-gray-600 mb-1">
+                Valor do Plano: <strong id="pix-selected-price" class="text-emerald-600 font-black text-sm">R$ 97,00</strong>
+            </div>
+            <div class="text-[10px] font-mono text-gray-400 mb-2">
+                Beneficiário: <strong id="pix-beneficiary-name" class="text-gray-700">ELEVATE Idiomas</strong>
+            </div>
+
+            <!-- PIX Copia e Cola -->
+            <div class="flex gap-1.5 mt-2">
+                <input type="text" id="pix-copia-cola-input" readonly class="form-input text-[11px] font-mono flex-1 py-1.5 px-2 bg-white text-gray-700 border-gray-300" value="">
+                <button onclick="copyPixCode()" class="btn-3d bg-emerald-600 hover:bg-emerald-700 text-white text-xs px-3 py-1.5 font-black rounded-xl cursor-pointer whitespace-nowrap">
+                    📋 Copiar
+                </button>
+            </div>
+        </div>
+
+        <!-- Botões de Ação para o Aluno -->
+        <div class="flex flex-col gap-2">
+            <button onclick="sendPixProofViaWhatsApp()" class="btn-3d bg-emerald-500 hover:bg-emerald-600 text-white p-2.5 text-xs font-black flex items-center justify-center gap-2 cursor-pointer shadow-xs rounded-xl">
+                <span>📱 Enviar Comprovante via WhatsApp</span>
+            </button>
+            <button onclick="openModal('modal-vip-store'); closeModal('modal-pix-checkout');" class="btn-3d bg-gray-100 hover:bg-gray-200 text-gray-700 p-2 text-xs font-bold flex items-center justify-center gap-1.5 cursor-pointer rounded-xl">
+                <span>🎟️ Já possui um Cupom VIP? Ativar aqui</span>
+            </button>
+        </div>
+    </div>
+</div>
+
 <div id="modal-vip-store" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-vip-store')">
     <div class="modal-content max-w-sm w-full mx-auto p-5 text-center rounded-3xl shadow-2xl relative">
         <!-- Botão Fechar X -->
@@ -1955,6 +2052,70 @@
             </button>
         </div>
 
+        
+        <!-- Gestão de Monetização, PIX & Avisos -->
+        <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-3 text-left mb-2.5">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-black text-gray-800 flex items-center gap-1.5">
+                    <span>⚡</span> Configuração PIX & Preços
+                </span>
+                <span class="text-[10px] font-black uppercase px-1.5 py-0.5 bg-emerald-100 text-emerald-700 rounded">Ativo</span>
+            </div>
+            <div class="space-y-2">
+                <div>
+                    <label class="text-[10px] font-bold text-gray-500 block">Chave PIX (CPF/CNPJ/Email/Tel/Aleatória):</label>
+                    <input type="text" id="adm-pix-key-input" class="form-input text-xs font-mono py-1 px-2" placeholder="sua-chave-pix@aqui.com">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="text-[10px] font-bold text-gray-500 block">Nome do Beneficiário:</label>
+                        <input type="text" id="adm-pix-name-input" class="form-input text-xs py-1 px-2" placeholder="Nome Completo ou Razão">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-bold text-gray-500 block">WhatsApp Suporte:</label>
+                        <input type="text" id="adm-pix-whatsapp-input" class="form-input text-xs font-mono py-1 px-2" placeholder="5511999999999">
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-1.5 pt-1">
+                    <div>
+                        <label class="text-[9px] font-bold text-gray-400 block">Mensal (R$):</label>
+                        <input type="number" step="0.01" id="adm-price-monthly-input" class="form-input text-xs font-black text-emerald-700 py-1 px-1.5" value="19.90">
+                    </div>
+                    <div>
+                        <label class="text-[9px] font-bold text-gray-400 block">Anual (R$):</label>
+                        <input type="number" step="0.01" id="adm-price-annual-input" class="form-input text-xs font-black text-emerald-700 py-1 px-1.5" value="97.00">
+                    </div>
+                    <div>
+                        <label class="text-[9px] font-bold text-gray-400 block">Vitalício (R$):</label>
+                        <input type="number" step="0.01" id="adm-price-lifetime-input" class="form-input text-xs font-black text-emerald-700 py-1 px-1.5" value="147.00">
+                    </div>
+                </div>
+                <button onclick="saveAdminPixSettings()" class="btn-3d bg-emerald-600 hover:bg-emerald-700 text-white w-full py-1.5 text-xs font-black rounded-xl cursor-pointer mt-1">
+                    💾 Salvar Configurações de PIX
+                </button>
+            </div>
+        </div>
+
+        <!-- Gestão do Banner de Aviso Global -->
+        <div class="bg-amber-50/70 border-2 border-amber-200 rounded-2xl p-3 text-left mb-2.5">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-black text-amber-900 flex items-center gap-1.5">
+                    <span>📢</span> Banner de Aviso Global
+                </span>
+                <label class="flex items-center gap-1.5 cursor-pointer text-xs font-bold text-amber-800">
+                    <input type="checkbox" id="adm-banner-active-checkbox" onchange="toggleAdminBannerStatus()" class="w-3.5 h-3.5 text-amber-600 rounded">
+                    <span>Ativo</span>
+                </label>
+            </div>
+            <div class="space-y-1.5">
+                <input type="text" id="adm-banner-title-input" class="form-input text-xs font-black text-gray-800 py-1 px-2" placeholder="Título do Aviso (ex: Promoção Relâmpago)">
+                <input type="text" id="adm-banner-text-input" class="form-input text-xs text-gray-700 py-1 px-2" placeholder="Mensagem do Aviso (ex: Assine o VIP por R$ 97/ano)">
+                <button onclick="saveAdminBannerSettings()" class="btn-3d bg-amber-600 hover:bg-amber-700 text-white w-full py-1.5 text-xs font-black rounded-xl cursor-pointer">
+                    📢 Publicar Aviso no Topo
+                </button>
+            </div>
+        </div>
+
         <!-- Seção VIP & Controle de Acesso no ADM -->
         <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-200 rounded-2xl p-3 mb-2.5 text-left">
             <div class="flex items-center justify-between mb-1.5">
@@ -2224,6 +2385,7 @@
     }, true);
 
     function initApp() {
+        initAnnouncementBanner();
         updateAdminVisibilityUI();
         if (window.location.hash === "#admin") { setTimeout(() => toggleAdminModal(), 400); }
         window.addEventListener("hashchange", () => { if (window.location.hash === "#admin") toggleAdminModal(); });
@@ -2807,6 +2969,16 @@
     }
 
 
+    
+    function getFeedbackMailto(email, name, message) {
+        if (!email) return '#';
+        const safeName = name || 'Aluno';
+        const safeMsg = message || '';
+        const subject = encodeURIComponent('Contato ELEVATE Idiomas - Feedback');
+        const body = encodeURIComponent('Olá ' + safeName + ',\n\nRecebemos seu feedback no ELEVATE Idiomas:\n"' + safeMsg + '"\n\nAtenciosamente,\nEquipe ELEVATE');
+        return 'mailto:' + encodeURIComponent(email) + '?subject=' + subject + '&body=' + body;
+    }
+
     function renderAdminFeedbacksList(list) {
         const container = document.getElementById('adm-feedbacks-list');
         if (!container) return;
@@ -2817,7 +2989,7 @@
         }
 
         container.innerHTML = list.map(f => `
-            <div class="bg-white border-2 border-gray-100 p-3.5 rounded-2xl flex flex-col gap-1.5 shadow-2xs">
+            <div class="bg-white border-2 border-gray-100 p-3.5 rounded-2xl flex flex-col gap-2 shadow-2xs">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                         <span class="text-amber-400 text-sm font-black">${'★'.repeat(f.rating || 5)}${'☆'.repeat(5 - (f.rating || 5))}</span>
@@ -2827,7 +2999,13 @@
                     <span class="text-[10px] font-bold text-gray-400">${f.createdAt || ''}</span>
                 </div>
                 <p class="text-xs font-bold text-gray-700 bg-gray-50 p-2.5 rounded-xl">${f.message || ''}</p>
-                <div class="text-[10px] text-gray-400 font-mono">Contato: ${f.userEmail || 'Sem e-mail'}</div>
+                <div class="flex items-center justify-between pt-1 border-t border-gray-100 text-[10px]">
+                    <div class="text-gray-500 font-mono font-bold">✉️ ${f.userEmail || 'Sem e-mail'}</div>
+                    <div class="flex items-center gap-2">
+                        ${f.userEmail ? `<a href="${getFeedbackMailto(f.userEmail, f.userName, f.message)}" class="px-2 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg font-black transition">✉️ Responder E-mail</a>` : ''}
+                        <button onclick="replyFeedbackViaWhatsApp('${f.userName || 'Aluno'}', '${f.message ? f.message.replace(/'/g, '') : ''}')" class="px-2 py-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-lg font-black transition cursor-pointer">💬 WhatsApp</button>
+                    </div>
+                </div>
             </div>
         `).join('');
     }
