@@ -2158,7 +2158,17 @@
             </div>
         </div>
 
-        <!-- Ações Inferiores: Confirmação Automática & Cupom -->
+        <!-- Link Direto Cartão/Asaas & Status -->
+            <div class="mb-2 flex flex-col gap-1.5">
+                <a id="asaas-checkout-direct-btn" href="https://www.asaas.com" target="_blank" class="w-full btn-3d bg-blue-600 hover:bg-blue-700 text-white py-2 px-3 text-xs font-black rounded-xl cursor-pointer shadow-xs flex items-center justify-center gap-1.5 text-center">
+                    💳 Pagar com Cartão / Boleto / Asaas Oficial
+                </a>
+                <div class="text-[10px] text-gray-500 font-bold text-center">
+                    <span id="pix-status-text">Aguardando recebimento via Asaas PIX...</span>
+                </div>
+            </div>
+
+            <!-- Ações Inferiores: Confirmação Automática & Cupom -->
         <div class="flex flex-col gap-1.5">
             <div id="pix-student-status-box" class="flex items-center justify-center gap-2 py-2 px-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-800 text-[11px] font-bold">
                 <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
@@ -3085,6 +3095,7 @@
 
     const LEVELS_ORDER = ["beginner", "intermediate", "advanced"];
     
+    let currentUser = null;
     let userData = {
         xp: 0,
         gems: 0,
@@ -3894,11 +3905,12 @@
         openModal('modal-unit3-bonus');
     }
 
+    function updatePixModuleSelection(mod) { if (typeof selectPaymentModule === "function") selectPaymentModule(mod); }
     function openFreemiumUnitPaywall(unitNum) {
         const curLang = userData.learningLanguage || 'en';
         const langName = curLang === 'es' ? 'Espanhol' : 'Inglês';
         currentSelectedModule = curLang === 'es' ? 'spanish' : 'english';
-        updatePixModuleSelection(currentSelectedModule);
+        selectPaymentModule(currentSelectedModule);
         openModal('modal-pix-checkout');
         showToast(`🎉 Parabéns pelo seu progresso em ${langName}! A Unidade ${unitNum} em diante faz parte do curso vitalício completo. Torne-se VIP para desbloquear tudo!`, 'info');
     }
@@ -4000,7 +4012,7 @@
     // ==========================================
     // FIREBASE INITIALIZATION & CLOUD INTEGRATION
     // ==========================================
-    let currentUser = null;
+    // currentUser inicializado no escopo global
     let authMode = 'login'; // 'login' or 'signup'
     let currentFbRating = 5;
     let cachedStudentsList = [];
@@ -5770,7 +5782,7 @@
     }
 
     function redeemVipCoupon() {
-        const input = document.getElementById('user-coupon-input') || document.getElementById('store-coupon-input');
+        const input = document.getElementById('store-coupon-input') || document.getElementById('user-coupon-input');
         const code = input?.value?.trim().toUpperCase();
         if (!code) {
             showToast("Digite o código do cupom!", "error");
