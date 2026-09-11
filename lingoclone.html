@@ -3773,10 +3773,7 @@
         if (priceEl) priceEl.innerText = modData.priceFormatted;
 
         // Update Direct Asaas URL
-        const asaasBtn = document.getElementById('asaas-checkout-direct-btn');
-        if (asaasBtn) {
-            asaasBtn.href = modData.checkoutUrl;
-        }
+        // Pagamento 100% via PIX
 
         const statusText = document.getElementById('pix-status-text');
         if (statusText) statusText.innerText = 'Aguardando recebimento via Asaas PIX...';
