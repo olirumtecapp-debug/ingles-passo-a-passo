@@ -2084,7 +2084,7 @@
 
 <!-- Modal: Checkout PIX Asaas & Módulos -->
 <!-- Modal: Checkout PIX Asaas & Módulos -->
-<div id="modal-pix-checkout" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-pix-checkout')">
+<div id="modal-pix-checkout" class="modal-overlay hidden" onclick="if(event.target === this) closeModal('modal-pix-checkout'); stopPixStatusPolling();">
     <div class="modal-content max-w-sm w-full mx-auto p-4 my-auto max-h-[94vh] overflow-hidden text-center rounded-3xl shadow-2xl relative bg-white flex flex-col justify-between">
         <!-- Botão Fechar X -->
         <button onclick="closeModal('modal-pix-checkout')" class="absolute top-3 right-3 w-6 h-6 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-400 hover:text-gray-700 flex items-center justify-center font-black text-xs transition cursor-pointer" title="Fechar">
@@ -3734,6 +3734,51 @@
         if (document.getElementById('adm-banner-active-checkbox')) document.getElementById('adm-banner-active-checkbox').checked = bannerConfig.active;
     }
 
+    
+    // Monitoramento automático de confirmação do PIX em tempo real
+    let pixPollingInterval = null;
+
+    function startPixStatusPolling() {
+        stopPixStatusPolling();
+        const statusText = document.getElementById('pix-status-text');
+        const statusBox = document.getElementById('pix-student-status-box');
+        
+        pixPollingInterval = setInterval(async () => {
+            try {
+                const targetMod = currentSelectedModule || 'combo';
+                const modData = ASAAS_PIX_MODULES[targetMod] || ASAAS_PIX_MODULES['combo'];
+                const email = currentUser?.email || userData?.userEmail || '';
+                
+                const url = `/api/asaas-webhook?value=${modData.price}&email=${encodeURIComponent(email)}`;
+                const res = await fetch(url);
+                if (!res.ok) return;
+                const data = await res.json();
+                
+                if (data.approved) {
+                    stopPixStatusPolling();
+                    if (statusText) statusText.innerText = '✓ Pagamento Confirmado pelo Asaas!';
+                    if (statusBox) {
+                        statusBox.className = 'flex items-center justify-center gap-2 py-2 px-3 bg-emerald-50 border border-emerald-300 rounded-xl text-emerald-800 text-[11px] font-black animate-bounce';
+                        statusBox.innerHTML = '<span>🎉 PIX Recebido com Sucesso! Liberando...</span>';
+                    }
+                    if (typeof playAudioEffect === 'function') playAudioEffect('win');
+                    setTimeout(() => {
+                        grantModuleAccess(targetMod);
+                    }, 1200);
+                }
+            } catch(e) {
+                // Silencioso em caso de oscilação de rede
+            }
+        }, 3000); // Consulta a cada 3 segundos
+    }
+
+    function stopPixStatusPolling() {
+        if (pixPollingInterval) {
+            clearInterval(pixPollingInterval);
+            pixPollingInterval = null;
+        }
+    }
+
     function openPixCheckoutModal() {
         // Mostra botão de simulação apenas se for Administrador
         const simBtn = document.getElementById('btn-admin-simulate-pix');
@@ -3748,6 +3793,7 @@
         }
         selectPaymentModule(currentSelectedModule || 'combo');
         openModal('modal-pix-checkout');
+        startPixStatusPolling();
     }
 
     function selectPaymentModule(moduleKey) {
