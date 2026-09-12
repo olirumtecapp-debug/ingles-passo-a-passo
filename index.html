@@ -1832,8 +1832,8 @@
                         </select>
                     </div>
                     <div class="flex gap-1.5">
-                        <button onclick="clearAllMockStudents()" class="btn-3d bg-red-100 hover:bg-red-200 text-red-700 text-xs px-2.5 py-2 font-black rounded-xl flex items-center gap-1 cursor-pointer border border-red-200 shadow-xs whitespace-nowrap" title="Excluir todos os alunos de demonstração/teste">
-                            🗑️ Limpar Testes
+                        <button onclick="clearAllStudents()" class="btn-3d bg-red-100 hover:bg-red-200 text-red-700 text-xs px-2.5 py-2 font-black rounded-xl flex items-center gap-1 cursor-pointer border border-red-200 shadow-xs whitespace-nowrap" title="Zerar todos os alunos e métricas">
+                            🗑️ Zerar Base
                         </button>
                         <button onclick="exportStudentsCSV()" class="btn-3d bg-green-600 hover:bg-green-700 text-white text-xs px-3 py-2 font-black rounded-xl flex items-center gap-1 cursor-pointer shadow-xs whitespace-nowrap" title="Exportar Planilha Excel/CSV">
                             📥 Exportar CSV
@@ -4038,6 +4038,27 @@
     function initApp() {
         initAnnouncementBanner();
         loadData();
+
+        // Purga automática preventiva de qualquer usuário ou feedback fictício residual
+        try {
+            const rawS = localStorage.getItem('elevate_cloud_students');
+            if (rawS && (rawS.includes('mariana.costa@email.com') || rawS.includes('std_1'))) {
+                let sArr = JSON.parse(rawS);
+                if (Array.isArray(sArr)) {
+                    sArr = sArr.filter(s => !['std_1','std_2','std_3','std_4'].includes(s.uid) && !['mariana.costa@email.com','rafael.menezes@email.com','camila.duarte@email.com','bruno.albuquerque@email.com'].includes(s.email?.toLowerCase()));
+                    localStorage.setItem('elevate_cloud_students', JSON.stringify(sArr));
+                }
+            }
+            const rawF = localStorage.getItem('elevate_cloud_feedbacks');
+            if (rawF && (rawF.includes('fb_1') || rawF.includes('fb_2'))) {
+                let fArr = JSON.parse(rawF);
+                if (Array.isArray(fArr)) {
+                    fArr = fArr.filter(f => !['fb_1','fb_2'].includes(f.id));
+                    localStorage.setItem('elevate_cloud_feedbacks', JSON.stringify(fArr));
+                }
+            }
+        } catch(e) {}
+
         updateAdminVisibilityUI();
         if (window.location.hash === "#admin") { setTimeout(() => toggleAdminModal(), 400); }
         window.addEventListener("hashchange", () => { if (window.location.hash === "#admin") toggleAdminModal(); });
@@ -4472,48 +4493,36 @@
 
         if (saved !== null) {
             try {
-                const list = JSON.parse(saved);
+                let list = JSON.parse(saved);
                 if (Array.isArray(list)) {
-                    // Respeita a lista mesmo se estiver vazia ([]) e filtra excluídos
+                    const mockUids = ['std_1', 'std_2', 'std_3', 'std_4'];
+                    const mockEmails = ['mariana.costa@email.com', 'rafael.menezes@email.com', 'camila.duarte@email.com', 'bruno.albuquerque@email.com'];
                     return list.filter(s => {
-                        const uidMatch = s.uid && deletedSet.has(s.uid.toLowerCase().trim());
-                        const emailMatch = s.email && deletedSet.has(s.email.toLowerCase().trim());
-                        return !uidMatch && !emailMatch;
+                        const uid = (s.uid || '').toLowerCase().trim();
+                        const email = (s.email || '').toLowerCase().trim();
+                        if (mockUids.includes(uid) || mockEmails.includes(email)) return false;
+                        if (deletedSet.has(uid) || deletedSet.has(email)) return false;
+                        return true;
                     });
                 }
             } catch(e) {}
         }
 
-        // Apenas na primeira inicialização absoluta do navegador (quando a chave nunca existiu)
-        const defaultList = [
-            { uid: 'std_1', displayName: 'Mariana Costa', email: 'mariana.costa@email.com', isVip: true, learningLanguage: 'en', completedLessonsCount: 42, lastActive: 'Hoje' },
-            { uid: 'std_2', displayName: 'Rafael Menezes', email: 'rafael.menezes@email.com', isVip: false, learningLanguage: 'en', completedLessonsCount: 15, lastActive: 'Hoje' },
-            { uid: 'std_3', displayName: 'Camila Duarte', email: 'camila.duarte@email.com', isVip: false, learningLanguage: 'es', completedLessonsCount: 8, lastActive: 'Ontem' },
-            { uid: 'std_4', displayName: 'Bruno Albuquerque', email: 'bruno.albuquerque@email.com', isVip: true, learningLanguage: 'en', completedLessonsCount: 60, lastActive: 'Hoje' }
-        ];
-
-        const filtered = defaultList.filter(s => {
-            const uidMatch = s.uid && deletedSet.has(s.uid.toLowerCase().trim());
-            const emailMatch = s.email && deletedSet.has(s.email.toLowerCase().trim());
-            return !uidMatch && !emailMatch;
-        });
-
-        localStorage.setItem('elevate_cloud_students', JSON.stringify(filtered));
-        return filtered;
+        // Base 100% limpa por padrão (sem nenhum aluno fictício)
+        return [];
     }
 
-    async function clearAllMockStudents() {
-        if (!confirm("⚠️ Deseja remover todos os 4 alunos de demonstração/teste (Mariana, Rafael, Camila, Bruno) do sistema?")) return;
-        const mockUids = ['std_1', 'std_2', 'std_3', 'std_4'];
-        const mockEmails = ['mariana.costa@email.com', 'rafael.menezes@email.com', 'camila.duarte@email.com', 'bruno.albuquerque@email.com'];
-        mockUids.forEach((uid, i) => markStudentAsDeleted(uid, mockEmails[i]));
-        let list = getStoredStudents().filter(s => !mockUids.includes(s.uid) && (!s.email || !mockEmails.includes(s.email.toLowerCase().trim())));
-        localStorage.setItem('elevate_cloud_students', JSON.stringify(list));
-        cachedStudentsList = list;
-        showToast("🧹 Alunos de teste removidos permanentemente!", "success");
+    async function clearAllStudents() {
+        if (!confirm("⚠️ Deseja zerar a lista de alunos e métricas do sistema?")) return;
+        localStorage.removeItem('elevate_cloud_students');
+        localStorage.removeItem('elevate_cloud_feedbacks');
+        cachedStudentsList = [];
+        cachedFeedbacksList = [];
+        showToast("🧹 Base de dados e métricas zeradas com sucesso!", "success");
         await refreshAdminAnalyticsData();
     }
-    window.clearAllMockStudents = clearAllMockStudents;
+    window.clearAllStudents = clearAllStudents;
+    window.clearAllMockStudents = clearAllStudents;
 
     function saveLocalRegisteredStudent(student) {
         const list = getStoredStudents();
@@ -4614,14 +4623,15 @@
     function getStoredFeedbacks() {
         const saved = localStorage.getItem('elevate_cloud_feedbacks');
         if (saved) {
-            try { return JSON.parse(saved); } catch(e) {}
+            try {
+                let list = JSON.parse(saved);
+                if (Array.isArray(list)) {
+                    const mockFbIds = ['fb_1', 'fb_2'];
+                    return list.filter(f => !mockFbIds.includes(f.id));
+                }
+            } catch(e) {}
         }
-        const initial = [
-            { id: 'fb_1', userName: 'Mariana Costa', userEmail: 'mariana.costa@email.com', rating: 5, category: 'Elogio', message: 'Amei as aulas de conversação e a prática de pronúncia!', createdAt: 'Hoje às 10:15', status: 'novo' },
-            { id: 'fb_2', userName: 'Rafael Menezes', userEmail: 'rafael.menezes@email.com', rating: 4, category: 'Sugestão', message: 'Seria legal ter mais exercícios com áudios em velocidade natural.', createdAt: 'Ontem às 18:30', status: 'novo' }
-        ];
-        localStorage.setItem('elevate_cloud_feedbacks', JSON.stringify(initial));
-        return initial;
+        return [];
     }
 
     // ==========================================
