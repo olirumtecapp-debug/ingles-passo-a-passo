@@ -683,15 +683,7 @@
             border-color: #d97706 !important;
             color: #facc15 !important;
         }
-        html.dark #btn-desktop-inbox {
-            background: #1e293b !important;
-            background-image: none !important;
-            border-color: #4f46e5 !important;
-            color: #a5b4fc !important;
-        }
-        html.dark #btn-desktop-inbox span.text-indigo-950 {
-            color: #e0e7ff !important;
-        }
+
         html.dark #right-sidebar .text-gray-400 {
             color: #94a3b8 !important;
         }
@@ -1228,12 +1220,7 @@
                 <span class="tracking-wide">VIP VITALÍCIO</span>
             </div>
 
-            <!-- Botão Caixa Postal Desktop -->
-            <button onclick="openStudentInbox()" id="btn-desktop-inbox" class="relative flex items-center gap-1.5 bg-indigo-50 hover:bg-indigo-100 border-2 border-indigo-200 p-2 rounded-xl text-indigo-700 font-black text-xs cursor-pointer shadow-2xs transition" title="Minha Caixa Postal & Suporte">
-                <span class="text-base">📬</span>
-                <span class="text-[10px] text-indigo-950 uppercase tracking-wider hidden xl:inline">Caixa Postal</span>
-                <span id="desktop-inbox-badge" class="hidden absolute -top-1.5 -right-1.5 bg-red-500 text-white text-[9px] font-black px-1.5 py-0.2 rounded-full border-2 border-white shadow-xs">0</span>
-            </button>
+
         </div>
 
         <!-- Mascote Motivation Card -->
@@ -5680,7 +5667,7 @@
 
         const badges = [
             document.getElementById('sidebar-inbox-badge'),
-            document.getElementById('desktop-inbox-badge')
+            document.getElementById('mobile-inbox-badge')
         ];
 
         badges.forEach(b => {
