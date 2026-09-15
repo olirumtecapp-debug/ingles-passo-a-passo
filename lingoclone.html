@@ -2890,7 +2890,30 @@
             </button>
         </form>
 
-        <button onclick="closeModal('modal-admin-login')" class="btn-3d btn-outline w-full p-2.5 text-xs text-gray-500">
+        <div class="border-t border-gray-200 pt-4 mt-1 text-left">
+            <button type="button" onclick="toggleAdminSenhaForm()" class="w-full text-xs font-bold text-indigo-600 hover:text-indigo-700 underline">
+                Criar ou alterar a senha do administrador
+            </button>
+            <form id="admin-senha-form" onsubmit="handleAdminSenhaChange(event)" class="hidden space-y-3 mt-3">
+                <p id="admin-senha-status" class="text-[11px] text-gray-500 text-center"></p>
+                <div>
+                    <label class="form-label text-xs">Senha atual</label>
+                    <input type="password" id="admin-senha-atual" class="form-input text-sm" autocomplete="off" placeholder="Senha atual">
+                </div>
+                <div>
+                    <label class="form-label text-xs">Nova senha</label>
+                    <input type="password" id="admin-senha-nova" class="form-input text-sm" autocomplete="new-password" placeholder="Minimo 6 caracteres">
+                </div>
+                <div>
+                    <label class="form-label text-xs">Repita a nova senha</label>
+                    <input type="password" id="admin-senha-confirma" class="form-input text-sm" autocomplete="new-password" placeholder="Repita a nova senha">
+                </div>
+                <button type="submit" class="btn-3d btn-outline w-full p-2.5 text-xs">Salvar nova senha</button>
+                <p id="admin-senha-msg" class="text-xs text-center"></p>
+            </form>
+        </div>
+
+        <button onclick="closeModal('modal-admin-login')" class="btn-3d btn-outline w-full p-2.5 text-xs text-gray-500 mt-4">
             Cancelar
         </button>
     </div>
@@ -3142,7 +3165,7 @@
     // Atalho: Alt + Shift + M ou Ctrl + Shift + M
     // Ou 3 cliques no logotipo ELEVATE
     // Ou URL com #admin
-    // Usuário: admplus | Senha: 16Bl33@p
+    // Usuário: admplus | Senha: definida no painel (nao fica no codigo)
     // ==========================================
     let pendingAdminTargetTab = null;
     let logoClickCount = 0;
@@ -3285,21 +3308,34 @@
         }
     }
 
-    function handleAdminLoginSubmit(e) {
+    async function handleAdminLoginSubmit(e) {
         if (e) e.preventDefault();
         const user = (document.getElementById('admin-user-input')?.value || '').trim();
         const pass = (document.getElementById('admin-pass-input')?.value || '').trim();
         const err = document.getElementById('admin-login-error');
+        let liberado = false;
 
-        if (user === 'admplus' && pass === '16Bl33@p') {
+        try {
+            const res = await fetch('/api/admin/auth', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'login', user: user, password: pass })
+            });
+            const data = await res.json();
+            liberado = !!data.ok;
+        } catch (err2) {
+            console.warn('[Admin] API de login indisponivel.', err2);
+            liberado = false;
+        }
+
+        if (liberado) {
             localStorage.setItem('elevate_admin_session', 'true');
             sessionStorage.setItem('elevate_admin_session', 'true');
             if (err) err.classList.add('hidden');
             closeModal('modal-admin-login');
             updateAdminVisibilityUI();
-        if (window.location.hash === "#admin") { setTimeout(() => toggleAdminModal(), 400); }
-        window.addEventListener("hashchange", () => { if (window.location.hash === "#admin") toggleAdminModal(); });
-            showToast('🛡️ Modo Administrador Liberado!');
+            if (window.location.hash === "#admin") { setTimeout(() => toggleAdminModal(), 400); }
+            showToast('Modo Administrador Liberado!');
             if (pendingAdminTargetTab) {
                 const t = pendingAdminTargetTab;
                 pendingAdminTargetTab = null;
@@ -3308,8 +3344,67 @@
         } else {
             if (err) {
                 err.classList.remove('hidden');
-                err.innerText = '⚠️ Usuário ou senha incorretos.';
+                err.innerText = 'Usuario ou senha incorretos.';
             }
+        }
+    }
+
+    function toggleAdminSenhaForm() {
+        const form = document.getElementById('admin-senha-form');
+        const status = document.getElementById('admin-senha-status');
+        if (!form) return;
+        form.classList.toggle('hidden');
+        if (!form.classList.contains('hidden')) {
+            atualizarStatusSenhaAdmin();
+        } else if (status) {
+            status.innerText = '';
+        }
+    }
+
+    async function atualizarStatusSenhaAdmin() {
+        const status = document.getElementById('admin-senha-status');
+        if (!status) return;
+        status.innerText = 'Verificando...';
+        try {
+            const res = await fetch('/api/admin/auth');
+            const data = await res.json();
+            status.innerText = data.hasCustomPassword
+                ? 'Voce ja criou uma senha propria. Informe a senha atual para trocar.'
+                : 'Voce ainda usa a senha padrao. Informe-a abaixo e escolha a sua nova senha.';
+        } catch (err) {
+            status.innerText = 'Nao foi possivel consultar o servidor agora.';
+        }
+    }
+
+    async function handleAdminSenhaChange(e) {
+        e.preventDefault();
+        const atual = document.getElementById('admin-senha-atual').value;
+        const nova = document.getElementById('admin-senha-nova').value;
+        const confirma = document.getElementById('admin-senha-confirma').value;
+        const msg = document.getElementById('admin-senha-msg');
+        const pintar = (texto, cor) => { if (msg) { msg.innerText = texto; msg.className = 'text-xs text-center ' + cor; } };
+
+        if (nova !== confirma) { pintar('As duas senhas novas nao sao iguais.', 'text-red-500'); return; }
+        if (nova.length < 6) { pintar('A nova senha precisa ter pelo menos 6 caracteres.', 'text-red-500'); return; }
+
+        pintar('Salvando...', 'text-gray-500');
+        try {
+            const res = await fetch('/api/admin/auth', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'set-password', currentPassword: atual, newPassword: nova })
+            });
+            const data = await res.json();
+            if (data.ok) {
+                pintar('Senha alterada com sucesso! Use a nova senha no proximo acesso.', 'text-green-600');
+                document.getElementById('admin-senha-atual').value = '';
+                document.getElementById('admin-senha-nova').value = '';
+                document.getElementById('admin-senha-confirma').value = '';
+            } else {
+                pintar(data.error || 'Nao foi possivel alterar a senha.', 'text-red-500');
+            }
+        } catch (err) {
+            pintar('Erro de conexao ao salvar a senha.', 'text-red-500');
         }
     }
 
