@@ -227,8 +227,7 @@ export default async function handler(req, res) {
                     '',
                     'Recado:',
                     recado
-                ].join('
-');
+                ].join('\n');
                 const envio = await enviarEmail({ para: destino, assunto: 'ELEVATE - ajuda para entrar (' + nomeAluno + ')', texto: texto });
                 if (!envio.ok) return res.status(200).json({ ok: false, error: 'Nao foi possivel enviar agora. Escreva para contato@creativeam.com.br.' });
 
