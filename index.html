@@ -5930,7 +5930,18 @@
     }
     window.openStudentInbox = openStudentInbox;
 
-            window.arquivarMensagemAlunoElevate = function (id) {
+            window.elevateExcluirMensagem = function (id) {
+        if (!confirm('Excluir esta conversa da sua caixa?\n\nEla sai da sua lista; a coordenacao mantem o registro.')) return;
+        const lista = getStoredFeedbacks();
+        const alvo = lista.find(x => x.id === id);
+        if (!alvo) return;
+        alvo.ocultadaParaAluno = true;
+        localStorage.setItem('elevate_cloud_feedbacks', JSON.stringify(lista));
+        renderStudentInboxMessages();
+        if (typeof updateStudentInboxBadges === 'function') updateStudentInboxBadges();
+    };
+
+    window.arquivarMensagemAlunoElevate = function (id) {
             const lista = getStoredFeedbacks();
             const alvo = lista.find(x => x.id === id);
             if (!alvo) return;
@@ -5968,7 +5979,8 @@ function renderStudentInboxMessages() {
             return;
         }
 
-        container.innerHTML = studentMsgs.map(m => {
+        const studentMsgsFiltrados = studentMsgs.filter(m => !m.ocultadaParaAluno);
+                    container.innerHTML = studentMsgsFiltrados.map(m => {
             const replies = m.replies || [];
             const hasReply = replies.length > 0;
             const statusLabel = (m.status === 'respondido')
@@ -6024,6 +6036,7 @@ function renderStudentInboxMessages() {
             
                     <div class="flex justify-end pt-1">
                         <button onclick="window.arquivarMensagemAlunoElevate('${m.id}')" class="text-[10px] font-black px-2 py-1 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-600">${m.status === 'arquivado' ? 'Desarquivar' : 'Arquivar'}</button>
+                        <button onclick="window.elevateExcluirMensagem('${m.id}')" class="text-[10px] font-black px-2 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-600 ml-1">Excluir</button>
                     </div>
 </div>
             `;
