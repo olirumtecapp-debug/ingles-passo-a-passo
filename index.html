@@ -4933,7 +4933,7 @@
     };
 
     window.elevateReceberCodigo = async function () {
-        const email = (prompt('Vamos enviar um codigo novo para o seu e-mail.\n\nDigite o e-mail da sua conta:') || '').trim().toLowerCase();
+        const guardado = (userData && userData.userEmail) ? String(userData.userEmail).trim() : ''; let email = ''; if (guardado) { const outro = prompt('Vamos enviar o codigo para o e-mail da sua matricula:\n\n' + guardado + '\n\nOK = enviar para este\nOu digite outro e-mail:', guardado); email = (outro || '').trim().toLowerCase(); } else { email = (prompt('Vamos enviar um codigo novo para o seu e-mail.\n\nDigite o e-mail da sua conta:') || '').trim().toLowerCase(); }
         if (!email || !email.includes('@')) { if (typeof showToast === 'function') showToast('Informe um e-mail valido.', 'error'); return; }
         try {
             const res = await fetch('/api/student/progress', {

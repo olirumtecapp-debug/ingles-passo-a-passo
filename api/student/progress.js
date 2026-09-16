@@ -175,7 +175,7 @@ export default async function handler(req, res) {
                 if (!segredo()) return res.status(200).json({ ok: false, error: 'Servidor sem segredo configurado.' });
 
                 if (!existia) {
-                    return res.status(200).json({ ok: true, message: 'Se este e-mail estiver cadastrado, o codigo chegara em instantes.' });
+                    return res.status(200).json({ ok: false, semMatricula: true, success: false, error: 'Não encontrei matrícula com este e-mail. Confira o endereço ou use a opção de falar com a coordenação.' });
                 }
 
                 const cod = gerarCodigo();
