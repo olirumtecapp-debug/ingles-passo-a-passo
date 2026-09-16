@@ -5,6 +5,7 @@
 //   POST { action: 'save' }      -> grava o progresso, aceita pin, gera codigo de recuperacao
 //   POST { action: 'recover' }   -> { email, code, newPin? } devolve o progresso
 import crypto from 'crypto';
+import { enviarEmail, emailConfigurado, modeloCodigo } from '../_email.js';
 
 const API_KEY = process.env.FIREBASE_API_KEY || 'AIzaSyBUHGXoUMg0bV3EdmfpfmVAEYMLQceqkQc';
 const PROJECT_ID = process.env.FIREBASE_PROJECT_ID || 'expedicao-brasil';
@@ -164,6 +165,74 @@ export default async function handler(req, res) {
                 const g = await fsRequest(basePath + '/' + docId(email), { method: 'PATCH', body: JSON.stringify({ fields: toFields(atualizado) }) });
                 if (!g.ok) return res.status(500).json({ ok: false, error: 'Falha ao recuperar o progresso.' });
                 return res.status(200).json({ ok: true, message: novoPin ? 'Progresso recuperado e PIN atualizado!' : 'Progresso recuperado!', name: atualizado.name, progress: atualizado.progress || null, temPin: !!atualizado.pinHash });
+            }
+
+            // ---- enviar um codigo novo por e-mail (o aluno recupera sozinho) ----
+            if (acao === 'enviar-codigo') {
+                if (!emailConfigurado()) {
+                    return res.status(200).json({ ok: false, naoConfigurado: true, error: 'O envio de e-mail ainda nao esta ligado. Use a opcao de falar com a coordenacao.' });
+                }
+                if (!segredo()) return res.status(200).json({ ok: false, error: 'Servidor sem segredo configurado.' });
+
+                if (!existia) {
+                    return res.status(200).json({ ok: true, message: 'Se este e-mail estiver cadastrado, o codigo chegara em instantes.' });
+                }
+
+                const cod = gerarCodigo();
+                const atual = { ...registroAnterior, recoveryHash: hash(cod), recoveryCreatedAt: new Date().toISOString() };
+                const g = await fsRequest(basePath + '/' + docId(email), { method: 'PATCH', body: JSON.stringify({ fields: toFields(atual) }) });
+                if (!g.ok) return res.status(200).json({ ok: false, error: 'Falha ao gerar o codigo.' });
+
+                const modelo = modeloCodigo({ nome: registroAnterior.name, codigo: cod, plataforma: 'ELEVATE' });
+                const envio = await enviarEmail({ para: email, assunto: modelo.titulo + ' - ELEVATE', texto: modelo.texto, html: modelo.html });
+                if (!envio.ok) return res.status(200).json({ ok: false, error: envio.error || 'Nao foi possivel enviar o e-mail agora.' });
+
+                return res.status(200).json({ ok: true, message: 'Codigo enviado para ' + email + '. Confira a caixa de entrada (e o spam).' });
+            }
+
+            // ---- a coordenacao redefine o acesso do aluno ----
+            if (acao === 'admin-resetar') {
+                if (!segredo()) return res.status(200).json({ ok: false, error: 'Servidor sem segredo configurado.' });
+                if (!existia) return res.status(404).json({ ok: false, error: 'Aluno nao encontrado.' });
+
+                const cod = gerarCodigo();
+                const atual = { ...registroAnterior, updatedAt: new Date().toISOString() };
+                delete atual.pinHash;
+                atual.recoveryHash = hash(cod);
+                atual.recoveryCreatedAt = new Date().toISOString();
+                atual.acessoRedefinidoEm = new Date().toISOString();
+                const g = await fsRequest(basePath + '/' + docId(email), { method: 'PATCH', body: JSON.stringify({ fields: toFields(atual) }) });
+                if (!g.ok) return res.status(500).json({ ok: false, error: 'Falha ao redefinir o acesso.' });
+
+                return res.status(200).json({ ok: true, email, recoveryCode: cod, message: 'Acesso redefinido. O aluno entra so com o e-mail. Entregue o novo codigo a ele.' });
+            }
+
+            // ---- pedido de ajuda (chega por e-mail para a coordenacao) ----
+            if (acao === 'ajuda') {
+                if (!emailConfigurado()) {
+                    return res.status(200).json({ ok: false, naoConfigurado: true, error: 'Canal de ajuda indisponivel agora. Tente pelo e-mail contato@creativeam.com.br.' });
+                }
+                const nomeAluno = String(body.nome || '').trim() || 'Aluno';
+                const emailAluno = String(body.emailAluno || email || '').trim().toLowerCase();
+                const recado = String(body.recado || '').trim();
+                if (!recado) return res.status(400).json({ ok: false, error: 'Escreva o que aconteceu.' });
+
+                const destino = process.env.EMAIL_RESPOSTA || 'contato@creativeam.com.br';
+                const texto = [
+                    'Pedido de ajuda para entrar no ELEVATE',
+                    '',
+                    'Nome: ' + nomeAluno,
+                    'E-mail do aluno: ' + emailAluno,
+                    'Conta na plataforma: ' + email,
+                    '',
+                    'Recado:',
+                    recado
+                ].join('
+');
+                const envio = await enviarEmail({ para: destino, assunto: 'ELEVATE - ajuda para entrar (' + nomeAluno + ')', texto: texto });
+                if (!envio.ok) return res.status(200).json({ ok: false, error: 'Nao foi possivel enviar agora. Escreva para contato@creativeam.com.br.' });
+
+                return res.status(200).json({ ok: true, message: 'Pedido enviado! A coordenacao responde para o e-mail que voce deixou.' });
             }
 
             // ---- gravacao ----

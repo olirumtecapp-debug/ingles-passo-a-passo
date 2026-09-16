@@ -1644,6 +1644,17 @@
             <button onclick="markAllInboxMessagesAsRead()" class="text-indigo-600 hover:text-indigo-800 font-black cursor-pointer">
                 ✓ Marcar todas como lidas
             </button>
+                <div class="pt-3 mt-2 border-t border-gray-100 space-y-1.5">
+                    <button type="button" onclick="window.elevateReceberCodigo()" class="w-full text-[11px] font-bold text-indigo-600 hover:text-indigo-800 underline cursor-pointer">
+                        Nao tenho o codigo - receber por e-mail
+                    </button>
+                    <button type="button" onclick="window.elevateRecuperarPorCodigo()" class="w-full text-[11px] font-bold text-slate-500 hover:text-slate-700 underline cursor-pointer">
+                        Ja tenho o codigo de recuperacao
+                    </button>
+                    <button type="button" onclick="window.elevateFalarComSuporte()" class="w-full text-[11px] font-bold text-slate-500 hover:text-slate-700 underline cursor-pointer">
+                        Nao consigo entrar - falar com a coordenacao
+                    </button>
+                </div>
         </div>
     </div>
 </div>
@@ -4919,6 +4930,60 @@
             window.elevatePin = pin;
             if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
         } catch (e) {}
+    };
+
+    window.elevateReceberCodigo = async function () {
+        const email = (prompt('Vamos enviar um codigo novo para o seu e-mail.\n\nDigite o e-mail da sua conta:') || '').trim().toLowerCase();
+        if (!email || !email.includes('@')) { if (typeof showToast === 'function') showToast('Informe um e-mail valido.', 'error'); return; }
+        try {
+            const res = await fetch('/api/student/progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'enviar-codigo', email: email })
+            });
+            const data = await res.json();
+            if (data && data.ok) {
+                alert('Pronto!\n\n' + data.message + '\n\nAgora use a opcao "Ja tenho o codigo de recuperacao".');
+            } else if (data && data.naoConfigurado) {
+                alert('O envio por e-mail ainda nao esta ligado. Use a opcao de falar com a coordenacao.');
+            } else {
+                if (typeof showToast === 'function') showToast((data && data.error) || 'Nao foi possivel enviar agora.', 'error');
+            }
+        } catch (e) {
+            if (typeof showToast === 'function') showToast('Erro de conexao ao pedir o codigo.', 'error');
+        }
+    };
+
+    window.elevateFalarComSuporte = async function () {
+        const nome = (prompt('Vamos avisar a coordenacao.\n\nSeu nome:') || '').trim();
+        if (!nome) return;
+        const emailAluno = (prompt('Um e-mail que voce acessa (a coordenacao responde por ele):') || '').trim().toLowerCase();
+        if (!emailAluno || !emailAluno.includes('@')) { if (typeof showToast === 'function') showToast('Informe um e-mail valido.', 'error'); return; }
+        const recado = (prompt('Conte o que aconteceu:') || '').trim();
+        if (!recado) return;
+        try {
+            const res = await fetch('/api/student/progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    action: 'ajuda',
+                    email: (userData && userData.userEmail) ? userData.userEmail : emailAluno,
+                    nome: nome,
+                    emailAluno: emailAluno,
+                    recado: recado
+                })
+            });
+            const data = await res.json();
+            if (data && data.ok) {
+                alert('Pedido enviado!\n\nA coordenacao responde para: ' + emailAluno);
+            } else if (data && data.naoConfigurado) {
+                alert('Canal indisponivel agora. Escreva para contato@creativeam.com.br');
+            } else {
+                if (typeof showToast === 'function') showToast((data && data.error) || 'Nao foi possivel enviar.', 'error');
+            }
+        } catch (e) {
+            if (typeof showToast === 'function') showToast('Erro de conexao ao enviar.', 'error');
+        }
     };
 
     window.elevateCarregarDaNuvem = async function () {
