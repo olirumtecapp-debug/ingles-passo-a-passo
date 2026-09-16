@@ -5269,6 +5269,26 @@
         }
     }
 
+    window.adminResetarAcessoElevate = async function (email, nome) {
+        if (!email) return;
+        if (!confirm('Redefinir o acesso de ' + (nome || email) + '?\n\nO PIN dele sera removido (volta a entrar so com o e-mail) e um codigo novo sera gerado para voce entregar a ele.')) return;
+        try {
+            const res = await fetch('/api/student/progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'admin-resetar', email: email })
+            });
+            const data = await res.json();
+            if (data && data.ok) {
+                alert('Acesso redefinido!\n\nNOVO CODIGO DE RECUPERACAO: ' + data.recoveryCode + '\n\nEntregue ao aluno: ele entra so com o e-mail e, se quiser, cria um PIN novo.');
+            } else {
+                alert((data && data.error) || 'Nao foi possivel redefinir.');
+            }
+        } catch (e) {
+            alert('Erro de conexao ao redefinir.');
+        }
+    };
+
     function renderAdminStudentsTable(list) {
         const tbody = document.getElementById('adm-students-table-body');
         if (!tbody) return;
@@ -5312,6 +5332,9 @@
                 </td>
                 <td class="py-2.5 px-3 align-middle text-right whitespace-nowrap">
                     <div class="inline-flex gap-1.5 items-center justify-end whitespace-nowrap">
+                            <button onclick="adminResetarAcessoElevate('${safeEmail}', '${safeDisplayName}')" class="btn-3d bg-slate-100 hover:bg-slate-200 text-slate-700 text-[10px] font-black px-2.5 py-1 rounded-lg border border-slate-200 transition" title="Remove o PIN e gera um codigo novo de recuperacao">
+                                🔑 Acesso
+                            </button>
                         <button onclick="toggleStudentVipCloud('${safeUid}', '${safeEmail}')" class="btn-3d text-[10px] font-black px-2.5 py-1 rounded-lg ${s.isVip ? 'bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200' : 'bg-amber-500 hover:bg-amber-600 text-white'} cursor-pointer whitespace-nowrap shadow-2xs" title="${s.isVip ? 'Remover status VIP deste aluno' : 'Conceder status VIP a este aluno'}">
                             ${s.isVip ? '❌ Remover VIP' : '👑 Tornar VIP'}
                         </button>
