@@ -9678,7 +9678,11 @@ RETORNE APENAS O ARRAY JSON VÁLIDO (sem markdown ou texto extra):
     
     // Ao abrir o app, tenta recuperar o progresso da nuvem
     setTimeout(function () {
-        if (typeof window.elevateCarregarDaNuvem === 'function') window.elevateCarregarDaNuvem();
+        // ao abrir o app: garante o cadastro no servidor (aparece no painel) e depois le o direito de acesso
+        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
+        setTimeout(function () {
+            if (typeof window.elevateCarregarDaNuvem === 'function') window.elevateCarregarDaNuvem();
+        }, 2000);
     }, 1500);
 </script>
 </body>
