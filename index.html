@@ -1644,7 +1644,8 @@
             <button onclick="markAllInboxMessagesAsRead()" class="text-indigo-600 hover:text-indigo-800 font-black cursor-pointer">
                 ✓ Marcar todas como lidas
             </button>
-                <div class="pt-3 mt-2 border-t border-gray-100 space-y-1.5">
+        </div>
+                <div class="pt-4 mt-1 border-t border-gray-100 space-y-2">
                     <button type="button" onclick="window.elevateReceberCodigo()" class="w-full text-[11px] font-bold text-indigo-600 hover:text-indigo-800 underline cursor-pointer">
                         Nao tenho o codigo - receber por e-mail
                     </button>
@@ -1655,7 +1656,6 @@
                         Nao consigo entrar - falar com a coordenacao
                     </button>
                 </div>
-        </div>
     </div>
 </div>
 
@@ -4505,6 +4505,8 @@
 
             if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
             setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
+            // garante o cadastro no SERVIDOR (aparece no painel e permite a recuperacao por e-mail)
+            setTimeout(function () { if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem(); }, 1500);
         userData.userEmail = cleanEmail;
         userData.userName = finalName;
         userData.isVip = isUserVip;
@@ -4572,6 +4574,8 @@
 
             if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
             setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
+            // garante o cadastro no SERVIDOR (aparece no painel e permite a recuperacao por e-mail)
+            setTimeout(function () { if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem(); }, 1500);
         userData.userEmail = cleanEmail;
         userData.userName = name;
         userData.isVip = isUserVip;
@@ -4619,6 +4623,8 @@
         userData.userName = name;
             if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
             setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
+            // garante o cadastro no SERVIDOR (aparece no painel e permite a recuperacao por e-mail)
+            setTimeout(function () { if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem(); }, 1500);
         userData.userEmail = cleanEmail;
         userData.isVip = isUserVip;
         userData.isAdmin = false;
