@@ -3239,6 +3239,7 @@
             userData.userName = 'Aluno Convidado';
             userData.hearts = 5;
             localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
         }
 
         closeModal('modal-admin-manager');
@@ -3264,6 +3265,7 @@
         userData.userName = 'Aluno Convidado';
         userData.hearts = 5;
         localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
         
         if (typeof auth !== 'undefined' && auth && auth.signOut) {
             try { auth.signOut(); } catch(e) {}
@@ -4508,6 +4510,7 @@
 
         localStorage.setItem('elevate_current_user_session', JSON.stringify(currentUser));
         localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
         saveLocalRegisteredStudent({
             uid: currentUser.uid,
             displayName: finalName,
@@ -4572,6 +4575,7 @@
 
         localStorage.setItem('elevate_current_user_session', JSON.stringify(currentUser));
         localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
         saveLocalRegisteredStudent({
             uid: currentUser.uid,
             displayName: name,
@@ -4827,6 +4831,52 @@
         showToast("💌 Muito obrigado! Sua mensagem foi enviada com sucesso para a equipe!", "success");
     }
     window.submitStudentFeedback = submitStudentFeedback;
+    // ===== Progresso na nuvem (troca de navegador / aparelho) =====
+    let elevateCloudTimer = null;
+
+    window.elevateSalvarNaNuvem = function () {
+        try {
+            const email = (userData && userData.userEmail ? String(userData.userEmail) : '').trim().toLowerCase();
+            if (!email || !email.includes('@')) return;
+            clearTimeout(elevateCloudTimer);
+            elevateCloudTimer = setTimeout(function () {
+                fetch('/api/student/progress', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        action: 'save',
+                        email: email,
+                        name: userData.userName || 'Aluno',
+                        progress: userData
+                    })
+                }).catch(function () {});
+            }, 1500);
+        } catch (e) {}
+    };
+
+    window.elevateCarregarDaNuvem = async function () {
+        try {
+            const email = (userData && userData.userEmail ? String(userData.userEmail) : '').trim().toLowerCase();
+            if (!email || !email.includes('@')) return false;
+
+            const res = await fetch('/api/student/progress?email=' + encodeURIComponent(email));
+            const data = await res.json();
+            if (!data || !data.ok || !data.progress) return false;
+
+            const nuvem = data.progress;
+            const xpLocal = Number(userData.xp || 0);
+            const xpNuvem = Number(nuvem.xp || 0);
+            if (xpNuvem <= xpLocal) return false;
+
+            Object.assign(userData, nuvem);
+            localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+            if (typeof updateStatsUI === 'function') updateStatsUI();
+            if (typeof renderMap === 'function') renderMap();
+            if (typeof showToast === 'function') showToast('Progresso recuperado da nuvem!', 'success');
+            return true;
+        } catch (e) { return false; }
+    };
+
     window.openFeedbackModal = openFeedbackModal;
     window.setFeedbackRating = setFeedbackRating;
 
@@ -5208,6 +5258,7 @@
             }
             localStorage.setItem('elevate_current_user_session', JSON.stringify(currentUser));
             localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
 
             if (typeof updateVipUI === 'function') updateVipUI();
             if (typeof updateAdminVisibilityUI === 'function') updateAdminVisibilityUI();
@@ -5310,6 +5361,7 @@
             userData.hearts = 5;
             userData.vipCouponUsed = null;
             localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
             if (typeof updateVipUI === 'function') updateVipUI();
             if (typeof updateAdminVisibilityUI === 'function') updateAdminVisibilityUI();
             if (typeof updateUserAuthUI === 'function') updateUserAuthUI();
@@ -6280,6 +6332,7 @@ function renderStudentInboxMessages() {
 
     function saveData() {
         localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
         localStorage.setItem('elevate_course_v3', JSON.stringify(courseDatabase));
         updateStatsUI();
         updateLanguageUI();
@@ -9412,6 +9465,11 @@ RETORNE APENAS O ARRAY JSON VÁLIDO (sem markdown ou texto extra):
                 navigator.serviceWorker.register('/sw.js').catch(() => {});
             });
         }
-    </script>
+    
+    // Ao abrir o app, tenta recuperar o progresso da nuvem
+    setTimeout(function () {
+        if (typeof window.elevateCarregarDaNuvem === 'function') window.elevateCarregarDaNuvem();
+    }, 1500);
+</script>
 </body>
 </html>
