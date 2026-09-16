@@ -4492,6 +4492,8 @@
             isAdmin: existing ? !!existing.isAdmin : false
         };
 
+            if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
+            setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
         userData.userEmail = cleanEmail;
         userData.userName = finalName;
         userData.isVip = isUserVip;
@@ -4557,6 +4559,8 @@
             isAdmin: existing ? !!existing.isAdmin : false
         };
 
+            if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
+            setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
         userData.userEmail = cleanEmail;
         userData.userName = name;
         userData.isVip = isUserVip;
@@ -4602,6 +4606,8 @@
         const isUserVip = existing ? !!existing.isVip : false;
         currentUser = { uid: existing?.uid || ('local_' + Date.now()), displayName: name, email: cleanEmail, isVip: isUserVip, isAdmin: false };
         userData.userName = name;
+            if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
+            setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
         userData.userEmail = cleanEmail;
         userData.isVip = isUserVip;
         userData.isAdmin = false;
@@ -4847,10 +4853,71 @@
                         action: 'save',
                         email: email,
                         name: userData.userName || 'Aluno',
+                        pin: window.elevatePin || '',
                         progress: userData
                     })
+                }).then(function (r) { return r.json(); }).then(function (d) {
+                    if (d && d.recoveryCode) {
+                        window.elevateCodigoRecuperacao = d.recoveryCode;
+                        alert('GUARDE ESTE CODIGO DE RECUPERACAO: ' + d.recoveryCode + '\n\nCom ele voce recupera seu progresso em outro aparelho, mesmo se esquecer o e-mail. Ele aparece so uma vez.');
+                    }
                 }).catch(function () {});
             }, 1500);
+        } catch (e) {}
+    };
+
+
+    // Recuperar progresso pelo codigo (quando o aluno esquece o e-mail ou troca de aparelho)
+    window.elevateRecuperarPorCodigo = async function () {
+        const email = (prompt('Qual o e-mail da sua conta?') || '').trim().toLowerCase();
+        if (!email || !email.includes('@')) return;
+        const code = (prompt('Digite o seu CODIGO DE RECUPERACAO (ex: ABC123):') || '').trim();
+        if (!code) return;
+        try {
+            const res = await fetch('/api/student/progress', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'recover', email: email, code: code })
+            });
+            const data = await res.json();
+            if (!data || !data.ok) {
+                if (typeof showToast === 'function') showToast(data && data.error ? data.error : 'Nao foi possivel recuperar.', 'error');
+                return;
+            }
+            if (data.progress) {
+                Object.assign(userData, data.progress);
+                userData.userEmail = email;
+                localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
+                if (typeof updateStatsUI === 'function') updateStatsUI();
+                if (typeof renderMap === 'function') renderMap();
+            }
+            if (typeof showToast === 'function') showToast('Progresso recuperado com sucesso!', 'success');
+        } catch (e) {
+            if (typeof showToast === 'function') showToast('Erro de conexao ao recuperar.', 'error');
+        }
+    };
+
+    // Aviso quando o e-mail digitado for diferente do que ja tem progresso neste aparelho
+    window.elevateAvisarEmailDiferente = function (novoEmail) {
+        try {
+            const atual = (userData && userData.userEmail ? String(userData.userEmail) : '').trim().toLowerCase();
+            const novo = String(novoEmail || '').trim().toLowerCase();
+            if (!atual || !novo || atual === novo) return false;
+            const manter = confirm('Neste aparelho ja existe progresso com o e-mail ' + atual + '.\n\nOK = continuar com o e-mail que ja tem progresso\nCancelar = usar ' + novo);
+            return manter === true;
+        } catch (e) { return false; }
+    };
+
+    // PIN opcional na primeira gravacao
+    window.elevatePedirPinSeNovo = function () {
+        try {
+            if (window.elevatePin || window.elevatePinPerguntado) return;
+            window.elevatePinPerguntado = true;
+            const pin = (prompt('Opcional: crie um PIN de 4 a 6 digitos para proteger seu progresso (deixe vazio para nao usar):') || '').trim();
+            if (!pin) return;
+            if (!/^\d{4,6}$/.test(pin)) { if (typeof showToast === 'function') showToast('PIN invalido: use de 4 a 6 digitos.', 'error'); return; }
+            window.elevatePin = pin;
+            if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
         } catch (e) {}
     };
 
@@ -4859,8 +4926,20 @@
             const email = (userData && userData.userEmail ? String(userData.userEmail) : '').trim().toLowerCase();
             if (!email || !email.includes('@')) return false;
 
-            const res = await fetch('/api/student/progress?email=' + encodeURIComponent(email));
-            const data = await res.json();
+            let pin = window.elevatePin || '';
+            let res = await fetch('/api/student/progress?email=' + encodeURIComponent(email) + (pin ? '&pin=' + encodeURIComponent(pin) : ''));
+            let data = await res.json();
+            if (data && data.precisaPin) {
+                pin = (prompt('Esta conta esta protegida por PIN. Digite seu PIN:') || '').trim();
+                if (!pin) return false;
+                window.elevatePin = pin;
+                res = await fetch('/api/student/progress?email=' + encodeURIComponent(email) + '&pin=' + encodeURIComponent(pin));
+                data = await res.json();
+            }
+            if (data && data.pinInvalido) {
+                if (typeof showToast === 'function') showToast('PIN incorreto para este e-mail.', 'error');
+                return false;
+            }
             if (!data || !data.ok || !data.progress) return false;
 
             const nuvem = data.progress;

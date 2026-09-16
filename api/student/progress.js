@@ -1,11 +1,9 @@
 // /api/student/progress — progresso do aluno do ELEVATE na nuvem
 //
-// Uma unica funcao para registro, gravacao e leitura (limite de 12 funcoes na Vercel):
-//   GET  ?email=               -> devolve o progresso salvo
-//   POST { action: 'save' }    -> grava/atualiza o progresso
-//
-// O aluno e identificado pelo e-mail; a leitura devolve o registro inteiro para o
-// navegador restaurar (troca de navegador ou de aparelho).
+// Padrao de acesso dos projetos:
+//   GET  ?email=&pin=            -> devolve o progresso (exige o PIN quando a conta tem um)
+//   POST { action: 'save' }      -> grava o progresso, aceita pin, gera codigo de recuperacao
+//   POST { action: 'recover' }   -> { email, code, newPin? } devolve o progresso
 import crypto from 'crypto';
 
 const API_KEY = process.env.FIREBASE_API_KEY || 'AIzaSyBUHGXoUMg0bV3EdmfpfmVAEYMLQceqkQc';
@@ -14,6 +12,23 @@ const COLECAO = 'elevate_students';
 const TIMEOUT_MS = 8000;
 
 const basePath = '/v1/projects/' + PROJECT_ID + '/databases/(default)/documents/' + COLECAO;
+
+function segredo() {
+    return process.env.ADMIN_AUTH_SECRET || '';
+}
+
+function hash(valor) {
+    return crypto.createHmac('sha256', segredo()).update(String(valor).trim()).digest('hex');
+}
+
+function gerarCodigo() {
+    const letras = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+    const numeros = '23456789';
+    let codigo = '';
+    for (let i = 0; i < 3; i++) codigo += letras[crypto.randomInt(0, letras.length)];
+    for (let i = 0; i < 3; i++) codigo += numeros[crypto.randomInt(0, numeros.length)];
+    return codigo;
+}
 
 function docId(email) {
     return crypto.createHash('sha256').update(String(email)).digest('hex').slice(0, 32);
@@ -98,18 +113,25 @@ export default async function handler(req, res) {
     try {
         if (req.method === 'GET') {
             const email = String(req.query.email || '').trim().toLowerCase();
+            const pin = String(req.query.pin || '').trim();
             if (!email) return res.status(400).json({ ok: false, error: 'E-mail não informado.' });
 
             const r = await fsRequest(basePath + '/' + docId(email));
             if (r.status === 404) return res.status(200).json({ ok: true, isNew: true, progress: null });
-            if (!r.ok || !r.body || !r.body.fields) {
-                return res.status(200).json({ ok: false, error: 'Não foi possível consultar o progresso.' });
-            }
+            if (!r.ok || !r.body || !r.body.fields) return res.status(200).json({ ok: false, error: 'Não foi possível consultar o progresso.' });
 
             const registro = docToObject(r.body);
+
+            if (registro.pinHash) {
+                if (!segredo()) return res.status(200).json({ ok: false, error: 'Servidor sem segredo configurado.' });
+                if (!pin) return res.status(200).json({ ok: false, precisaPin: true, error: 'Esta conta tem PIN. Informe o PIN para carregar o progresso.' });
+                if (hash(pin) !== registro.pinHash) return res.status(200).json({ ok: false, pinInvalido: true, error: 'PIN incorreto.' });
+            }
+
             return res.status(200).json({
                 ok: true,
                 isNew: false,
+                temPin: !!registro.pinHash,
                 name: registro.name || null,
                 email: registro.email || email,
                 progress: registro.progress || null,
@@ -120,16 +142,36 @@ export default async function handler(req, res) {
         if (req.method === 'POST') {
             const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
             const email = String(body.email || '').trim().toLowerCase();
-            const nome = String(body.name || '').trim() || 'Aluno';
-            const progresso = body.progress;
             const acao = String(body.action || 'save');
-
             if (!email || !email.includes('@')) return res.status(400).json({ ok: false, error: 'E-mail válido é obrigatório.' });
-            if (!progresso || typeof progresso !== 'object') return res.status(400).json({ ok: false, error: 'Progresso não informado.' });
 
             const anterior = await fsRequest(basePath + '/' + docId(email));
             const existia = anterior.ok && anterior.body && anterior.body.fields;
             const registroAnterior = existia ? docToObject(anterior.body) : null;
+
+            // ---- recuperacao pelo codigo ----
+            if (acao === 'recover') {
+                const codigo = String(body.code || '').trim().toUpperCase().replace(/[\s-]/g, '');
+                const novoPin = String(body.newPin || '').trim();
+                if (!existia) return res.status(200).json({ ok: false, error: 'Conta não encontrada com este e-mail.' });
+                if (!registroAnterior.recoveryHash) return res.status(200).json({ ok: false, error: 'Esta conta ainda não tem código de recuperação.' });
+                if (!segredo()) return res.status(200).json({ ok: false, error: 'Servidor sem segredo configurado.' });
+                if (!codigo || hash(codigo) !== registroAnterior.recoveryHash) return res.status(200).json({ ok: false, error: 'Código de recuperação incorreto.' });
+                if (novoPin && !/^\d{4,6}$/.test(novoPin)) return res.status(200).json({ ok: false, error: 'O novo PIN deve ter de 4 a 6 dígitos.' });
+
+                const atualizado = { ...registroAnterior, updatedAt: new Date().toISOString() };
+                if (novoPin) atualizado.pinHash = hash(novoPin);
+                const g = await fsRequest(basePath + '/' + docId(email), { method: 'PATCH', body: JSON.stringify({ fields: toFields(atualizado) }) });
+                if (!g.ok) return res.status(500).json({ ok: false, error: 'Falha ao recuperar o progresso.' });
+                return res.status(200).json({ ok: true, message: novoPin ? 'Progresso recuperado e PIN atualizado!' : 'Progresso recuperado!', name: atualizado.name, progress: atualizado.progress || null, temPin: !!atualizado.pinHash });
+            }
+
+            // ---- gravacao ----
+            const progresso = body.progress;
+            const nome = String(body.name || '').trim() || 'Aluno';
+            const pinInformado = String(body.pin || '').trim();
+            if (!progresso || typeof progresso !== 'object') return res.status(400).json({ ok: false, error: 'Progresso não informado.' });
+            if (pinInformado && !/^\d{4,6}$/.test(pinInformado)) return res.status(200).json({ ok: false, error: 'O PIN deve ter de 4 a 6 dígitos.' });
 
             const agora = new Date().toISOString();
             const registro = {
@@ -139,21 +181,26 @@ export default async function handler(req, res) {
                 createdAt: (registroAnterior && registroAnterior.createdAt) || agora,
                 updatedAt: agora
             };
+            if (registroAnterior && registroAnterior.pinHash) registro.pinHash = registroAnterior.pinHash;
+            if (registroAnterior && registroAnterior.recoveryHash) registro.recoveryHash = registroAnterior.recoveryHash;
 
-            const gravar = await fsRequest(basePath + '/' + docId(email), {
-                method: 'PATCH',
-                body: JSON.stringify({ fields: toFields(registro) })
-            });
+            let codigoNovo = null;
+            if (pinInformado && segredo()) registro.pinHash = hash(pinInformado);
+            if (!registro.recoveryHash && segredo()) {
+                codigoNovo = gerarCodigo();
+                registro.recoveryHash = hash(codigoNovo);
+                registro.recoveryCreatedAt = agora;
+            }
 
+            const gravar = await fsRequest(basePath + '/' + docId(email), { method: 'PATCH', body: JSON.stringify({ fields: toFields(registro) }) });
             if (!gravar.ok) return res.status(500).json({ ok: false, error: 'Falha ao gravar o progresso na nuvem.' });
 
-            return res.status(200).json({
-                ok: true,
-                isNew: !existia,
-                action: acao,
-                message: existia ? 'Progresso atualizado na nuvem.' : 'Progresso criado na nuvem.',
-                updatedAt: agora
-            });
+            const resposta = { ok: true, isNew: !existia, temPin: !!registro.pinHash, message: existia ? 'Progresso atualizado na nuvem.' : 'Progresso criado na nuvem.' };
+            if (codigoNovo) {
+                resposta.recoveryCode = codigoNovo;
+                resposta.avisoCodigo = 'Guarde este código: é com ele que você recupera seu progresso em outro aparelho.';
+            }
+            return res.status(200).json(resposta);
         }
 
         return res.status(405).json({ ok: false, error: 'Method not allowed' });
