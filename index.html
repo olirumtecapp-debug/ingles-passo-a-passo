@@ -4507,6 +4507,7 @@
             if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
             setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
             // garante o cadastro no SERVIDOR (aparece no painel e permite a recuperacao por e-mail)
+            window.__cadastroObrigatorio = false; // aluno identificado: libera o app
             setTimeout(function () { if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem(); }, 1500);
         userData.userEmail = cleanEmail;
         userData.userName = finalName;
@@ -4576,6 +4577,7 @@
             if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
             setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
             // garante o cadastro no SERVIDOR (aparece no painel e permite a recuperacao por e-mail)
+            window.__cadastroObrigatorio = false; // aluno identificado: libera o app
             setTimeout(function () { if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem(); }, 1500);
         userData.userEmail = cleanEmail;
         userData.userName = name;
@@ -4625,6 +4627,7 @@
             if (typeof window.elevateAvisarEmailDiferente === 'function' && window.elevateAvisarEmailDiferente(cleanEmail)) { return; }
             setTimeout(function () { if (typeof window.elevatePedirPinSeNovo === 'function') window.elevatePedirPinSeNovo(); }, 800);
             // garante o cadastro no SERVIDOR (aparece no painel e permite a recuperacao por e-mail)
+            window.__cadastroObrigatorio = false; // aluno identificado: libera o app
             setTimeout(function () { if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem(); }, 1500);
         userData.userEmail = cleanEmail;
         userData.isVip = isUserVip;
@@ -6544,7 +6547,13 @@ const DEFAULT_VIP_COUPONS = [];
     }
 
     function openModal(id) { const el = document.getElementById(id); if (el) el.classList.remove('hidden'); }
-    function closeModal(id) { 
+    function closeModal(id) {
+        // cadastro obrigatorio: o aluno precisa se identificar antes de usar
+        if (id === 'modal-auth' && window.__cadastroObrigatorio) {
+            if (typeof showToast === 'function') showToast('Informe seu nome e e-mail para comecar.', 'info');
+            return;
+        }
+ 
         const el = document.getElementById(id);
         if (el) el.classList.add('hidden'); 
     }
@@ -9678,6 +9687,17 @@ RETORNE APENAS O ARRAY JSON VÁLIDO (sem markdown ou texto extra):
     
     // Ao abrir o app, tenta recuperar o progresso da nuvem
     setTimeout(function () {
+        // CADASTRO OBRIGATORIO: sem aluno identificado, o app pede nome e e-mail antes de qualquer coisa
+        const temAluno = !!(userData && userData.userEmail);
+        const ehAdmin = !!(currentUser && currentUser.isAdmin) || localStorage.getItem('elevate_admin_session') === 'true';
+        if (!temAluno && !ehAdmin) {
+            window.__cadastroObrigatorio = true;
+            if (typeof openModal === 'function') openModal('modal-auth');
+            if (typeof authMode !== 'undefined' && authMode !== 'signup' && typeof toggleAuthMode === 'function') toggleAuthMode();
+            const aviso = document.getElementById('auth-modal-title');
+            if (aviso) aviso.innerText = 'Bem-vindo ao ELEVATE! Informe seu nome e e-mail';
+        }
+
         // ao abrir o app: garante o cadastro no servidor (aparece no painel) e depois le o direito de acesso
         if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
         setTimeout(function () {
