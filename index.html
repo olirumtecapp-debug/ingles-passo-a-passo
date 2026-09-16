@@ -5007,6 +5007,18 @@
             }
             if (!data || !data.ok || !data.progress) return false;
 
+            // direito de acesso definido pelo painel (VIP) - o servidor manda
+            const direito = data.entitlement || { isVip: false };
+            const vipNoServidor = !!direito.isVip;
+            if (vipNoServidor !== !!userData.isVip) {
+                userData.isVip = vipNoServidor;
+                userData.hearts = vipNoServidor ? 999 : (userData.hearts || 5);
+                try { localStorage.setItem('elevate_user_v2', JSON.stringify(userData)); } catch (_e) {}
+                if (typeof updateVipUI === 'function') updateVipUI();
+                if (typeof renderMap === 'function') renderMap();
+                if (typeof showToast === 'function') showToast(vipNoServidor ? 'Seu acesso VIP esta ativo!' : 'Acesso VIP encerrado.', vipNoServidor ? 'success' : 'info');
+            }
+
             const nuvem = data.progress;
             const xpLocal = Number(userData.xp || 0);
             const xpNuvem = Number(nuvem.xp || 0);
@@ -5289,6 +5301,30 @@
         }
     };
 
+    window.carregarAlunosDaNuvem = async function () {
+        try {
+            const res = await fetch('/api/admin/students');
+            const data = await res.json();
+            const lista = (data && data.students) || [];
+            const formatada = lista.map(s => ({
+                uid: s.email,
+                displayName: s.displayName,
+                email: s.email,
+                isVip: !!s.isVip,
+                xp: s.xp,
+                streak: s.streak,
+                hearts: s.hearts,
+                learningLanguage: s.learningLanguage,
+                completedLessonsCount: s.completedLessonsCount,
+                lastActive: s.lastActiveAt
+            }));
+            if (typeof renderAdminStudentsTable === 'function') renderAdminStudentsTable(formatada);
+            console.log('[admin] alunos vindos da nuvem:', formatada.length);
+        } catch (e) {
+            console.warn('[admin] nao consegui buscar os alunos da nuvem:', e && e.message);
+        }
+    };
+
     function renderAdminStudentsTable(list) {
         const tbody = document.getElementById('adm-students-table-body');
         if (!tbody) return;
@@ -5369,86 +5405,26 @@
     }
 
     async function toggleStudentVipCloud(uid, email) {
-        let student = cachedStudentsList.find(s => (uid && s.uid === uid) || (email && s.email && s.email.toLowerCase() === email.toLowerCase()));
-        if (!student) {
-            const list = getStoredStudents();
-            student = list.find(s => (uid && s.uid === uid) || (email && s.email && s.email.toLowerCase() === email.toLowerCase()));
-        }
-        if (!student) {
-            showToast("Aluno não encontrado para alterar VIP.", "warning");
-            return;
-        }
-
-        const newVipStatus = !student.isVip;
-        student.isVip = newVipStatus;
-        if (!newVipStatus) {
-            student.vipCouponUsed = null;
-        } else {
-            student.vipCouponUsed = student.vipCouponUsed || 'ADMIN_VIP';
-        }
-
-        // 1. Salva na lista geral de alunos
-        saveLocalRegisteredStudent(student);
-
-        // 2. Atualiza no registro individual do aluno isolado
-        if (student.email) {
-            const acc = getStudentAccount(student.email) || {};
-            acc.isVip = newVipStatus;
-            if (!newVipStatus) {
-                acc.vipCouponUsed = null;
-            } else {
-                acc.vipCouponUsed = acc.vipCouponUsed || 'ADMIN_VIP';
-            }
-            saveStudentAccount(student.email, {
-                ...acc,
-                uid: student.uid || acc.uid,
-                email: student.email,
-                displayName: student.displayName || acc.displayName
+        // VIP via servidor: vale em qualquer aparelho e nao se perde na sincronizacao
+        if (!email) { showToast('Aluno sem e-mail cadastrado.', 'error'); return; }
+        const aluno = (window.getRegisteredStudents && window.getRegisteredStudents() || []).find(s => s.email === email);
+        const conceder = !(aluno && aluno.isVip);
+        try {
+            const res = await fetch('/api/admin/students', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email, isVip: conceder })
             });
-        }
-
-        // 3. Se for o usuário da sessão atual, atualiza sessão e dados ao vivo
-        const isCurrentSession = currentUser && (
-            (uid && currentUser.uid === uid) ||
-            (student.email && currentUser.email && currentUser.email.toLowerCase() === student.email.toLowerCase())
-        );
-
-        if (isCurrentSession) {
-            currentUser.isVip = newVipStatus;
-            userData.isVip = newVipStatus;
-            if (!newVipStatus) {
-                userData.vipCouponUsed = null;
-                userData.hearts = 5;
+            const data = await res.json();
+            if (data && data.ok) {
+                showToast(conceder ? 'VIP concedido! O aluno recebe ao abrir o app.' : 'VIP removido.', 'success');
+                if (typeof window.carregarAlunosDaNuvem === 'function') window.carregarAlunosDaNuvem();
             } else {
-                userData.vipCouponUsed = userData.vipCouponUsed || 'ADMIN_VIP';
-                userData.hearts = 999;
+                showToast((data && data.error) || 'Nao foi possivel alterar o VIP.', 'error');
             }
-            localStorage.setItem('elevate_current_user_session', JSON.stringify(currentUser));
-            localStorage.setItem('elevate_user_v2', JSON.stringify(userData));
-        if (typeof window.elevateSalvarNaNuvem === 'function') window.elevateSalvarNaNuvem();
-
-            if (typeof updateVipUI === 'function') updateVipUI();
-            if (typeof updateAdminVisibilityUI === 'function') updateAdminVisibilityUI();
-            if (typeof updateUserAuthUI === 'function') updateUserAuthUI();
-            if (typeof updateStatsUI === 'function') updateStatsUI();
-            if (typeof renderMap === 'function') renderMap();
+        } catch (e) {
+            showToast('Erro de conexao ao alterar o VIP.', 'error');
         }
-
-        // 4. Salva no Firebase se disponível
-        const firestoreDocId = uid || student.uid;
-        if (isFirebaseReady && db && firestoreDocId) {
-            try {
-                await db.collection('users').doc(firestoreDocId).set({
-                    isVip: newVipStatus,
-                    vipCouponUsed: newVipStatus ? (student.vipCouponUsed || 'ADMIN_VIP') : null
-                }, { merge: true });
-            } catch(e) {
-                console.warn("Erro ao sincronizar VIP com o Firebase:", e);
-            }
-        }
-
-        showToast(`Status de ${student.displayName || 'Aluno'}: ${newVipStatus ? '👑 VIP ATIVADO' : '⚪ GRÁTIS'}!`, "success");
-        await refreshAdminAnalyticsData();
     }
 
     
@@ -7220,20 +7196,19 @@ function renderStudentInboxMessages() {
                 let isBonusUnit3Locked = false;
 
                 if (!isPaidModule && !userData.isVip) {
-                    if (currentSelectedLevel === 'beginner') {
-                        if (lesson.unit <= 2) {
-                            isUnitPaywallLocked = false;
-                            isBonusUnit3Locked = false;
-                        } else if (lesson.unit === 3) {
-                            const hasStreak3 = (userData.streak || 0) >= 3;
-                            const u1Done = isUnitCompleted('beginner', 1);
-                            const u2Done = isUnitCompleted('beginner', 2);
-                            const bonusUnlocked = hasStreak3 || (u1Done && u2Done);
-                            if (!bonusUnlocked) {
-                                isBonusUnit3Locked = true;
-                            }
-                        } else {
-                            isUnitPaywallLocked = true;
+                    // Regra do ELEVATE - vale para TODOS os niveis (inclusive o alcancado no teste de nivelamento):
+                    // Unidades 1 e 2 livres; Unidade 3 por merito (ofensiva >= 3 OU concluir as duas primeiras);
+                    // Unidades 4 em diante exigem VIP.
+                    if (lesson.unit <= 2) {
+                        isUnitPaywallLocked = false;
+                        isBonusUnit3Locked = false;
+                    } else if (lesson.unit === 3) {
+                        const hasStreak3 = (userData.streak || 0) >= 3;
+                        const u1Done = isUnitCompleted(currentSelectedLevel, 1);
+                        const u2Done = isUnitCompleted(currentSelectedLevel, 2);
+                        const bonusUnlocked = hasStreak3 || (u1Done && u2Done);
+                        if (!bonusUnlocked) {
+                            isBonusUnit3Locked = true;
                         }
                     } else {
                         isUnitPaywallLocked = true;

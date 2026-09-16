@@ -136,6 +136,7 @@ export default async function handler(req, res) {
                 name: registro.name || null,
                 email: registro.email || email,
                 progress: registro.progress || null,
+                entitlement: registro.entitlement || { isVip: false },
                 updatedAt: registro.updatedAt || null
             });
         }
@@ -234,8 +235,25 @@ export default async function handler(req, res) {
                 return res.status(200).json({ ok: true, message: 'Pedido enviado! A coordenacao responde para o e-mail que voce deixou.' });
             }
 
+            // ---- painel concede ou remove o VIP ----
+            if (acao === 'vip') {
+                if (!existia) return res.status(404).json({ ok: false, error: 'Aluno nao encontrado na nuvem.' });
+                const conceder = !!body.isVip;
+                const entitlement = { ...(registroAnterior.entitlement || {}), isVip: conceder, updatedAt: new Date().toISOString() };
+                const g = await fsRequest(basePath + '/' + docId(email) + '?updateMask.fieldPaths=entitlement', { method: 'PATCH', body: JSON.stringify({ fields: { entitlement: toFields(entitlement) } }) });
+                if (!g.ok) return res.status(500).json({ ok: false, error: 'Falha ao gravar o VIP.' });
+                return res.status(200).json({ ok: true, email, isVip: conceder, message: conceder ? 'VIP concedido!' : 'VIP removido.' });
+            }
+
             // ---- gravacao ----
             const progresso = body.progress;
+            // o direito de acesso (VIP) e definido pelo painel, nunca pelo aparelho do aluno:
+            // remove essas chaves do que chega para nao apagar o VIP concedido
+            if (progresso && typeof progresso === 'object') {
+                delete progresso.isVip;
+                delete progresso.unlockedModules;
+                delete progresso.vipCouponUsed;
+            }
             const nome = String(body.name || '').trim() || 'Aluno';
             const pinInformado = String(body.pin || '').trim();
             if (!progresso || typeof progresso !== 'object') return res.status(400).json({ ok: false, error: 'Progresso não informado.' });
@@ -251,6 +269,7 @@ export default async function handler(req, res) {
             };
             if (registroAnterior && registroAnterior.pinHash) registro.pinHash = registroAnterior.pinHash;
             if (registroAnterior && registroAnterior.recoveryHash) registro.recoveryHash = registroAnterior.recoveryHash;
+            if (registroAnterior && registroAnterior.entitlement) registro.entitlement = registroAnterior.entitlement;
 
             let codigoNovo = null;
             if (pinInformado && segredo()) registro.pinHash = hash(pinInformado);
