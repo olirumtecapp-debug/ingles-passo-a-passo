@@ -55,6 +55,29 @@ module.exports = async function handler(req, res) {
         'PAYMENT_RECEIVED_IN_CASH'
       ].includes(event);
 
+// Concede o VIP no servidor (Firestore) para o e-mail que pagou.
+async function concederVipNoServidor(email) {
+  if (!email || !String(email).includes('@')) return false;
+  const API_KEY = process.env.FIREBASE_API_KEY || 'AIzaSyBUHGXoUMg0bV3EdmfpfmVAEYMLQceqkQc';
+  const PROJ = process.env.FIREBASE_PROJECT_ID || 'expedicao-brasil';
+  const crypto = require('crypto');
+  const id = crypto.createHash('sha256').update(String(email).trim().toLowerCase()).digest('hex').slice(0, 32);
+  const base = 'https://firestore.googleapis.com/v1/projects/' + PROJ + '/databases/(default)/documents/elevate_students/' + id;
+  try {
+    const atual = await fetch(base + '?key=' + API_KEY);
+    if (atual.status === 404) return false;
+    const doc = await atual.json();
+    const anterior = (doc.fields && doc.fields.entitlement && doc.fields.entitlement.mapValue && doc.fields.entitlement.mapValue.fields) || {};
+    const fields = { ...anterior, isVip: { booleanValue: true }, pagoEm: { stringValue: new Date().toISOString() } };
+    const patch = await fetch(base + '?updateMask.fieldPaths=entitlement&key=' + API_KEY, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fields: { entitlement: { mapValue: { fields } } } })
+    });
+    return patch.ok;
+  } catch (e) { return false; }
+}
+
       if (isApprovedEvent) {
         const approvalRecord = {
           paymentId: payment.id,
@@ -66,6 +89,13 @@ module.exports = async function handler(req, res) {
         };
 
         recentApprovals.unshift(approvalRecord);
+
+        // quem pagou recebe o acesso no SERVIDOR (vale em qualquer aparelho, nao se perde)
+        if (approvalRecord.customerEmail) {
+          concederVipNoServidor(approvalRecord.customerEmail).then(ok => {
+            console.log('[Asaas Webhook] VIP concedido para ' + approvalRecord.customerEmail + '? ' + ok);
+          });
+        }
         if (recentApprovals.length > 50) recentApprovals.pop();
       }
 

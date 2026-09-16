@@ -6125,7 +6125,8 @@ function renderStudentInboxMessages() {
     }
     window.updateStudentInboxBadges = updateStudentInboxBadges;
 
-    const DEFAULT_VIP_COUPONS = ["VIP-ELEVATE-TESTER", "ADM-2026", "VIP-ALUNO-PRO", "FLUENCIA-100"];
+    // Cupons agora vivem no servidor (colecao elevate_coupons), criados pela coordenacao.
+const DEFAULT_VIP_COUPONS = [];
 
     function getVipCoupons() {
         const saved = localStorage.getItem('elevate_vip_coupons');
@@ -6141,30 +6142,38 @@ function renderStudentInboxMessages() {
         renderAdmCoupons();
     }
 
-    function addVipCoupon() {
-        const input = document.getElementById('adm-coupon-input');
-        const code = input?.value?.trim().toUpperCase();
-        if (!code) {
-            showToast("Digite o código do cupom!", "error");
-            return;
+    async function addVipCoupon() {
+    const input = document.getElementById('adm-coupon-input');
+    const code = input?.value?.trim().toUpperCase();
+    if (!code) { showToast("Digite o código do cupom!", "error"); return; }
+    try {
+        const resp = await fetch('/api/coupons', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'criar', code: code, dias: 0, maxUsos: 0 })
+        });
+        const dados = await resp.json();
+        if (dados && dados.ok) {
+            if (input) input.value = '';
+            showToast('Cupom ' + code + ' criado no servidor!', 'success');
+            renderAdmCoupons();
+        } else {
+            showToast((dados && dados.error) || 'Não foi possível criar o cupom.', 'error');
         }
-        const list = getVipCoupons();
-        if (list.includes(code)) {
-            showToast("Este cupom já existe!", "error");
-            return;
-        }
-        list.push(code);
-        saveVipCoupons(list);
-        if (input) input.value = '';
-        showToast(`Cupom ${code} criado com sucesso!`, "success");
-    }
+    } catch (e) { showToast('Erro de conexão ao criar o cupom.', 'error'); }
+}
 
-    function renderAdmCoupons() {
+    async function renderAdmCoupons() {
         const containers = [
             document.getElementById('adm-coupons-list'),
             document.getElementById('adm-window-coupons-list')
         ];
-        const list = getVipCoupons();
+        let list = [];
+        try {
+            const resp = await fetch('/api/coupons');
+            const dados = await resp.json();
+            list = ((dados && dados.cupons) || []).filter(c => !c.expirado).map(c => c.code);
+        } catch (e) { list = []; }
         containers.forEach(container => {
             if (!container) return;
             if (!list || list.length === 0) {
@@ -6180,23 +6189,31 @@ function renderStudentInboxMessages() {
         });
     }
 
-    function removeVipCoupon(code) {
-        let list = getVipCoupons().filter(c => c !== code);
-        saveVipCoupons(list);
-        showToast(`Cupom ${code} removido.`, "info");
-    }
+    async function removeVipCoupon(code) {
+    if (!confirm('Excluir o cupom ' + code + '? Ele deixa de funcionar para todos.')) return;
+    try {
+        const resp = await fetch('/api/coupons', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'excluir', code: code })
+        });
+        const dados = await resp.json();
+        showToast((dados && dados.ok) ? ('Cupom ' + code + ' excluído.') : ((dados && dados.error) || 'Não foi possível excluir.'), (dados && dados.ok) ? 'info' : 'error');
+        renderAdmCoupons();
+    } catch (e) { showToast('Erro de conexão ao excluir.', 'error'); }
+}
 
     
     // Gera cupom VIP aleatório de 6 caracteres (Ex: VIP-8K3X9A)
-    function generateRandomVipCoupon() {
+    async function generateRandomVipCoupon() {
         const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
         let randomPart = '';
         for (let i = 0; i < 6; i++) {
             randomPart += chars.charAt(Math.floor(Math.random() * chars.length));
         }
         const code = 'VIP-' + randomPart;
-        const list = getVipCoupons();
-        if (!list.includes(code)) {
+        try { await fetch('/api/coupons', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'criar', code: code }) }); renderAdmCoupons(); } catch (e) {}
+        if (false) {
             list.push(code);
             saveVipCoupons(list);
         }
@@ -6216,15 +6233,27 @@ function renderStudentInboxMessages() {
     }
 
     // Resgate de cupom na loja do aluno
-    function redeemStudentStoreCoupon() {
+    async function redeemStudentStoreCoupon() {
         const input = document.getElementById('store-coupon-input');
         const code = input?.value?.trim().toUpperCase();
         if (!code) {
             showToast("Digite o código do cupom!", "error");
             return;
         }
-        const validCoupons = getVipCoupons();
-        if (validCoupons.includes(code)) {
+        // validacao no SERVIDOR: cupom da coordenacao, com validade e uso unico por aluno
+        let cupomOk = false, cupomErro = '';
+        try {
+            const resp = await fetch('/api/coupons', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'resgatar', email: (currentUser && currentUser.email) || userData.userEmail || '', code: code })
+            });
+            const dados = await resp.json();
+            cupomOk = !!(dados && dados.ok);
+            cupomErro = (dados && (dados.error || dados.message)) || '';
+        } catch (e) { cupomErro = 'Erro de conexao ao validar o cupom.'; }
+
+        if (cupomOk) {
             userData.isVip = true;
             userData.hearts = 999;
             userData.vipCouponUsed = code;
@@ -6260,7 +6289,7 @@ function renderStudentInboxMessages() {
             closeModal('modal-vip-store');
             showToast("👑 PARABÉNS! Cupom VIP validado com sucesso! Vidas infinitas e todas as 285 aulas liberadas!", "success");
         } else {
-            showToast("❌ Cupom inválido ou expirado.", "error");
+            showToast(cupomErro || "Cupom inválido.", "error");
         }
     }
 
