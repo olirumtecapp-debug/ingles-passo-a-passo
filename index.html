@@ -3187,7 +3187,8 @@
 
     // Aula Ativa State
     let currentLessonData = null;
-    let currentExercisesQueue = []; 
+    let currentExercisesQueue = [];
+    let tentativasDoExercicio = {}; 
     let currentExerciseIndex = 0;
     let totalExercisesToPass = 0;
     let selectedOptionIndex = null;
@@ -7312,6 +7313,7 @@ const DEFAULT_VIP_COUPONS = [];
     function startLesson(lesson) {
         currentLessonData = lesson;
         currentExercisesQueue = JSON.parse(JSON.stringify(lesson.exercises));
+        tentativasDoExercicio = {};
         currentExerciseIndex = 0;
         totalExercisesToPass = currentExercisesQueue.length;
         
@@ -7544,7 +7546,9 @@ const DEFAULT_VIP_COUPONS = [];
         const ex = currentExercisesQueue[currentExerciseIndex];
         let isCorrect = false;
 
-        const cleanText = (str) => String(str || '').toLowerCase().replace(/[.,!?;:¡¿'"`´]/g, '').replace(/\s+/g, ' ').trim();
+        // normaliza: minusculas, sem acento, sem pontuacao (aceita 'voce' e 'você', 'esta' e 'está')
+        const semAcento = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const cleanText = (str) => semAcento(String(str || '').toLowerCase()).replace(/[.,!?;:'"`´¡¿]/g, '').replace(/\s+/g, ' ').trim();
 
         if(ex.type === 'multiple_choice') {
             const chosen = (currentRenderedOptions && currentRenderedOptions.length > 0 && selectedOptionIndex !== null) ? currentRenderedOptions[selectedOptionIndex] : ex.options[selectedOptionIndex];
@@ -7564,11 +7568,22 @@ const DEFAULT_VIP_COUPONS = [];
         } else if(ex.type === 'translate') {
             const inputVal = document.getElementById('translate-input').value;
             const normalizedInput = cleanText(inputVal);
-            if (ex.correctAnswer) {
-                isCorrect = normalizedInput === cleanText(ex.correctAnswer);
-            }
-            if (!isCorrect && ex.answer) {
-                isCorrect = normalizedInput === cleanText(ex.answer);
+
+            // 1) igual a resposta esperada
+            const respostas = [ex.correctAnswer, ex.answer].filter(Boolean).map(cleanText);
+            if (respostas.includes(normalizedInput)) isCorrect = true;
+
+            // 2) equivalencia: aceita "Eu tenho trabalhado..." para "Tenho trabalhado..."
+            //    (cobre a maior parte das palavras importantes sem escrever muito a mais)
+            if (!isCorrect && respostas.length > 0) {
+                const importantes = (txt) => txt.split(' ').filter(w => w.length > 2);
+                const alvo = importantes(respostas[0]);
+                const digitado = importantes(normalizedInput);
+                if (alvo.length > 0 && digitado.length > 0) {
+                    const acertos = alvo.filter(w => digitado.includes(w)).length;
+                    const cobertura = acertos / alvo.length;
+                    if (cobertura >= 0.7 && digitado.length <= alvo.length + 3) isCorrect = true;
+                }
             }
             if (!isCorrect && ex.keywords && Array.isArray(ex.keywords) && ex.keywords.length > 0) {
                 const matched = ex.keywords.filter(k => normalizedInput.includes(cleanText(k)));
@@ -7619,7 +7634,12 @@ const DEFAULT_VIP_COUPONS = [];
             document.getElementById('lesson-hearts').innerText = userData.hearts;
             saveData();
 
+            // repete o exercicio UMA vez; se errar de novo, segue em frente
+        const chaveTentativa = (ex.question || '') + '|' + (ex.english || '') + '|' + (ex.type || '');
+        tentativasDoExercicio[chaveTentativa] = (tentativasDoExercicio[chaveTentativa] || 0) + 1;
+        if (tentativasDoExercicio[chaveTentativa] < 2) {
             currentExercisesQueue.push(ex);
+        }
 
             document.getElementById('btn-check').classList.add('hidden');
             const nextBtn = document.getElementById('btn-next');
