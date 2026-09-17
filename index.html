@@ -5151,7 +5151,10 @@
             renderAdmCoupons();
         }
         if (tabName === 'students') {
-            if (cachedStudentsList && cachedStudentsList.length > 0) {
+            // SEMPRE busca a lista real da nuvem: o aluno pode ter se cadastrado em outro aparelho
+            if (typeof window.carregarAlunosDaNuvem === 'function') {
+                window.carregarAlunosDaNuvem();
+            } else if (cachedStudentsList && cachedStudentsList.length > 0) {
                 renderAdminStudentsTable(cachedStudentsList);
             } else {
                 refreshAdminAnalyticsData();
