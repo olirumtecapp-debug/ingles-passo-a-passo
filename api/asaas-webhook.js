@@ -1,66 +1,16 @@
-// api/asaas-webhook.js - Webhook Oficial do Asaas para ELEVATE
-let recentApprovals = globalThis.__elevate_approvals || [];
-globalThis.__elevate_approvals = recentApprovals;
+// api/asaas-webhook.js — Webhook do Asaas para ELEVATE
+//
+// A aprovacao vai para o Firestore (nao mais para a memoria do processo): em serverless
+// cada chamada pode cair em outra instancia e o site nunca veria o pagamento.
+const { registrarPagamento, listarPagamentos, limparPagamentosAntigos } = require('./_pagamentos.js');
 
-module.exports = async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,POST');
-  res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Content-Type, asaas-access-token');
+const crypto = require('crypto');
 
-  if (req.method === 'OPTIONS') {
-    res.status(200).end();
-    return;
-  }
-
-  // Consulta do frontend (GET) para verificar se o PIX acabou de ser pago
-  if (req.method === 'GET') {
-    const { email, value } = req.query;
-    const now = Date.now();
-    
-    // Procura aprovação recente (últimos 15 minutos)
-    const match = recentApprovals.find(item => {
-      const isFresh = (now - item.timestamp) < 15 * 60 * 1000;
-      if (!isFresh) return false;
-      if (email && item.customerEmail && item.customerEmail.toLowerCase() === email.toLowerCase()) return true;
-      if (value && Math.abs(parseFloat(item.value) - parseFloat(value)) < 0.1) return true;
-      return true; // Se estiver no modal ativo e houver aprovação recente
-    });
-
-    if (match) {
-      return res.status(200).json({
-        approved: true,
-        event: match.event,
-        paymentId: match.paymentId,
-        value: match.value,
-        timestamp: match.timestamp
-      });
-    }
-
-    return res.status(200).json({ approved: false, message: 'Aguardando confirmação do Asaas' });
-  }
-
-  // Notificação do Asaas (POST)
-  if (req.method === 'POST') {
-    try {
-      const body = req.body || {};
-      const event = body.event;
-      const payment = body.payment || {};
-
-      console.log(`[Asaas Webhook] Evento: ${event}, ID: ${payment.id}, Valor: ${payment.value}`);
-
-      const isApprovedEvent = [
-        'PAYMENT_RECEIVED',
-        'PAYMENT_CONFIRMED',
-        'PAYMENT_RECEIVED_IN_CASH'
-      ].includes(event);
-
-// Concede o VIP no servidor (Firestore) para o e-mail que pagou.
+// Concede o VIP no Firestore para o e-mail que pagou
 async function concederVipNoServidor(email) {
   if (!email || !String(email).includes('@')) return false;
   const API_KEY = process.env.FIREBASE_API_KEY || 'AIzaSyBUHGXoUMg0bV3EdmfpfmVAEYMLQceqkQc';
-  const PROJ = process.env.FIREBASE_PROJECT_ID || 'expedicao-brasil';
-  const crypto = require('crypto');
+  const PROJ = 'expedicao-brasil';
   const id = crypto.createHash('sha256').update(String(email).trim().toLowerCase()).digest('hex').slice(0, 32);
   const base = 'https://firestore.googleapis.com/v1/projects/' + PROJ + '/databases/(default)/documents/elevate_students/' + id;
   try {
@@ -70,39 +20,64 @@ async function concederVipNoServidor(email) {
     const anterior = (doc.fields && doc.fields.entitlement && doc.fields.entitlement.mapValue && doc.fields.entitlement.mapValue.fields) || {};
     const fields = { ...anterior, isVip: { booleanValue: true }, pagoEm: { stringValue: new Date().toISOString() } };
     const patch = await fetch(base + '?updateMask.fieldPaths=entitlement&key=' + API_KEY, {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
+      method: 'PATCH', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ fields: { entitlement: { mapValue: { fields } } } })
     });
     return patch.ok;
   } catch (e) { return false; }
 }
 
-      if (isApprovedEvent) {
-        const approvalRecord = {
-          paymentId: payment.id,
+const EVENTOS_APROVADOS = ['PAYMENT_RECEIVED', 'PAYMENT_CONFIRMED', 'PAYMENT_RECEIVED_IN_CASH'];
+const JANELA_MS = 15 * 60 * 1000;
+
+module.exports = async function handler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, asaas-access-token');
+  res.setHeader('Cache-Control', 'no-store');
+  if (req.method === 'OPTIONS') return res.status(204).end();
+
+  if (req.method === 'GET') {
+    const { value, since } = req.query || {};
+    const desde = parseInt(since || '0', 10) || 0;
+    const pagamentos = await listarPagamentos();
+    const agora = Date.now();
+    const achou = pagamentos.find(p => {
+      if (desde && Number(p.timestamp) < desde) return false;
+      if ((agora - Number(p.timestamp)) >= JANELA_MS) return false;
+      if (value) return Math.abs(parseFloat(p.value) - parseFloat(value)) < 0.1;
+      return true;
+    });
+    if (achou) return res.status(200).json({ approved: true, event: achou.event, paymentId: achou.paymentId, value: achou.value, timestamp: achou.timestamp });
+    return res.status(200).json({ approved: false, message: 'Aguardando confirmação do Asaas' });
+  }
+
+  if (req.method === 'POST') {
+    try {
+      const body = req.body || {};
+      const event = body.event;
+      const payment = body.payment || {};
+      if (EVENTOS_APROVADOS.includes(event)) {
+        const registro = {
+          paymentId: payment.id || null,
           event: event,
-          value: payment.value,
-          billingType: payment.billingType,
-          customerEmail: payment.customer?.email || null,
+          value: payment.value || null,
+          billingType: payment.billingType || null,
+          customerEmail: (payment.customer && payment.customer.email) || null,
           timestamp: Date.now()
         };
-
-        recentApprovals.unshift(approvalRecord);
-
-        // quem pagou recebe o acesso no SERVIDOR (vale em qualquer aparelho, nao se perde)
-        if (approvalRecord.customerEmail) {
-          concederVipNoServidor(approvalRecord.customerEmail).then(ok => {
-            console.log('[Asaas Webhook] VIP concedido para ' + approvalRecord.customerEmail + '? ' + ok);
-          });
+        await registrarPagamento(registro);
+        await limparPagamentosAntigos();
+        console.log('[Asaas] pagamento confirmado: ' + registro.paymentId + ' | ' + registro.customerEmail);
+        // quem pagou recebe o VIP no SERVIDOR (vale em qualquer aparelho)
+        if (registro.customerEmail) {
+          concederVipNoServidor(registro.customerEmail).then(ok => console.log('[Asaas] VIP concedido para ' + registro.customerEmail + ': ' + ok));
         }
-        if (recentApprovals.length > 50) recentApprovals.pop();
       }
-
       return res.status(200).json({ received: true });
     } catch (err) {
-      console.error('[Asaas Webhook] Erro:', err);
-      return res.status(200).json({ received: true, error: err.message });
+      console.error('[Asaas] erro:', err && err.message);
+      return res.status(200).json({ received: true, error: err && err.message });
     }
   }
 
