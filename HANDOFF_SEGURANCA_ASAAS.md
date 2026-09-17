@@ -1,4 +1,4 @@
-﻿# HANDOFF DE SEGURANÇA: REMOÇÃO DA CHAVE ASAAS NO FRONTEND
+# HANDOFF DE SEGURANÇA: REMOÇÃO DA CHAVE ASAAS NO FRONTEND
 
 **Palavra-chave de Continuidade:** `ELEVATE_ASAAS_SECURED_2026`
 **Data:** 17/09/2026
@@ -41,5 +41,20 @@
 ## 3. Próximos Passos Recomendados para a Próxima IA
 
 1. Lembrar o usuário de rotacionar o token no painel do Asaas e atualizar a variável de ambiente na Vercel (`ASAAS_API_KEY`).
-2. Realizar commit e push das alterações de segurança usando o executável Git do ecossistema.
+2. Realizar commit e push das alterações via VSCode / Git (`index.html` e `lingoclone.html` sincronizados).
 3. Continuar as funcionalidades pendentes planejadas para o projeto ELEVATE.
+
+---
+
+## 4. Auditoria de Alunos & Sincronização Cloud (Resolvido em 17/09/2026 16:30)
+
+- **Situação reportada:** O aluno recém-cadastrado (filho) aparecia ontem no ADM e parou de aparecer hoje.
+- **Diagnóstico:**
+  - **Dados 100% preservados na nuvem:** Verificado diretamente no Firestore (`projects/expedicao-brasil/databases/(default)/documents/elevate_students`). O aluno **Murilo Martins** (`murilomartinsferreirammf@gmail.com`) está perfeitamente salvo com todas as métricas (105 XP, 7 aulas concluídas, status VIP ativo).
+  - **Causa raiz:** O arquivo `index.html` havia sido sobrescrito por uma versão legada de `lingoclone.html` que não continha a integração de busca na nuvem (`carregarAlunosDaNuvem`), dependendo apenas do `localStorage` do navegador da sessão anterior.
+- **Solução implementada:**
+  - Restaurada a versão completa e moderna de 9.707 linhas a partir de `index.html.bak_2026-09-17_11-25`.
+  - Chave do Asaas mantida 100% segura (`const ASAAS_API_KEY = "";`).
+  - Função `refreshAdminAnalyticsData` e `carregarAlunosDaNuvem` atualizadas com `getElevateApiBase()`: busca sempre em `/api/admin/students` (ou no endpoint de produção com CORS se aberto localmente via Live Server/file), renderizando imediatamente todos os alunos reais e atualizando contadores de métricas.
+  - `index.html` e `lingoclone.html` sincronizados e idênticos.
+
